@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "D-DIN";
+  src: url("font/D-DIN-Bold.woff2") format("woff2"),
+    url("font/D-DIN-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "D-DIN Condensed";
+  src: url("font/D-DINCondensed.woff2") format("woff2"),
+    url("font/D-DINCondensed.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "D-DIN Exp";
+  src: url("font/D-DINExp-Bold.woff2") format("woff2"),
+    url("font/D-DINExp-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "D-DIN";
+  src: url("font/D-DIN.woff2") format("woff2"),
+    url("font/D-DIN.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "D-DIN Exp";
+  src: url("font/D-DINExp.woff2") format("woff2"),
+    url("font/D-DINExp.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "D-DIN Condensed";
+  src: url("font/D-DINCondensed-Bold.woff2") format("woff2"),
+    url("font/D-DINCondensed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "D-DIN";
+  src: url("font/D-DIN-Italic.woff2") format("woff2"),
+    url("font/D-DIN-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "D-DIN Exp";
+  src: url("font/D-DINExp-Italic.woff2") format("woff2"),
+    url("font/D-DINExp-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+@import "../scss/component/header.scss";
+@import "../scss/component/banner.scss";
+@import "../scss/component/modal.scss";
+@import "../scss/component/stake.scss";
+@import "../scss/component/buy.scss";
+@import "../scss/component/footer.scss";
+@import "../scss/component/history.scss";
+@import "../scss/component/nft.scss";
+@import "../scss/component/_certificate.scss";
+@import "../scss/component/_metaverse.scss";
+@import "../scss/component/tabs.scss";
+@import "../scss/component/checkbox.scss";
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+
+body, label {
+  font-family: 'D-Din Exp';
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'D-Din Exp';
+}
+
+.btn-claim {
+  background-color: #163244;
+}

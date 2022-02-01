@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+$navabr-bg: #202428;
+$navlink-clr: #f2f1f1;
+
+.metaverse {
+  .metaverse-bg {
+    background: #193552;
+    .metaverse-header {
+      h2 {
+        font-family: 'D-DIN Exp';
+        font-weight: bold;
+        font-size: 2.5rem;
+        span {
+          color: #00dd73;
+        }
+      }
+      p {
+        font-family: 'Poppins', sans-serif;
+      }
+    }
+  }
+  .metaverse-content {
+    h3 {
+      font-family: 'D-DIN Exp';
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-family: 'D-DIN Exp';
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    .link-arrow {
+      color: #00dd73;
+      position: relative;
+      font-weight: bold;
+      font-size: 1.2rem;
+      top: 0.2rem;
+      height: 20px;
+    }
+    p {
+      font-family: 'Poppins', sans-serif;
+    }
+    p a {
+      color: #727272;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none !important;
+    }
+    .metaverse-img {
+      height: 610px;
+      z-index: 1;
+    }
+    .metaverse01,
+    .metaverse02,
+    .metaverse03,
+    .metaverse04 {
+      position: absolute;
+    }
+    .metaverse01,
+    .metaverse02 {
+      top: 100px;
+    }
+    .metaverse01,
+    .metaverse03 {
+      left: 0px;
+    }
+    .metaverse02 {
+      right: 0px;
+    }
+    .metaverse03 {
+      bottom: 150px;
+    }
+
+    .metaverse04 {
+      bottom: 200px;
+      right: 0px;
+    }
+
+    .arrow-1,
+    .arrow-2,
+    .arrow-3,
+    .arrow-4 {
+      position: absolute;
+    }
+
+    .arrow-1 {
+      top: 60px;
+      left: 100px;
+    }
+    .arrow-2 {
+      top: 40px;
+      right: 205px;
+    }
+    .arrow-3 {
+      top: -50px;
+      left: 50px;
+    }
+    .arrow-4 {
+      top: -50px;
+      right: 160px;
+    }
+  }
+}
