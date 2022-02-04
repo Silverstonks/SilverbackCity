@@ -1,31 +1,25 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import actions from '../../store/actions';
 
+const ClaimButton = () => {
+  const { isAuthenticated } = useSelector((state) => state.auth);
+  const { nfts } = useSelector((state) => state.nft);
+  const dispatch = useDispatch();
 
-const ClaimButton = ({ nextRewardDate, onClickClaimBehavior }) => {
-    const [currTime, setCurrTime] = useState(new Date());
+  const claimNft = () => {
+    dispatch(actions.applicationActions.updateModalState(true));
+    dispatch(actions.applicationActions.updateModalStep(7));
+  };
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrTime(new Date());
-        }, 1000)
+  return (
+    <>
+      {/*TODO disable when use is not authenthicated or has no nfts : disabled={!isAuthenticated || nfts.length < 1}     */}
+      <button onClick={claimNft} className="btn btn-outline-bgalpha w-100">
+        CLAIM
+      </button>
+    </>
+  );
+};
 
-        return () => {
-            clearInterval(interval);
-        };
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-
-    const isTimeToClaim = nextRewardDate && currTime >= new Date(nextRewardDate * 1000);
-    return (
-        (
-            isTimeToClaim ?
-                <button
-                    onClick={onClickClaimBehavior}
-                    className="btn btn-outline-success w-100">Claim
-                </button> :
-                <button className="btn btn-secondary w-100" disabled>Claim</button>
-        )
-    )
-}
-
-export default ClaimButton
+export default ClaimButton;

@@ -4,12 +4,11 @@ import Logo from '../static/images/logo.svg';
 import { FaBars } from 'react-icons/fa';
 import actions from '../store/actions';
 import arrowLight from '../static/images/icon-arrow-right-single-light.png';
-import ClaimButton from './ClaimButton';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
-  const { walletAddress, isAuthenticated } = useSelector((state) => state.auth);
-  const { nft } = useSelector((state) => state.nft);
+  const { walletAddress, isAuthenticated } = useSelector((state) => state?.auth);
+  const { nft } = useSelector((state) => state?.nft);
   const dispatch = useDispatch();
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -150,7 +149,7 @@ const Header = () => {
                     <div className="d-block text-white align-self-center">
                       <h4>Silver Silverback</h4>
                       <h5>BNB {nft && nft.gasFee ? nft.gasFee.toString().substring(1, nft.gasFee.toString().length) : ''}</h5>
-                      <ClaimButton />
+                      
                     </div>
                   </div>
                 

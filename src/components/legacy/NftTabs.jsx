@@ -5,9 +5,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import logoProductInfo from '../static/images/icon-ingot.png';
 import bockChainInfo from '../static/images/icon-blockchain.png';
 import myNft from '../static/images/my-nft.png';
-import ProductInfo from './tabs/ProductInfo';
-import BlockChainInfo from './tabs/BlockchainInfo';
-import MyNfts from './tabs/MyNfts';
+import ProductInfo from '../tabs/ProductInfo';
+import BlockChainInfo from '../tabs/BlockchainInfo';
+import MyNfts from '../tabs/MyNfts';
 
 const NftTabs = () => {
   const { walletAddress } = useSelector((state) => state.auth);

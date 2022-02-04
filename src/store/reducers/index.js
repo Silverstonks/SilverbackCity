@@ -8,5 +8,5 @@ export default combineReducers({
   nft: nftReducer,
   application: applicationReducer,
   auth: authReducer,
-  nftTransactions: nftTransactionReducer
+ // nftTransactions: nftTransactionReducer
 });
