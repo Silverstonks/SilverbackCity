@@ -63,14 +63,21 @@ const Header = () => {
                       <i className="fas fa-times txt-color-white"></i>
                     </button>
                   </li>
-                  <li className="nav-item">
-                    <a href="https://www.silverstonks.com/" className="nav-link">
-                      SHOP
-                    </a>
+                  <li className="nav-item nav-item-lang">
+                    <img src="/src/static/images/header/lang" alt="lang selector" id='lang-selector' className='lang-selector' />
+                    <span className='lang-options'>
+                      <span className="lang-en" id='lang-en'>
+                        EN
+                      </span>
+                      /
+                      <span className="lang-es" id='lang-es'>
+                        ES 
+                      </span>
+                    </span>
                   </li>
-                  <li className="nav-item" onClick={() => scrollTo('buy-sstx')}>
-                    <a href="" className="nav-link">
-                      BUY SSTX
+                  <li className="nav-item">
+                    <a href="https://www.silverstonks.com/" className="nav-link" onClick={() => scrollTo('city')}>
+                      Silverback City
                     </a>
                   </li>
                   <li className="nav-item dropdown">
@@ -83,29 +90,40 @@ const Header = () => {
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      ABOUT NFT
+                      Citizens / Zones
                     </a>
                     <div className="dropdown-menu " aria-labelledby="navbarDropdown">
                       <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
-                        Other popular certificates
+                        Bids Arena
                       </a>
                       <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
-                        Introducing Silver Stonks collectibles
+                        The Vault
                       </a>
                       <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
-                        Why Silver Stonks certificates?
+                        NFT Lab
                       </a>
                       <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
-                        A growing Silver Stonks Ecosystem
+                        Silver Shop
+                      </a>
+                      <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
+                        Token
+                      </a>
+                      <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
+                        Underground Lounge
                       </a>
                     </div>
+                  </li>
+                  <li className="nav-item" onClick={() => scrollTo('story')}>
+                    <a href="/" className="nav-link">
+                      Story
+                    </a>
                   </li>
                   <li className="nav-item">
                     <ul className="navbar-nav ml-auto d-flex justify-content-center align-items-center">
                       <li className="nav-item m-0">
                         {isAuthenticated && walletAddress ? (
                           <button className="btn btn-outline-danger ml-3 " onClick={() => dispatch(actions.authActions.logOutUser())}>
-                            DISCONECT
+                            Disconect
                           </button>
                         ) : (
                           <button
@@ -113,9 +131,18 @@ const Header = () => {
                             className="btn btn-outline-bgalpha "
                             onClick={() => dispatch(actions.blockChainActions.connectToMetaMask)}
                           >
-                            CONNECT WALLET
+                            Connect Wallet
                           </button>
                         )}
+                      </li>
+                      <li className="nav-item m-0">
+                        <button
+                          type="button"
+                          className="btn btn-outline-bgalpha "
+                          onClick={() => dispatch(actions.blockChainActions.connectToMetaMask)}
+                        >
+                          Mint NFT
+                        </button>
                       </li>
                     </ul>
                   </li>
