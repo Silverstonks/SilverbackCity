@@ -1,23 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 
-
-$colors:(
-  'dark': #141D20,
-  'dark-2': #3D4449,
-  'mint': #3ACB87,
-  'black': #000000,
-  'white': #ffffff,
-  'gray': #D6D6D6,
-  'light': #F1F5F6,
-  'yellow': #01F953,
-  'dgray': #8B8B8B,
-  'darker-gray': #706F6F,
-  'mint-2': #03F27A,
+$colors: (
+  "dark": #141d20,
+  "dark-2": #3d4449,
+  "mint": #3acb87,
+  "black": #000000,
+  "white": #ffffff,
+  "gray": #d6d6d6,
+  "light": #f1f5f6,
+  "yellow": #01f953,
+  "dgray": #8b8b8b,
+  "darker-gray": #706f6f,
+  "mint-2": #03f27a,
 );
 
-$font-family: 'Poppins', sans-serif;
-$fonts:(
-    'primary': 'Poppins',
+$font-family: "Poppins", sans-serif;
+$fonts: (
+  "primary": "Poppins",
 );
 
 $navabr-bg: #202428;
@@ -31,290 +30,60 @@ $DN-Exp: "D-DIN Exp";
 $popins: "Poppins", sans-serif;
 
 // COLORS
-$primary: #45EF8E;
+$primary: #45ef8e;
 $white: #ffffff;
 $red: #ff0000;
-$dark: #141D20;
+$dark: #141d20;
 
 // CHECKBOX
 $checkbox-background: $white;
-$checkbox-border: #C3CACE;
+$checkbox-border: #c3cace;
 $checkbox-checked: $dark;
 $checkbox-label-color: #ffffff;
 
 // ICON SIZES
-$icon-sizes:(10px, 15px, 20px, 25px, 30px, 40px, 50px, 80px, 140px);
+$icon-sizes: (10px, 15px, 20px, 25px, 30px, 40px, 50px, 80px, 140px);
 
-
-footer{
-  background: url('../../images/footer-bg.png');
+footer {
+  color: #fff;
+  background-color: #0f0f11;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: $font-family !important;
+  font-size: 14px;
+  
+  .footer-container {
+    justify-content: space-evenly;
+  }
+
+  button {
+    clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+    background-color: #0f0f11;
+    color: #0bff56;
+    width: 100%;
+    margin: auto;
+    font-size: 12px;
+    line-height: 200%;
+    border: solid #0f0f11;
+  }
+
+  .button-container {
+    background-color: #fff;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+    border: 2px solid #fff;
+    width: 75%;
+  }
+
   a {
-      color: #3C3C3B;
-      transition: 0.3s;
-          &:hover, &:focus{
-              color: #3ACB87;
-              text-decoration: none;
-          }
-      }
-
-      .btn {
-        padding: 10px 25px;
-        transition: all 0.2s ease-in-out;
-        font-weight: 500;
-        font-size: 16px;
-        
-        &-unset {
-            /* // ONLY USE THIS CLASS WHEN YOU WANT RESET ALL STYLE IN A BUTTON */
-            all: unset;
-        }
-    
-        &-link {
-            /* // TRANSPARENT BUTTON */
-            all: unset;
-            padding: 0px;
-            background: transparent;
-            cursor: pointer;
-        }
-    
-        &-clear {
-            /* // TRANSPARENT BUTTON */
-            background: transparent;
-            cursor: pointer;
-    
-            &:hover {
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
-            }
-        }
-    
-        &-solid {
-
-            /*  // SOLID COLORS BUTTON */
-            @each $color_name,
-            $color_value in $colors {
-                &-#{$color_name} {
-    
-                    // @if $color_name=='white' {
-                    //     color: $primary;
-                    // }
-    
-                    // @else {
-                    //     color: $white;
-                    // }
-    
-                    background: $color_value;
-                    color: $white;
-                    border: 2px solid $color_value;
-    
-                    @if $color_name=='mint' {
-                        color: $dark;
-                    }
-    
-                    &:hover {
-                        color: $white;
-                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
-    
-                        @if $color_name=='mint' {
-                            color: $dark;
-                            background: #5eeebf;
-                        }
-                    }
-                }
-            }
-        }
-    
-        &-outline {
-    
-            /* // OUTLINED BUTTON */
-            @each $color_name,
-            $color_value in $colors {
-                &-#{$color_name} {
-    
-                    @if $color_name=='white' {
-                        color: #45EF8E;
-                    }
-    
-                    @else {
-                        color: $color_value;
-                    }
-    
-                    border: 2px solid $color_value;
-                    background: transparent;
-                    font-weight: 700;
-    
-                    &:hover {
-                        background: $color_value;
-                        color: $white;
-                    }
-                }
-            }
-    
-            &-cta {
-                background-color: rgba($color: #000000, $alpha: .5);
-                border: 2px solid #45EF8E;
-                color: $white;
-    
-                &:hover {
-                    background-color: #5eeebf;
-                    color: $dark;
-                }
-            }
-    
-            &-bgalpha {
-                background-color: rgba($color: #000000, $alpha: 0);
-                border: 2px solid #45EF8E;
-                color: $white;
-    
-                &:hover {
-                    background-color: #5eeebf;
-                    color: $dark;
-                }
-            }
-        }
-    }
- 
-}
-
-// .footer {
-//   .footer-bg {
-//     background: linear-gradient(
-//       90deg,
-//       rgba(243, 245, 253, 1) 17%,
-//       rgba(221, 233, 233, 1) 45%
-//     );
-//     padding: 70px 0px;
-//     .content {
-//       h4 {
-//         font-size: 15px;
-//         font-weight: medium;
-//         font-family: $popins;
-//       }
-//       a {
-//         cursor: pointer;
-//         // font-size: 13px !important;
-//         // font-family: $popins;
-//         p {
-//           font-size: 14px !important;
-//           font-family: $popins;
-//         }
-//       }
-
-//       ul {
-//         li {
-//           a {
-//             color: $dark;
-//             padding-left: 0px;
-//           }
-//         }
-//       }
-//       .input-bg {
-//         .input-group {
-//           border: 2px solid $white;
-//           margin-top: 30px;
-//           input {
-//             background-color: #f3f5fd;
-//             border: none;
-//           }
-//           .input-group-append {
-//             a {
-//               background-color: $white;
-//               outline: none;
-//               border: none;
-//             }
-//           }
-//         }
-//       }
-//       .social-links {
-//         .links-icons {
-//           .list-inline {
-//             .list-inline-item {
-//               color: #000000 !important;
-//               cursor: pointer !important;
-//               //   a {
-
-//               //   }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-
-//   .footer-copyright {
-//     background-color: #000000;
-//     padding-top: 20px;
-
-//     .copyright-content {
-//       h4 {
-//         font-size: 14px;
-//         color: $white;
-//       }
-//     }
-//     .copyright {
-//       ul {
-//         li {
-//           color: #aaafaf;
-//         }
-//       }
-//     }
-//   }
-// }
-
-
-#tiktok {
-  color: #3C3C3B;
-  transition: 0.3s;
-  margin: auto;
-  &:hover {
-    fill: #3ACB87;
-  }
-  &:before {
-    content: "\e07b";
-  }
-}
-
-.fa-lg {
-  font-size: 1em;
-  line-height: .75em;
-  vertical-align: -0.0667em;
-}
-
-.border-top-mint-1 {
-  border-top: 1px
-  solid rgb(58, 203, 135);
-}
-
-.bg-color-black {
-  background: rgb(0, 0, 0) !important;
-  color: white;
-  font: 75% $font-family;
-  & a{
-    color:white;
-    text-decoration: none;
-    &:hover{
+    color: #fff;
+    text-decoration: none; /* no underline */
+    &:hover {
+      color: #fff;
       text-decoration: none;
-      color:white;
     }
   }
-}
 
-.fw-700.txt-color-mint.text-uppercase {
-  font-weight: 700;
-  font-size: 16px !important;
-  color: rgb(58, 203, 135) !important;
-  text-transform: uppercase !important;
-}
-
-.small-label {
-  font-size: .9em;
-}
-
-p.fs-16 {
-  color: rgb(61, 68, 73);
-  &.light-color {
-    color: rgb(112, 111, 111);
-
+  ul {
+    list-style-type: none;
   }
 }

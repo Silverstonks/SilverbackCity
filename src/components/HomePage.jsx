@@ -19,9 +19,9 @@ const HomePage = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header />
       <ToastContainer />
-      <ModalDialogs />
+      <ModalDialogs /> */}
 
       {/*<History />
       <Nft />
