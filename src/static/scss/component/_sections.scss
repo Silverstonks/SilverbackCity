@@ -1,4 +1,4 @@
-.benefits {
+.benefits, .marketplace {
     color: #fff;
 
     .title-text, .subtitle-text {
@@ -8,4 +8,9 @@
     .info {
         font-size: 14px;
     }
+}
+
+.marketplace {
+    background-image: url('../../images/sections/Marketplace.png');
+    
 }
