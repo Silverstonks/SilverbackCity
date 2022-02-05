@@ -7,6 +7,7 @@ import Header from './Header';
 import actions from '../store/actions';
 import '../static/scss/main.scss';
 import ModalDialogs from './ModalDialogs';
+import Slider from './Slider/Slider';
 
 const HomePage = () => {
   localStorage.clear();
@@ -22,6 +23,8 @@ const HomePage = () => {
       <Header />
       <ToastContainer />
       <ModalDialogs />
+
+      <Slider />
 
       {/*<History />
       <Nft />
