@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { SiTiktok } from 'react-icons/si';
 import { useDispatch, useSelector } from 'react-redux';
 import actions from '../store/actions';
