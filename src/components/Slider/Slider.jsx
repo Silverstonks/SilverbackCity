@@ -86,11 +86,12 @@ export const Slider = () => {
             setSelectedIndex(index);
         }
 
+        const regex = /\s+/g;
         const cleanedDescription = description
-            .replaceAll(/\s+/, ' ')
+            .replaceAll(regex, ' ')
             .trim();
 
-        return <div className={`nav-pill ${active ? 'active' : null}`}>
+        return <div className={`nav-pill ${active ? 'active' : null}`} key={`title-${index}`}>
             <div className="nav-pill-title-container" >
                 <span className="nav-pill-index">
                     {index}

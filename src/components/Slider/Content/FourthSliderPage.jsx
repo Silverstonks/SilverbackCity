@@ -14,6 +14,8 @@ const strings = {
     tokens.`
 }
 
+const regex = /\s+/g;
+
 export const FourthSliderPage = () => {
     return <div className="slider-index-content">
         <div className="row">
@@ -24,7 +26,7 @@ export const FourthSliderPage = () => {
             <div className="col-12 col-md-6">
                 <p className="play2earn-text">
                     {strings.description
-                        .replaceAll(/\s+/, ' ')
+                        .replaceAll(regex, ' ')
                         .trim()}
                 </p>
                 <img src={'/src/static/images/pure-silver.jpg'} alt="pure silver" />
