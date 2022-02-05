@@ -4,6 +4,7 @@ import Logo from '../static/images/logo.svg';
 import { FaBars } from 'react-icons/fa';
 import actions from '../store/actions';
 import arrowLight from '../static/images/icon-arrow-right-single-light.png';
+import "./Header.scss"
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
