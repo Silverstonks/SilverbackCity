@@ -73,7 +73,7 @@ export const Slider = () => {
             navPills.map(navPill => {
                 return {
                     ...navPill,
-                    active: index == selectedIndex
+                    active: navPill.index === selectedIndex
                 }
             })
         )
