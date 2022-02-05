@@ -46,7 +46,7 @@ export const ThirdSliderPage = () => {
     const renderPointOfAccess = pointOfAccess => {
         const { icon, text } = pointOfAccess;
 
-        return <div className="access-point">
+        return <div className="access-point col-12 col-sm-4" key={`access-point-${text}`}>
             <div className="access-point-img-container">
                 {icon}
             </div>
@@ -58,7 +58,7 @@ export const ThirdSliderPage = () => {
     }
 
     return <div className="slider-index-content">
-        <div className="access-points-container">
+        <div className="access-points-container row">
             {pointsOfAccess.map(renderPointOfAccess)}
         </div>
     </div>
