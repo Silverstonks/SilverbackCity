@@ -1,5 +1,4 @@
 import React from "react"
-import GreenLineBenefits from '../static/images/sections/GreenLineBenefits.png'
 
 
 const Marketplace = () => {
