@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Footer from './Footer';
 import Benefits from './Benefits';
 import Marketplace from './Marketplace';
+import Sections from './Sections'
 import Header from './Header';
 import actions from '../store/actions';
 import '../static/scss/main.scss';
@@ -31,6 +32,7 @@ const HomePage = () => {
       <Metaverse />
       <BuySection />*/}
       <Benefits />
+      <Sections />
       <Marketplace />
       <Footer />
     </>

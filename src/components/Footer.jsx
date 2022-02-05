@@ -82,7 +82,7 @@ const Footer = () => {
       <div className="container-fluid">
         <div className="container-xl py-4">
           <div className="row justify-content-between">
-            <div className="col-md-4 txt-color-white text-center text-md-left">© 2021 Silver Stonks. All Rights Reserved.</div>
+            <div className="col-md-4 txt-color-white text-center text-md-left">© 2022 Silver Stonks. All Rights Reserved.</div>
             <div className="col-md-4 text-center txt-color-white">
               <a href="https://silverstonks.io/privacy.html" className="txt-color-white ">
                 Privacy Policy

@@ -1,16 +1,107 @@
-.benefits, .marketplace {
-    color: #fff;
+.benefits,
+.marketplace,
+.landlord, .meta  {
+  color: #fff;
 
-    .title-text, .subtitle-text {
-        color: #00E101;
-    }
+  .title-text,
+  .subtitle-text {
+    color: #00e101;
+  }
 
-    .info {
-        font-size: 14px;
-    }
+  .info {
+    font-size: 14px;
+  }
 }
 
 .marketplace {
-    background-image: url('../../images/sections/Marketplace.png');
-    
+  background-image: url("../../images/sections/Marketplace.png");
+}
+
+.section-item-img-right {
+  color: #fff;
+  font-size: 12px;
+
+  .title-container {
+    position: relative;
+  }
+
+  #title-text,
+  #title-icon,
+  #title-text {
+    position: absolute;
+  }
+
+  #title-icon {
+    left: 25px;
+    top: 25px;
+  }
+
+  #title-text{
+    top: 35px;
+    left: 120px;
+  }
+  
+  button {
+    clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+    background-color: #271528;
+    color: #0bff56;
+    width: 100%;
+    margin: auto;
+    font-size: 12px;
+    line-height: 200%;
+    border: solid #271528;
+  }
+
+  .button-container {
+    background-color: #fff;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+    border: 2px solid #fff;
+    width: 40%;
+  }
+}
+
+
+
+
+.section-item-img-left {
+  color: #fff;
+  font-size: 12px;
+
+  .title-container {
+    position: relative;
+  }
+
+  #title-text,
+  #title-icon,
+  #title-text {
+    position: absolute;
+  }
+
+  #title-icon {
+    left: 25px;
+    top: 25px;
+  }
+
+  #title-text{
+    top: 35px;
+    left: 120px;
+  }
+  
+  button {
+    clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+    background-color: #271528;
+    color: #0bff56;
+    width: 100%;
+    margin: auto;
+    font-size: 12px;
+    line-height: 200%;
+    border: solid #271528;
+  }
+
+  .button-container {
+    background-color: #fff;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+    border: 2px solid #fff;
+    width: 40%;
+  }
 }
