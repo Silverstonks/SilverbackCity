@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './Footer';
+import Benefits from './Benefits';
 import Header from './Header';
 import actions from '../store/actions';
 import '../static/scss/main.scss';
@@ -28,6 +29,7 @@ const HomePage = () => {
       <NftCertificate />
       <Metaverse />
       <BuySection />*/}
+      <Benefits />
       <Footer />
     </>
   );
