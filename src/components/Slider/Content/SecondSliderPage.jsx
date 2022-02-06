@@ -1,9 +1,10 @@
 import React from "react";
 import "./SecondSliderPage.scss";
+import Map from "../../../static/images/slider/Map.svg"
 
 export const SecondSliderPage = () => {
     return <div className="slider-index-content">
-        <img src={'/src/static/images/map.jpg'} alt="Silverback City" />
+        <img src={Map} alt="Silverback City" />
     </div>
 };
 

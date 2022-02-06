@@ -1,5 +1,7 @@
 import React from "react";
 import "./FourthSliderPage.scss";
+import Play2Earn from "../../../static/images/slider/Play2Earn.png"
+import Silver from "../../../static/images/slider/Silver.png"
 
 const strings = {
     description: `Play in our first Play 2 Earn video game with your avatar. In the
@@ -20,7 +22,7 @@ export const FourthSliderPage = () => {
     return <div className="slider-index-content">
         <div className="row">
             <div className="col-12 col-md-6">
-                <img src={'/src/static/images/play2earn.jpg'} alt="play to earn" />
+                <img src={Play2Earn} className="play2earn-img" alt="play to earn" />
             </div>
 
             <div className="col-12 col-md-6">
@@ -29,7 +31,7 @@ export const FourthSliderPage = () => {
                         .replaceAll(regex, ' ')
                         .trim()}
                 </p>
-                <img src={'/src/static/images/pure-silver.jpg'} alt="pure silver" />
+                <img src={Silver} alt="pure silver" className="play2earn-img" />
             </div>
         </div>
     </div>

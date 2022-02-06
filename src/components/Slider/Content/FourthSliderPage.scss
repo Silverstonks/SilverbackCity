@@ -1,0 +1,22 @@
+// ajustar al 4 solo
+
+.slider-index-content
+{
+    .play2earn-img
+    {
+        width: 100%;
+    }
+
+    .play2earn-text
+    {
+        text-align: justify;
+        text-align-last: center;
+    }
+
+    @media screen and (min-width: 800px) {
+        .play2earn-text
+        {
+            text-align: left;
+        }
+    }
+}

@@ -4,6 +4,10 @@ import FourthSliderPage from "./Content/FourthSliderPage";
 import SecondSliderPage from "./Content/SecondSliderPage";
 import ThirdSliderPage from "./Content/ThirdSliderPage";
 import "./Slider.scss"
+import TitleBackground from "../../static/images/slider/TitleDecoration.png";
+import DotsDecoration from "../../static/images/slider/DotsDecoration.png";
+import LinesDecoration from "../../static/images/slider/LinesDecoration.png";
+import BackgroundDecoration from "../../static/images/slider/BackgroundDecoration.png";
 
 const initialNavPills = [
     {
@@ -91,42 +95,64 @@ export const Slider = () => {
             .replaceAll(regex, ' ')
             .trim();
 
-        return <div className={`nav-pill ${active ? 'active' : null}`} key={`title-${index}`}>
-            <div className="nav-pill-title-container" >
-                <span className="nav-pill-index">
-                    {index}
-                </span>
+        const classes = [
+            'nav-pill',
+            'col-12',
+            'col-md',
+        ];
+
+        if (active) classes.push('active');
+
+        return <div className={classes.join(' ')} key={`title-${index}`} onClick={onNavPillClick}>
+            <div className="nav-pill-title-container">
+                <div className="button-container">
+                    <button className="btn btn-light nav-pill-index">
+                        {index}
+                    </button>
+                </div>
 
                 <span className="nav-pill-title">
                     {title}
                 </span>
             </div>
 
-            <div className="nav-pill-content" onClick={onNavPillClick}>
+            <div className="nav-pill-content">
                 {cleanedDescription}
             </div>
         </div>
     }
 
-    return <div className="main-home-slider slider" id="main-home-slider">
-        <div className="slider-title-container">
-            <div className="slider-pre-title">
-                {strings.pretitle}
+    return <div className="container">
+        <div className="main-home-slider slider" id="main-home-slider">
+            <div className="slider-title-container">
+                <div className="slider-title-background">
+                    <img src={TitleBackground} alt="" />
+                </div>
+                <div className="slider-title-background-detail">
+                    <img src={BackgroundDecoration} alt="" />
+                </div>
+                <div className="slider-pre-title">
+                    {strings.pretitle}
+                </div>
+                <div className="slider-title">
+                    {strings.title}
+                </div>
+                <div className="slider-subtitle">
+                    {strings.subtitle}
+                </div>
             </div>
-            <div className="slider-title">
-                {strings.title}
-            </div>
-            <div className="slider-subtitle">
-                {strings.subtitle}
-            </div>
-        </div>
 
-        <div className="slider-content">
-            {navPills[selectedIndex].content}
-        </div>
+            <div className="slider-content">
+                <img src={DotsDecoration} alt="" className="img-detail dots" />
 
-        <div className="slider-nav-pills-container">
-            {navPills.map(renderNavPill)}
+                {navPills.find(({ index }) => index === selectedIndex).content}
+
+                <img src={LinesDecoration} alt="" className="img-detail lines" />
+            </div>
+
+            <div className="slider-nav-pills-container row">
+                {navPills.map(renderNavPill)}
+            </div>
         </div>
     </div>
 };
