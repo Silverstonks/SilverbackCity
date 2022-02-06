@@ -1,0 +1,84 @@
+$navText: #00E101;
+
+.mint-card-container
+{
+    color: white;
+    text-align: right;
+
+    overflow-x: hidden;
+
+    margin: 4rem 0;
+    
+    @media screen and (min-width: 800px) {
+        .mint-card
+        {
+            padding: 5rem;
+        }
+    }
+
+    .mint-card-details
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+
+        .img-detail.lines {
+            align-self: start;
+        }
+
+        .mint-card-title
+        {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .mint-card-action
+        {
+            .button-container
+            {
+                width: 100% !important;
+                background: unset !important;
+                border-color: #00E101 !important;
+                border-width: 2px !important;
+
+                button
+                {
+                    border-width: 0 !important;
+                    border-color: #00E101 !important;
+                    padding: .5rem 3rem;
+                    color: white !important;
+                    background: rgba(0, 225, 1, .2) !important;
+                }
+            }
+        }
+
+        .mint-card-select-container
+        {
+            .mint-card-select
+            {
+                word-wrap: normal;
+                background: transparent;
+                padding: .5rem 2rem .5rem .5rem;
+                border-color: #00E101;
+                color: white;
+            }
+        }
+
+        .mint-card-price-container
+        {
+            text-align: right;
+            color: $navText;
+            
+            .mint-card-price
+            {
+                font-size: 1.25em;
+            }
+        }
+    }
+
+    .mint-card-gorilla-background-img
+    {
+        transform: scale(.5);
+    }
+}
