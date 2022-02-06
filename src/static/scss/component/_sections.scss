@@ -54,8 +54,27 @@
   }
 }
 
-.sections-container {
-  // justify-content: space-evenly;
+.title-nftlab{
+  background-image: url("../../images/sections/TitleDecorationNftLab.png");
+  position: relative;
+  background-size: contain;
+  min-height: 100px;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  span {
+    position: absolute;
+    color: #00e101;
+    top: 30px;
+    left: 30px;
+  }
+
+  p {
+    position: absolute;
+    color: #fff;
+    top: 10px;
+    left: 30px;
+  }
 }
 
 .section-item-img-right {
