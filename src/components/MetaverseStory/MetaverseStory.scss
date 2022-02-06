@@ -1,5 +1,14 @@
 .metaverse-story-container
 {
+    margin-bottom: 3rem;
+
+    @media screen and (min-width: 800px) {
+        &
+        {
+            margin-top: 10rem;
+        }
+    }
+
     .metaverse-story-title-container
     {
         position: relative;
