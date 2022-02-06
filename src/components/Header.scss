@@ -1,0 +1,119 @@
+$mainTextColor: #0BFF56;
+
+.banner
+{
+    background: linear-gradient(to bottom, rgba(0,0,0,.8) 25%, transparent 75%);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    
+    .stick
+    {
+        background: linear-gradient(to bottom, rgba(0,0,0,.8) 25%, transparent 75%);
+        border: none;
+        box-shadow: none;
+    }
+
+    .nav-item
+    {
+        &:not(.no-hover):hover,
+        & .dropdown-menu
+        {
+            background: rgba(0,0,0,.4);
+        }
+
+        &:hover
+        {
+            color: #00E101;
+            
+            & > a
+            {
+                color: #00E101;
+                
+            }
+        }
+    }
+
+    .nav
+    {
+        .dropdown-menu
+        {
+            &.show
+            {
+                display: flex;
+                flex-wrap: wrap;
+                width: 22.5rem;
+            }
+
+            .dropdown-item
+            {
+                flex: 50% 0 0;
+            }
+
+            :hover
+            {
+                background: rgba(0,0,0,.4);
+                color: #00E101;
+            }
+        }
+
+        // TODO: Some elements overlap with the responsive menu
+        @media screen and (max-width: 800px) {
+            #problematic-button
+            {
+                width: 90%;
+            }
+
+            &
+            {
+                background: linear-gradient(to right, rgba(12,10,16,.95) 25%, rgba(12,10,16,.8) 75%);
+
+                #menu-toggle
+                {
+                    color: white;
+                }
+            }
+        }
+    }
+    
+    .button-container
+    {
+        background: unset !important;
+        position: relative;
+        overflow: visible !important;
+        width: 100% !important;
+
+        &:hover
+        {
+            background: unset !important;
+            border-color: #00E101 !important;
+            border-width: 2px !important;
+
+            button
+            {
+                // border-width: 0 !important;
+                // border-color: #00E101 !important;
+                border-color: transparent !important;
+                color: white !important;
+                background: rgba(0, 225, 1, .2) !important;
+            }
+        }
+
+        button
+        {
+            background: unset !important;
+            color: #00E101 !important;
+            border-color: transparent !important;
+        }
+    }
+
+    .lang-options
+    {
+        color: white;
+
+        span.active
+        {
+            color: #0BFF56;
+        }
+    }
+}

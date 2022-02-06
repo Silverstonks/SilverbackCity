@@ -7,6 +7,12 @@ import Header from './Header';
 import actions from '../store/actions';
 import '../static/scss/main.scss';
 import ModalDialogs from './ModalDialogs';
+import Slider from './Slider/Slider';
+import ClansSlider from './ClansSlider/ClansSlider'
+import Jumbotron from './Jumbotron/Jumbotron';
+import './HomePage.scss';
+import MetaverseStory from './MetaverseStory/MetaverseStory';
+import MintCard from './MintCard/MintCard';
 
 const HomePage = () => {
   localStorage.clear();
@@ -20,8 +26,21 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <ToastContainer />
-      <ModalDialogs />
+      {/* <ToastContainer /> */}
+      {/* <ModalDialogs /> */}
+      <Jumbotron />
+
+      <div className="container home-container">
+        <Slider />
+
+        <MetaverseStory />
+        {/* TODO: poner NFT Lab aquí */}
+        <ClansSlider />
+
+        <MintCard />
+        {/* TODO: NFT Benefits */}
+        {/* TODO: El resto de la integración de Bea */}
+      </div>
 
       {/*<History />
       <Nft />

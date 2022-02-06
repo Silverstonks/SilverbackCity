@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import Logo from '../static/images/logo.svg';
+import Logo from '../static/images/header/Logo.png';
+import LanguageIcon from '../static/images/header/LanguageIcon.png';
 import { FaBars } from 'react-icons/fa';
 import actions from '../store/actions';
 import arrowLight from '../static/images/icon-arrow-right-single-light.png';
+import "./Header.scss"
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -45,116 +47,131 @@ const Header = () => {
   return (
     <>
       <section className="banner">
-        <div className="banner-bg">
-          <div className={x.join('nav-top ')}>
-            <div className="container-xl">
-              <div className="nav-container">
-                <div className="nav-brand">
-                  <div className="navbar-brand">
-                    <a href="http://silverstonks.io">
-                      <img src={Logo} className="img-fluid" alt="Logo" />
+        <div className={x.join('nav-top ')}>
+          <div className="container-xl">
+            <div className="nav-container">
+              <div className="nav-brand">
+                <div className="navbar-brand">
+                  <a href="http://silverstonks.io">
+                    <img src={Logo} className="img-fluid" alt="Logo" />
+                  </a>
+                </div>
+              </div>
+              <ul className="nav" id="nav">
+                <li className="nav-item pt-3 d-flex d-md-none justify-content-end">
+                  <button className="btn btn-clear" id="menu-toggle" onClick={() => toggleSideMenu()}>
+                    <i className="fas fa-times txt-color-white"></i>
+                  </button>
+                </li>
+                <li className="nav-item nav-item-lang no-hover">
+                  <img src={LanguageIcon} alt="lang selector" id='lang-selector' className='lang-selector' />
+                  &nbsp;
+                  <span className='lang-options'>
+                    <span className="lang-en active" id='lang-en'>
+                      EN
+                    </span>
+                    <span className="separator">
+                      &nbsp;
+                      /
+                      &nbsp;
+                    </span>
+                    <span className="lang-es" id='lang-es'>
+                      ES
+                    </span>
+                  </span>
+                </li>
+                <li className="nav-item">
+                  <a href="https://www.silverstonks.com/" className="nav-link" onClick={() => scrollTo('city')}>
+                    Silverback City
+                  </a>
+                </li>
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Citizens / Zones
+                  </a>
+                  <div className="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
+                      Bids Arena
+                    </a>
+                    <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
+                      The Vault
+                    </a>
+                    <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
+                      NFT Lab
+                    </a>
+                    <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
+                      Silver Shop
+                    </a>
+                    <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
+                      Token
+                    </a>
+                    <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
+                      Underground Lounge
                     </a>
                   </div>
-                </div>
-                <ul className="nav" id="nav">
-                  <li className="nav-item pt-3 d-flex d-md-none justify-content-end">
-                    <button className="btn btn-clear" id="menu-toggle" onClick={() => toggleSideMenu()}>
-                      <i className="fas fa-times txt-color-white"></i>
-                    </button>
-                  </li>
-                  <li className="nav-item">
-                    <a href="https://www.silverstonks.com/" className="nav-link">
-                      SHOP
-                    </a>
-                  </li>
-                  <li className="nav-item" onClick={() => scrollTo('buy-sstx')}>
-                    <a href="" className="nav-link">
-                      BUY SSTX
-                    </a>
-                  </li>
-                  <li className="nav-item dropdown">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="/"
-                      id="navbarDropdown"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      ABOUT NFT
-                    </a>
-                    <div className="dropdown-menu " aria-labelledby="navbarDropdown">
-                      <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
-                        Other popular certificates
-                      </a>
-                      <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
-                        Introducing Silver Stonks collectibles
-                      </a>
-                      <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
-                        Why Silver Stonks certificates?
-                      </a>
-                      <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
-                        A growing Silver Stonks Ecosystem
-                      </a>
-                    </div>
-                  </li>
-                  <li className="nav-item">
+                </li>
+                <li className="nav-item" onClick={() => scrollTo('story')}>
+                  <a href="/" className="nav-link">
+                    Story
+                  </a>
+                </li>
+                <li className="nav-item no-hover" id='problematic-button'>
+                  <div className="ml-auto d-flex flex-wrap" style={{
+                    gap: '1rem',
+                  }}>
+
                     <ul className="navbar-nav ml-auto d-flex justify-content-center align-items-center">
-                      <li className="nav-item m-0">
+                      <li className="nav-item m-0 no-hover">
                         {isAuthenticated && walletAddress ? (
-                          <button className="btn btn-outline-danger ml-3 " onClick={() => dispatch(actions.authActions.logOutUser())}>
-                            DISCONECT
-                          </button>
+                          <div className="button-container">
+
+                            <button className="btn btn-outline-danger ml-3 " onClick={() => dispatch(actions.authActions.logOutUser())}>
+                              Disconect
+                            </button>
+                          </div>
                         ) : (
-                          <button
-                            type="button"
-                            className="btn btn-outline-bgalpha "
-                            onClick={() => dispatch(actions.blockChainActions.connectToMetaMask)}
-                          >
-                            CONNECT WALLET
-                          </button>
+                          <div className="button-container">
+
+                            <button
+                              type="button"
+                              className="btn btn-outline-bgalpha "
+                              onClick={() => dispatch(actions.blockChainActions.connectToMetaMask)}
+                            >
+                              Connect Wallet
+                            </button>
+                          </div>
                         )}
                       </li>
                     </ul>
-                  </li>
-                </ul>
+                    <div className="nav-item m-0 no-hover">
+                      <div className="button-container">
 
-                <button className="btn btn-clear px-0 d-block d-md-none" id="menu-toggle" onClick={() => toggleSideMenu()}>
-                  <div className="navbar-toggler-icon">
-                    <FaBars />
+                        <button
+                          type="button"
+                          className="btn btn-outline-bgalpha "
+                          onClick={() => dispatch(actions.blockChainActions.connectToMetaMask)}
+                        >
+                          Mint NFT
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="container">
-            <div className="banner-content">
-              <div className="row">
-                <div className="col-6 my-5 py-5">
-                  <h2>Discover the New Way to Buy Silver</h2>
+                </li>
+              </ul>
 
-                  <p className="color-alpha my-3 py-2">
-                    <img className="mr-2" alt="" src={arrowLight} height={15} />
-                    Earn more rewards by buying different silver products on our ecommerce store.
-                  </p>
-                  <button className="btn btn-outline-bgalpha " onClick={() => dispatch(actions.authActions.logOutUser())}>
-                    SHOP NOW
-                  </button>
+              <button className="btn btn-clear px-0 d-block d-md-none" id="menu-toggle" onClick={() => toggleSideMenu()}>
+                <div className="navbar-toggler-icon">
+                  <FaBars />
                 </div>
-                <div className="col-6 my-5 d-flex justify-content-around">
-                    <div className="align-self-center justify-content-center align-content-center">
-                      <img className="mx-2" alt={nft?.itemName} src={`nft/${nft?.imagePath}`} height={500} />
-                    </div>
-                    <div className="d-block text-white align-self-center">
-                      <h4>Silver Silverback</h4>
-                      <h5>BNB {nft && nft.gasFee ? nft.gasFee.toString().substring(1, nft.gasFee.toString().length) : ''}</h5>
-                      
-                    </div>
-                  </div>
-                
-                <div className="col-12 d-none d-xl-block my-4 py-3"></div>
-              </div>
+              </button>
             </div>
           </div>
         </div>
