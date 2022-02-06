@@ -1,0 +1,64 @@
+.metaverse-story-container
+{
+    .metaverse-story-title-container
+    {
+        position: relative;
+        color: #0BFF56;
+
+        .metaverse-story-title
+        {
+            position: absolute;
+        }
+
+        .metaverse-story-subtitle
+        {
+            position: absolute;
+        }
+    }
+
+    .metaverse-story-controls
+    {
+        .metaverse-story-page-index
+        {
+            color: white;
+
+            &.active
+            {
+                color: #0BFF56;
+            }
+        }
+    }
+
+    .metaverse-story
+    {
+        position: relative;
+
+        &-img-container
+        {
+            max-width: 100%;
+
+            img
+            {
+                width: 100%;
+            }
+        }
+
+        &-details
+        {
+            background: rgba(0,0,0,.4);
+            padding: 2rem;
+
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            bottom: 0;
+        }
+
+        &-text
+        {
+            color: white;
+            text-align: justify;
+            text-align-last: left;
+        }
+    }
+}
