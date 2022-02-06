@@ -97,10 +97,10 @@ $navText: #00E101;
             filter: brightness(0) contrast(0);
             position: absolute;
             left: 5rem;
-            top: 5rem;
+            top: 7rem;
             text-align: center;
             margin: auto;
-            transform: scaleX(-1);
+            // transform: scaleX(-1);
             filter: grayscale(100%) brightness(0);
             z-index: 19;
         }
@@ -108,7 +108,7 @@ $navText: #00E101;
         .mint-card-gorilla-question-mark
         {
             position: absolute;
-            top: 11rem;
+            top: 13rem;
             left: 14.5rem;
             z-index: 20;
         }
