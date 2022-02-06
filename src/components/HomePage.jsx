@@ -30,14 +30,16 @@ const HomePage = () => {
       {/* <ModalDialogs /> */}
       <Jumbotron />
 
-      <div className="container">
+      <div className="container home-container">
         <Slider />
 
         <MetaverseStory />
+        {/* TODO: poner NFT Lab aquí */}
+        <ClansSlider />
 
         <MintCard />
-
-        <ClansSlider />
+        {/* TODO: NFT Benefits */}
+        {/* TODO: El resto de la integración de Bea */}
       </div>
 
       {/*<History />
