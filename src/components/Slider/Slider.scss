@@ -159,7 +159,7 @@ $navText: #00E101;
             .button-container
             {
                 clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%) !important;
-                border-width: 2px;
+                border-width: 1px;
                 background: transparent !important;
 
                 width: auto !important;
@@ -181,7 +181,7 @@ $navText: #00E101;
                 {
                     clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%) !important;
 
-                    border: 2px solid $border !important;
+                    border: 1px solid $border !important;
                     color: $text !important;
                     background: $background !important;
                     background: transparent !important;
