@@ -2,6 +2,8 @@ import React from "react";
 import "./MintCard.scss"
 import GorillaBackground from "../../static/images/gorillas-slider/Backgorund.png";
 import LinesDecoration from "../../static/images/slider/LinesDecoration.png";
+import GorillaIncognito from "../../static/images/sections/GorillaIncognito.png"
+import QuestionMark from "../../static/images/sections/QuestionMark.png"
 
 const strings = {
     title: `CITIZEN OF SILVERBACK CITY`,
@@ -26,10 +28,12 @@ export const MintCard = () => {
 
     }
 
+    // TODO: fix responsiveness
+
     return <div className="mint-card-container">
         <div className="mint-card row">
             <div className="col-12 col-md-6 mint-card-details">
-                <img src={LinesDecoration} alt="" className="img-detail lines" />
+                {/* <img src={LinesDecoration} alt="" className="img-detail lines" /> */}
                 
                 <div className="mint-card-title-container">
                     <p className="mint-card-title">
@@ -61,8 +65,10 @@ export const MintCard = () => {
                     </select>
                 </div>
             </div>
-            <div className="col-12 col-md-6">
-                <img src={GorillaBackground} alt="" className="mint-card-gorilla-background-img" />
+            <div className="col-12 col-md-6 mint-card-presentation">
+                {/* <img src={GorillaBackground} alt="" className="mint-card-gorilla-background-img" /> */}
+                <img src={QuestionMark} alt="" className="mint-card-gorilla-question-mark" />
+                <img src={GorillaIncognito} alt="" className="mint-card-gorilla-incognito" />
             </div>
         </div>
     </div>
