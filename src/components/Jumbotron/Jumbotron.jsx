@@ -21,13 +21,17 @@ export const Jumbotron = () => {
                 </span>
             </div>
             <div className="jumbotron-actions">
-                <button className="information">
-                    {strings.information}
-                </button>
+                <div className="button-container">
+                    <button className="information">
+                        {strings.information}
+                    </button>
+                </div>
 
-                <button className="mint">
-                    {strings.mint}
-                </button>
+                <div className="button-container">
+                    <button className="mint">
+                        {strings.mint}
+                    </button>
+                </div>
             </div>
         </div>
     </div>
