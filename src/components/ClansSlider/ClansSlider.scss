@@ -1,0 +1,102 @@
+$navText: #00E101;
+
+.clans-slider
+{
+    &-title-container
+    {
+        color: white;
+
+        &-title
+        {
+            color: white;
+        }
+    }
+
+    &-gorillas-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        position: relative;
+
+        .img-detail.dots
+        {
+            position: absolute;
+            top: -2.5rem;
+            right: 0;
+        }
+    }
+    
+    &-gorilla
+    {
+        display: inline;
+
+        width: auto;
+
+        img
+        {
+            width: 100%;
+        }
+
+        &-left,
+        &-right
+        {
+            flex: 20%;
+        }
+
+        &-current
+        {
+            flex: 60%;
+
+            position: relative;
+            z-index: 20;
+
+            .clans-slider-gorilla
+            {
+                position: relative;
+                z-index: 20;
+            }
+
+            &-background
+            {
+                z-index: 2;
+
+                background: url('../../static/images/gorillas-slider/Backgorund.png') no-repeat;
+                background-size: contain;
+
+                width: 125%;
+
+                position: absolute;
+                top: -12.5%;
+                left: -12.5%;
+
+                filter: saturate(0) brightness(.5) opacity(.5);
+            }
+        }
+    }
+
+    &-arrow-left,
+    &-arrow-right
+    {
+        color: $navText;
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .clans-slider
+    {
+        .btn
+        {
+            padding: 0 !important;
+        }
+
+        &-arrow-left,
+        &-arrow-right
+        {
+            display: none;
+        }
+    }
+}
