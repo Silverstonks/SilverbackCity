@@ -26,19 +26,6 @@ const HomePage = () => {
   useEffect(() => {
     /*dispatch(actions.applicationActions.setModal());*/
     dispatch(actions.applicationActions.updateModalState(false));
-    
-  }, [dispatch]);
-
-  return (
-    <>
-      <Header />
-      <ToastContainer />
-      <ModalDialogs />
-      <Jumbotron />
-
-      <div className="container home-container">
-        <Slider />
-        updateModalState
   }, [dispatch]);
 
   return (
@@ -53,24 +40,6 @@ const HomePage = () => {
 
         <MetaverseStory />
         {/* TODO: poner NFT Lab aquí */}
-
-        <ClansSlider />
-
-        <MintCard />
-        {/* TODO: NFT Benefits */}
-        {/* TODO: El resto de la integración de Bea */}
-      </div>
-
-      <NftLab />
-      <Benefits />
-      <Sections />
-      <Marketplace />
-      <Footer />
-    </>
-  );
-};
-
-export default HomePage;
 
         <ClansSlider />
 
