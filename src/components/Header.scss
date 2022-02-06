@@ -23,6 +23,13 @@ $mainTextColor: #0BFF56;
         }
     }
 
+    @media screen and (max-width: 800px) {
+        #problematic-button
+        {
+            width: 90%;
+        }
+    }
+
     
     .button-container
     {

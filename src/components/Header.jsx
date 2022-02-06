@@ -123,7 +123,7 @@ const Header = () => {
                     Story
                   </a>
                 </li>
-                <li className="nav-item no-hover">
+                <li className="nav-item no-hover" id='problematic-button'>
                   <div className="ml-auto d-flex flex-wrap" style={{
                     gap: '1rem',
                   }}>
