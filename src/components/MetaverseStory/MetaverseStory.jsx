@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SlideImage from "../../static/images/header/HeaderBackground.png"
+import HistorySliderImg from "../../static/images/sections/HistorySliderImg.png"
 import LeftArrow from "../../static/images/gorillas-slider/LeftArrow.png";
 import RightArrow from "../../static/images/gorillas-slider/RightArrow.png";
 import TitleDecoration from "../../static/images/sections/HistoryTitleDecoration.png";
@@ -7,7 +7,7 @@ import "./MetaverseStory.scss";
 
 const initialSlides = [
     {
-        image: SlideImage,
+        image: HistorySliderImg,
         text: `
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Nulla ex ut molestiae voluptates ipsum dolor laborum, voluptatibus
@@ -20,7 +20,7 @@ const initialSlides = [
         `,
     },
     {
-        image: SlideImage,
+        image: HistorySliderImg,
         text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
     },
 ];
