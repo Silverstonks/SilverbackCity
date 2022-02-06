@@ -28,16 +28,6 @@ $navText: #00E101;
         }
 
         // Background
-        /* &::before
-        {
-            content: "";
-            position: absolute;
-            width: 50ch;
-            height: 100%;
-            z-index: 2;
-            left: -5rem;
-            background: url('../../static/images/slider/BackgroundDecoration.png') no-repeat;
-        } */
         .slider-title-background-detail
         {
             content: "";
@@ -168,6 +158,10 @@ $navText: #00E101;
 
             .button-container
             {
+                clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%) !important;
+                border-width: 2px;
+                background: transparent !important;
+
                 width: auto !important;
 
                 &:hover
@@ -185,9 +179,12 @@ $navText: #00E101;
 
                 button
                 {
+                    clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%) !important;
+
                     border: 2px solid $border !important;
                     color: $text !important;
                     background: $background !important;
+                    background: transparent !important;
                     font-weight: bold;
                 }
             }
