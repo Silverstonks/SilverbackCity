@@ -10,6 +10,7 @@ import Header from './Header';
 import actions from '../store/actions';
 import '../static/scss/main.scss';
 import ModalDialogs from './ModalDialogs';
+import NftLab from './NftLab';
 
 const HomePage = () => {
   localStorage.clear();
@@ -31,6 +32,7 @@ const HomePage = () => {
       <NftCertificate />
       <Metaverse />
       <BuySection />*/}
+      <NftLab />
       <Benefits />
       <Sections />
       <Marketplace />
