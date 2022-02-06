@@ -79,8 +79,9 @@ $grayNavText: #D8D8D8;
 
                     button
                     {
-                        border-width: 0 !important;
-                        border-color: #00E101 !important;
+                        // border-width: 0 !important;
+                        // border-color: #00E101 !important;
+                        border-color: transparent !important;
                         color: white !important;
                         background: rgba(0, 225, 1, .2) !important;
                     }
