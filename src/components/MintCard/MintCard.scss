@@ -5,15 +5,17 @@ $navText: #00E101;
     color: white;
     text-align: right;
 
-    min-height: 622px;
-
-    background: url('../../static/images/sections/BackgroundMintNft.png') no-repeat;
-
     overflow-x: hidden;
+    min-height: 622px;
 
     margin: 4rem 0;
     
     @media screen and (min-width: 800px) {
+        &
+        {
+            background: url('../../static/images/sections/BackgroundMintNft.png') no-repeat;
+        }
+
         .mint-card
         {
             padding: 5rem;
@@ -100,6 +102,7 @@ $navText: #00E101;
             margin: auto;
             transform: scaleX(-1);
             filter: grayscale(100%) brightness(0);
+            z-index: 19;
         }
 
         .mint-card-gorilla-question-mark
@@ -108,6 +111,25 @@ $navText: #00E101;
             top: 11rem;
             left: 14.5rem;
             z-index: 20;
+        }
+
+        @media screen and (max-width: 800px) {
+            &
+            {
+                margin: 3rem;
+            }
+
+            .mint-card-gorilla-incognito
+            {
+                left: 0;
+                top: 0;
+            }
+    
+            .mint-card-gorilla-question-mark
+            {
+                top: 6rem;
+                left: 9rem;
+            }
         }
     }
 
