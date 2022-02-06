@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./MintCard.scss"
 import GorillaBackground from "../../static/images/gorillas-slider/Backgorund.png";
 import LinesDecoration from "../../static/images/slider/LinesDecoration.png";
@@ -18,7 +18,7 @@ const selectOptions = [
 ]
 
 export const MintCard = () => {
-    const renderOption = ({ label, value }) => <option value={value}>
+    const renderOption = ({ label, value }) => <option key={`mint-card-option-${value}`} value={value}>
         {label}
     </option>;
 

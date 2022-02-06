@@ -151,7 +151,7 @@ const Header = () => {
                         )}
                       </li>
                     </ul>
-                    <li className="nav-item m-0 no-hover">
+                    <div className="nav-item m-0 no-hover">
                       <div className="button-container">
 
                         <button
@@ -162,7 +162,7 @@ const Header = () => {
                           Mint NFT
                         </button>
                       </div>
-                    </li>
+                    </div>
                   </div>
                 </li>
               </ul>

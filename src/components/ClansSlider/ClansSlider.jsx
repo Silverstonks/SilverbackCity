@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import DefaultGorilla from "../../static/images/slider/Gorilla.svg"
 import "./ClansSlider.scss"
 import DotsDecoration from "../../static/images/slider/DotsDecoration.png";
 import LeftArrow from "../../static/images/gorillas-slider/LeftArrow.png";
@@ -60,7 +59,7 @@ export const ClansSlider = () => {
         if (selectedIndex === index) classes.push('active');
 
         return <button className={classes.join(' ')} onClick={onGorillaClick}>
-            <img src={image} alt="Gorilla Image" className="clans-slider-gorilla-img" />
+            <img src={image} alt="Gorilla" className="clans-slider-gorilla-img" />
         </button>
     }
 
@@ -79,7 +78,7 @@ export const ClansSlider = () => {
     return <div className="clans-slider">
         <div className="clans-slider-title-container">
             <div className="clans-slider-title-background">
-                <img src="" className="clans-slider-title-background-img" />
+                <img src="" alt="main clans slider background" className="clans-slider-title-background-img" />
             </div>
 
             {/* TODO: title decoration */}
@@ -102,7 +101,7 @@ export const ClansSlider = () => {
             </span>
 
             <div className="clans-slider-gorilla-current">
-                <img src={Background} alt="" className="clans-slider-gorilla-current-background" />
+                <img src={Background} alt="current gorilla background" className="clans-slider-gorilla-current-background" />
                 {renderGorilla(selectedIndex)}
             </div>
 

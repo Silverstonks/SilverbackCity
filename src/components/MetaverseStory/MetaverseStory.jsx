@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import SlideImage from "../../static/images/header/HeaderBackground.png"
 import LeftArrow from "../../static/images/gorillas-slider/LeftArrow.png";
 import RightArrow from "../../static/images/gorillas-slider/RightArrow.png";
@@ -54,18 +54,20 @@ export const MetaverseStory = () => {
     }
 
     const renderPageIndex = (index) => {
+        const newIndex = index = parseInt(index);
+
         const onPageIndexClick = () => {
-            setSelectedIndex(index)
+            setSelectedIndex(newIndex)
         }
 
         const classes = [
             'metaverse-story-page-index',
             'btn',
         ]
-        if (selectedIndex == index) classes.push('active');
+        if (selectedIndex === newIndex) classes.push('active');
 
-        return <button className={classes.join(' ')} key={`page-index-${index}`} onClick={onPageIndexClick}>
-            {parseInt(index) + 1}
+        return <button className={classes.join(' ')} key={`page-index-${newIndex}`} onClick={onPageIndexClick}>
+            {parseInt(newIndex) + 1}
         </button>
     }
 
@@ -87,7 +89,7 @@ export const MetaverseStory = () => {
 
         <div className="metaverse-story">
             <div className="metaverse-story-img-container">
-                <img className="metaverse-story-img" src={image} />
+                <img className="metaverse-story-img" src={image} alt="story background img" />
             </div>
 
             {/* TODO: Fix responsiveness */}
