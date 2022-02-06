@@ -47,7 +47,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="container-fluid d-flex row footer-container">
-        <div className='d-flex flex-column my-5'>
+        <div className='d-flex flex-column align-items-center my-md-5'>
           <img className='mt-5 mb-2' src={Logo} alt="" />
           <div className='button-container my-3'>
             <button className=''>Connect Wallet</button>
@@ -57,8 +57,8 @@ const Footer = () => {
           </div>
 
         </div>
-        <div className='row mt-5 pt-5'>
-          <div className="pr-5">
+        <div className='row mt-5 pt-md-5'>
+          <div className="col-6 col-md">
             <ul>
               <li className='py-1'><a href=""><p> <img src={Bidsarena} alt="" width="20px" className='mr-2' /> BIDSARENA</p></a></li>
               <li className='py-1'><a href=""><p> <img src={NftLab} alt="" width="25px" className='mr-2'/>NFT LAB</p></a>
@@ -68,7 +68,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="pl-5">
+          <div className="col-6 col-md">
             <ul>
               <li className='py-1'><p> <img src={Lounge} alt="" width="20px" className='mr-2' /><a href="">UNDERGROUND LOUNGE</a></p></li>
               <li className='py-1'><p> <img src={Exchange} alt="" width="20px" className='mr-2' /><a href="">SSTX EXCHANGE</a></p></li>
