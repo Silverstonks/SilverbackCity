@@ -7,6 +7,7 @@ import Gorilla1 from "../../static/images/gorillas-slider/Gorilla1.png";
 import Gorilla2 from "../../static/images/gorillas-slider/Gorilla2.png";
 import Gorilla3 from "../../static/images/gorillas-slider/Gorilla3.png";
 import Background from "../../static/images/gorillas-slider/Backgorund.png";
+import TitleDecoration from "../../static/images/sections/ClansTitleDecoration.png";
 
 const initialGorillas = [
     {
@@ -78,12 +79,15 @@ export const ClansSlider = () => {
     return <div className="clans-slider">
         <div className="clans-slider-title-container">
             <div className="clans-slider-title-background">
-                <img src="" alt="main clans slider background" className="clans-slider-title-background-img" />
+                <img src={TitleDecoration} alt="main clans slider background" className="clans-slider-title-background-img" />
             </div>
 
-            {/* TODO: title decoration */}
             <div className="clans-slider-title">
                 CLANS
+            </div>
+
+            <div className="clans-slider-subtitle">
+                Scanning...
             </div>
         </div>
 
