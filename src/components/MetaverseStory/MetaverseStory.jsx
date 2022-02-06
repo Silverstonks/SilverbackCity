@@ -92,7 +92,6 @@ export const MetaverseStory = () => {
                 <img className="metaverse-story-img" src={image} alt="story background img" />
             </div>
 
-            {/* TODO: Fix responsiveness */}
             <div className="metaverse-story-details">
                 <div className="metaverse-story-controls">
                     <button className="arrow-left btn" onClick={() => increment()}>
