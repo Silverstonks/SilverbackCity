@@ -36,7 +36,7 @@ export const Slider = () => {
 
         <div className="slider-nav-pills-container row">
           {navPills.map((navPill, index) => (
-            <SliderItem navPill={{ ...navPill, index, active: index === selectedIndex }} callBackSetIndex={setSelectedIndex} />
+            <SliderItem key={`slider-principal-title-${index}`} navPill={{ ...navPill, index, active: index === selectedIndex }} callBackSetIndex={setSelectedIndex} />
           ))}
         </div>
       </div>
