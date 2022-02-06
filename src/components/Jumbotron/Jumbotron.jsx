@@ -1,6 +1,9 @@
 import React from "react";
 import "./Jumbotron.scss";
 
+import ButtonDecorationCorners from "../../static/images/header/ButtonDecorationCorners.png";
+import ButtonDecorationBar from "../../static/images/header/ButtonDecorationBar.png";
+
 const strings = {
     companyName: 'Silver Stonks',
     metaverse: 'Metaverse',
@@ -26,11 +29,19 @@ export const Jumbotron = () => {
                         {strings.information}
                     </button>
                 </div>
+                <div className="button-details information">
+                    <img src={ButtonDecorationCorners} alt="" className="corner-top" />
+                    <img src={ButtonDecorationBar} alt="" className="decoration" />
+                </div>
 
                 <div className="button-container">
                     <button className="mint">
                         {strings.mint}
                     </button>
+                </div>
+                <div className="button-details mint">
+                    <img src={ButtonDecorationCorners} alt="" className="corner-top" />
+                    <img src={ButtonDecorationBar} alt="" className="decoration" />
                 </div>
             </div>
         </div>

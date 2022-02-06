@@ -58,6 +58,9 @@ $grayNavText: #D8D8D8;
             display: flex;
             justify-content: center;
             gap: 1rem;
+            margin-top: .5rem;
+            transform: scale(1.25);
+            position: relative;
 
             button
             {
@@ -65,11 +68,70 @@ $grayNavText: #D8D8D8;
                 text-transform: uppercase;
             }
 
+            .button-details
+            {
+                position: absolute;
+                width: 100%;
+
+                .decoration,
+                .corner-top
+                {
+                    display: none;
+                    pointer-events: none;
+                }
+
+                .decoration
+                {
+                    position: absolute;
+                    width: 88px;
+                    height: 10px;
+                    bottom: -3rem;
+                    // background: url('../../static/images/header/ButtonDecorationBar.png') no-repeat;
+                }
+
+                .corner-top
+                {
+                    position: absolute;
+                    width: 175px;
+                    height: 58px;
+                    bottom: -3rem;
+                    transform: scale(.65);
+                    // background: url('../../static/images/header/ButtonDecorationCorners.png') no-repeat;
+                }
+
+                &.information
+                {
+                    .corner-top
+                    {
+                        left: -2rem;
+                    }
+
+                    .decoration
+                    {
+
+                    }
+                }
+
+                &.mint
+                {
+                    .corner-top
+                    {
+                        left: 7rem;
+                    }
+
+                    .decoration
+                    {
+                        left: 9rem;
+                    }
+                }
+            }
+
             .button-container
             {
                 background: unset !important;
                 position: relative;
                 overflow: visible !important;
+                max-width: 142px;
 
                 &:hover
                 {
@@ -85,25 +147,19 @@ $grayNavText: #D8D8D8;
                         color: white !important;
                         background: rgba(0, 225, 1, .2) !important;
                     }
-                    
-                    &::before
+
+                    .mint
                     {
-                        content: "";
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        bottom: -2.5rem;
-                        background: url('../../static/images/header/ButtonDecorationBar.png') no-repeat;
+                        background: rgba(255, 255, 255, .2) !important;
                     }
 
-                    &::after
+                    & + .button-details
                     {
-                        content: "";
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        bottom: -2.5rem;
-                        background: url('../../static/images/header/ButtonDecorationCorners.png') no-repeat;
+                        .corner-top,
+                        .decoration
+                        {
+                            display: block;
+                        }
                     }
                 }
 
