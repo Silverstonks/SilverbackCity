@@ -23,13 +23,23 @@ $mainTextColor: #0BFF56;
         }
     }
 
+    // TODO: Some elements overlap with the responsive menu
     @media screen and (max-width: 800px) {
         #problematic-button
         {
             width: 90%;
         }
-    }
 
+        .nav
+        {
+            background: linear-gradient(to right, rgba(12,10,16,.95) 25%, rgba(12,10,16,.8) 75%);
+
+            #menu-toggle
+            {
+                color: white;
+            }
+        }
+    }
     
     .button-container
     {
