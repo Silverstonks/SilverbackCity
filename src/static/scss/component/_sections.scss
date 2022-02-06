@@ -1,6 +1,7 @@
 .benefits,
 .marketplace,
-.landlord, .meta  {
+.landlord,
+.meta {
   color: #fff;
 
   .title-text,
@@ -15,6 +16,46 @@
 
 .marketplace {
   background-image: url("../../images/sections/Marketplace.png");
+}
+
+.landlord-title {
+  background-image: url("../../images/sections/SectionTitleDecoration.png");
+  position: relative;
+  background-size: contain;
+  min-height: 70px;
+  background-repeat: no-repeat;
+  span {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+  }
+  p {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+  }
+}
+
+.meta-title {
+  background-image: url("../../images/sections/SectionTitleDecorationInverse.png");
+  position: relative;
+  background-size: contain;
+  min-height: 70px;
+  background-repeat: no-repeat;
+  span {
+    position: absolute;
+    top: 5px;
+    left: 120px;
+  }
+  p {
+    position: absolute;
+    top: -10px;
+    left: 120px;
+  }
+}
+
+.sections-container {
+  // justify-content: space-evenly;
 }
 
 .section-item-img-right {
@@ -36,16 +77,17 @@
     top: 25px;
   }
 
-  #title-text{
+  #title-text {
     top: 35px;
     left: 120px;
   }
-  
+
   button {
     clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
     background-color: #271528;
     color: #0bff56;
     width: 100%;
+    height: 100%;
     margin: auto;
     font-size: 12px;
     line-height: 200%;
@@ -56,12 +98,17 @@
     background-color: #fff;
     clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
     border: 2px solid #fff;
-    width: 40%;
+    width: 130px;
+    height: 40px;
+  }
+
+  #exchange {
+    #title-text {
+      top: 35px;
+      left: 95px;
+    }
   }
 }
-
-
-
 
 .section-item-img-left {
   color: #fff;
@@ -82,16 +129,17 @@
     top: 25px;
   }
 
-  #title-text{
+  #title-text {
     top: 35px;
     left: 120px;
   }
-  
+
   button {
     clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
     background-color: #271528;
     color: #0bff56;
     width: 100%;
+    height: 100%;
     margin: auto;
     font-size: 12px;
     line-height: 200%;
@@ -102,6 +150,16 @@
     background-color: #fff;
     clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
     border: 2px solid #fff;
-    width: 40%;
+    width: 130px;
+    height: 40px;
+  }
+
+  #lounge {
+    #title-text {
+      text-align: right;
+      top: 25px;
+      right: 30px;
+      left: 40px;
+    }
   }
 }

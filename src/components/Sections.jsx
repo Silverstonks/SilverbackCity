@@ -22,8 +22,8 @@ const Sections = () => {
                                                                                                             - Store your SSTX tokens and earn up to 12% APY.
                                                                                                             - Store your NFT certificates from your physical silver purchases to earn interest up to 6% APY.
                                                                                                             - Store the digital silver you earn in our Play 2 Earn games up to 12%. You need a Silverback NFT to earn passive income in the Play 2 Earn games."/>
-            <SectionItemImgLeft icon={LoungeIcon} title="UNDERGROUND LOUNGE" buttonText={"COMING SOON"} img={LoungeImg} text="Each Silverback holder will have access to the Underground Lounge, an exclusive chatroom to talk about the latest news from everything in crypto to the precious metals market. "/>
-            <SectionItemImgRight icon={ExchangeIcon} title="SSTX EXCHANGE" buttonText={"BUY SSTX"} img={ExchangeImg} text="Purchase SSTX using BNB or swap any BSC token for SSTX." />
+            <SectionItemImgLeft id="lounge" icon={LoungeIcon} title={"UNDERGROUND\nLOUNGE"} buttonText={"COMING SOON"} img={LoungeImg} text="Each Silverback holder will have access to the Underground Lounge, an exclusive chatroom to talk about the latest news from everything in crypto to the precious metals market. "/>
+            <SectionItemImgRight id="exchange" icon={ExchangeIcon} title="SSTX EXCHANGE" buttonText={"BUY SSTX"} img={ExchangeImg} text="Purchase SSTX using BNB or swap any BSC token for SSTX." />
             <SectionItemImgLeft icon={FoundryIcon} title="FOUNDRY" buttonText={"COMING SOON"} img={FoundryImg} text="Each Silverback holder will have access to the Underground Lounge, an exclusive chatroom to talk about the latest news from everything in crypto to the precious metals market. "/>        
         </>
     );
@@ -32,14 +32,14 @@ const Sections = () => {
 
 
 
-const SectionItemImgRight = ({ icon, title, text, buttonText, img }) => {
+const SectionItemImgRight = ({id="", icon, title, text, buttonText, img }) => {
     return (
         <div className="container my-5">
             <div className="row">
                 <div className="section-item-img-right col-8 m-auto my-5">
                     <div className="row">
                         <div className="col-6">
-                            <div className="title-container">
+                            <div className="title-container"  id={id}>
                                 <img id="title-background" src={GreenBoxTitle} alt="" />
                                 <img id="title-icon" src={icon} alt="" />
                                 <span id="title-text" className="h5">{title}</span>
@@ -72,12 +72,12 @@ const SectionItemImgRight = ({ icon, title, text, buttonText, img }) => {
 }
 
 
-const SectionItemImgLeft = ({ icon, title, text, buttonText, img }) => {
+const SectionItemImgLeft = ({id="", icon, title, text, buttonText, img }) => {
     return (
         <div className="container my-5">
             <div className="row">
             
-                <div className="section-item-img-right col-10 m-auto my-5">
+                <div className="section-item-img-left col-10 m-auto my-5">
                     <div className="row">
 
                         <div className="col-8">
@@ -85,7 +85,7 @@ const SectionItemImgLeft = ({ icon, title, text, buttonText, img }) => {
                         </div>
 
                         <div className="col-4">
-                            <div className="title-container">
+                            <div className="title-container"  id={id}>
                                 <img id="title-background" src={GreenBoxTitle} alt="" />
                                 <img id="title-icon" src={icon} alt="" />
                                 <span id="title-text" className="h5">{title}</span>
