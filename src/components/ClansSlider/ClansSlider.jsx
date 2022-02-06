@@ -11,10 +11,12 @@ import TitleDecoration from "../../static/images/sections/ClansTitleDecoration.p
 
 const initialGorillas = [
     {
-        image: Gorilla1,
+        // image: Gorilla1,
+        image: Gorilla3,
     },
     {
-        image: Gorilla2,
+        // image: Gorilla2,
+        image: Gorilla3,
     },
     {
         image: Gorilla3,
