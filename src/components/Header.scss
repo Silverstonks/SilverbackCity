@@ -19,24 +19,48 @@ $mainTextColor: #0BFF56;
         &:not(.no-hover):hover,
         & .dropdown-menu
         {
-            background: rgba(0,0,0,.2);
+            background: rgba(0,0,0,.4);
         }
     }
 
-    // TODO: Some elements overlap with the responsive menu
-    @media screen and (max-width: 800px) {
-        #problematic-button
+    .nav
+    {
+        .dropdown-menu
         {
-            width: 90%;
+            &.show
+            {
+                display: flex;
+                flex-wrap: wrap;
+                width: 22.5rem;
+            }
+
+            .dropdown-item
+            {
+                flex: 50% 0 0;
+            }
+
+            :hover
+            {
+                background: rgba(0,0,0,.4);
+                color: #00E101;
+            }
         }
 
-        .nav
-        {
-            background: linear-gradient(to right, rgba(12,10,16,.95) 25%, rgba(12,10,16,.8) 75%);
-
-            #menu-toggle
+        // TODO: Some elements overlap with the responsive menu
+        @media screen and (max-width: 800px) {
+            #problematic-button
             {
-                color: white;
+                width: 90%;
+            }
+
+            &
+            {
+                background: linear-gradient(to right, rgba(12,10,16,.95) 25%, rgba(12,10,16,.8) 75%);
+
+                #menu-toggle
+                {
+                    color: white;
+                }
             }
         }
     }
