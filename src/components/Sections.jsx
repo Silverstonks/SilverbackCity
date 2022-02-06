@@ -36,12 +36,12 @@ const SectionItemImgRight = ({id="", icon, title, text, buttonText, img }) => {
     return (
         <div className="container my-5">
             <div className="row">
-                <div className="section-item-img-right col-8 m-auto my-5">
-                    <div className="row">
-                        <div className="col-6">
+                <div className="section-item-img-right col-md-8 m-auto my-5">
+                    <div className="row flex-column-reverse flex-md-row">
+                        <div className="col-md-6">
                             <div className="title-container"  id={id}>
-                                <img id="title-background" src={GreenBoxTitle} alt="" />
-                                <img id="title-icon" src={icon} alt="" />
+                                <img className="" id="title-background" src={GreenBoxTitle} alt="" />
+                                <img className="" id="title-icon" src={icon} alt="" />
                                 <span id="title-text" className="h5">{title}</span>
                             </div>
                             <div className="my-4 py-2">
@@ -58,13 +58,13 @@ const SectionItemImgRight = ({id="", icon, title, text, buttonText, img }) => {
                             </div>
                         </div>
 
-                        <div className="col-6">
-                            <img src={img} alt="" />
+                        <div className="col-md-6">
+                            <img className="w-100 mb-4" src={img} alt="" />
                         </div>
                     </div>
                 </div>
 
-                <div className="col-2"></div>
+                <div className="col-md-2"></div>
             </div>
 
         </div>
@@ -77,17 +77,17 @@ const SectionItemImgLeft = ({id="", icon, title, text, buttonText, img }) => {
         <div className="container my-5">
             <div className="row">
             
-                <div className="section-item-img-left col-10 m-auto my-5">
+                <div className="section-item-img-left col-md-10 m-auto my-5">
                     <div className="row">
 
-                        <div className="col-8">
-                            <img src={img} alt="" />
+                        <div className="col-md-8">
+                            <img className="w-100 mb-4" src={img} alt="" />
                         </div>
 
-                        <div className="col-4">
+                        <div className="col-md-4">
                             <div className="title-container"  id={id}>
-                                <img id="title-background" src={GreenBoxTitle} alt="" />
-                                <img id="title-icon" src={icon} alt="" />
+                                <img className="" id="title-background" src={GreenBoxTitle} alt="" />
+                                <img className="" id="title-icon" src={icon} alt="" />
                                 <span id="title-text" className="h5">{title}</span>
                             </div>
                             <div className="my-4 py-2">

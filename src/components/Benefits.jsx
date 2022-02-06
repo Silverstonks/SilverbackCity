@@ -7,14 +7,14 @@ const Benefits = () => {
         <div className="container">
 
             <div className="row benefits my-5">
-                <div className="col-1"></div>
-                <div className="col-3">
+                <div className="col-md-1"></div>
+                <div className="col-md-3">
                     <p className="h2"><span className="title-text">NFT</span> BENEFITS</p>
                 </div>
-                <div className="col-2">
-                    <img src={GreenLineBenefits} alt="" />
+                <div className="col-md-2 d-none d-md-block">
+                    <img src={GreenLineBenefits} alt="" className="w-100" />
                 </div>
-                <div className="col-5">
+                <div className="col-md-5">
                     <p className="h5 subtitle-text">- Play 2 Earn Metaverse Access</p>
                     <p className="info">Your NFT lets you earn digital silver and other rewards by playing entertaining games in the Metaverse.
                         Your avatar will be able to earn bids in Bids Arena by competing with other players.
@@ -30,7 +30,7 @@ const Benefits = () => {
                         When you play you earn cashback on every auction you participate in.
                         This gives you purchasing power for products you love.</p>
                 </div>
-                <div className="col-1"></div>
+                <div className="col-md-1"></div>
             </div>
         </div>
     );
