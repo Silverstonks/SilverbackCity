@@ -21,6 +21,17 @@ $mainTextColor: #0BFF56;
         {
             background: rgba(0,0,0,.4);
         }
+
+        &:hover
+        {
+            color: #00E101;
+            
+            & > a
+            {
+                color: #00E101;
+                
+            }
+        }
     }
 
     .nav
