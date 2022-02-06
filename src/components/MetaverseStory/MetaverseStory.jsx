@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SlideImage from "../../static/images/header/HeaderBackground.png"
 import LeftArrow from "../../static/images/gorillas-slider/LeftArrow.png";
 import RightArrow from "../../static/images/gorillas-slider/RightArrow.png";
+import TitleDecoration from "../../static/images/sections/HistoryTitleDecoration.png";
 import "./MetaverseStory.scss";
 
 const initialSlides = [
@@ -74,10 +75,9 @@ export const MetaverseStory = () => {
     const { image, text } = slides[selectedIndex];
 
     return <div className="metaverse-story-container">
-        {/* TODO: title decoration */}
         <div className="metaverse-story-title-container">
             <div className="metaverse-story-title-background">
-                <img src="" alt="" className="metaverse-story-title-background-img" />
+                <img src={TitleDecoration} alt="" className="metaverse-story-title-background-img" />
             </div>
             <span className="metaverse-story-title">
                 {strings.title}
