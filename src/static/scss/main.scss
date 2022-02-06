@@ -76,7 +76,7 @@
 @import "../scss/component/buy.scss";
 @import "../scss/component/footer.scss";
 @import "../scss/component/checkbox.scss";
-
+@import "../scss/component/sections.scss";
 .centered {
   position: fixed;
   top: 50%;
@@ -85,6 +85,11 @@
   transform: translate(-50%, -50%);
 }
 
+body {
+  background-image: url('../images/sections/Background.png');
+  background-position: center;
+  // backdrop-filter: grayscale(0.7) opacity(0.7);
+}
 
 body, label {
   font-family: 'D-Din Exp';
