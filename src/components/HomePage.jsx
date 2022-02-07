@@ -40,12 +40,12 @@ const HomePage = () => {
 
         <MetaverseStory />
 
+      <NftLab />
         <ClansSlider />
 
         <MintCard />
       </div>
 
-      <NftLab />
       <Benefits />
       <Sections />
       <Marketplace />

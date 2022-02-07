@@ -55,7 +55,7 @@ export const MintCard = () => {
                     </span>
                     &nbsp;
                     <span className="mint-card-price">
-                        0.5 BNB
+                        0.8 BNB
                     </span>
                 </div>
 
