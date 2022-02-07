@@ -8,7 +8,7 @@ import { HomeTitles, initialNavPills } from './SliderConstants';
 import { SliderItem } from './SliderItem';
 
 export const Slider = () => {
-  const [navPills, setNavPills] = useState(initialNavPills);
+  const [navPills] = useState(initialNavPills);
   const [selectedIndex, setSelectedIndex] = useState(1);
 
   return (
@@ -36,7 +36,11 @@ export const Slider = () => {
 
         <div className="slider-nav-pills-container row">
           {navPills.map((navPill, index) => (
-            <SliderItem key={`slider-principal-title-${index}`} navPill={{ ...navPill, index, active: index === selectedIndex }} callBackSetIndex={setSelectedIndex} />
+            <SliderItem
+              key={`slider-principal-title-${index}`}
+              navPill={{ ...navPill, index, active: index === selectedIndex }}
+              callBackSetIndex={setSelectedIndex}
+            />
           ))}
         </div>
       </div>

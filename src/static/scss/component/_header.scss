@@ -41,10 +41,8 @@ $fonts: (
     position: fixed;
     top: 0px;
     left: 0px;
+    background: rgba(0,0,0,.4);
     z-index: 999999;
-    background-image: url('../../images/section-background.jpg');
-    background-size: cover;
-    background-position: bottom;
     width: calc(100% - 30px);
     max-width: 300px;
     height: 100%;
@@ -127,9 +125,7 @@ $fonts: (
   width: 100%;
   top: 0px;
   z-index: 999999;
-  background-image: url('../../images/section-background.jpg');
-  background-size: cover;
-  background-position: center;
+  background: rgba(0,0,0,.4);
   box-shadow: 0px 2px 8px rgb(20 29 32 / 50%);
   border-bottom: 3px solid #45ef8e;
   animation-name: drop;
@@ -264,14 +260,14 @@ $fonts: (
 }
 
 .nav .dropdown-menu {
-  background-image: url('../../images/section-background.jpg');
+  background: rgba(0,0,0,.4);
   background-size: cover;
   background-position: center;
   padding-bottom: 0px;
   padding-top: 0px;
   
   & :hover {
-    background-image: url('../../images/section-background.jpg');
+    background: rgba(0,0,0,.4);
     background-size: cover;
     background-position: center;
   }

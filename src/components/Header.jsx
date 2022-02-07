@@ -63,7 +63,7 @@ const Header = () => {
                     <i className="fas fa-times txt-color-white"></i>
                   </button>
                 </li>
-                <li className="nav-item nav-item-lang no-hover">
+                <li className="nav-item nav-item-lang">
                   <img src={LanguageIcon} alt="lang selector" id='lang-selector' className='lang-selector' />
                   &nbsp;
                   <span className='lang-options'>
@@ -123,13 +123,13 @@ const Header = () => {
                     Story
                   </a>
                 </li>
-                <li className="nav-item no-hover" id='problematic-button'>
+                <li className="nav-item" id='problematic-button'>
                   <div className="ml-auto d-flex flex-wrap" style={{
                     gap: '1rem',
                   }}>
 
                     <ul className="navbar-nav ml-auto d-flex justify-content-center align-items-center">
-                      <li className="nav-item m-0 no-hover">
+                      <li className="nav-item m-0">
                         {isAuthenticated && walletAddress ? (
                           <div className="button-container">
 
@@ -139,10 +139,9 @@ const Header = () => {
                           </div>
                         ) : (
                           <div className="button-container">
-
                             <button
                               type="button"
-                              className="btn btn-outline-bgalpha "
+                              className="btn "
                               onClick={() => dispatch(actions.blockChainActions.connectToMetaMask)}
                             >
                               Connect Wallet
@@ -151,12 +150,12 @@ const Header = () => {
                         )}
                       </li>
                     </ul>
-                    <div className="nav-item m-0 no-hover">
+                    <div className="nav-item m-0">
                       <div className="button-container">
 
                         <button
                           type="button"
-                          className="btn btn-outline-bgalpha "
+                          className="btn "
                           onClick={() => dispatch(actions.blockChainActions.connectToMetaMask)}
                         >
                           Mint NFT

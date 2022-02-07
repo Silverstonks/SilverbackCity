@@ -39,13 +39,10 @@ const HomePage = () => {
         <Slider />
 
         <MetaverseStory />
-        {/* TODO: poner NFT Lab aquí */}
 
         <ClansSlider />
 
         <MintCard />
-        {/* TODO: NFT Benefits */}
-        {/* TODO: El resto de la integración de Bea */}
       </div>
 
       <NftLab />
