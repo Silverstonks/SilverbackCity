@@ -31,24 +31,32 @@ const HomePage = () => {
   return (
     <>
       <Header />
+
       <ToastContainer />
       <ModalDialogs />
+
       <Jumbotron />
 
-      <div className="container home-container">
+      <div className="container">
         <Slider />
-
+      </div>
+      <div className="container">
         <MetaverseStory />
-
+      </div>
       <NftLab />
+      <div className="container">
         <ClansSlider />
-
+      </div>
+      <div className="container">
         <MintCard />
       </div>
 
       <Benefits />
+
       <Sections />
+
       <Marketplace />
+      
       <Footer />
     </>
   );

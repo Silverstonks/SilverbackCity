@@ -1,15 +1,22 @@
 $mainTextColor: #0bff56;
 
 .banner {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 25%, transparent 75%);
+  // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 50%, transparent 100%);
   position: absolute;
-  z-index: 2;
+  z-index: 999;
   width: 100%;
-
+  .gradient{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 15%, transparent 100%);
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+  }
   .stick {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 25%, transparent 75%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 50%, transparent 100%);
     border: none;
     box-shadow: none;
+    z-index: 9999;
   }
 
   .nav-item {
@@ -63,16 +70,22 @@ $mainTextColor: #0bff56;
     width: 100%;
     margin: auto;
     font-size: 12px;
-    line-height: 1  00%;
-    border: solid #0f0f11;
+    line-height: 0.8;
+    // border: solid #0f0f11;
+    background-image: url("../static/images/header/HeaderBackground.png");
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: initial;
+    background-attachment: fixed;
   }
 
   .button-container {
     background-color: #fff;
     clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
     border: 2px solid #fff;
-    width: 100%;
-    
+    width: 150px;
+    max-height: fit-content;
   }
 
   .lang-options {

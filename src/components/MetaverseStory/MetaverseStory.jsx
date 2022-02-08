@@ -94,13 +94,13 @@ export const MetaverseStory = () => {
 
             <div className="metaverse-story-details">
                 <div className="metaverse-story-controls">
-                    <button className="arrow-left btn" onClick={() => increment()}>
+                    <button className="arrow-left btn p-0" onClick={() => increment()}>
                         <img src={LeftArrow} alt="arrow left" className="arrow-left" />
                     </button>
 
                     {Object.keys(slides).map(renderPageIndex)}
 
-                    <button className="arrow-right btn" onClick={() => decrement()}>
+                    <button className="arrow-right btn p-0" onClick={() => decrement()}>
                         <img src={RightArrow} alt="arrow right" className="arrow-right" />
                     </button>
                 </div>

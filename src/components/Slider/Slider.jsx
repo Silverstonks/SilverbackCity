@@ -14,7 +14,7 @@ export const Slider = () => {
   return (
     <div className="container">
       <div className="main-home-slider slider" id="main-home-slider">
-        <div className="slider-title-container">
+        <div className="slider-title-container mb-5">
           <div className="slider-title-background">
             <img src={TitleBackground} alt="" />
           </div>
@@ -26,23 +26,26 @@ export const Slider = () => {
           <div className="slider-subtitle">{HomeTitles.subtitle}</div>
         </div>
 
-        <div className="slider-content">
+        <div className="slider-content mt-5">
           <img src={DotsDecoration} alt="" className="img-detail dots" />
 
-          {navPills.find((navPill, index) => index === selectedIndex).content}
+          {navPills.find((navPill, index) => (index + 1) === selectedIndex).content}
 
-          <img src={LinesDecoration} alt="" className="img-detail lines" />
+
         </div>
 
         <div className="slider-nav-pills-container row">
           {navPills.map((navPill, index) => (
             <SliderItem
               key={`slider-principal-title-${index}`}
-              navPill={{ ...navPill, index, active: index === selectedIndex }}
+              navPill={{ ...navPill, index: (index + 1), active: (index + 1) === selectedIndex }}
               callBackSetIndex={setSelectedIndex}
             />
           ))}
         </div>
+      </div>
+      <div className='d-flex justify-content-end'>
+        <img src={LinesDecoration} alt="" className="img-detail lines mr-5" />
       </div>
     </div>
   );
