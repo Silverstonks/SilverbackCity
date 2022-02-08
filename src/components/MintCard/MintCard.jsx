@@ -65,11 +65,6 @@ export const MintCard = () => {
                     </select>
                 </div>
             </div>
-            <div className="col-12 col-md-6 mint-card-presentation">
-                {/* <img src={GorillaBackground} alt="" className="mint-card-gorilla-background-img" /> */}
-                <img src={QuestionMark} alt="" className="mint-card-gorilla-question-mark" />
-                <img src={GorillaIncognito} alt="" className="mint-card-gorilla-incognito" />
-            </div>
         </div>
     </div>
 };
