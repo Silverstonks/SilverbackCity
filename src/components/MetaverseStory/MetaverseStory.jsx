@@ -9,14 +9,7 @@ const initialSlides = [
     {
         image: HistorySliderImg,
         text: `
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Nulla ex ut molestiae voluptates ipsum dolor laborum, voluptatibus
-        praesentium dolorum maiores voluptatum recusandae quaerat labore id?
-        Accusamus sed eius totam sit.
-        Quos ipsa praesentium repudiandae velit, harum, autem consequatur
-        minus rem facere eaque earum ut aperiam maiores consequuntur enim
-        officia doloribus aut quidem impedit, eum aliquid ipsum omnis? Fugit,
-        ipsam aspernatur?
+        TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story 
         `,
     },
     {
@@ -93,7 +86,7 @@ export const MetaverseStory = () => {
             </div>
 
             <div className="metaverse-story-details">
-                <div className="metaverse-story-controls">
+                <div className="metaverse-story-controls my-2">
                     <button className="arrow-left btn p-0" onClick={() => increment()}>
                         <img src={LeftArrow} alt="arrow left" className="arrow-left" />
                     </button>
@@ -106,7 +99,7 @@ export const MetaverseStory = () => {
                 </div>
 
                 <div className="metaverse-story-text-container">
-                    <p className="metaverse-story-text">
+                    <p className="metaverse-story-text w-75 m-auto">
                         {text}
                     </p>
                 </div>
