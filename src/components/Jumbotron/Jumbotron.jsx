@@ -8,10 +8,15 @@ import ButtonDecorationBar from "../../static/images/header/ButtonDecorationBar.
 export const Jumbotron = () => {
     return <div className="jumbotron-container d-flex flex-column justify-content-center ">
         <img src={Logo} alt="" className="w-25 mx-auto my-5" />
-        <div className="button-container mx-auto">
-            <button className="information">
-                ENTER
-            </button>
+        <div className="button-decoration mx-auto">
+            <div className="button-container h-75 mx-2 my-2">
+                <button className="h-100 information">
+                    ENTER
+                </button>
+            </div>
+            <div className="decoration-bar">
+                <img src={ButtonDecorationBar} alt="" />
+            </div>
         </div>
     </div>
 };

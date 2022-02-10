@@ -140,10 +140,57 @@ $grayNavText: #d8d8d8;
     background-color: #fff;
     clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
     border: 2px solid #fff;
-    width: 10%;
+    width: 90%;
+    height: 90%;
     &:hover {
         background-color: rgba(11, 255, 86, 1);;
         border: 2px solid rgba(11, 255, 86, 0.5);
+    }
+    &:after {
+      content: "";
+      display: block;
+      background-image: url("../../static/images/header/ButtonDecorationBar.png");
+    }
+  }
+}
+
+.button-decoration{
+  width: 12%;
+  height: 60px;
+  padding: auto;
+  // background-color: transparent;
+  // background-image: url("../../static/images/header/ButtonDecorationCorners.png");
+  // background-size: cover;
+  img{
+    visibility: hidden;
+  }
+}
+
+
+.button-decoration:hover{
+  width: 12%;
+  height: 60px;
+  padding: auto;
+  // background-color: transparent;
+  background-image: url("../../static/images/header/ButtonDecorationCorners.png");
+  background-size: cover;
+  .decoration-bar {
+    min-height: 10px;
+    min-width: 80px;
+    max-height: 10px;
+    max-width: 80px;
+    position: absolute;
+
+    img {
+      visibility: visible;
+      position: relative;
+      top: -10px;
+      min-height: 10px;
+      min-width: 80px;
+      max-height: 10px;
+      left: 10px;
+      max-width: 80px;
+  
     }
   }
 }
