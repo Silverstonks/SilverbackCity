@@ -1,127 +1,86 @@
-import React, { useState } from "react";
-import "./ClansSlider.scss"
-import DotsDecoration from "../../static/images/slider/DotsDecoration.png";
-import LeftArrow from "../../static/images/gorillas-slider/LeftArrow.png";
-import RightArrow from "../../static/images/gorillas-slider/RightArrow.png";
-import Gorilla1 from "../../static/images/gorillas-slider/Gorilla1.png";
-import Gorilla2 from "../../static/images/gorillas-slider/Gorilla2.png";
-import Gorilla3 from "../../static/images/gorillas-slider/Gorilla3.png";
-import Background from "../../static/images/gorillas-slider/Backgorund.png";
-import TitleDecoration from "../../static/images/sections/ClansTitleDecoration.png";
+import React, { useState } from 'react';
+import './ClansSlider.scss';
+import DotsDecoration from '../../static/images/slider/DotsDecoration.png';
+import LeftArrow from '../../static/images/gorillas-slider/LeftArrow.png';
+import RightArrow from '../../static/images/gorillas-slider/RightArrow.png';
+import Gorilla1 from '../../static/images/gorillas-slider/gorillas/Gorilla1.png';
+import Gorilla2 from '../../static/images/gorillas-slider/gorillas/Gorilla2.png';
+import Gorilla3 from '../../static/images/gorillas-slider/gorillas/Gorilla3.png';
+import TitleDecoration from '../../static/images/sections/ClansTitleDecoration.png';
 
-const initialGorillas = [
-    {
-        // image: Gorilla1,
-        image: Gorilla3,
-    },
-    {
-        // image: Gorilla2,
-        image: Gorilla3,
-    },
-    {
-        image: Gorilla3,
-    },
-]
-const initialIndex = 2;
+const initialGorillas = [Gorilla3, Gorilla3, Gorilla3];
+const initialIndex = 0;
 
 export const ClansSlider = () => {
-    const [gorillas, setGorillas] = useState(initialGorillas);
-    const [selectedIndex, setSelectedIndex] = useState(initialIndex);
+  const [gorillas] = useState(initialGorillas.map((imgSrc, index) => ({ image: imgSrc, order: index })));
+  const [selectedIndex, setSelectedIndex] = useState(initialIndex);
 
-    const step = (increment = 0) => {
-        let targetIndex = selectedIndex + increment;
-
-        // Seguridad de que no se pase, ni de más ni de menos
-        if (targetIndex >= gorillas.length) targetIndex = 0;
-        else if (targetIndex < 0) targetIndex = gorillas.length - 1;
-
-        setSelectedIndex(targetIndex);
+  const step = (nextStep) => {
+    if (nextStep > gorillas.length - 1) {
+      setSelectedIndex(0);
+    } else if (nextStep < 0) {
+      setSelectedIndex(gorillas.length - 1);
+    } else {
+      setSelectedIndex(nextStep);
     }
+  };
 
-    const increment = () => {
-        step(1);
-    }
+  const increment = () => {
+    step(selectedIndex + 1);
+  };
 
-    const decrement = () => {
-        step(-1);
-    }
+  const decrement = () => {
+    step(selectedIndex - 1);
+  };
 
-    const renderGorilla = (index) => {
-        if (!index in gorillas) return;
+  const getLeftIndex = () => {
+    return selectedIndex - 1 >= 0 ? selectedIndex - 1 : gorillas.length - 1;
+  };
 
-        const { image } = gorillas[index];
+  const getRightIndex = () => {
+    return selectedIndex + 1 <= gorillas.length - 1 ? selectedIndex + 1 : 0;
+  };
 
-        const onGorillaClick = () => {
-            setSelectedIndex(index);
-        }
-
-        const classes = [
-            'clans-slider-gorilla',
-            'btn',
-        ];
-        if (selectedIndex === index) classes.push('active');
-
-        return <button className={classes.join(' ')} onClick={onGorillaClick}>
-            <img src={image} alt="Gorilla" className="clans-slider-gorilla-img" />
-        </button>
-    }
-
-    const getLeftIndex = index => {
-        if (index > 0) return index - 1;
-
-        return gorillas.length - 1;
-    }
-
-    const getRightIndex = index => {
-        if ((index + 1) <= (gorillas.length - 1)) return index + 1;
-
-        return 0;
-    }
-
-    return <div className="clans-slider">
-        <div className="clans-slider-title-container">
+  return (
+    <div className="clans-slider">
+      <div className="row">
+        <div className="col-12">
+          <div className="clans-slider-title-container">
             <div className="clans-slider-title-background">
-                <img src={TitleDecoration} alt="main clans slider background" className="clans-slider-title-background-img" />
+              <img src={TitleDecoration} alt="main clans slider background" className="clans-slider-title-background-img" />
             </div>
 
-            <div className="clans-slider-title">
-                CLANS
-            </div>
+            <div className="clans-slider-title">CLANS</div>
 
-            <div className="clans-slider-subtitle">
-                Scanning...
-            </div>
+            <div className="clans-slider-subtitle">Scanning...</div>
+          </div>
         </div>
+      </div>
 
-        <div className="clans-slider-gorillas-container">
-            <img src={DotsDecoration} alt="" className="img-detail dots" />
-
-            <div className="clans-slider-gorilla-left">
-                {renderGorilla(
-                    getLeftIndex(selectedIndex)
-                )}
+      <div className="row h-100">
+        <div className="mb-5 col-12 ">
+          <img src={DotsDecoration} alt="" className="img-detail dots" />
+          <div className="row h-100">
+            <div className="col-lg-3 col-12 d-flex align-items-center clans-slider-gorilla-left">
+              <img src={gorillas[getLeftIndex()].image} alt="Gorilla" className="clans-slider-gorilla-img" onClick={() => decrement()} />
             </div>
-
-            <span className="btn clans-slider-arrow-left" onClick={() => decrement()}>
+            <div className="col-6 d-flex align-items-center justify-content-center">
+              <span className="btn clans-slider-arrow-left position-absolute d-lg-flex d-none" onClick={() => decrement()}>
                 <img src={LeftArrow} alt="left arrow" />
-            </span>
-
-            <div className="clans-slider-gorilla-current">
-                <img src={Background} alt="current gorilla background" className="clans-slider-gorilla-current-background" />
-                {renderGorilla(selectedIndex)}
-            </div>
-
-            <span className="btn clans-slider-arrow-right" onClick={() => increment()}>
+              </span>
+              <img src={gorillas[selectedIndex].image} alt="Gorilla" className="clans-slider-gorilla-img " />
+              <span className="btn clans-slider-arrow-right d-lg-flex d-none position-absolute" onClick={() => increment()}>
                 <img src={RightArrow} alt="right arrow" />
-            </span>
-
-            <div className="clans-slider-gorilla-right">
-                {renderGorilla(
-                    getRightIndex(selectedIndex)
-                )}
+              </span>
             </div>
+            <div className="col-lg-3 col-12 d-flex align-items-center clans-slider-gorilla-right">
+              <img src={gorillas[getRightIndex()].image} alt="Gorilla" className="clans-slider-gorilla-img" onClick={() => increment()} />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  );
 };
 
 export default ClansSlider;

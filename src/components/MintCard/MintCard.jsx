@@ -1,9 +1,5 @@
 import React from "react";
 import "./MintCard.scss"
-import GorillaBackground from "../../static/images/gorillas-slider/Backgorund.png";
-import LinesDecoration from "../../static/images/slider/LinesDecoration.png";
-import GorillaIncognito from "../../static/images/sections/GorillaIncognito.png"
-import QuestionMark from "../../static/images/sections/QuestionMark.png"
 
 const strings = {
     title: `CITIZEN OF SILVERBACK CITY`,

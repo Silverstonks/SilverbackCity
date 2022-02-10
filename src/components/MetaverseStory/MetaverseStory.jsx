@@ -1,111 +1,106 @@
-import React, { useState } from "react";
-import HistorySliderImg from "../../static/images/sections/HistorySliderImg.png"
-import LeftArrow from "../../static/images/gorillas-slider/LeftArrow.png";
-import RightArrow from "../../static/images/gorillas-slider/RightArrow.png";
-import TitleDecoration from "../../static/images/sections/HistoryTitleDecoration.png";
-import "./MetaverseStory.scss";
+import React, { useState } from 'react';
+import HistorySliderImg from '../../static/images/sections/HistorySliderImg.png';
+import LeftArrow from '../../static/images/gorillas-slider/LeftArrow.png';
+import RightArrow from '../../static/images/gorillas-slider/RightArrow.png';
+import TitleDecoration from '../../static/images/sections/HistoryTitleDecoration.png';
+import './MetaverseStory.scss';
 
 const initialSlides = [
-    {
-        image: HistorySliderImg,
-        text: `
+  {
+    image: HistorySliderImg,
+    text: `
         TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story 
         `,
-    },
-    {
-        image: HistorySliderImg,
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
-    },
+  },
+  {
+    image: HistorySliderImg,
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+  },
 ];
 
 const initialIndex = 0;
 
 const strings = {
-    title: 'METAVERSE STORY',
-    subtitle: 'THE BEGINNING',
-}
+  title: 'METAVERSE STORY',
+  subtitle: 'THE BEGINNING',
+};
 
 export const MetaverseStory = () => {
-    const [slides, setSlides] = useState(initialSlides);
-    const [selectedIndex, setSelectedIndex] = useState(initialIndex);
+  const [slides, setSlides] = useState(initialSlides);
+  const [selectedIndex, setSelectedIndex] = useState(initialIndex);
 
-    const step = (increment = 0) => {
-        let targetIndex = selectedIndex + increment;
+  const step = (increment = 0) => {
+    let targetIndex = selectedIndex + increment;
 
-        // Seguridad de que no se pase, ni de más ni de menos
-        if (targetIndex >= slides.length) targetIndex = 0;
-        else if (targetIndex < 0) targetIndex = slides.length - 1;
+    // Seguridad de que no se pase, ni de más ni de menos
+    if (targetIndex >= slides.length) targetIndex = 0;
+    else if (targetIndex < 0) targetIndex = slides.length - 1;
 
-        setSelectedIndex(targetIndex);
-    }
+    setSelectedIndex(targetIndex);
+  };
 
-    const increment = () => {
-        step(1);
-    }
+  const increment = () => {
+    step(1);
+  };
 
-    const decrement = () => {
-        step(-1);
-    }
+  const decrement = () => {
+    step(-1);
+  };
 
-    const renderPageIndex = (index) => {
-        const newIndex = index = parseInt(index);
+  const renderPageIndex = (index) => {
+    const newIndex = (index = parseInt(index));
 
-        const onPageIndexClick = () => {
-            setSelectedIndex(newIndex)
-        }
+    const onPageIndexClick = () => {
+      setSelectedIndex(newIndex);
+    };
 
-        const classes = [
-            'metaverse-story-page-index',
-            'btn',
-        ]
-        if (selectedIndex === newIndex) classes.push('active');
+    const classes = ['metaverse-story-page-index', 'btn'];
+    if (selectedIndex === newIndex) classes.push('active');
 
-        return <button className={classes.join(' ')} key={`page-index-${newIndex}`} onClick={onPageIndexClick}>
-            {parseInt(newIndex) + 1}
-        </button>
-    }
+    return (
+      <button className={classes.join(' ')} key={`page-index-${newIndex}`} onClick={onPageIndexClick}>
+        {parseInt(newIndex) + 1}
+      </button>
+    );
+  };
 
-    const { image, text } = slides[selectedIndex];
+  const { image, text } = slides[selectedIndex];
 
-    return <div className="metaverse-story-container">
-        <div className="metaverse-story-title-container">
-            <div className="metaverse-story-title-background">
-                <img src={TitleDecoration} alt="" className="metaverse-story-title-background-img" />
-            </div>
-            <span className="metaverse-story-title">
-                {strings.title}
-            </span>
-            <span className="metaverse-story-subtitle">
-                {strings.subtitle}
-            </span>
+  return (
+    <div className="metaverse-story-container mt-4">
+      <div className="metaverse-story-title-container">
+        <div className="metaverse-story-title-background">
+          <img src={TitleDecoration} alt="" className="metaverse-story-title-background-img" />
+        </div>
+        <span className="metaverse-story-title">{strings.title}</span>
+        <span className="metaverse-story-subtitle">{strings.subtitle}</span>
+      </div>
+
+      <div className="metaverse-story">
+        <div className="metaverse-story-img-container">
+          <img className="metaverse-story-img" src={image} alt="story background img" />
         </div>
 
-        <div className="metaverse-story">
-            <div className="metaverse-story-img-container">
-                <img className="metaverse-story-img" src={image} alt="story background img" />
-            </div>
+        <div className="metaverse-story-details">
+          <div className="metaverse-story-controls my-2">
+            <button className="arrow-left btn p-0" onClick={() => increment()}>
+              <img src={LeftArrow} alt="arrow left" className="arrow-left" />
+            </button>
 
-            <div className="metaverse-story-details">
-                <div className="metaverse-story-controls my-2">
-                    <button className="arrow-left btn p-0" onClick={() => increment()}>
-                        <img src={LeftArrow} alt="arrow left" className="arrow-left" />
-                    </button>
+            {Object.keys(slides).map(renderPageIndex)}
 
-                    {Object.keys(slides).map(renderPageIndex)}
+            <button className="arrow-right btn p-0" onClick={() => decrement()}>
+              <img src={RightArrow} alt="arrow right" className="arrow-right" />
+            </button>
+          </div>
 
-                    <button className="arrow-right btn p-0" onClick={() => decrement()}>
-                        <img src={RightArrow} alt="arrow right" className="arrow-right" />
-                    </button>
-                </div>
-
-                <div className="metaverse-story-text-container">
-                    <p className="metaverse-story-text w-75 m-auto">
-                        {text}
-                    </p>
-                </div>
-            </div>
+          <div className="metaverse-story-text-container">
+            <p className="metaverse-story-text w-75 m-auto">{text}</p>
+          </div>
         </div>
+      </div>
     </div>
-}
+  );
+};
 
 export default MetaverseStory;
