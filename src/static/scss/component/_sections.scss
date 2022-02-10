@@ -111,6 +111,12 @@
     font-size: 12px;
     line-height: 200%;
     border: solid #271528;
+    &:hover {
+      background-color: #00e101;
+      color: #271528;
+      font-weight: bold;
+      border: solid #00e101;
+    }
   }
 
   .button-container {
@@ -119,6 +125,11 @@
     border: 2px solid #fff;
     width: 130px;
     height: 40px;
+    &:hover {
+      background-color: #00e101;
+      border: 2px solid #00e101;
+      color: #00e101;
+    }
   }
 
   #exchange {
@@ -163,6 +174,12 @@
     font-size: 12px;
     line-height: 200%;
     border: solid #271528;
+    &:hover {
+      background-color: #00e101;
+      font-weight: bold;
+      color: #271528;
+      border: solid #00e101;
+    }
   }
 
   .button-container {
@@ -171,6 +188,11 @@
     border: 2px solid #fff;
     width: 130px;
     height: 40px;
+    &:hover {
+      background-color: #00e101;
+      border: 2px solid #00e101;
+      color: #00e101;
+    }
   }
 
   #lounge {

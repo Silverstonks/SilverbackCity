@@ -65,6 +65,12 @@ footer {
     font-size: 12px;
     line-height: 200%;
     border: solid #0f0f11;
+    &:hover {
+      background-color: #00e101;
+      font-weight: bold;
+      color: #271528;
+      border: solid #00e101;
+    }
   }
 
   .button-container {
@@ -72,13 +78,18 @@ footer {
     clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
     border: 2px solid #fff;
     width: 75%;
+    &:hover {
+      background-color: #00e101;
+      border: 2px solid #00e101;
+      color: #00e101;
+    }
   }
 
   a {
     color: #fff;
     text-decoration: none; /* no underline */
     &:hover {
-      color: #fff;
+      color: #00e101;
       text-decoration: none;
     }
   }
