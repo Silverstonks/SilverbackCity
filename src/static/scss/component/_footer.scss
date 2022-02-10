@@ -96,5 +96,8 @@ footer {
 
   ul {
     list-style-type: none;
+    li {
+      white-space: nowrap;
+    }
   }
 }
