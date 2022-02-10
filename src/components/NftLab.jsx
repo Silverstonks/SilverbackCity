@@ -16,7 +16,7 @@ const NftLab = () => {
                 <div className="section-item-img-right col-12 m-auto my-5">
                     <div className="row my-5">
                         <div className="col-5 mt-5">
-                            <div className="title-container">
+                            <div id="nft-lab" className="title-container">
                                 <img id="title-background" src={GreenBoxTitle} alt="" />
                                 <img id="title-icon" src={NftLabIcon} alt="" />
                                 <span id="title-text" className="h5 font-weight-bold">NFT LAB</span>
