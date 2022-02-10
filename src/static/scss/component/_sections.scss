@@ -79,7 +79,7 @@
 
 .section-item-img-right {
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
 
   .title-container {
     position: relative;
@@ -131,7 +131,7 @@
 
 .section-item-img-left {
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
 
   .title-container {
     position: relative;
@@ -181,4 +181,34 @@
       left: 40px;
     }
   }
+}
+
+#bidsarena #title-icon {
+  left: 25px;
+  top: 25px;
+}
+
+#silvershop #title-icon {
+  left: 20px;
+  top: 25px;
+}
+
+#vault #title-icon {
+  left: 22px;
+  top: 25px;
+}¨
+
+#lounge #title-icon {
+  left: 25px;
+  top: 25px;
+}
+
+#exchange #title-icon {
+  left: 27px;
+  top: 23px;
+}
+
+#foundry #title-icon {
+  left: 23px;
+  top: 20px;
 }

@@ -17,6 +17,7 @@ import './HomePage.scss';
 import MetaverseStory from './MetaverseStory/MetaverseStory';
 import MintCard from './MintCard/MintCard';
 import NftLab from './NftLab';
+import LinesDecoration from '../static/images/slider/LinesDecoration.png';
 
 const HomePage = () => {
   localStorage.clear();
@@ -32,22 +33,19 @@ const HomePage = () => {
     <>
       <Header />
 
-      <ToastContainer />
-      <ModalDialogs />
+      {/* <ToastContainer />
+      <ModalDialogs /> */}
 
       <Jumbotron />
 
       <div className="container">
         <Slider />
-      </div>
-      <div className="container">
+        <div className='d-flex justify-content-end mt-5'>
+          <img src={LinesDecoration} alt="" className="img-detail lines mr-5 mt-5" />
+        </div>
         <MetaverseStory />
-      </div>
-      <NftLab />
-      <div className="container">
+        <NftLab />
         <ClansSlider />
-      </div>
-      <div className="container">
         <MintCard />
       </div>
 
@@ -56,7 +54,7 @@ const HomePage = () => {
       <Sections />
 
       <Marketplace />
-      
+
       <Footer />
     </>
   );

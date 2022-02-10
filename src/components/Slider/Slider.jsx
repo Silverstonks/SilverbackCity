@@ -44,9 +44,7 @@ export const Slider = () => {
           ))}
         </div>
       </div>
-      <div className='d-flex justify-content-end'>
-        <img src={LinesDecoration} alt="" className="img-detail lines mr-5" />
-      </div>
+
     </div>
   );
 };
