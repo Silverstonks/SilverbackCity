@@ -31,11 +31,14 @@ $mainTextColor: #0bff56;
   .nav-item {
     &:hover {
       color: #00e101;
+      cursor: pointer;
 
-      & > a {
+      & > a, & > div {
         color: #00e101;
       }
     }
+  }
+  .nav-link {
   }
 
   .nav {
@@ -81,7 +84,7 @@ $mainTextColor: #0bff56;
     font-size: 12px;
     line-height: 0.8;
     // border: solid #0f0f11;
-    background-image: url("../static/images/header/HeaderBackground.png");
+    background-image: url("../static/images/header/HeaderBackground.jpg");
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken;
     background-position: center;

@@ -5,7 +5,7 @@ import LanguageIcon from '../static/images/header/LanguageIcon.png';
 import { FaBars } from 'react-icons/fa';
 import actions from '../store/actions';
 import arrowLight from '../static/images/icon-arrow-right-single-light.png';
-import "./Header.scss"
+import './Header.scss';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -36,10 +36,12 @@ const Header = () => {
     document.getElementById('nav').classList.toggle('active');
   };
 
-  const scrollTo = (ancla) => {
+  const scrollTo = (ancla, offset = 0) => {
     let x = document.querySelector('#' + ancla);
     if (x) {
-      x.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      //x.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      const y = x.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
     }
     return false;
   };
@@ -47,7 +49,7 @@ const Header = () => {
   return (
     <>
       <section className="banner">
-        <div className='gradient'></div>
+        <div className="gradient"></div>
         <div className={x.join('nav-top ')}>
           <div className="container-xl">
             <div className="nav-container">
@@ -65,31 +67,26 @@ const Header = () => {
                   </button>
                 </li>
                 <li className="nav-item nav-item-lang">
-                  <img src={LanguageIcon} alt="lang selector" id='lang-selector' className='lang-selector' />
+                  <img src={LanguageIcon} alt="lang selector" id="lang-selector" className="lang-selector" />
                   &nbsp;
-                  <span className='lang-options'>
-                    <span className="lang-en active" id='lang-en'>
+                  <span className="lang-options">
+                    <span className="lang-en active" id="lang-en">
                       EN
                     </span>
-                    <span className="separator">
-                      &nbsp;
-                      /
-                      &nbsp;
-                    </span>
-                    <span className="lang-es" id='lang-es'>
+                    <span className="separator">&nbsp; / &nbsp;</span>
+                    <span className="lang-es" id="lang-es">
                       ES
                     </span>
                   </span>
                 </li>
                 <li className="nav-item">
-                  <a href="https://www.silverstonks.com/" className="nav-link" onClick={() => scrollTo('city')}>
+                  <div className="nav-link" onClick={() => scrollTo('main-home-slider', 20)}>
                     Silverback City
-                  </a>
+                  </div>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
+                  <div
                     className="nav-link dropdown-toggle"
-                    href="#"
                     id="navbarDropdown"
                     role="button"
                     data-toggle="dropdown"
@@ -97,54 +94,52 @@ const Header = () => {
                     aria-expanded="false"
                   >
                     Citizens / Zones
-                  </a>
+                  </div>
                   <div className="dropdown-menu " aria-labelledby="navbarDropdown">
-                    <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
+                    <div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('bidsarena', 100)}>
                       Bids Arena
-                    </a>
-                    <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
+                    </div>
+                    <div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('vault', 100)}>
                       The Vault
-                    </a>
-                    <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
+                    </div>
+                    <div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('nft-lab', 100)}>
                       NFT Lab
-                    </a>
-                    <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
+                    </div>
+                    <div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('silvershop', 100)}>
                       Silver Shop
-                    </a>
-                    <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
+                    </div>
+                    <div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('exchange', 20)}>
                       Token
-                    </a>
-                    <a className="dropdown-item nav-link p-2 text-capitalize" href="/">
+                    </div>
+                    <div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('lounge', 100)}>
                       Underground Lounge
-                    </a>
+                    </div>
+                    {/*<div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('foundry', 100)}>
+                        Foundry
+                      </div>*/}
                   </div>
                 </li>
-                <li className="nav-item" onClick={() => scrollTo('story')}>
-                  <a href="/" className="nav-link">
-                    Story
-                  </a>
+                <li className="nav-item" onClick={() => scrollTo('metaverse-story', 50)}>
+                  <div className="nav-link">Story</div>
                 </li>
-                <li className="nav-item" id='problematic-button'>
-                  <div className="ml-auto d-flex flex-wrap" style={{
-                    gap: '1rem',
-                  }}>
-
+                <li className="nav-item" id="problematic-button">
+                  <div
+                    className="ml-auto d-flex flex-wrap"
+                    style={{
+                      gap: '1rem',
+                    }}
+                  >
                     <ul className="navbar-nav ml-auto d-flex justify-content-center align-items-center">
                       <li className="nav-item m-0">
                         {isAuthenticated && walletAddress ? (
                           <div className="button-container">
-
                             <button className="btn btn-outline-danger ml-3 " onClick={() => dispatch(actions.authActions.logOutUser())}>
                               Disconect
                             </button>
                           </div>
                         ) : (
                           <div className="button-container">
-                            <button
-                              type="button"
-                              className="btn "
-                              onClick={() => dispatch(actions.blockChainActions.connectToMetaMask)}
-                            >
+                            <button type="button" className="btn " onClick={() => dispatch(actions.blockChainActions.connectToMetaMask)}>
                               Connect Wallet
                             </button>
                           </div>
@@ -153,12 +148,7 @@ const Header = () => {
                     </ul>
                     <div className="nav-item m-0">
                       <div className="button-container">
-
-                        <button
-                          type="button"
-                          className="btn "
-                          onClick={() => dispatch(actions.blockChainActions.connectToMetaMask)}
-                        >
+                        <button type="button" className="btn " onClick={() => dispatch(actions.blockChainActions.connectToMetaMask)}>
                           Mint NFT
                         </button>
                       </div>

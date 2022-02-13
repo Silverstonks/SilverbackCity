@@ -56,7 +56,7 @@ export const MintCard = () => {
                 </div>
 
                 <div className="mint-card-select-container">
-                    <select name="mint-card" id="mint-card" onChange={onChange} className="mint-card-select">
+                    <select name="mint-card" id="mint-card" disabled={true} onChange={onChange} className="mint-card-select">
                         {selectOptions.map(renderOption)}
                     </select>
                 </div>

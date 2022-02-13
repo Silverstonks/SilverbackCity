@@ -26,7 +26,7 @@ const strings = {
 };
 
 export const MetaverseStory = () => {
-  const [slides, setSlides] = useState(initialSlides);
+  const [slides] = useState(initialSlides);
   const [selectedIndex, setSelectedIndex] = useState(initialIndex);
 
   const step = (increment = 0) => {
@@ -67,7 +67,7 @@ export const MetaverseStory = () => {
   const { image, text } = slides[selectedIndex];
 
   return (
-    <div className="metaverse-story-container mt-4">
+    <div id="metaverse-story" className="metaverse-story-container mt-5">
       <div className="metaverse-story-title-container">
         <div className="metaverse-story-title-background">
           <img src={TitleDecoration} alt="" className="metaverse-story-title-background-img" />

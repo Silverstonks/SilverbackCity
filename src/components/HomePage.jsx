@@ -40,7 +40,7 @@ const HomePage = () => {
 
       <div className="container">
         <Slider />
-        <div className='d-flex justify-content-end mt-5'>
+        <div className='d-flex justify-content-end mt-3'>
           <img src={LinesDecoration} alt="" className="img-detail lines mr-5 mt-5" />
         </div>
         <MetaverseStory />
