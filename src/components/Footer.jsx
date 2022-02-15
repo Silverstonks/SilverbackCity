@@ -134,25 +134,25 @@ const Footer = () => {
               <li className="py-1" onClick={() => scrollTo('lounge', 100)}>
                 <p className='d-flex'>
                   <img src={Lounge} alt="" width="20px" className="mr-2" />
-                  <div>UNDERGROUND LOUNGE</div>
+                  <span>UNDERGROUND LOUNGE</span>
                 </p>
               </li>
               <li className="py-1" onClick={() => scrollTo('exchange', 100)}>
                 <p className='d-flex'>
                   <img src={Exchange} alt="" width="20px" className="mr-2" />
-                  <div>SSTX EXCHANGE</div>
+                  <span>SSTX EXCHANGE</span>
                 </p>
               </li>
               <li className="py-1" onClick={() => scrollTo('silvershop', 100)}>
                 <p className='d-flex'>
                   <img src={Ecommerce} alt="" width="20px" className="mr-2" />
-                  <div>SILVER SHOP</div>
+                  <span>SILVER SHOP</span>
                 </p>
               </li>
               <li className="py-1" onClick={() => scrollTo('meta-advertising', 100)}>
                 <p className='d-flex'>
                   <img src={Meta} alt="" width="20px" className="mr-2" />
-                  <div>META ADVERTISING</div>
+                  <span>META ADVERTISING</span>
                 </p>
               </li>
             </ul>
