@@ -3,16 +3,13 @@ import './ClansSlider.scss';
 import DotsDecoration from '../../static/images/slider/DotsDecoration.png';
 import LeftArrow from '../../static/images/gorillas-slider/LeftArrow.png';
 import RightArrow from '../../static/images/gorillas-slider/RightArrow.png';
-import Gorilla1 from '../../static/images/gorillas-slider/gorillas/Gorilla1.png';
-import Gorilla2 from '../../static/images/gorillas-slider/gorillas/Gorilla2.png';
-import Gorilla3 from '../../static/images/gorillas-slider/gorillas/Gorilla3.png';
 import TitleDecoration from '../../static/images/sections/ClansTitleDecoration.png';
+import { gorillasList } from './ClansSlider.constants';
 
-const initialGorillas = [Gorilla3, Gorilla3, Gorilla3];
 const initialIndex = 0;
 
 export const ClansSlider = () => {
-  const [gorillas] = useState(initialGorillas.map((imgSrc, index) => ({ image: imgSrc, order: index })));
+  const [gorillas] = useState(gorillasList.map((imgSrc, index) => ({ image: imgSrc, order: index })));
   const [selectedIndex, setSelectedIndex] = useState(initialIndex);
 
   const step = (nextStep) => {
