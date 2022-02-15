@@ -25,7 +25,7 @@ const NftLab = () => {
               </div>
               <div className="my-4 py-2">
                 <p>
-                  Citizens of Silverback City is a collection of 10,000 Silverback gorillas on the Binance Smart Chain blockchain. Your
+                  Citizens of Silverback City is a collection of 9,999 Silverback gorillas on the Binance Smart Chain blockchain. Your
                   Silverback is also used as a membership avatar that gives you access to exclusive member rewards, including the ability to
                   earn passive income through the digital silver you earn in our Play 2 Earn games, along with purchasing power you can use
                   to buy precious metals and free bids to acquire the products you love in Bids Arena.

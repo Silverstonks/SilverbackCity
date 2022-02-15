@@ -1,82 +1,95 @@
 @font-face {
-  font-family: "D-DIN";
-  src: url("font/D-DIN-Bold.woff2") format("woff2"),
-    url("font/D-DIN-Bold.woff") format("woff");
+  font-family: 'D-DIN';
+  src: url('font/D-DIN-Bold.woff2') format('woff2'), url('font/D-DIN-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "D-DIN Condensed";
-  src: url("font/D-DINCondensed.woff2") format("woff2"),
-    url("font/D-DINCondensed.woff") format("woff");
+  font-family: 'D-DIN Condensed';
+  src: url('font/D-DINCondensed.woff2') format('woff2'), url('font/D-DINCondensed.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "D-DIN Exp";
-  src: url("font/D-DINExp-Bold.woff2") format("woff2"),
-    url("font/D-DINExp-Bold.woff") format("woff");
+  font-family: 'D-DIN Exp';
+  src: url('font/D-DINExp-Bold.woff2') format('woff2'), url('font/D-DINExp-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "D-DIN";
-  src: url("font/D-DIN.woff2") format("woff2"),
-    url("font/D-DIN.woff") format("woff");
+  font-family: 'D-DIN';
+  src: url('font/D-DIN.woff2') format('woff2'), url('font/D-DIN.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "D-DIN Exp";
-  src: url("font/D-DINExp.woff2") format("woff2"),
-    url("font/D-DINExp.woff") format("woff");
+  font-family: 'D-DIN Exp';
+  src: url('font/D-DINExp.woff2') format('woff2'), url('font/D-DINExp.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "D-DIN Condensed";
-  src: url("font/D-DINCondensed-Bold.woff2") format("woff2"),
-    url("font/D-DINCondensed-Bold.woff") format("woff");
+  font-family: 'D-DIN Condensed';
+  src: url('font/D-DINCondensed-Bold.woff2') format('woff2'), url('font/D-DINCondensed-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "D-DIN";
-  src: url("font/D-DIN-Italic.woff2") format("woff2"),
-    url("font/D-DIN-Italic.woff") format("woff");
+  font-family: 'D-DIN';
+  src: url('font/D-DIN-Italic.woff2') format('woff2'), url('font/D-DIN-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "D-DIN Exp";
-  src: url("font/D-DINExp-Italic.woff2") format("woff2"),
-    url("font/D-DINExp-Italic.woff") format("woff");
+  font-family: 'D-DIN Exp';
+  src: url('font/D-DINExp-Italic.woff2') format('woff2'), url('font/D-DINExp-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
-@import "../scss/component/header.scss";
-@import "../scss/component/banner.scss";
-@import "../scss/component/modal.scss";
-@import "../scss/component/buy.scss";
-@import "../scss/component/footer.scss";
-@import "../scss/component/checkbox.scss";
-@import "../scss/component/sections.scss";
+
+@font-face {
+  font-family: 'Chakra Bold';
+  src: url('font/ChakraPetch-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Chakra SemiBold';
+  src: url('font/ChakraPetch-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Chakra Regular';
+  src: url('font/ChakraPetch-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Chakra Medium';
+  src: url('font/ChakraPetch-Medium.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import '../scss/component/header.scss';
+@import '../scss/component/banner.scss';
+@import '../scss/component/modal.scss';
+@import '../scss/component/buy.scss';
+@import '../scss/component/footer.scss';
+@import '../scss/component/checkbox.scss';
+@import '../scss/component/sections.scss';
 .centered {
   position: fixed;
   top: 50%;
@@ -91,19 +104,42 @@ body {
   // backdrop-filter: grayscale(0.7) opacity(0.7);
 }
 
-body, label {
-  font-family: 'D-Din Exp', 'Arial';
-}
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'D-Din Exp', 'Arial';
+body,
+label {
+  font-family: 'Chakra Medium', 'Arial' !important;
 }
 
-button {
-  font-family: 'D-Din Exp', 'Arial' !important;
+.slider-subtitle, .clans-slider-subtitle, .mint-card-price-label {
+  font-family: 'Chakra Regular', 'Arial' !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.slider-title,
+.h6,
+.h5,
+.h4,
+.h3,
+.h2,
+.h1 {
+  font-family: 'Chakra Bold', 'Arial' !important;
+}
+
+button,
+.slider-pre-title,
+.button-container {
+  font-family: 'Chakra SemiBold', 'Arial' !important;
 }
 
 .btn-claim {
   background-color: #163244;
+}
+.footer {
+  font-family: 'D-DIN Exp';
 }
 /*
 body

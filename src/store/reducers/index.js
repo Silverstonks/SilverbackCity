@@ -5,8 +5,8 @@ import authReducer from './authReducer'
 import nftTransactionReducer from './bsscanAPIReducer';
 
 export default combineReducers({
-  nft: nftReducer,
+  /*nft: nftReducer,
+  auth: authReducer,*/
   application: applicationReducer,
-  auth: authReducer,
  // nftTransactions: nftTransactionReducer
 });

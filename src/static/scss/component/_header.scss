@@ -8,9 +8,9 @@ $white: #ffffff;
 $dark: #000000;
 $gold: #f6aa18;
 
-$font-family: 'Poppins', sans-serif;
+$font-family: 'Chakra SemiBold', sans-serif;
 $fonts: (
-  'primary': 'Poppins',
+  'primary': 'Chakra SemiBold',
 );
 
 .scrolled {
@@ -31,7 +31,7 @@ $fonts: (
     .nav-item {
       .nav-link {
         color: $navlink-clr !important;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Chakra SemiBold', sans-serif;
       }
     }
   }
@@ -276,3 +276,9 @@ $fonts: (
 #barmenu {
   fill: #3acb87;
 }
+
+.banner .stick button:hover {
+  background: rgba(0,0,0,.4);
+  color: #00e101;
+}
+

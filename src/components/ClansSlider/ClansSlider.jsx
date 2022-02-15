@@ -50,7 +50,7 @@ export const ClansSlider = () => {
               <img src={TitleDecoration} alt="main clans slider background" className="clans-slider-title-background-img" />
             </div>
 
-            <div className="clans-slider-title">CLANS</div>
+            <div className="clans-slider-title">TROPS</div>
 
             <div className="clans-slider-subtitle">Scanning...</div>
           </div>
@@ -61,10 +61,10 @@ export const ClansSlider = () => {
         <div className="mb-5 col-12 ">
           <img src={DotsDecoration} alt="" className="img-detail dots" />
           <div className="row h-100">
-            <div className="col-lg-3 col-12 d-flex align-items-center clans-slider-gorilla-left">
+            <div className="col-lg-3 col-12 d-none d-lg-flex align-items-center clans-slider-gorilla-left">
               <img src={gorillas[getLeftIndex()].image} alt="Gorilla" className="clans-slider-gorilla-img" onClick={() => decrement()} />
             </div>
-            <div className="col-6 d-flex align-items-center justify-content-center">
+            <div className="col-12 col-lg-6 d-flex align-items-center justify-content-center">
               <span className="btn clans-slider-arrow-left position-absolute d-lg-flex d-none" onClick={() => decrement()}>
                 <img src={LeftArrow} alt="left arrow" />
               </span>
@@ -73,7 +73,7 @@ export const ClansSlider = () => {
                 <img src={RightArrow} alt="right arrow" />
               </span>
             </div>
-            <div className="col-lg-3 col-12 d-flex align-items-center clans-slider-gorilla-right">
+            <div className="col-lg-3 col-12 d-none d-lg-flex align-items-center clans-slider-gorilla-right">
               <img src={gorillas[getRightIndex()].image} alt="Gorilla" className="clans-slider-gorilla-img" onClick={() => increment()} />
             </div>
           </div>

@@ -71,7 +71,7 @@ const Sections = () => {
         title="FOUNDRY"
         buttonText={'COMING SOON'}
         img={FoundryImg}
-        text="Each Silverback holder will have access to the Underground Lounge, an exclusive chatroom to talk about the latest news from everything in crypto to the precious metals market. "
+        text="Visit the Foundry to melt the digital silver and gold you earn in our Play 2 Earn games with your NFT avatar. Once you collect enough precious metals, you can shape your silver or gold into bars and coins. When you create your digital bars and coins, you receive a certificate of authenticity for your precious metals in a form of an NFT. Store them in our vault to earn interest on your digital precious metals. Earn interest in SSTX tokens and use them to buy physical precious metals and other hard assets in our Silver Shop, or accumulate tokens and stake them directly to get paid in SSTX and begin earning passive income."
       />
     </div>
   );
@@ -80,9 +80,9 @@ const Sections = () => {
 const SectionItemImgRight = ({ id = '', icon, title, text, buttonText, img, btnHref = null }) => {
   return (
     <div className="row">
-      <div className="section-item-img-right col-12 m-auto ">
-        <div className="row flex-column-reverse flex-md-row ">
-          <div className="col-md-6 d-flex col-12 flex-column justify-content-between pr-5 my-5">
+      <div className="section-item-img-right col-12 m-lg-auto mb-5">
+        <div className="row flex-column-reverse flex-lg-row ">
+          <div className="col-lg-6 d-flex col-12 flex-column justify-content-between pr-5 my-5">
             <div className="title-container mb-3" id={id}>
               <img className="" id="title-background" src={GreenBoxTitle} alt="" />
               <img className="" id="title-icon" src={icon} alt="" />
@@ -100,7 +100,7 @@ const SectionItemImgRight = ({ id = '', icon, title, text, buttonText, img, btnH
             </div>
           </div>
 
-          <div className="col-md-6 col-12 my-5 d-flex align-item-center ">
+          <div className="col-lg-6 col-12 my-5 d-flex align-item-center ">
             <img className="" src={img} alt="" height="300px" />
           </div>
         </div>
@@ -112,13 +112,13 @@ const SectionItemImgRight = ({ id = '', icon, title, text, buttonText, img, btnH
 const SectionItemImgLeft = ({ id = '', icon, title, text, buttonText, img, btnHref = null }) => {
   return (
     <div className="row ">
-      <div className="section-item-img-left col-12 m-auto ">
-        <div className="row flex-column-reverse flex-md-row">
-          <div className="col-md-6 col-12 my-5">
+      <div className="section-item-img-left col-12 m-lg-auto mb-5 ">
+        <div className="row flex-column-reverse flex-lg-row">
+          <div className="col-lg-6 col-12 my-5">
             <img className="" src={img} alt="" height="300px" style={{ maxWidth: '555px' }} />
           </div>
 
-          <div className="col-md-6 col-12 d-flex flex-column justify-content-between pl-5 my-5">
+          <div className="col-lg-6 col-12 d-flex flex-column justify-content-between pl-5 my-5">
             <div className="title-container ml-auto mb-3" id={id}>
               <img className="" id="title-background" src={GreenBoxTitle} alt="" />
               <img className="" id="title-icon" src={icon} alt="" />

@@ -1,22 +1,10 @@
 import React, { useState } from 'react';
-import HistorySliderImg from '../../static/images/sections/HistorySliderImg.png';
 import LeftArrow from '../../static/images/gorillas-slider/LeftArrow.png';
 import RightArrow from '../../static/images/gorillas-slider/RightArrow.png';
 import TitleDecoration from '../../static/images/sections/HistoryTitleDecoration.png';
+import { storyConfig } from './MetaverseStory.constant';
 import './MetaverseStory.scss';
 
-const initialSlides = [
-  {
-    image: HistorySliderImg,
-    text: `
-        TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story TEXT example to describe the story 
-        `,
-  },
-  {
-    image: HistorySliderImg,
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
-  },
-];
 
 const initialIndex = 0;
 
@@ -26,25 +14,24 @@ const strings = {
 };
 
 export const MetaverseStory = () => {
-  const [slides] = useState(initialSlides);
+  const [slides] = useState(storyConfig);
   const [selectedIndex, setSelectedIndex] = useState(initialIndex);
 
-  const step = (increment = 0) => {
-    let targetIndex = selectedIndex + increment;
+  const step = (nextStepIndex) => {
 
     // Seguridad de que no se pase, ni de más ni de menos
-    if (targetIndex >= slides.length) targetIndex = 0;
-    else if (targetIndex < 0) targetIndex = slides.length - 1;
+    if (nextStepIndex >= slides.length) nextStepIndex = 0;
+    else if (nextStepIndex < 0) nextStepIndex = slides.length - 1;
 
-    setSelectedIndex(targetIndex);
+    setSelectedIndex(nextStepIndex);
   };
 
   const increment = () => {
-    step(1);
+    step(selectedIndex + 1);
   };
 
   const decrement = () => {
-    step(-1);
+    step(selectedIndex - 1);
   };
 
   const renderPageIndex = (index) => {
@@ -83,13 +70,13 @@ export const MetaverseStory = () => {
 
         <div className="metaverse-story-details">
           <div className="metaverse-story-controls my-2">
-            <button className="arrow-left btn p-0" onClick={() => increment()}>
+            <button className="arrow-left btn p-0" onClick={() => decrement()}>
               <img src={LeftArrow} alt="arrow left" className="arrow-left" />
             </button>
 
             {Object.keys(slides).map(renderPageIndex)}
 
-            <button className="arrow-right btn p-0" onClick={() => decrement()}>
+            <button className="arrow-right btn p-0" onClick={() => increment()}>
               <img src={RightArrow} alt="arrow right" className="arrow-right" />
             </button>
           </div>

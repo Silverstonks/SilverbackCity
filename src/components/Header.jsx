@@ -9,8 +9,8 @@ import './Header.scss';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
-  const { walletAddress, isAuthenticated } = useSelector((state) => state?.auth);
-  const { nft } = useSelector((state) => state?.nft);
+  // const { walletAddress, isAuthenticated } = useSelector((state) => state?.auth);
+  // const { nft } = useSelector((state) => state?.nft);
   const dispatch = useDispatch();
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -55,7 +55,7 @@ const Header = () => {
             <div className="nav-container">
               <div className="nav-brand">
                 <div className="navbar-brand">
-                  <a href="http://silverstonks.io">
+                  <a href="/">
                     <img src={Logo} className="img-fluid" alt="Logo" />
                   </a>
                 </div>
@@ -131,24 +131,24 @@ const Header = () => {
                   >
                     <ul className="navbar-nav ml-auto d-flex justify-content-center align-items-center">
                       <li className="nav-item m-0">
-                        {isAuthenticated && walletAddress ? (
+                        {/*isAuthenticated && walletAddress ? (
                           <div className="button-container">
                             <button className="btn btn-outline-danger ml-3 " onClick={() => dispatch(actions.authActions.logOutUser())}>
                               Disconect
                             </button>
                           </div>
-                        ) : (
+                        ) : (*/
                           <div className="button-container">
-                            <button type="button" className="btn " onClick={() => dispatch(actions.blockChainActions.connectToMetaMask)}>
+                            <button type="button" className="btn " onClick={() => /*dispatch(actions.blockChainActions.connectToMetaMask)*/ null}>
                               Connect Wallet
                             </button>
                           </div>
-                        )}
+                        /*)*/}
                       </li>
                     </ul>
                     <div className="nav-item m-0">
                       <div className="button-container">
-                        <button type="button" className="btn " onClick={() => dispatch(actions.blockChainActions.connectToMetaMask)}>
+                        <button type="button" className="btn " onClick={() => /*dispatch(actions.blockChainActions.connectToMetaMask)*/ null}>
                           Mint NFT
                         </button>
                       </div>

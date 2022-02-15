@@ -14,7 +14,7 @@ import Vault from '../static/images/slider/IconVault.png';
 
 const Footer = () => {
   const dispatch = useDispatch();
-  const [loadingNewsletter, setloadingNewsletter] = useState(false);
+  /*const [loadingNewsletter, setloadingNewsletter] = useState(false);
   const { emailNewsletter, errorEmailNewsletter } = useSelector((state) => state.application);
 
   useEffect(() => {
@@ -42,38 +42,119 @@ const Footer = () => {
     } else {
       email.value = '';
     }
+  };*/
+
+  const [scrolled, setScrolled] = useState(false);
+  // const { walletAddress, isAuthenticated } = useSelector((state) => state?.auth);
+  // const { nft } = useSelector((state) => state?.nft);
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 100) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  let x = ['nav-top'];
+  if (scrolled) {
+    x.push('scrolled stick');
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, []);
+
+  const toggleSideMenu = () => {
+    console.log('menu active');
+    document.getElementById('nav').classList.toggle('active');
+  };
+
+  const scrollTo = (ancla, offset = 0) => {
+    let x = document.querySelector('#' + ancla);
+    if (x) {
+      //x.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      const y = x.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+    return false;
   };
 
   return (
     <footer>
       <div className="container-fluid d-flex row footer-container">
-        <div className='d-flex flex-column align-items-center my-md-5'>
-          <img className='mt-5 mb-2' src={Logo} alt="" />
-          <div className='button-container my-3'>
-            <button className=''>Connect Wallet</button>
+        <div className="d-flex flex-column align-items-center my-md-5">
+          <img className="mt-5 mb-2" src={Logo} alt="" />
+          <div className="button-container my-3">
+            <button className="">Connect Wallet</button>
           </div>
-          <div className='button-container'>
-            <button className=''>Mint</button>
+          <div className="button-container">
+            <button className="">Mint</button>
           </div>
-
         </div>
-        <div className='row mt-5 pt-md-5'>
+        <div className="row mt-5 pt-md-5">
           <div className="col-6 col-md">
             <ul>
-              <li className='py-1'><a href=""><p> <img src={Bidsarena} alt="" width="20px" className='mr-2' /> BIDSARENA</p></a></li>
-              <li className='py-1'><a href=""><p> <img src={NftLab} alt="" width="25px" className='mr-2'/>NFT LAB</p></a>
+              <li className="py-1">
+                <div onClick={() => scrollTo('bidsarena', 100)}>
+                  <p className='d-flex'>
+                    <img src={Bidsarena} alt="" width="20px" className="mr-2" /> BIDSARENA
+                  </p>
+                </div>
               </li>
-              <li className='py-1'> <a href=""><p> <img src={Vault} alt="" width="20px" className='mr-2'/>THE VAULT</p></a></li>
-              <li className='py-1'> <a href=""><p> <img src={Foundry} alt="" width="20px" className='mr-2'/>FOUNDRY</p></a>
+              <li className="py-1">
+                <div onClick={() => scrollTo('nft-lab', 100)}>
+                  <p className='d-flex'>
+                    <img src={NftLab} alt="" width="25px" className="mr-2" />
+                    NFT LAB
+                  </p>
+                </div>
+              </li>
+              <li className="py-1">
+                <div onClick={() => scrollTo('vault', 100)}>
+                  <p className='d-flex'>
+                    <img src={Vault} alt="" width="20px" className="mr-2" />
+                    THE VAULT
+                  </p>
+                </div>
+              </li>
+              <li className="py-1">
+                <div onClick={() => scrollTo('foundry', 100)}>
+                  <p className='d-flex'>
+                    <img src={Foundry} alt="" width="20px" className="mr-2" />
+                    FOUNDRY
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
           <div className="col-6 col-md">
             <ul>
-              <li className='py-1'><p> <img src={Lounge} alt="" width="20px" className='mr-2' /><a href="">UNDERGROUND LOUNGE</a></p></li>
-              <li className='py-1'><p> <img src={Exchange} alt="" width="20px" className='mr-2' /><a href="">SSTX EXCHANGE</a></p></li>
-              <li className='py-1'><p> <img src={Ecommerce} alt="" width="20px" className='mr-2' /><a href="">SILVER SHOP</a></p></li>
-              <li className='py-1'><p> <img src={Meta} alt="" width="20px" className='mr-2' /><a href="">META ADVERTISING</a></p></li>
+              <li className="py-1" onClick={() => scrollTo('lounge', 100)}>
+                <p className='d-flex'>
+                  <img src={Lounge} alt="" width="20px" className="mr-2" />
+                  <div>UNDERGROUND LOUNGE</div>
+                </p>
+              </li>
+              <li className="py-1" onClick={() => scrollTo('exchange', 100)}>
+                <p className='d-flex'>
+                  <img src={Exchange} alt="" width="20px" className="mr-2" />
+                  <div>SSTX EXCHANGE</div>
+                </p>
+              </li>
+              <li className="py-1" onClick={() => scrollTo('silvershop', 100)}>
+                <p className='d-flex'>
+                  <img src={Ecommerce} alt="" width="20px" className="mr-2" />
+                  <div>SILVER SHOP</div>
+                </p>
+              </li>
+              <li className="py-1" onClick={() => scrollTo('meta-advertising', 100)}>
+                <p className='d-flex'>
+                  <img src={Meta} alt="" width="20px" className="mr-2" />
+                  <div>META ADVERTISING</div>
+                </p>
+              </li>
             </ul>
           </div>
         </div>

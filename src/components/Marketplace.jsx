@@ -31,8 +31,8 @@ const Marketplace = () => {
                     </div>
                 </div>
                 <div className="col-md-1"></div>
-                <div className="meta col-md-5 my-3 my-md-5">
-                    <div className="meta-title">
+                <div className="meta col-md-5 my-3 my-md-5" id="meta-advertising">
+                    <div className="meta-title" >
                         <span className="h3 title-text">META ADVERTISING </span>
                         <p className="my-md-auto py-5"> Get yoor Advertising</p>
                     </div>

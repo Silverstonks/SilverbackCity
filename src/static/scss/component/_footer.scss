@@ -14,9 +14,9 @@ $colors: (
   "mint-2": #03f27a,
 );
 
-$font-family: "Poppins", sans-serif;
+$font-family: "D-DIN Exp", sans-serif;
 $fonts: (
-  "primary": "Poppins",
+  "primary": "D-DIN Exp",
 );
 
 $navabr-bg: #202428;
@@ -27,7 +27,7 @@ $dark: #000000;
 $gold: #f6aa18;
 
 $DN-Exp: "D-DIN Exp";
-$popins: "Poppins", sans-serif;
+$popins: "D-DIN Exp", sans-serif;
 
 // COLORS
 $primary: #45ef8e;
@@ -85,7 +85,7 @@ footer {
     }
   }
 
-  a {
+  div {
     color: #fff;
     text-decoration: none; /* no underline */
     &:hover {

@@ -16,7 +16,7 @@ const ModalDialogs = () => {
       <Modal
         show={modalShow}
         onHide={() =>
-          dispatch(actions.applicationActions.updateModalState(false))
+         /* dispatch(actions.applicationActions.updateModalState(false))*/ null
         }
         backdrop="static"
         keyboard={false}

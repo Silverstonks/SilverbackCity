@@ -2,7 +2,7 @@ import React from "react";
 import "./MintCard.scss"
 
 const strings = {
-    title: `CITIZEN OF SILVERBACK CITY`,
+    title: `TROOPS OF SILVERBACK CITY`,
     btn: 'MINT NFT',
     priceLabel: 'Presale Price:',
 

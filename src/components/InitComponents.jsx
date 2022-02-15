@@ -4,7 +4,7 @@ import actions from "../store/actions";
 
 const InitComponents = () => {
   const dispatch = useDispatch();
-  dispatch(actions.blockChainActions.getUserDetails())
+  /*dispatch(actions.blockChainActions.getUserDetails())*/
   return (
     <></>
   )

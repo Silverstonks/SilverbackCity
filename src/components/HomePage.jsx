@@ -22,11 +22,9 @@ import LinesDecoration from '../static/images/slider/LinesDecoration.png';
 const HomePage = () => {
   localStorage.clear();
   const dispatch = useDispatch();
-  const { isAuthenticated } = useSelector((state) => state.auth);
 
   useEffect(() => {
     /*dispatch(actions.applicationActions.setModal());*/
-    dispatch(actions.applicationActions.updateModalState(false));
   }, [dispatch]);
 
   return (
