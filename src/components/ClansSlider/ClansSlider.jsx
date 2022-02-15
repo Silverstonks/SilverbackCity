@@ -9,24 +9,14 @@ import { gorillasList } from './ClanSlider.constants';
 export const ClansSlider = () => {
   const [gorillas] = useState(gorillasList.map((imgSrc, index) => ({ image: imgSrc, order: index })));
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [imageLeft, setImageLeft] = useState(gorillas[selectedIndex - 1 >= 0 ? selectedIndex - 1 : gorillas.length - 1].image);
-  const [imageRight, setImageRight] = useState(gorillas[selectedIndex + 1 <= gorillas.length - 1 ? selectedIndex + 1 : 0].image);
-  const [imagePrincipal, setImagePrincipal] = useState(gorillas[selectedIndex].image);
-
-  useEffect(() => {
-    setImageLeft(gorillas[getLeftIndex()].image);
-    setImagePrincipal(gorillas[selectedIndex].image);
-    setImageRight(gorillas[getRightIndex()].image);
-  }, [selectedIndex]);
 
   const step = (nextStep) => {
     if (nextStep > gorillas.length - 1) {
-      setSelectedIndex(0);
+      nextStep = 0;
     } else if (nextStep < 0) {
-      setSelectedIndex(gorillas.length - 1);
-    } else {
-      setSelectedIndex(nextStep);
+      nextStep = gorillas.length - 1;
     }
+    setSelectedIndex(nextStep);
   };
 
   const increment = () => {
@@ -37,13 +27,9 @@ export const ClansSlider = () => {
     step(selectedIndex - 1);
   };
 
-  const getLeftIndex = () => {
-    return selectedIndex - 1 >= 0 ? selectedIndex - 1 : gorillas.length - 1;
-  };
-
-  const getRightIndex = () => {
-    return selectedIndex + 1 <= gorillas.length - 1 ? selectedIndex + 1 : 0;
-  };
+  const { image } = gorillas[selectedIndex];
+  const leftGorilla = gorillas[selectedIndex - 1 >= 0 ? selectedIndex - 1 : gorillas.length - 1];
+  const rightGorilla = gorillas[selectedIndex + 1 <= gorillas.length - 1 ? selectedIndex + 1 : 0];
 
   return (
     <div className="clans-slider">
@@ -66,19 +52,19 @@ export const ClansSlider = () => {
           <img src={DotsDecoration} alt="" className="img-detail dots" />
           <div className="row h-100">
             <div className="col-lg-3 col-12 d-none d-lg-flex align-items-center clans-slider-gorilla-left justify-content-center">
-              <img src={imageLeft} alt="Gorilla" className="clans-slider-gorilla-img" onClick={() => decrement()} />
+              <img src={leftGorilla.image} alt="Gorilla" className="clans-slider-gorilla-img" onClick={() => decrement()} />
             </div>
             <div className="col-12 col-lg-6 d-flex align-items-center justify-content-center">
               <span className="btn clans-slider-arrow-left position-absolute d-lg-flex d-none" onClick={() => decrement()}>
                 <img src={LeftArrow} alt="left arrow" />
               </span>
-              <img src={imagePrincipal} alt="Gorilla" className="clans-slider-gorilla-img " />
+              <img src={image} alt="Gorilla" className="clans-slider-gorilla-img " />
               <span className="btn clans-slider-arrow-right d-lg-flex d-none position-absolute" onClick={() => increment()}>
                 <img src={RightArrow} alt="right arrow" />
               </span>
             </div>
             <div className="col-lg-3 col-12 d-none d-lg-flex align-items-center clans-slider-gorilla-right justify-content-center">
-              <img src={imageRight} alt="Gorilla" className="clans-slider-gorilla-img" onClick={() => increment()} />
+              <img src={rightGorilla.image} alt="Gorilla" className="clans-slider-gorilla-img" onClick={() => increment()} />
             </div>
           </div>
         </div>
