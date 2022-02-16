@@ -62,7 +62,7 @@ export const ThirdSliderPage = () => {
     const renderPointOfAccess = pointOfAccess => {
         const { icon, text, color } = pointOfAccess;
 
-        return <a href="/" className="access-point col-12 col-sm-4" key={`access-point-${text}`}>
+        return <a href="/" className="access-point col-lg-4 col-md-6 col-12" key={`access-point-${text}`}>
             <div className={`access-point-img-container ${color}`}>
                 {icon}
             </div>

@@ -70,14 +70,7 @@ export const Slider = () => {
           <div className="slider-subtitle">{HomeTitles.subtitle}</div>
         </div>
 
-        <div className="slider-content mt-5">
-          <img src={DotsDecoration} alt="" className="img-detail dots" />
-
-          {navPills.find((navPill, index) => index + 1 === selectedIndex).content}
-        </div>
-
         <div
-          className="slider-nav-pills-container row"
           onTouchStart={(touchStartEvent) => handleTouchStart(touchStartEvent)}
           onTouchMove={(touchMoveEvent) => handleTouchMove(touchMoveEvent)}
           onTouchEnd={() => handleMouseUp()}
@@ -86,13 +79,21 @@ export const Slider = () => {
           onMouseUp={() => handleMouseUp()}
           onMouseLeave={() => handleMouseLeave()}
         >
-          {navPills.map((navPill, index) => (
-            <SliderItem
-              key={`slider-principal-title-${index}`}
-              navPill={{ ...navPill, index: index + 1, active: index + 1 === selectedIndex }}
-              callBackSetIndex={setSelectedIndex}
-            />
-          ))}
+          <div className="slider-content mt-5">
+            <img src={DotsDecoration} alt="" className="img-detail dots" />
+
+            {navPills.find((navPill, index) => index + 1 === selectedIndex).content}
+          </div>
+
+          <div className="slider-nav-pills-container row">
+            {navPills.map((navPill, index) => (
+              <SliderItem
+                key={`slider-principal-title-${index}`}
+                navPill={{ ...navPill, index: index + 1, active: index + 1 === selectedIndex }}
+                callBackSetIndex={setSelectedIndex}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
