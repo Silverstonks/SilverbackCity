@@ -5,7 +5,6 @@ import TitleDecoration from '../../static/images/sections/HistoryTitleDecoration
 import { storyConfig } from './MetaverseStory.constant';
 import './MetaverseStory.scss';
 
-
 const initialIndex = 0;
 
 const strings = {
@@ -16,9 +15,10 @@ const strings = {
 export const MetaverseStory = () => {
   const [slides] = useState(storyConfig);
   const [selectedIndex, setSelectedIndex] = useState(initialIndex);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
 
   const step = (nextStepIndex) => {
-
     // Seguridad de que no se pase, ni de más ni de menos
     if (nextStepIndex >= slides.length) nextStepIndex = 0;
     else if (nextStepIndex < 0) nextStepIndex = slides.length - 1;
@@ -32,6 +32,39 @@ export const MetaverseStory = () => {
 
   const decrement = () => {
     step(selectedIndex - 1);
+  };
+
+
+  const handleTouchStart = (touchStartEvent) => {
+    setTouchStart(touchStartEvent.targetTouches[0].screenX);
+  };
+  const handleTouchMove = (touchMoveEvent) => {
+    if (touchStart > 0) {
+      setTouchEnd(touchMoveEvent.targetTouches[0].screenX);
+    }
+  };
+
+  const handleMouseDown = (mouseDownEvent) => {
+    setTouchStart(mouseDownEvent.screenX);
+  };
+  const handleMouseMove = (mouseMoveEvent) => {
+    if (touchStart > 0) {
+      setTouchEnd(mouseMoveEvent.screenX)
+    }
+  };
+  const handleMouseUp = () => {
+    if (touchStart - touchEnd > 150) {
+      decrement();
+    } else if (touchEnd - touchStart > 150) {
+      increment();
+    }
+    setTouchStart(0);
+    setTouchEnd(0);
+  };
+
+  const handleMouseLeave = () => {
+    setTouchStart(0);
+    setTouchEnd(0);
   };
 
   const renderPageIndex = (index) => {
@@ -63,7 +96,16 @@ export const MetaverseStory = () => {
         <span className="metaverse-story-subtitle">{strings.subtitle}</span>
       </div>
 
-      <div className="metaverse-story">
+      <div
+        className="metaverse-story"
+        onTouchStart={(touchStartEvent) => handleTouchStart(touchStartEvent)}
+        onTouchMove={(touchMoveEvent) => handleTouchMove(touchMoveEvent)}
+        onTouchEnd={() => handleMouseUp()}
+        onMouseDown={(mouseDownEvent) => handleMouseDown(mouseDownEvent)}
+        onMouseMove={(mouseMoveEvent) => handleMouseMove(mouseMoveEvent)}
+        onMouseUp={() => handleMouseUp()}
+        onMouseLeave={() => handleMouseLeave()}
+      >
         <div className="metaverse-story-img-container">
           <img className="metaverse-story-img" src={image} alt="story background img" />
         </div>
