@@ -18,6 +18,8 @@ import MetaverseStory from './MetaverseStory/MetaverseStory';
 import MintCard from './MintCard/MintCard';
 import NftLab from './NftLab';
 import LinesDecoration from '../static/images/slider/LinesDecoration.png';
+import Roadmap from './static/Roadmap';
+import Team from './static/Team';
 
 const HomePage = () => {
   localStorage.clear();
@@ -53,7 +55,12 @@ const HomePage = () => {
 
       <Marketplace />
 
+      <Roadmap />
+
+      <Team />
+
       <Footer />
+
     </>
   );
 };
