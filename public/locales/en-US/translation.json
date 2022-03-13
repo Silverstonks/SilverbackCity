@@ -55,5 +55,19 @@
   "marketplace": {},
   "roadmap": {},
   "team": {},
-  "footer": {}
+  "footer": {
+    "link": {
+      "arena": "BIDSARENA",
+      "nftlab": "NFT LAB",
+      "vault": "THE VAULT",
+      "foundry": "FOUNDRY",
+      "lounge": "UNDERGROUND LOUNGE",
+      "exchange": "SSTX EXCHANGE",
+      "ecommerce": "SILVER SHOP",
+      "avertising": "META ADVERTISING"
+    },
+    "copyright": "© 2022 Silver Stonks. All Rights Reserved.",
+    "privacy_policy": "Privacy Policy",
+    "terms_and_conditions": "Terms & Conditions"
+  }
 }

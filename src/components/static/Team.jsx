@@ -6,8 +6,11 @@ import David from '../../static/images/team/david.jpg';
 import Pablo from '../../static/images/team/pablo.jpg';
 import Christopher from '../../static/images/team/christopher.jpg';
 import Ignacio from '../../static/images/team/ignacio.jpg';
+import { useTranslation } from 'react-i18next';
 
 const Team = () => {
+  const { t, i18n } = useTranslation ('translation', { keyPrefix: 'team' });
+
   return (
     <>
       <section className="container-fluid py-5 bg-white">

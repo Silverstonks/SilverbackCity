@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import LeftArrow from '../../static/images/gorillas-slider/LeftArrow.png';
 import RightArrow from '../../static/images/gorillas-slider/RightArrow.png';
 import TitleDecoration from '../../static/images/sections/HistoryTitleDecoration.png';
@@ -17,6 +18,7 @@ export const MetaverseStory = () => {
   const [selectedIndex, setSelectedIndex] = useState(initialIndex);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
+  const { t, i18n } = useTranslation('translation', { keyPrefix: 'metaverse_story' });
 
   const step = (nextStepIndex) => {
     // Seguridad de que no se pase, ni de más ni de menos

@@ -6,6 +6,7 @@ import RightArrow from '../../static/images/gorillas-slider/RightArrow.png';
 import TitleDecoration from '../../static/images/sections/ClansTitleDecoration.png';
 import { gorillasList } from './ClanSlider.constants';
 import ClansSliderImage from './ClanSliderImage';
+import { useTranslation } from 'react-i18next';
 
 export const ClansSlider = () => {
   const [gorillas] = useState(gorillasList.map((imgSrc, index) => ({ image: imgSrc, order: index })));
@@ -15,6 +16,7 @@ export const ClansSlider = () => {
   const rightGorilla = gorillas[selectedIndex + 1 <= gorillas.length - 1 ? selectedIndex + 1 : 0];
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
+  const { t, i18n } = useTranslation('translation', { keyPrefix: 'clans_slider' });
 
   const step = (nextStep) => {
     if (nextStep > gorillas.length - 1) {

@@ -13,6 +13,7 @@ import LoungeIcon from '../static/images/slider/IconLounge.png';
 import FoundryImg from '../static/images/sections/FoundrySection.png';
 import FoundryIcon from '../static/images/slider/IconFoundry.png';
 import DotsDecoration from '../static/images/slider/DotsDecoration.png';
+import { useTranslation } from 'react-i18next';
 
 const Sections = () => {
   return (
@@ -78,6 +79,7 @@ const Sections = () => {
 };
 
 const SectionItemImgRight = ({ id = '', icon, title, text, buttonText, img, btnHref = null }) => {
+  const { t, i18n } = useTranslation('translation', { keyPrefix: 'sections' });
   return (
     <div className="row">
       <div className="section-item-img-right col-12 m-lg-auto mb-5">
@@ -110,6 +112,7 @@ const SectionItemImgRight = ({ id = '', icon, title, text, buttonText, img, btnH
 };
 
 const SectionItemImgLeft = ({ id = '', icon, title, text, buttonText, img, btnHref = null }) => {
+  const { t, i18n } = useTranslation('translation', { keyPrefix: 'sections' });
   return (
     <div className="row ">
       <div className="section-item-img-left col-12 m-lg-auto mb-5 ">

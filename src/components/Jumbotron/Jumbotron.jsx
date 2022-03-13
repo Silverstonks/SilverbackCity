@@ -4,8 +4,10 @@ import Logo from '../../static/images/header/Logo.svg';
 
 import ButtonDecorationCorners from '../../static/images/header/ButtonDecorationCorners.png';
 import ButtonDecorationBar from '../../static/images/header/ButtonDecorationBar.png';
+import { useTranslation } from 'react-i18next';
 
 export const Jumbotron = () => {
+  const { t, i18n } = useTranslation('translation', { keyPrefix: 'jumbotron' });
   return (
     <div className="jumbotron-container d-flex flex-column justify-content-center ">
       <img src={Logo} alt="" className="w-25 mx-auto my-5" />

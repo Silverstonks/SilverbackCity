@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./MintCard.scss"
 
 const strings = {
@@ -16,6 +17,8 @@ const selectOptions = [
 ]
 
 export const MintCard = () => {
+    const { t, i18n } = useTranslation('translation', { keyPrefix: 'mint_card' });
+    
     const renderOption = ({ label, value }) => <option key={`mint-card-option-${value}`} value={value}>
         {label}
     </option>;

@@ -1,8 +1,10 @@
 import React from "react"
+import { useTranslation } from "react-i18next";
 import LandlordImg from "../static/images/sections/Landlord.png"
 import MetaImg from "../static/images/sections/Meta.png"
 
 const Marketplace = () => {
+    const { t, i18n } = useTranslation('translation', { keyPrefix: 'marketplace' });
     return (
         <div className="container">
             <div className="row">

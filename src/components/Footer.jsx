@@ -11,9 +11,12 @@ import Lounge from '../static/images/slider/IconLounge.png';
 import Meta from '../static/images/slider/IconMeta.png';
 import NftLab from '../static/images/slider/IconNftLab.png';
 import Vault from '../static/images/slider/IconVault.png';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
   const dispatch = useDispatch();
+  const { t, i18n } = useTranslation('translation', { keyPrefix: 'footer' });
+
   /*const [loadingNewsletter, setloadingNewsletter] = useState(false);
   const { emailNewsletter, errorEmailNewsletter } = useSelector((state) => state.application);
 
@@ -86,10 +89,10 @@ const Footer = () => {
       <div className="container-fluid d-flex row footer-container">
         <div className="d-flex flex-column align-items-center my-md-5">
           <img className="mt-5 mb-2" src={Logo} alt="" />
-          <div className="button-container my-3">
+          <div className="button-container my-3 d-none">
             <button className="">Connect Wallet</button>
           </div>
-          <div className="button-container">
+          <div className="button-container d-none">
             <button className="">Mint</button>
           </div>
         </div>
@@ -99,7 +102,7 @@ const Footer = () => {
               <li className="py-1">
                 <div onClick={() => scrollTo('bidsarena', 100)}>
                   <p className='d-flex'>
-                    <img src={Bidsarena} alt="" width="20px" className="mr-2" /> BIDSARENA
+                    <img src={Bidsarena} alt="" width="20px" className="mr-2" /> {t('links.arena')}
                   </p>
                 </div>
               </li>
@@ -107,7 +110,7 @@ const Footer = () => {
                 <div onClick={() => scrollTo('nft-lab', 100)}>
                   <p className='d-flex'>
                     <img src={NftLab} alt="" width="25px" className="mr-2" />
-                    NFT LAB
+                    {t('links.nftlab')}
                   </p>
                 </div>
               </li>
@@ -115,7 +118,7 @@ const Footer = () => {
                 <div onClick={() => scrollTo('vault', 100)}>
                   <p className='d-flex'>
                     <img src={Vault} alt="" width="20px" className="mr-2" />
-                    THE VAULT
+                    {t('links.vault')}
                   </p>
                 </div>
               </li>
@@ -123,7 +126,7 @@ const Footer = () => {
                 <div onClick={() => scrollTo('foundry', 100)}>
                   <p className='d-flex'>
                     <img src={Foundry} alt="" width="20px" className="mr-2" />
-                    FOUNDRY
+                    {t('links.foundry')}
                   </p>
                 </div>
               </li>
@@ -134,25 +137,25 @@ const Footer = () => {
               <li className="py-1" onClick={() => scrollTo('lounge', 100)}>
                 <p className='d-flex'>
                   <img src={Lounge} alt="" width="20px" className="mr-2" />
-                  <span>UNDERGROUND LOUNGE</span>
+                  <span>{t('links.lounge')}</span>
                 </p>
               </li>
               <li className="py-1" onClick={() => scrollTo('exchange', 100)}>
                 <p className='d-flex'>
                   <img src={Exchange} alt="" width="20px" className="mr-2" />
-                  <span>SSTX EXCHANGE</span>
+                  <span>{t('links.exchange')}</span>
                 </p>
               </li>
               <li className="py-1" onClick={() => scrollTo('silvershop', 100)}>
                 <p className='d-flex'>
                   <img src={Ecommerce} alt="" width="20px" className="mr-2" />
-                  <span>SILVER SHOP</span>
+                  <span>{t('links.ecommerce')}</span>
                 </p>
               </li>
               <li className="py-1" onClick={() => scrollTo('meta-advertising', 100)}>
                 <p className='d-flex'>
                   <img src={Meta} alt="" width="20px" className="mr-2" />
-                  <span>META ADVERTISING</span>
+                  <span>{t('links.avertising')}</span>
                 </p>
               </li>
             </ul>
@@ -163,14 +166,14 @@ const Footer = () => {
       <div className="container-fluid">
         <div className="container-xl py-4">
           <div className="row justify-content-between">
-            <div className="col-md-4 txt-color-white text-center text-md-left">© 2022 Silver Stonks. All Rights Reserved.</div>
+            <div className="col-md-4 txt-color-white text-center text-md-left">{t('copyright')}</div>
             <div className="col-md-4 text-center txt-color-white">
               <a href="https://silverstonks.io/privacy.html" className="txt-color-white ">
-                Privacy Policy
+              {t('privacy_policy')}
               </a>
               <span className="px-3">|</span>
               <a href="https://silverstonks.io/terms.html" className="txt-color-white ">
-                Terms & Conditions
+              {t('terms_and_conditions')}
               </a>
             </div>
           </div>

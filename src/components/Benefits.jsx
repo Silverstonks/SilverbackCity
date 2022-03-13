@@ -1,8 +1,10 @@
 import React from "react"
+import { useTranslation } from "react-i18next";
 import GreenLineBenefits from '../static/images/sections/GreenLineBenefits.png'
 
 
 const Benefits = () => {
+    const { t, i18n } = useTranslation('translation', { keyPrefix: 'benefits' });
     return (
         <div className="container">
 
