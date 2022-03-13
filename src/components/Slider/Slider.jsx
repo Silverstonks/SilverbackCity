@@ -6,12 +6,14 @@ import LinesDecoration from '../../static/images/slider/LinesDecoration.png';
 import BackgroundDecoration from '../../static/images/slider/BackgroundDecoration.png';
 import { HomeTitles, initialNavPills } from './SliderConstants';
 import { SliderItem } from './SliderItem';
+import { useTranslation } from 'react-i18next';
 
 export const Slider = () => {
   const [navPills] = useState(initialNavPills);
   const [selectedIndex, setSelectedIndex] = useState(1);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
+  const { t, i18n } = useTranslation('translation', { keyPrefix: 'slider' });
 
   const handleTouchStart = (touchStartEvent) => {
     setTouchStart(touchStartEvent.targetTouches[0].screenX);
@@ -65,9 +67,9 @@ export const Slider = () => {
           <div className="slider-title-background-detail">
             <img src={BackgroundDecoration} alt="" />
           </div>
-          <div className="slider-pre-title">{HomeTitles.pretitle}</div>
-          <div className="slider-title">{HomeTitles.title}</div>
-          <div className="slider-subtitle">{HomeTitles.subtitle}</div>
+          <div className="slider-pre-title">{t('SECTION.pretitle')}</div>
+          <div className="slider-title">{t('SECTION.title')}</div>
+          <div className="slider-subtitle">{t('SECTION.subtitle')}</div>
         </div>
 
         <div

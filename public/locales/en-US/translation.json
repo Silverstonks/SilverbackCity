@@ -1,61 +1,59 @@
 {
-    "header": {
-        "nav": {
-            "first_option": {
-                "item": "Silverback City"
-            },
-            "second_option": {
-                "item":"Citizens / Zones",
-                "dropdown": {
-                    "first": "Bids Arena",
-                    "second": "The Vault",
-                    "third": "NFT Lab",
-                    "fourth": "Silver Shop",
-                    "fifth": "Token",
-                    "sixth": "Underground Lounge"
-                }
-            },
-            "third_option": {
-                "item": "Story"
-            },
-            "first_button": "Connect Wallet",
-            "second_button": "Mint NFT"
+  "header": {
+    "nav": {
+      "first_option": {
+        "item": "Silverback City"
+      },
+      "second_option": {
+        "item": "Citizens / Zones",
+        "dropdown": {
+          "first": "Bids Arena",
+          "second": "The Vault",
+          "third": "NFT Lab",
+          "fourth": "Silver Shop",
+          "fifth": "Token",
+          "sixth": "Underground Lounge"
         }
-    },
-    "jumbotron": {
-
-    },
-    "slider": {
-
-    },
-    "metaverse_story": {
-
-    },
-    "nft_lab": {
-
-    },
-    "clans_slider": {
-
-    },
-    "mint_card": {
-
-    },
-    "benefits": {
-
-    },
-    "sections": {
-
-    },
-    "marketplace": {
-
-    },
-    "roadmap": {
-
-    },
-    "team": {
-
-    },
-    "footer": {
-
+      },
+      "third_option": {
+        "item": "Story"
+      },
+      "first_button": "Connect Wallet",
+      "second_button": "Mint NFT"
     }
+  },
+  "jumbotron": {},
+  "slider": {
+    "SECTION": {
+      "pretitle": "Our Vision",
+      "title": "Acces to Silverback City",
+      "subtitle": "A Way to Earn Passive Income in hard Assets"
+    },
+    "SLIDE_1": {
+      "title": "Own",
+      "description": "Own NFTs to join the community and gain access to Silverback City, the Silver Stonks metaverse."
+    },
+    "SLIDE_2": {
+      "title": "Explore",
+      "description": "Silverback City brings every service Silver Stonks offers in one immersive experience. Explore the different areas of the city and use your avatar to interact with different metaverse zones."
+    },
+    "SLIDE_3": {
+      "title": "Inmerse",
+      "description": "Choose which service of Silverback City you want to interact with and start living your own story in themetaverse."
+    },
+    "SLIDE_4": {
+      "title": "Play 2 Earn",
+      "description": "Earn SSTX tokens and free bids to win purchasing power by playing fun games in the metaverse,starting with Bids Arena."
+    }
+  },
+  "metaverse_story": {},
+  "nft_lab": {},
+  "clans_slider": {},
+  "mint_card": {},
+  "benefits": {},
+  "sections": {},
+  "marketplace": {},
+  "roadmap": {},
+  "team": {},
+  "footer": {}
 }
