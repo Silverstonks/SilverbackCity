@@ -1,0 +1,61 @@
+{
+    "header": {
+        "nav": {
+            "first_option": {
+                "item": "Silverback City"
+            },
+            "second_option": {
+                "item":"Citizens / Zones",
+                "dropdown": {
+                    "first": "Bids Arena",
+                    "second": "The Vault",
+                    "third": "NFT Lab",
+                    "fourth": "Silver Shop",
+                    "fifth": "Token",
+                    "sixth": "Underground Lounge"
+                }
+            },
+            "third_option": {
+                "item": "Story"
+            },
+            "first_button": "Connect Wallet",
+            "second_button": "Mint NFT"
+        }
+    },
+    "jumbotron": {
+
+    },
+    "slider": {
+
+    },
+    "metaverse_story": {
+
+    },
+    "nft_lab": {
+
+    },
+    "clans_slider": {
+
+    },
+    "mint_card": {
+
+    },
+    "benefits": {
+
+    },
+    "sections": {
+
+    },
+    "marketplace": {
+
+    },
+    "roadmap": {
+
+    },
+    "team": {
+
+    },
+    "footer": {
+
+    }
+}
