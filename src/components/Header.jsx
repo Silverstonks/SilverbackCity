@@ -6,9 +6,11 @@ import { FaBars } from 'react-icons/fa';
 import actions from '../store/actions';
 import arrowLight from '../static/images/icon-arrow-right-single-light.png';
 import './Header.scss';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const { t, i18n } = useTranslation('translation', { keyPrefix: 'header' });
   // const { walletAddress, isAuthenticated } = useSelector((state) => state?.auth);
   // const { nft } = useSelector((state) => state?.nft);
   const dispatch = useDispatch();
@@ -81,7 +83,7 @@ const Header = () => {
                 </li>
                 <li className="nav-item">
                   <div className="nav-link" onClick={() => scrollTo('main-home-slider', 20)}>
-                    Silverback City
+                  {t("nav.first_option.item")}
                   </div>
                 </li>
                 <li className="nav-item dropdown">
@@ -93,26 +95,26 @@ const Header = () => {
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    Citizens / Zones
+                    {t("nav.second_option.item")}
                   </div>
                   <div className="dropdown-menu " aria-labelledby="navbarDropdown">
                     <div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('bidsarena', 100)}>
-                      Bids Arena
+                    {t("nav.second_option.dropdown.first")}
                     </div>
                     <div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('vault', 100)}>
-                      The Vault
+                    {t("nav.second_option.dropdown.second")}  
                     </div>
                     <div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('nft-lab', 100)}>
-                      NFT Lab
+                    {t("nav.second_option.dropdown.third")} 
                     </div>
                     <div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('silvershop', 100)}>
-                      Silver Shop
+                    {t("nav.second_option.dropdown.fourth")} 
                     </div>
                     <div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('exchange', 20)}>
-                      Token
+                    {t("nav.second_option.dropdown.fifth")} 
                     </div>
                     <div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('lounge', 100)}>
-                      Underground Lounge
+                    {t("nav.second_option.dropdown.sixth")}  
                     </div>
                     {/*<div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('foundry', 100)}>
                         Foundry
@@ -120,7 +122,7 @@ const Header = () => {
                   </div>
                 </li>
                 <li className="nav-item" onClick={() => scrollTo('metaverse-story', 50)}>
-                  <div className="nav-link">Story</div>
+                  <div className="nav-link">{t("nav.third_option.item")}</div>
                 </li>
                 {/* IMPORTANT: BUTTONS HIDDEN WITH d-none CLASS */}
                 <li className="nav-item d-none" id="problematic-button">
@@ -141,7 +143,7 @@ const Header = () => {
                         ) : (*/
                           <div className="button-container">
                             <button type="button" className="btn " onClick={() => /*dispatch(actions.blockChainActions.connectToMetaMask)*/ null}>
-                              Connect Wallet
+                            {t("nav.first_button")}
                             </button>
                           </div>
                         /*)*/}
@@ -150,7 +152,7 @@ const Header = () => {
                     <div className="nav-item m-0">
                       <div className="button-container">
                         <button type="button" className="btn " onClick={() => /*dispatch(actions.blockChainActions.connectToMetaMask)*/ null}>
-                          Mint NFT
+                        {t("nav.second_button")}
                         </button>
                       </div>
                     </div>

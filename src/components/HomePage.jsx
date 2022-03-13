@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -31,6 +31,8 @@ const HomePage = () => {
 
   return (
     <>
+    <Suspense fallback="loading">
+
       <Header />
 
       {/* <ToastContainer />
@@ -60,6 +62,7 @@ const HomePage = () => {
       <Team />
 
       <Footer />
+    </Suspense>
 
     </>
   );
