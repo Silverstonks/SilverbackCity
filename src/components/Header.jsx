@@ -122,9 +122,10 @@ const Header = () => {
                 <li className="nav-item" onClick={() => scrollTo('metaverse-story', 50)}>
                   <div className="nav-link">Story</div>
                 </li>
-                <li className="nav-item" id="problematic-button">
+                {/* IMPORTANT: BUTTONS HIDDEN WITH d-none CLASS */}
+                <li className="nav-item d-none" id="problematic-button">
                   <div
-                    className="ml-auto d-flex flex-wrap"
+                    className="ml-auto d-flex flex-wrap "
                     style={{
                       gap: '1rem',
                     }}
