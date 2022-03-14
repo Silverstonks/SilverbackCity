@@ -53,8 +53,120 @@
   "benefits": {},
   "sections": {},
   "marketplace": {},
-  "roadmap": {},
-  "team": {},
+  "roadmap": {
+    "pre_title": "TIMELINE",
+    "subtitle": "Roadmap",
+    "description": "Our team is working hard to reach our goals each quarter and grow our ecosystem to provide holders with increasing benefits.",
+    "Quarter": {
+      "Q221": {
+        "quarter": "Q2 2021",
+        "title": "Concept",
+        "des1": "Assemble Team",
+        "des2": "White Paper Completion",
+        "des3": "Strategic plan"
+      },
+      "Q321": {
+        "quarter": "Q3 2021",
+        "title": "Token Launch",
+        "des1": "SSTX Launch",
+        "des2": "Locked Liquidity",
+        "des3": "Silver Design & Production",
+        "des4": "Business Website",
+        "des5": "Staking"
+      },
+      "Q421": {
+        "quarter": "Q4 2021",
+        "title": "Silver Market",
+        "des1": "E-Commerce",
+        "des2": "Marketing Campaign",
+        "des3": "Silver Stonks Merch Release"
+      },
+      "Q122": {
+        "quarter": "Q1 2022",
+        "title": "Silver Stonks Expansion",
+        "des1": "Expand SilverStonks Products",
+        "des2": "Talks with Centralized Exchanges",
+        "des3": "NFT Authenticity Certificates",
+        "des4": "Design NFT Art Collection",
+        "des5": "Silverback City Concept"
+      },
+      "Q222": {
+        "quarter": "Q2 2022",
+        "title": "Metaverse & Play2Earn Development",
+        "des1": "Token Adoption Talks with Bullion Dealers",
+        "des2": "Apply SilverStonks Services to Metaverse",
+        "des3": "Payment Processor for SSTX",
+        "des4": "Develop Bids Arena"
+      },
+      "Q322": {
+        "quarter": "Q3 2022",
+        "title": "SSTX Expansion",
+        "des1": "Small Centralized Exchange Listing",
+        "des2": "Bring Silver Creation Process In-House",
+        "des3": "Underground Lounge Development",
+        "des4": "NFT Building Drop for Silverback City"
+      },
+      "Q422": {
+        "quarter": "Q4 2022",
+        "title": "Exosystem Expansion",
+        "des1": "Silver Bank Run Game Development",
+        "des2": "Expand Financial Content",
+        "des3": "Grow Social Channels",
+        "des4": "Expand Into Jewelry"
+      },
+      "Q123": {
+        "quarter": "Q1 2023",
+        "title": "Go Mainstream",
+        "des1": "NFT Marketplace for Silverback City",
+        "des2": "Large Exchange Listing"
+      },
+      "Q223": {
+        "quarter": "Q2 2023",
+        "title": "Meta Advertising Services",
+        "des1": "Improve Metaverse Services",
+        "des2": "Expand Marketplace",
+        "des3": "Meta Advertising NFT Drop"
+      }
+    }
+  },
+  "team": {
+    "main_title": "Our Team",
+    "description": "The Silver Stonks team combines a passion for creating impactful businesses with industry expertise in finance, development & marketing.",
+    "member": {
+      "Vicente": {
+        "name": "Vicente Benlloch",
+        "jobTitle": "Co-founder, Chief Executive Officer"
+      },
+      "Teresa": {
+        "name": "Teresa De Jesus",
+        "jobTitle": "Co-founder, Chief Financial Officer"
+      },
+      "Jose": {
+        "name": "Jose Honrubia",
+        "jobTitle": "Chief Operating Officer"
+      },
+      "JoseDeJesus": {
+        "name": "Jose De Jesus",
+        "jobTitle": "Chief Technology Officer"
+      },
+      "David": {
+        "name": "David Miguel",
+        "jobTitle": "Director of Silver Production, Europe"
+      },
+      "Pablo": {
+        "name": "Pablo Palau",
+        "jobTitle": "Creative Director"
+      },
+      "Christopher": {
+        "name": "Christopher Navarro",
+        "jobTitle": "Director of Silver Production, US"
+      },
+      "Ignacio": {
+        "name": "Ignacio Olmos",
+        "jobTitle": "Attorney, Legal Counsel"
+      }
+    }
+  },
   "footer": {
     "link": {
       "arena": "BIDSARENA",

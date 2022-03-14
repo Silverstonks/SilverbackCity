@@ -18,11 +18,10 @@ const Team = () => {
           <div className="row">
             <div className="col text-center">
               <h2 className="txt-color-mint fw-600" data-aos="fade-up" data-aos-delay="300" data-aos-offset="50" data-aos-duration="500">
-                Our Team
+                {t('main_title')}
               </h2>
               <p className="fs-16 mb-5" data-aos="fade" data-aos-delay="100" data-aos-offset="50" data-aos-duration="1000">
-                The Silver Stonks team combines a passion for creating impactful businesses with industry expertise in finance, development
-                & marketing.
+                {t('description')}
               </p>
             </div>
           </div>
@@ -42,8 +41,8 @@ const Team = () => {
                   data-aos-offset="50"
                   data-aos-duration="1000"
                 >
-                  <h3 className="card-title">Vicente Benlloch</h3>
-                  <h2 className="card-subtitle mb-2 text-muted">Co-founder, Chief Executive Officer</h2>
+                  <h3 className="card-title">{t('member.Vicente.name')}</h3>
+                  <h2 className="card-subtitle mb-2 text-muted">{t('member.Vicente.jobTitle')}</h2>
                   <a href="https://www.linkedin.com/in/vicentebenlloch/" target="_blank" className="" >
                     <i className="fab fa-linkedin fa-lg"></i>
                   </a>
@@ -65,8 +64,8 @@ const Team = () => {
                   data-aos-offset="50"
                   data-aos-duration="1000"
                 >
-                  <h3 className="card-title">Teresa De Jesus</h3>
-                  <h2 className="card-subtitle mb-2 text-muted">Co-founder, Chief Financial Officer</h2>
+                  <h3 className="card-title">{t('member.Teresa.name')}</h3>
+                  <h2 className="card-subtitle mb-2 text-muted">{t('member.Teresa.jobTitle')}</h2>
                   <a href="https://www.linkedin.com/in/teresadejesus/" target="_blank" className="">
                     <i className="fab fa-linkedin fa-lg"></i>
                   </a>
@@ -88,8 +87,8 @@ const Team = () => {
                   data-aos-offset="50"
                   data-aos-duration="1000"
                 >
-                  <h3 className="card-title">Jose Honrubia</h3>
-                  <h2 className="card-subtitle mb-2 text-muted">Chief Operating Officer</h2>
+                  <h3 className="card-title">{t('member.Jose.name')}</h3>
+                  <h2 className="card-subtitle mb-2 text-muted">{t('member.Jose.jobTitle')}</h2>
                   <a href="https://www.linkedin.com/in/jose-manuel-honrubia-belenguer-8338a9104/" target="_blank" className="">
                     <i className="fab fa-linkedin fa-lg"></i>
                   </a>
@@ -111,8 +110,8 @@ const Team = () => {
                   data-aos-offset="50"
                   data-aos-duration="1000"
                 >
-                  <h3 className="card-title">Jose De Jesus</h3>
-                  <h2 className="card-subtitle mb-2 text-muted">Chief Technology Officer</h2>
+                  <h3 className="card-title">{t('member.JoseDeJesus.name')}</h3>
+                  <h2 className="card-subtitle mb-2 text-muted">{t('member.JoseDeJesus.jobTitle')}</h2>
                   <a href="https://www.linkedin.com/in/jdejesus-ibm/" target="_blank" className="">
                     <i className="fab fa-linkedin fa-lg"></i>
                   </a>
@@ -134,8 +133,8 @@ const Team = () => {
                   data-aos-offset="50"
                   data-aos-duration="1000"
                 >
-                  <h3 className="card-title">David Miguel</h3>
-                  <h2 className="card-subtitle mb-2 text-muted">Director of Silver Production, Europe</h2>
+                  <h3 className="card-title">{t('member.David.name')}</h3>
+                  <h2 className="card-subtitle mb-2 text-muted">{t('member.David.jobTitle')}</h2>
                   <a href="https://www.linkedin.com/in/david-miquel-castells-855424123/" target="_blank" className="">
                     <i className="fab fa-linkedin fa-lg"></i>
                   </a>
@@ -157,8 +156,8 @@ const Team = () => {
                   data-aos-offset="50"
                   data-aos-duration="1000"
                 >
-                  <h3 className="card-title">Pablo Palau</h3>
-                  <h2 className="card-subtitle mb-2 text-muted">Creative Director</h2>
+                  <h3 className="card-title">{t('member.Pablo.name')}</h3>
+                  <h2 className="card-subtitle mb-2 text-muted">{t('member.Pablo.jobTitle')}</h2>
                   <a href="https://www.linkedin.com/in/pablo-palau-garcer%C3%A1-81ba0292/" target="_blank" className="">
                     <i className="fab fa-linkedin fa-lg"></i>
                   </a>
@@ -181,8 +180,8 @@ const Team = () => {
                   data-aos-offset="50"
                   data-aos-duration="1000"
                 >
-                  <h3 className="card-title">Christopher Navarro</h3>
-                  <h2 className="card-subtitle mb-2 text-muted">Director of Silver Production, US</h2>
+                  <h3 className="card-title">{t('member.Christopher.name')}</h3>
+                  <h2 className="card-subtitle mb-2 text-muted">{t('member.Christopher.jobTitle')}</h2>
                   <a href="https://www.linkedin.com/in/chris-navarro-00081670/" target="_blank" className="">
                     <i className="fab fa-linkedin fa-lg"></i>
                   </a>
@@ -204,8 +203,8 @@ const Team = () => {
                   data-aos-offset="50"
                   data-aos-duration="1000"
                 >
-                  <h3 className="card-title">Ignacio Olmos</h3>
-                  <h2 className="card-subtitle mb-2 text-muted">Attorney, Legal Counsel</h2>
+                  <h3 className="card-title">{t('member.Ignacio.name')}</h3>
+                  <h2 className="card-subtitle mb-2 text-muted">{t('member.Ignacio.jobTitle')}</h2>
                   <a href="https://www.linkedin.com/in/iolmosclemades/" target="_blank" className="">
                     <i className="fab fa-linkedin fa-lg"></i>
                   </a>
