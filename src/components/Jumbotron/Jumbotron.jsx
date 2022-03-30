@@ -7,7 +7,7 @@ import ButtonDecorationBar from '../../static/images/header/ButtonDecorationBar.
 import { useTranslation } from 'react-i18next';
 
 export const Jumbotron = () => {
-  const { t, i18n } = useTranslation('translation', { keyPrefix: 'jumbotron' });
+  const { t } = useTranslation('translation', { keyPrefix: 'jumbotron' });
   return (
     <div className="jumbotron-container d-flex flex-column justify-content-center ">
       <img src={Logo} alt="" className="w-25 mx-auto my-5" />
@@ -26,3 +26,6 @@ export const Jumbotron = () => {
 };
 
 export default Jumbotron;
+
+
+/* chrackra bold y poppings */

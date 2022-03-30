@@ -1,7 +1,7 @@
 const initialState = {
   loading: false,
   error: '',
-  modalShow: true,
+  modalShow: false,
   modalStep: 1,
   emailNewsletter: '',
   errorEmailNewsletter: false,

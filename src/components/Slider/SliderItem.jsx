@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
 
 export const SliderItem = ({ navPill, callBackSetIndex }) => {
-  const { index, title, description, active } = navPill;
-  const { t, i18n } = useTranslation('translation', { keyPrefix: 'slider' });
+  const { index, active } = navPill;
+  const { t } = useTranslation('translation', { keyPrefix: 'slider' });
   return (
     <div className={`col-md col-12 nav-pill d-lg-block ${active ? 'active' : 'd-none'} `} onClick={() => callBackSetIndex(index)}>
       <div className="nav-pill-title-container d-flex justify-content-center align-items-baseline ">

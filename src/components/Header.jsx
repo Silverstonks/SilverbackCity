@@ -1,19 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
 import Logo from '../static/images/header/Logo.png';
 import LanguageIcon from '../static/images/header/LanguageIcon.png';
 import { FaBars } from 'react-icons/fa';
-import actions from '../store/actions';
-import arrowLight from '../static/images/icon-arrow-right-single-light.png';
 import './Header.scss';
 import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
-  const { t, i18n } = useTranslation('translation', { keyPrefix: 'header' });
+  const { t } = useTranslation('translation', { keyPrefix: 'header' });
   // const { walletAddress, isAuthenticated } = useSelector((state) => state?.auth);
   // const { nft } = useSelector((state) => state?.nft);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 100) {

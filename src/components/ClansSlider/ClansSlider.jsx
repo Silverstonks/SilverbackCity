@@ -16,7 +16,7 @@ export const ClansSlider = () => {
   const rightGorilla = gorillas[selectedIndex + 1 <= gorillas.length - 1 ? selectedIndex + 1 : 0];
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
-  const { t, i18n } = useTranslation('translation', { keyPrefix: 'clans_slider' });
+  const { t } = useTranslation('translation', { keyPrefix: 'clans_slider' });
 
   const step = (nextStep) => {
     if (nextStep > gorillas.length - 1) {
@@ -76,9 +76,9 @@ export const ClansSlider = () => {
               <img src={TitleDecoration} alt="main clans slider background" className="clans-slider-title-background-img" />
             </div>
 
-            <div className="clans-slider-title">TROOPS</div>
+            <div className="clans-slider-title">{t('title')}</div>
 
-            <div className="clans-slider-subtitle">Scanning...</div>
+            <div className="clans-slider-subtitle">{t('subtitle')}</div>
           </div>
         </div>
       </div>

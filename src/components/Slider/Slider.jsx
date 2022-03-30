@@ -13,7 +13,7 @@ export const Slider = () => {
   const [selectedIndex, setSelectedIndex] = useState(1);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
-  const { t, i18n } = useTranslation('translation', { keyPrefix: 'slider' });
+  const { t } = useTranslation('translation', { keyPrefix: 'slider' });
 
   const handleTouchStart = (touchStartEvent) => {
     setTouchStart(touchStartEvent.targetTouches[0].screenX);

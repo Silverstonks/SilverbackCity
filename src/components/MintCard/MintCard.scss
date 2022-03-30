@@ -1,6 +1,8 @@
 $navText: #00e101;
 
 .mint-card-container {
+
+  font-family: 'Chakra Bold' !important;
   color: white;
   text-align: right;
 
@@ -67,10 +69,7 @@ $navText: #00e101;
     .mint-card-price-container {
       text-align: right;
       color: $navText;
-
-      .mint-card-price {
-        font-size: 1.25em;
-      }
+      font-size: 1.0rem;
     }
   }
 
@@ -114,5 +113,8 @@ $navText: #00e101;
   .mint-card-gorilla-background-img {
     transform: scale(0.65);
     filter: saturate(0) opacity(0.6);
+  }
+  .presale {
+    font-size: 1.7rem !important;
   }
 }

@@ -8,17 +8,12 @@ import './MetaverseStory.scss';
 
 const initialIndex = 0;
 
-const strings = {
-  title: 'METAVERSE STORY',
-  subtitle: 'THE BEGINNING',
-};
-
 export const MetaverseStory = () => {
   const [slides] = useState(storyConfig);
   const [selectedIndex, setSelectedIndex] = useState(initialIndex);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
-  const { t, i18n } = useTranslation('translation', { keyPrefix: 'metaverse_story' });
+  const { t } = useTranslation('translation', { keyPrefix: 'metaverse_story' });
 
   const step = (nextStepIndex) => {
     // Seguridad de que no se pase, ni de más ni de menos
@@ -36,7 +31,6 @@ export const MetaverseStory = () => {
     step(selectedIndex - 1);
   };
 
-
   const handleTouchStart = (touchStartEvent) => {
     setTouchStart(touchStartEvent.targetTouches[0].screenX);
   };
@@ -51,7 +45,7 @@ export const MetaverseStory = () => {
   };
   const handleMouseMove = (mouseMoveEvent) => {
     if (touchStart > 0) {
-      setTouchEnd(mouseMoveEvent.screenX)
+      setTouchEnd(mouseMoveEvent.screenX);
     }
   };
   const handleMouseUp = () => {
@@ -86,7 +80,7 @@ export const MetaverseStory = () => {
     );
   };
 
-  const { image, text } = slides[selectedIndex];
+  const { image } = slides[selectedIndex];
 
   return (
     <div id="metaverse-story" className="metaverse-story-container mt-5">
@@ -94,8 +88,8 @@ export const MetaverseStory = () => {
         <div className="metaverse-story-title-background">
           <img src={TitleDecoration} alt="" className="metaverse-story-title-background-img" />
         </div>
-        <span className="metaverse-story-title">{strings.title}</span>
-        <span className="metaverse-story-subtitle">{strings.subtitle}</span>
+        <span className="metaverse-story-title">{t('title')}</span>
+        <span className="metaverse-story-subtitle">{t('subtitle')}</span>
       </div>
 
       <div
@@ -126,7 +120,7 @@ export const MetaverseStory = () => {
           </div>
 
           <div className="metaverse-story-text-container">
-            <p className="metaverse-story-text w-75 m-auto">{text}</p>
+            <p className="metaverse-story-text w-75 m-auto">{t('slides.' + selectedIndex + '.text')}</p>
           </div>
         </div>
       </div>

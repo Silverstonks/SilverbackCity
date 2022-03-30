@@ -35,8 +35,8 @@ const HomePage = () => {
 
       <Header />
 
-      {/* <ToastContainer />
-      <ModalDialogs /> */}
+      {/* <ToastContainer /> */}
+      <ModalDialogs /> 
 
       <Jumbotron />
 

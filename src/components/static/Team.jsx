@@ -9,7 +9,7 @@ import Ignacio from '../../static/images/team/ignacio.jpg';
 import { useTranslation } from 'react-i18next';
 
 const Team = () => {
-  const { t, i18n } = useTranslation ('translation', { keyPrefix: 'team' });
+  const { t } = useTranslation ('translation', { keyPrefix: 'team' });
 
   return (
     <>

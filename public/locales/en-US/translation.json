@@ -46,13 +46,139 @@
       "description": "Earn SSTX tokens and free bids to win purchasing power by playing fun games in the metaverse,starting with Bids Arena."
     }
   },
-  "metaverse_story": {},
-  "nft_lab": {},
-  "clans_slider": {},
-  "mint_card": {},
-  "benefits": {},
-  "sections": {},
-  "marketplace": {},
+  "metaverse_story": {
+    "title": "METAVERSE STORY",
+    "subtitle": "THE BEGINNING",
+    "slides": [
+      {
+        "text": "Some time in the not too distant future, the inevitable global economic collapse and the failure of world governments becomes a reality. Inflation is at an all time high, the supply chain is in a complete state of meltdown, and unemployment is rampant. A scalable solution for energy could not be adopted quick enough around the world, and oil reserves and aw materials have been depleted. Nationstates have completely broken down, and any remaining remnants of governments are battling for the renewable energy that is available, while people battle each other for resources."
+      },
+      {
+        "text": "People have become more reclusive, choosing to stay in the shelter of their homes and in closed communities. Cities have become catastrophic areas where people try collect resources to survive. Walking on the streets has become more and more dangerous since there is no police and militaries have broken down. People feel a heightened sense of risk."
+      },
+      {
+        "text": "In the chaos of the collapse of power, one of the largest, most influential cities quickly started declining, leaving only the strongest to survive."
+      },
+      {
+        "text": "Slowly the strongest adapted to their new environment and experimented with wearing different armors to protect themselves from outside pollution and dangers. Assets of intrinsic value rise in demand and precious metals recovered their true status as money."
+      },
+      {
+        "text": "As days passed, the outlook for survivors grew more  and more grim. Each day there were less resources, less rule of law, and less hope of restoring what once was. But on one pivotal day, a meteor with green flames of aurora crash landed and created a burst of energy."
+      },
+      {
+        "text": "On his way he start realizing that he may found something that it could change his reality. He wasn't blind, he was seeing a green light, finally a source of power."
+      },
+      {
+        "text": "The energy was something no one had ever seen before. One survivor noticed that the dead forest around the explosion was now full of life."
+      },
+      {
+        "text": "He realized this energy was a source of spiritual light that possessed healing properties, and decided to take a piece  back to his community."
+      },
+      {
+        "text": "This light would be used to restore the city. However, it had to be in a way that wouldn't expose humans to the contamination the city was producing."
+      },
+      {
+        "text": "He went back to his underground lab to experiemnt with an avatar he had been creating in the form of gorillas, since their dna sequence is close to that of humans. This seemed to be the solution that he needed to bring the avatars to life."
+      },
+      {
+        "text": "Through the metaverse, people could interact through their avatars without risking their lifes. They could offer safety and new zones where the energy source could be used to rebuild the city."
+      }
+    ]
+  },
+  "nft_lab": {
+    "title": "NFT LAB",
+    "text": "Citizens of Silverback City is a collection of 9,999 Silverback gorillas on the Binance Smart Chain blockchain. Your Silverback is also used as a membership avatar that gives you access to exclusive member rewards, including the ability to earn passive income through the digital silver you earn in our Play 2 Earn games, along with purchasing power you can use to buy precious metals and free bids to acquire the products you love in Bids Arena."
+  },
+  "clans_slider": {
+    "title": "TROOPS",
+    "subtitle": "Scanning..."
+  },
+  "mint_card": {
+    "title": "TROOPS OF SILVERBACK CITY",
+    "subtitle": "Pre Launch: July 16",
+    "btn": "Register for Whitelist",
+    "priceLabel": "Presale Price:",
+    "price": "0.1",
+    "coin": "ETH",
+    "launchLabel": "Launch Price:",
+    "launchPrice": "0.13"
+
+  },
+  "mint_modal": {
+    "title": ""
+  },
+  "benefits": {
+    "titlegreen": "NFT",
+    "title": "BENEFITS",
+    "section": {
+      "play": {
+        "title": "- Play 2 Earn Metaverse Access",
+        "text": "Your NFT lets you earn digital silver and other rewards by playing entertaining games in the Metaverse. Your avatar will be able to earn bids in Bids Arena by competing with other players. Use your bids to acquire real products you love, like precious metals, electronics, collectibles and much more."
+      },
+      "incoming": {
+        "title": "- Passive Income",
+        "text": "Stake digital silver you earn in Silverback City to earn SSTX tokens. You can use your SSTX tokens to purchase real silver and other precious metals."
+      },
+      "auctions": {
+        "title": "- Exclusive Auctions",
+        "text": "Holding your silverback NFTs gives you access to exclusive auctions in Bids Arena, which gives you more chances to win amazing products at incredible prices"
+      },
+      "cashback": {
+        "title": "- Cashback",
+        "text": "Receive a welcome package of bids for Bids Arena when you hold an NFT. When you play you earn cashback on every auction you participate in. This gives you purchasing power for products you love."
+      }
+    }
+  },
+  "sections": {
+    "bidsarena": {
+      "title": "BIDSARENA",
+      "buttonText": "INVEST IN SILVER",
+      "text": "Win purchasing power with our first Play 2 Earn game. Use your bids to win your favorite products at incredible prices. Every auction starts at $0.00 and has a timer. Each bid increases the price by $0.01 and resets the timer by 10 seconds. The last bidder to place a bid before the time runs out wins the item at a price much lower than the regular retail price."
+    },
+    "silvershop": {
+      "title": "SILVER SHOP",
+      "buttonText": "INVEST IN SILVER",
+      "text": "Buy physical silver in Silver Stonks’ Silver Shop to protect yourself against inflation. We take a spin on traditional bullion by making products that appeal to a wider demographic, connecting blockchain with the traditional world of investing in precious metals. Each silver product is tied to a digital certificate of authenticity. \n\nOwning our silver bars allows you to claim certificates of authenticity in your digital wallet, which can then be used to earn interest on your silver every month in SSTX."
+    },
+    "vault": {
+      "title": "THE VAULT",
+      "buttonText": "COMING SOON",
+      "text": "In the Vault you can store your SSTX tokens and digital silver certificates to earn interest in SSTX. There are three ways you can earn interest:\n- Store your SSTX tokens and earn up to 12% APY.\n- Store your NFT certificates from your physical silver purchases to earn interest up to 6% APY.\n- Store the digital silver you earn in our Play 2 Earn games up to 12%. You need a Silverback NFT to earn passive income in the Play 2 Earn games."
+    },
+    "lounge": {
+      "title": "UNDERGROUND\nLOUNGE",
+      "buttonText": "COMING SOON",
+      "text": "Each Silverback holder will have access to the Underground Lounge, an exclusive chatroom to talk about the latest news from everything in crypto to the precious metals market."
+    },
+    "exchange": {
+      "title": "SSTX EXCHANGE",
+      "buttonText": "BUY SSTX",
+      "text": "Purchase SSTX using BNB or swap any BSC token for SSTX."
+    },
+    "foundry": {
+      "title": "FOUNDRY",
+      "buttonText": "COMING SOON",
+      "text": "Visit the Foundry to melt the digital silver and gold you earn in our Play 2 Earn games with your NFT avatar. Once you collect enough precious metals, you can shape your silver or gold into bars and coins. When you create your digital bars and coins, you receive a certificate of authenticity for your precious metals in a form of an NFT. Store them in our vault to earn interest on your digital precious metals. Earn interest in SSTX tokens and use them to buy physical precious metals and other hard assets in our Silver Shop, or accumulate tokens and stake them directly to get paid in SSTX and begin earning passive income."
+    }
+  },
+  "marketplace": {
+    "title01": "BE PART OF THE SILVERBACK",
+    "title02": "CITY",
+    "title03": "MARKETPLACE",
+    "section": {
+      "landlord": {
+        "title": "BECOME A LANDLORD",
+        "subtitle": "Become A Digital Landlord",
+        "paragraph01": "Who wants to own real estate in the big city? Silver Stonks will launch a secondary NFT collection with unique buildings around the city. In Silverback City you can finally own an entire building in the most popular streets. Buy blocks of the city to have advertising rights on your building and earn passive income.",
+        "paragraph02": "If you own the NFT, you will own the exploitation rights over your building. Silver Stonks encourages you to diversify your portfolio between digital and hard assets. Being paid for advertising rights will just be the beginning, as we develop our Play 2 Earn games that let you esrn real assets and stores of value. Get your building in Silverback City and start taking advantage of the NFT world."
+      },
+      "advertising": {
+        "title": "META ADVERTISING",
+        "subtitle": "Get yoor Advertising",
+        "paragraph01": "Silver Stonks Meta Advertising connects businesses with landlords. Landlords have the opportunity to earn passive income by renting out advertising space to companies. Every building you own will be a candidate for advertising, depending on the building’s location and value. Companies will have different packages to choose from when advertising in Silverback City. Be the first to take advantage of the new way to advertise in the metaverse."
+      }
+    }
+  },
   "roadmap": {
     "pre_title": "TIMELINE",
     "subtitle": "Roadmap",

@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import Arrow from '../../static/images/icon-arrow-light.svg';
 
 const Roadmap = () => {
-  const { t, i18n } = useTranslation('translation', { keyPrefix: 'roadmap' });
+  const { t } = useTranslation('translation', { keyPrefix: 'roadmap' });
   return (
     <>
       {/*<!-- Roadmap START -->*/}

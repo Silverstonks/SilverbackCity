@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Modal } from "react-bootstrap";
 import actions from "../store/actions";
+import MintModal  from './modals/MintModal';
 
 const ModalDialogs = () => {
   const [email, setEmail] = useState("");
@@ -15,15 +16,14 @@ const ModalDialogs = () => {
     <>
       <Modal
         show={modalShow}
-        onHide={() =>
-         /* dispatch(actions.applicationActions.updateModalState(false))*/ null
-        }
+        onHide={() => dispatch(actions.applicationActions.updateModalState(false))}
         backdrop="static"
         keyboard={false}
         id="onboardModal"
-        style={{ transform: "translate(0, 25%)" }}
+        dialogClassName={'mint-modal-content '}
+        style={{ transform: "translate(0, 5%)", "background-image": "url('../images/sections/Background.png')" }}
       >
-        {/*modalStep === 1 && <ChooseHowConnect />*/}
+        {modalStep === 1 && <MintModal />}
         {/*modalStep === 1 && <LoginModal email={email} setEmail={setEmail} error={error} />*/}
         {/* modalStep === 2 && <VerifyModal setVerificationCode={setVerificationCode} verificationCode={verificationCode} email={email} error={error} />*/}
 
