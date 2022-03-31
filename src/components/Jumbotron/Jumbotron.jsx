@@ -1,20 +1,49 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Jumbotron.scss';
-import Logo from '../../static/images/header/Logo.svg';
+import Logo from '../../static/images/header/Logo2.png';
 
-import ButtonDecorationCorners from '../../static/images/header/ButtonDecorationCorners.png';
 import ButtonDecorationBar from '../../static/images/header/ButtonDecorationBar.png';
 import { useTranslation } from 'react-i18next';
 
 export const Jumbotron = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'jumbotron' });
+  const countDownDate = new Date('16-8-2022 18:00');
+  const intervalTime = 1000;
+  // Update the count down every 1 second
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
+
+  const scrollTo = (ancla = 'mint-card', offset = 20) => {
+    let x = document.querySelector('#' + ancla);
+    if (x) {
+      //x.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      const y = x.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+    return false;
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      var distance = countDownDate.getTime() - new Date().getTime(); // Time calculations for days, hours, minutes and seconds
+
+      setSeconds(Math.floor((distance % (1000 * 60)) / 1000));
+      setMinutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
+      setHours(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+      setDays(Math.floor(distance / (1000 * 60 * 60 * 24)));
+    }, intervalTime);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="jumbotron-container d-flex flex-column justify-content-center ">
       <img src={Logo} alt="" className="w-25 mx-auto my-5" />
       <div className="button-decoration mx-auto">
         <div className="button-container h-75 mx-2 my-2">
-          <a href="https://discord.com/invite/6q9hQcmYq5">
-            <button className="h-100 information">ENTER</button>
+          <a onClick={() => scrollTo()}>
+            <button className="h-100 information">JOIN THE PRESALE</button>
           </a>
         </div>
         <div className="decoration-bar">
@@ -26,6 +55,5 @@ export const Jumbotron = () => {
 };
 
 export default Jumbotron;
-
 
 /* chrackra bold y poppings */

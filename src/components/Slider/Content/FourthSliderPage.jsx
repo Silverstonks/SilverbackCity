@@ -1,6 +1,6 @@
 import React from "react";
 import "./FourthSliderPage.scss";
-import Play2Earn from "../../../static/images/slider/Play2Earn.png"
+import Play2Earn from "../../../static/images/slider/Play2Earn2.png"
 import Silver from "../../../static/images/slider/Silver.png"
 
 const strings = {

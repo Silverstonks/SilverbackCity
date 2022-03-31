@@ -159,6 +159,11 @@
       "title": "FOUNDRY",
       "buttonText": "COMING SOON",
       "text": "Visit the Foundry to melt the digital silver and gold you earn in our Play 2 Earn games with your NFT avatar. Once you collect enough precious metals, you can shape your silver or gold into bars and coins. When you create your digital bars and coins, you receive a certificate of authenticity for your precious metals in a form of an NFT. Store them in our vault to earn interest on your digital precious metals. Earn interest in SSTX tokens and use them to buy physical precious metals and other hard assets in our Silver Shop, or accumulate tokens and stake them directly to get paid in SSTX and begin earning passive income."
+    },
+    "staking": {
+      "title": "STAKING",
+      "buttonText": "STAKE NOW",
+      "text": "Stake your SSTX and earn up to 12% APY by becoming a member and entering our metaverse."
     }
   },
   "marketplace": {

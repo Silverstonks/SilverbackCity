@@ -48,7 +48,7 @@ const Header = () => {
   return (
     <>
       <section className="banner">
-        <div className="gradient"></div>
+        {/*<div className="gradient"></div>*/}
         <div className={x.join('nav-top ')}>
           <div className="container-xl">
             <div className="nav-container">

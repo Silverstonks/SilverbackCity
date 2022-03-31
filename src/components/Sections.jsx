@@ -13,6 +13,8 @@ import LoungeIcon from '../static/images/slider/IconLounge.png';
 import FoundryImg from '../static/images/sections/FoundrySection.png';
 import FoundryIcon from '../static/images/slider/IconFoundry.png';
 import DotsDecoration from '../static/images/slider/DotsDecoration.png';
+import StakingIcon from '../static/images/slider/IconStaking.png';
+import StakingImg from '../static/images/sections/SectionStaking.png';
 import { useTranslation } from 'react-i18next';
 
 const Sections = () => {
@@ -30,6 +32,7 @@ const Sections = () => {
         <img src={DotsDecoration} alt="" className="mr-5 my-4" style={{ transform: 'rotate(90deg)' }} />
       </div>
       <SectionItemImgLeft id="foundry" icon={FoundryIcon} img={FoundryImg} />
+      <SectionItemImgRight id="staking" icon={StakingIcon} img={StakingImg}  btnHref={`https://staking.silverstonkstoken.com/`}/>
     </div>
   );
 };
