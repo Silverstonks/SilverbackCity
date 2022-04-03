@@ -43,7 +43,7 @@ export const Jumbotron = () => {
       <div className="button-decoration mx-auto">
         <div className="button-container h-75 mx-2 my-2">
           <a onClick={() => scrollTo()}  >
-            <button className="h-100 information">JOIN THE PRESALE</button>
+            <button className="h-100 information">{t('button')}</button>
           </a>
         </div>
         <div className="decoration-bar">
