@@ -52,9 +52,9 @@ export const Jumbotron = () => {
       </div>
         <div className="row">
           <h1 className='col-12 d-flex justify-content-center countdown-container mt-4'>
-            <span className='day-countdown'>{days}:</span>
-            <span className='hour-countdown'>{hours}:</span>
-            <span className='minute-countdown'>{minutes}:</span>
+            <span className='day-countdown'>{days}&nbsp;:&nbsp;</span>
+            <span className='hour-countdown'>{hours}&nbsp;:&nbsp;</span>
+            <span className='minute-countdown'>{minutes}&nbsp;:&nbsp;</span>
             <span className='second-countdown'>{seconds}</span>
           </h1>
         </div>
