@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 export const Jumbotron = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'jumbotron' });
-  const countDownDate = new Date('16-8-2022 18:00');
+  const countDownDate = new Date('2022-07-16 18:00');
   const intervalTime = 1000;
   // Update the count down every 1 second
   const [days, setDays] = useState(0);
@@ -42,7 +42,7 @@ export const Jumbotron = () => {
       <img src={Logo} alt="" className="w-25 mx-auto my-5" />
       <div className="button-decoration mx-auto">
         <div className="button-container h-75 mx-2 my-2">
-          <a onClick={() => scrollTo()}>
+          <a onClick={() => scrollTo()}  >
             <button className="h-100 information">JOIN THE PRESALE</button>
           </a>
         </div>
@@ -50,6 +50,14 @@ export const Jumbotron = () => {
           <img src={ButtonDecorationBar} alt="" />
         </div>
       </div>
+        <div className="row">
+          <h1 className='col-12 d-flex justify-content-center countdown-container mt-4'>
+            <span className='day-countdown'>{days}:</span>
+            <span className='hour-countdown'>{hours}:</span>
+            <span className='minute-countdown'>{minutes}:</span>
+            <span className='second-countdown'>{seconds}</span>
+          </h1>
+        </div>
     </div>
   );
 };
