@@ -57,6 +57,12 @@ export const Jumbotron = () => {
             <span className='minute-countdown'>{minutes}&nbsp;:&nbsp;</span>
             <span className='second-countdown'>{seconds}</span>
           </h1>
+          <div className='col-12 d-flex justify-content-center text-white countdown-container'>
+            <span>{t('countdown.days')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>{t('countdown.hours')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>{t('countdown.minutes')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span className='second-countdown'>{t('countdown.seconds')}</span>
+          </div>
         </div>
     </div>
   );

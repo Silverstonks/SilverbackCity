@@ -53,7 +53,7 @@ export const ClansSlider = () => {
     }
   };
   const handleMouseUp = () => {
-    if (touchStart - touchEnd > 150) {
+    if (touchEnd > 0 && touchStart - touchEnd > 150) {
       decrement();
     } else if (touchEnd - touchStart > 150) {
       increment();
@@ -100,11 +100,11 @@ export const ClansSlider = () => {
               <ClansSliderImage image={leftGorilla.image} callBack={() => decrement()}></ClansSliderImage>
             </div>
             <div className="col-12 col-lg-6 d-flex align-items-center justify-content-center">
-              <span className="btn clans-slider-arrow-left position-absolute d-lg-flex d-none" onClick={() => decrement()}>
+              <span className="btn clans-slider-arrow-left position-absolute d-lg-flex d-flex" onClick={() => decrement()}>
                 <img src={LeftArrow} alt="left arrow" />
               </span>
-              <ClansSliderImage image={image}></ClansSliderImage>
-              <span className="btn clans-slider-arrow-right d-lg-flex d-none position-absolute" onClick={() => increment()}>
+              <ClansSliderImage image={image}  ></ClansSliderImage>
+              <span className="btn clans-slider-arrow-right d-lg-flex d-flex position-absolute" onClick={() => increment()}>
                 <img src={RightArrow} alt="right arrow" />
               </span>
             </div>

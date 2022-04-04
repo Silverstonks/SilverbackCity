@@ -89,7 +89,7 @@ footer {
     color: #fff;
     text-decoration: none; /* no underline */
     &:hover {
-      color: #00e101;
+      
       text-decoration: none;
     }
   }
@@ -98,6 +98,11 @@ footer {
     list-style-type: none;
     li {
       white-space: nowrap;
+      &:hover {
+        cursor: pointer;
+        color: #00e101;
+        text-decoration: none;
+      }
     }
   }
 }

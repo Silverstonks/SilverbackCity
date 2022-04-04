@@ -23,7 +23,13 @@
     }
   },
   "jumbotron": {
-    "button": "JOIN THE PRESALE"
+    "button": "JOIN THE PRESALE",
+    "countdown": {
+      "days": "DAYS",
+      "hours": "HOURS",
+      "minutes": "MINUTES",
+      "seconds": "SECONDS"
+    }
   },
   "slider": {
     "SECTION": {

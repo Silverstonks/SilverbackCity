@@ -49,7 +49,7 @@ export const MetaverseStory = () => {
     }
   };
   const handleMouseUp = () => {
-    if (touchStart - touchEnd > 150) {
+    if (touchEnd > 0 && touchStart - touchEnd > 150) {
       decrement();
     } else if (touchEnd - touchStart > 150) {
       increment();
@@ -103,7 +103,7 @@ export const MetaverseStory = () => {
         onMouseLeave={() => handleMouseLeave()}
       >
         <div className="metaverse-story-img-container">
-          <img className="metaverse-story-img" src={image} alt="story background img" />
+          <img className="metaverse-story-img" src={image} onClick={() => increment()} alt="story background img" />
         </div>
 
         <div className="metaverse-story-details">

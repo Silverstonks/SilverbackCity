@@ -4,7 +4,7 @@ import TitleBackground from '../../static/images/slider/TitleDecoration.png';
 import DotsDecoration from '../../static/images/slider/DotsDecoration.png';
 import LinesDecoration from '../../static/images/slider/LinesDecoration.png';
 import BackgroundDecoration from '../../static/images/slider/BackgroundDecoration.png';
-import { HomeTitles, initialNavPills } from './SliderConstants';
+import { initialNavPills } from './SliderConstants';
 import { SliderItem } from './SliderItem';
 import { useTranslation } from 'react-i18next';
 

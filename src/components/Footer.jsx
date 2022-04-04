@@ -99,61 +99,53 @@ const Footer = () => {
         <div className="row mt-5 pt-md-5">
           <div className="col-6 col-md">
             <ul>
-              <li className="py-1">
-                <div onClick={() => scrollTo('bidsarena', 100)}>
-                  <p className='d-flex'>
-                    <img src={Bidsarena} alt="" width="20px" className="mr-2" /> {t('link.arena')}
-                  </p>
-                </div>
+              <li className="py-1" onClick={() => scrollTo('bidsarena', 100)}>
+                <p className="d-flex">
+                  <img src={Bidsarena} alt="" width="20px" className="mr-2" /> {t('link.arena')}
+                </p>
               </li>
-              <li className="py-1">
-                <div onClick={() => scrollTo('nft-lab', 100)}>
-                  <p className='d-flex'>
-                    <img src={NftLab} alt="" width="25px" className="mr-2" />
-                    {t('link.nftlab')}
-                  </p>
-                </div>
+              <li className="py-1" onClick={() => scrollTo('nft-lab', 100)}>
+                <p className="d-flex">
+                  <img src={NftLab} alt="" width="25px" className="mr-2" />
+                  {t('link.nftlab')}
+                </p>
               </li>
-              <li className="py-1">
-                <div onClick={() => scrollTo('vault', 100)}>
-                  <p className='d-flex'>
-                    <img src={Vault} alt="" width="20px" className="mr-2" />
-                    {t('link.vault')}
-                  </p>
-                </div>
+              <li className="py-1" onClick={() => scrollTo('vault', 100)}>
+                <p className="d-flex">
+                  <img src={Vault} alt="" width="20px" className="mr-2" />
+                  {t('link.vault')}
+                </p>
               </li>
-              <li className="py-1">
-                <div onClick={() => scrollTo('foundry', 100)}>
-                  <p className='d-flex'>
-                    <img src={Foundry} alt="" width="20px" className="mr-2" />
-                    {t('link.foundry')}
-                  </p>
-                </div>
+              <li className="py-1" onClick={() => scrollTo('foundry', 100)}>
+                <p className="d-flex">
+                  <img src={Foundry} alt="" width="20px" className="mr-2" />
+                  {t('link.foundry')}
+                </p>
               </li>
             </ul>
           </div>
           <div className="col-6 col-md">
             <ul>
               <li className="py-1" onClick={() => scrollTo('lounge', 100)}>
-                <p className='d-flex'>
+                <p className="d-flex">
                   <img src={Lounge} alt="" width="20px" className="mr-2" />
                   <span>{t('link.lounge')}</span>
                 </p>
               </li>
               <li className="py-1" onClick={() => scrollTo('exchange', 100)}>
-                <p className='d-flex'>
+                <p className="d-flex">
                   <img src={Exchange} alt="" width="20px" className="mr-2" />
                   <span>{t('link.exchange')}</span>
                 </p>
               </li>
               <li className="py-1" onClick={() => scrollTo('silvershop', 100)}>
-                <p className='d-flex'>
+                <p className="d-flex">
                   <img src={Ecommerce} alt="" width="20px" className="mr-2" />
                   <span>{t('link.ecommerce')}</span>
                 </p>
               </li>
               <li className="py-1" onClick={() => scrollTo('meta-advertising', 100)}>
-                <p className='d-flex'>
+                <p className="d-flex">
                   <img src={Meta} alt="" width="20px" className="mr-2" />
                   <span>{t('link.avertising')}</span>
                 </p>
@@ -169,11 +161,11 @@ const Footer = () => {
             <div className="col-md-4 txt-color-white text-center text-md-left">{t('copyright')}</div>
             <div className="col-md-4 text-center txt-color-white">
               <a href="https://silverstonks.io/privacy.html" className="txt-color-white ">
-              {t('privacy_policy')}
+                {t('privacy_policy')}
               </a>
               <span className="px-3">|</span>
               <a href="https://silverstonks.io/terms.html" className="txt-color-white ">
-              {t('terms_and_conditions')}
+                {t('terms_and_conditions')}
               </a>
             </div>
           </div>
