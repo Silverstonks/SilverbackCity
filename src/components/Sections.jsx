@@ -77,7 +77,7 @@ const SectionItemImgLeft = ({ id = '', icon, img, btnHref = null }) => {
       <div className="section-item-img-left col-12 m-lg-auto mb-5 ">
         <div className="row flex-column-reverse flex-lg-row">
           <div className="col-lg-6 col-12 my-5">
-            <img className="" src={img} alt="" height="300px" style={{ maxWidth: '100%' }} />
+            <img className="" src={img} alt="" height="300px" style={{ maxWidth: '555px' }} />
           </div>
 
           <div className="col-lg-6 col-12 d-flex flex-column justify-content-between pl-5 my-5">
