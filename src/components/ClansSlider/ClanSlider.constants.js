@@ -7,6 +7,7 @@ import Gorilastronpng from '../../static/images/gorillas-slider/gorillas/Gorilas
 import Gorilasvanhelsingpng from '../../static/images/gorillas-slider/gorillas/Gorilasvanhelsingpng.png';
 import Gorilaszamuraipng from '../../static/images/gorillas-slider/gorillas/Gorilaszamuraipng.png';
 import Gorilaszombietechpng from '../../static/images/gorillas-slider/gorillas/Gorilaszombietechpng.png';
+import SpecialAgentpng from '../../static/images/gorillas-slider/gorillas/SpecialAgent.png';
 
 export const gorillasList = [
   GorilaFornite,
@@ -18,4 +19,5 @@ export const gorillasList = [
   Gorilasvanhelsingpng,
   Gorilaszamuraipng,
   Gorilaszombietechpng,
+  SpecialAgentpng
 ];

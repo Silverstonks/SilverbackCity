@@ -7,7 +7,9 @@ import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
-  const { t } = useTranslation('translation', { keyPrefix: 'header' });
+  const { t, i18n } = useTranslation('translation', { keyPrefix: 'header' });
+  const langEn = 'en-US';
+  const langEs = 'es-ES'; 
   // const { walletAddress, isAuthenticated } = useSelector((state) => state?.auth);
   // const { nft } = useSelector((state) => state?.nft);
   // const dispatch = useDispatch();
@@ -45,6 +47,10 @@ const Header = () => {
     return false;
   };
 
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  }
+
   return (
     <>
       <section className="banner">
@@ -69,11 +75,11 @@ const Header = () => {
                   <img src={LanguageIcon} alt="lang selector" id="lang-selector" className="lang-selector" />
                   &nbsp;
                   <span className="lang-options">
-                    <span className="lang-en active" id="lang-en">
+                    <span className={'lang-en ' + (i18n.language === langEn ? 'active': '') } id="lang-en" onClick={() => changeLanguage(langEn)}>
                       EN
                     </span>
                     <span className="separator">&nbsp; / &nbsp;</span>
-                    <span className="lang-es" id="lang-es">
+                    <span className={'lang-es ' + (i18n.language === langEs ? 'active': '')} id="lang-es" onClick={() => changeLanguage(langEs)}>
                       ES
                     </span>
                   </span>

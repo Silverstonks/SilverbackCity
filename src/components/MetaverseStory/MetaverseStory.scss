@@ -23,6 +23,7 @@
             width: 15ch;
         }
 
+
         @media screen and (max-width: 800px) {
             &
             {
@@ -87,6 +88,7 @@
             color: white;
             text-align: justify;
             text-align-last: left;
+            font-size: 14px;
         }
     }
 }

@@ -41,11 +41,19 @@ export const Jumbotron = () => {
     <div className="jumbotron-container d-flex flex-column justify-content-center ">
       <img src={Logo} alt="" className="w-25 mx-auto my-5" />
       <div className="button-decoration mx-auto">
+
         <div className="button-container h-75 mx-2 my-2">
           <a onClick={() => scrollTo()}  >
             <button className="h-100 information">{t('button')}</button>
           </a>
         </div>
+        
+        {/* <div className="button-container h-75 mx-2 my-2">
+          <a onClick={() => scrollTo()}  >
+            <button className="h-100 information">{t('button')}</button>
+          </a>
+        </div> */}
+
         <div className="decoration-bar">
           <img src={ButtonDecorationBar} alt="" />
         </div>

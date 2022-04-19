@@ -2,15 +2,15 @@ import React from 'react';
 import BidsarenaImg from '../static/images/sections/BidsarenaSection.png';
 import BidsarenaIcon from '../static/images/slider/IconBidsarena.png';
 import GreenBoxTitle from '../static/images/sections/GreenBoxTitle.png';
-import VaultImg from '../static/images/sections/VaultSection.png';
+import VaultImg from '../static/images/sections/VaultSection.gif';
 import VaultIcon from '../static/images/slider/IconVault.png';
-import ExchangeImg from '../static/images/sections/ExchangeSection.png';
+import ExchangeImg from '../static/images/sections/ExchangeSection.gif';
 import ExchangeIcon from '../static/images/slider/IconExchange.png';
-import SilverShopImg from '../static/images/sections/SilverShopSection.png';
+import SilverShopImg from '../static/images/sections/SilverShopSection.gif';
 import SilverShopIcon from '../static/images/slider/IconEcommerce.png';
-import LoungeImg from '../static/images/sections/LoungeSection.png';
+import LoungeImg from '../static/images/sections/LoungeSection.gif';
 import LoungeIcon from '../static/images/slider/IconLounge.png';
-import FoundryImg from '../static/images/sections/FoundrySection.png';
+import FoundryImg from '../static/images/sections/FoundrySection.gif';
 import FoundryIcon from '../static/images/slider/IconFoundry.png';
 import DotsDecoration from '../static/images/slider/DotsDecoration.png';
 import StakingIcon from '../static/images/slider/IconStaking.png';
@@ -56,7 +56,7 @@ const SectionItemImgRight = ({ id = '', icon, img, btnHref = null }) => {
               <p>{t(id + '.text')}</p>
             </div>
 
-            <div className="button-container ">
+            <div className="button-container">
               <button onClick={() => (btnHref ? window.open(btnHref) : null)}>{t(id + '.buttonText')}</button>
             </div>
           </div>

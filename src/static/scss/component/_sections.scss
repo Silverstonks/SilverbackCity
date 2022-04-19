@@ -132,6 +132,12 @@
     }
   }
 
+  .comingsoon {
+    &:hover {
+      background-color: white;
+    } 
+  }
+
   #exchange {
     #title-text {
       top: 35px;

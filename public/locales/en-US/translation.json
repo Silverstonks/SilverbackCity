@@ -34,8 +34,8 @@
   "slider": {
     "SECTION": {
       "pretitle": "Our Vision",
-      "title": "Acces to Silverback City",
-      "subtitle": "A Way to Earn Passive Income in hard Assets"
+      "title": "Access to Silverback City",
+      "subtitle": "A Way to Earn Passive Income in Hard Assets"
     },
     "SLIDE_1": {
       "title": "Own",
@@ -140,7 +140,7 @@
   "sections": {
     "bidsarena": {
       "title": "BIDSARENA",
-      "buttonText": "INVEST IN SILVER",
+      "buttonText": "LEARN MORE",
       "text": "Win purchasing power with our first Play 2 Earn game. Use your bids to win your favorite products at incredible prices. Every auction starts at $0.00 and has a timer. Each bid increases the price by $0.01 and resets the timer by 10 seconds. The last bidder to place a bid before the time runs out wins the item at a price much lower than the regular retail price."
     },
     "silvershop": {
@@ -289,7 +289,7 @@
         "jobTitle": "Chief Technology Officer"
       },
       "David": {
-        "name": "David Miguel",
+        "name": "David Miquel",
         "jobTitle": "Director of Silver Production, Europe"
       },
       "Pablo": {
@@ -303,6 +303,18 @@
       "Ignacio": {
         "name": "Ignacio Olmos",
         "jobTitle": "Attorney, Legal Counsel"
+      },
+      "Carlos": {
+        "name": "Carlos Moreno",
+        "jobTitle": "Lead Developer"
+      },
+      "Niraj": {
+        "name": "Niraj Bhattarai",
+        "jobTitle": "Blockchain Developer"
+      },
+      "Jamal": {
+        "name": "Jamal Ramjohn",
+        "jobTitle": "Director of eCommerce"
       }
     }
   },

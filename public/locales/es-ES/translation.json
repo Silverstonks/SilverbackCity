@@ -1,0 +1,335 @@
+{
+  "header": {
+    "nav": {
+      "first_option": {
+        "item": "Silverback City"
+      },
+      "second_option": {
+        "item": "Citizens / Zonas",
+        "dropdown": {
+          "first": "Bids Arena",
+          "second": "The Vault",
+          "third": "NFT Lab",
+          "fourth": "Silver Shop",
+          "fifth": "Token",
+          "sixth": "Underground Lounge"
+        }
+      },
+      "third_option": {
+        "item": "Historia"
+      },
+      "first_button": "Conectar Cartera",
+      "second_button": "Mint NFT"
+    }
+  },
+  "jumbotron": {
+    "button": "ÚNETE A LA PREVENTA",
+    "countdown": {
+      "days": "DIAS",
+      "hours": "HORAS",
+      "minutes": "MINUTOS",
+      "seconds": "SEGUNDOS"
+    }
+  },
+  "slider": {
+    "SECTION": {
+      "pretitle": "Nuestra visión",
+      "title": "Accede a Silverback City",
+      "subtitle": "Obtén ingresos pasivos en activos tangibles"
+    },
+    "SLIDE_1": {
+      "title": "Sé Dueño ",
+      "description": "Adquiere un NFT para unirte a la comunidad y obtener acceso a Silverback City, el metaverso de Silver Stonks."
+    },
+    "SLIDE_2": {
+      "title": "Explora",
+      "description": "Silverback City reúne todos los servicios que ofrece Silver Stonks en una experiencia inmersiva. Explora las diferentes áreas de la ciudad y usa tu avatar para interactuar con diferentes zonas del metaverso."
+    },
+    "SLIDE_3": {
+      "title": "Inmersivo",
+      "description": "Elige con qué servicio de Silverback City quieres interactuar y empieza a vivir tu propia historia en el metaverso."
+    },
+    "SLIDE_4": {
+      "title": "Play 2 Earn",
+      "description": "Gana tokens SSTX y pujas gratis para ganar poder adquisitivo, jugando video juegos en el metaverso, comenzando con Bids Arena y SilverBack Run."
+    }
+  },
+  "metaverse_story": {
+    "title": "HISTORIA METAVERSO",
+    "subtitle": "EL PRINCIPIO",
+    "slides": [
+      {
+        "text": "En un futuro no muy lejano, el inevitable colapso económico global y el fracaso de los gobiernos mundiales se vuelve una realidad. La inflación está en su punto más alto, la cadena de suministro está en un estado de colapso total y el desempleo no para de crecer. No se pudo adoptar una solución escalable para la energía lo suficientemente rápido en todo el mundo, y las reservas de petróleo y las materias primas se han agotado. Las naciones se han derrumbado por completo, y los gobiernos restantes están luchando por la energía renovable que está disponible, mientras que las personas luchan entre sí por los recursos."
+      },
+      {
+        "text": "Las personas se han vuelto más solitarias, eligiendo refugiarse en sus hogares y en comunidades cerradas. Las ciudades se han convertido en áreas catastróficas donde las personas intentan recolectar recursos para sobrevivir. Caminar por las calles se ha vuelto cada vez más peligroso ya que no hay policías y los ejercitos se han derrumbado. La gente siente una mayor sensación de riesgo."
+      },
+      {
+        "text": "En el caos del colapso del poder, una de las ciudades más grandes e influyentes rápidamente comenzó a decaer, solo los más fuertes pueden sobrevivir."
+      },
+      {
+        "text": "Lentamente, los más fuertes se adaptaron a su nuevo entorno y experimentaron creando diferentes armaduras para protegerse de la contaminación y los peligros externos. Los activos con valor intrínseco aumentaron en demanda y los metales preciosos recuperaron su verdadero estatus como dinero."
+      },
+      {
+        "text": "A medida que pasaban los días, las perspectivas para los supervivientes se volvían cada vez más sombrías. Cada día había menos recursos, menos estado de derecho y menos esperanza de restaurar lo que una vez fue. Pero en un día crucial, un meteorito con una aurora de llamas verdes se estrelló y creó una explosión de energía."
+      },
+      {
+        "text": "En su camino, comienza a darse cuenta de que puede encontrar algo que podría cambiar su realidad. No estaba ciego, estaba viendo una luz verde, finalmente una fuente de poder."
+      },
+      {
+        "text": "La energía era algo que nadie había visto antes. Un sobreviviente notó que en el bosque muerto donde había caído la explosión, ahora estaba lleno de vida."
+      },
+      {
+        "text": "Se dio cuenta de que esa energía era una fuente de luz espiritual que poseía propiedades curativas y decidió llevarse una parte de ella a su comunidad."
+      },
+      {
+        "text": "Esta luz se utilizaría para restaurar la ciudad. Sin embargo, tenía que ser de una manera que no expusiera a los humanos a la contaminación que producía la ciudad."
+      },
+      {
+        "text": "Regresó a su laboratorio subterráneo para experimentar con un avatar que había estado creando en forma de gorila, ya que su secuencia de ADN es similar a la de los humanos. Esta parecía ser la solución que necesitaba para dar vida a los avatares."
+      },
+      {
+        "text": "A través del metaverso, las personas podían interactuar a través de sus avatares sin arriesgar sus vidas. Podrían ofrecer seguridad y nuevas zonas donde la fuente de energía podría usarse para reconstruir la ciudad."
+      }
+    ]
+  },
+  "nft_lab": {
+    "title": "NFT LAB",
+    "text": "Citizens of Silverback City es una colección de 9,999 gorilas Silverback en la blockchain de Ethereum. Tu Silverback también se usa como un avatar en forma de  membresía que ofrece acceso a recompensas exclusivas para miembros, incluida la capacidad de obtener ingresos pasivos a través de la plata digital que ganas en nuestros juegos Play 2 Earn, junto con el poder adquisitivo que puedes usar para comprar metales preciosos y pujas gratuitas para adquirir los productos que te gustan en Bids Arena."
+  },
+  "clans_slider": {
+    "title": "TROOPS",
+    "subtitle": "Scanning..."
+  },
+  "mint_card": {
+    "title": "TROOPS OF SILVERBACK CITY",
+    "subtitle": "Pre Lanzamiento: Julio 16",
+    "btn": "Regístrate a la Whitelist",
+    "priceLabel": "Precio Preventa:",
+    "price": "0.1",
+    "coin": "ETH",
+    "launchLabel": "Precio Lanzamiento:",
+    "launchPrice": "0.13"
+  },
+  "mint_modal": {
+    "title": ""
+  },
+  "benefits": {
+    "titlegreen": "NFT",
+    "title": "BENEFICIOS",
+    "section": {
+      "play": {
+        "title": "- Play 2 Earn Acceso Metaverso ",
+        "text": "Tu NFT te permite ganar plata digital y otras recompensas jugando juegos increíbles en el Metaverso. Tu avatar podrá ganar pujas en Bids Arena compitiendo contra otros jugadores. Utiliza tus pujas para adquirir productos reales que te encanten, como metales preciosos, productos electrónicos, coleccionables y mucho más."
+      },
+      "incoming": {
+        "title": "- Ingresos Pasivos",
+        "text": "Pon a trabajar tu plata digital que ganas en Silverback City para gaenerar tokens SSTX. Puedes usar tus tokens SSTX para comprar plata física y otros metales preciosos."
+      },
+      "auctions": {
+        "title": "- Subastas Exclusivas",
+        "text": "Poseer tus NFT SilverBack te da acceso a subastas exclusivas en Bids Arena, lo que te brinda más oportunidades de ganar productos increíbles a precios exclusivos"
+      },
+      "cashback": {
+        "title": "- Reembolso",
+        "text": "Recibe un paquete de bienvenida de pujas para Bids Arena cuando poseas un NFT. Cuando juegas, obtienes un reembolso en cada subasta en la que participas. Esto te da poder adquisitivo para los productos que te deseas."
+      }
+    }
+  },
+  "sections": {
+    "bidsarena": {
+      "title": "BIDSARENA",
+      "buttonText": "APRENDE MÁS ",
+      "text": "Gana poder adquisitivo con nuestro primer video juego Play 2 Earn. Usa tus pujas para ganar tus productos favoritos a precios increíbles. Cada subasta comienza en $0.00 y tiene un temporizador. Cada puja aumenta el precio en $ 0.01 y reinicia el temporizador en 10 segundos. El último postor que haga una puja antes de que se acabe el tiempo gana el artículo a un precio mucho más bajo que el precio de venta normal."
+    },
+    "silvershop": {
+      "title": "SILVER SHOP",
+      "buttonText": "INVIERTE EN PLATA",
+      "text": "Compre plata física en la tienda de plata de Silver Stonks para protegerte contra la inflación. Damos un giro a los lingotes de plata tradicionales al hacer productos que atraigan a un grupo demográfico más amplio, conectando blockchain con el mundo tradicional de invertir en metales preciosos. Cada producto de plata está vinculado a un certificado digital de autenticidad. \n\nPoseer nuestros lingotes de plata te permite reclamar certificados de autenticidad en forma de NFT en tu cartera digital. Tus certificados generan intereses sobre tu plata todos los meses en SSTX."
+    },
+    "vault": {
+      "title": "LA BÓVEDA",
+      "buttonText": "PRÓXIMAMENTE",
+      "text": "En la Bóveda puedes almacenar tus tokens SSTX y certificados digitales de plata para ganar interés en SSTX. Hay tres formas de ganar intereses:\n- Almacena sus tokens SSTX y gana hasta un 12 % de APY.\n- Almacena tus certificados NFT de tus compras físicas de plata para ganar intereses de hasta un 6 % de APY.\n- Almacena los la plata digital que ganas en nuestros juegos Play 2 Earn hasta un 12 %. Necesitas un Silverback NFT para obtener ingresos pasivos en los juegos Play 2 Earn."
+    },
+    "lounge": {
+      "title": "UNDERGROUND\nLOUNGE",
+      "buttonText": "PRÓXIMAMENTE",
+      "text": "Cada dueño de un NFT Silverback tendrá acceso al Underground Lounge, una sala de chat exclusiva para hablar sobre las últimas noticias, desde todo lo relacionado con las criptomonedas hasta el mercado de los metales preciosos."
+    },
+    "exchange": {
+      "title": "SSTX EXCHANGE",
+      "buttonText": "COMPRA SSTX",
+      "text": "Compra SSTX usando BNB o cambia cualquier token BSC por SSTX."
+    },
+    "foundry": {
+      "title": "FUNDICIÓN",
+      "buttonText": "PRÓXIMAMENTE",
+      "text": "Visita la fundición para fundir la plata y el oro digital que ganas en nuestros juegos Play 2 Earn con tu avatar NFT. Una vez que recojas suficientes metales preciosos, puedes moldear tu plata u oro en lingotes y monedas. Cuando creas tus lingotes y monedas digitales, recibes un certificado de autenticidad para tus metales preciosos digitales en forma de NFT. Guárdalos en nuestra bóveda para ganar intereses sobre sus metales preciosos digitales. Gana intereses en tokens SSTX y utilízalos para comprar metales preciosos físicos y otros activos tangibles en nuestra tienda de plata, o acumula tokens y ponlos a trabajar directamente para que sigan generando más SSTX y continues generando más ingresos pasivos."
+    },
+    "staking": {
+      "title": "STAKING",
+      "buttonText": "STAKE AHORA",
+      "text": "Pon a trabajar tus SSTX y gana hasta un 12% APY al convertirte en miembro e ingresar en nuestro metaverso."
+    }
+  },
+  "marketplace": {
+    "title01": "SE PARTE DE SILVERBACK",
+    "title02": "CITY",
+    "title03": "MARKETPLACE",
+    "section": {
+      "landlord": {
+        "title": "CONVIERTETE EN PROPIETARIO",
+        "subtitle": "Conviertete en un propietario digital",
+        "paragraph01": "¿Quién quiere ser dueño de inmuebles en la gran ciudad? Silver Stonks lanzará una colección secundaria de NFT con edificios únicos en la ciudad. En Silverback City finalmente puedes poseer un edificio completo en las calles más populares. Compra bloques de la ciudad para tener derechos de publicidad en tu edificio y obtener ingresos pasivos.",
+        "paragraph02": "Si eres el propietario del NFT, tendrás los derechos de explotación sobre tu edificio. Silver Stonks te ayuda a diversificar tu cartera entre activos digitales y activos tangibles. Generar dinero por los derechos de publicidad será solo el comienzo, ya que desarrollaremos nuestros juegos Play 2 Earn para que te permitan obtener activos reales y reservas de valor. Consigue tu edificio en Silverback City y comienza a aprovechar el mundo NFT."
+      },
+      "advertising": {
+        "title": "META ADVERTISING",
+        "subtitle": "Consigue tu Publicidad",
+        "paragraph01": "Silver Stonks Meta Advertising conecta empresas con propietarios. Los propietarios tienen la oportunidad de obtener ingresos pasivos alquilando espacios publicitarios a empresas. Cada edificio que poseas será candidato para la publicidad, según la ubicación y el valor del edificio. Las empresas tendrán diferentes paquetes para elegir cuando anuncien en Silverback City. Se el primero en aprovechar la nueva forma de anunciarse en el metaverso."
+      }
+    }
+  },
+  "roadmap": {
+    "pre_title": "TIMELINE",
+    "subtitle": "Hoja de ruta",
+    "description": "Nuestro equipo está trabajando arduamente para alcanzar nuestros objetivos cada trimestre y hacer crecer nuestro ecosistema para brindar a nuestros holders mayores beneficios.",
+    "Quarter": {
+      "Q221": {
+        "quarter": "Q2 2021",
+        "title": "Concepto",
+        "des1": "Crear equipo",
+        "des2": "White Paper finalizado",
+        "des3": "Plan estratégico"
+      },
+      "Q321": {
+        "quarter": "Q3 2021",
+        "title": "Lanzamiento Token",
+        "des1": "Lanzamienti SSTX",
+        "des2": "Liquidez bloqueada",
+        "des3": "Diseño y producción de plata",
+        "des4": "Creación web",
+        "des5": "Staking"
+      },
+      "Q421": {
+        "quarter": "Q4 2021",
+        "title": "PLATA",
+        "des1": "E-Commerce",
+        "des2": "Campaña de marketing",
+        "des3": "Lanzamiento merch de Silver Stonks"
+      },
+      "Q122": {
+        "quarter": "Q1 2022",
+        "title": "Expansión Silver Stonks",
+        "des1": "Expandir productos Silver Stonks",
+        "des2": "Hablar con exchanges centralizados",
+        "des3": "Certificates de autenticidad NFT",
+        "des4": "Colección de arte NFT",
+        "des5": "Concepto Silverback City"
+      },
+      "Q222": {
+        "quarter": "Q2 2022",
+        "title": "Desarrollo Metaverso & Play2Earn",
+        "des1": "Reuniones con bullion dealers adopción token",
+        "des2": "Aplicar los servicios de Silver Stonks al Metaverso",
+        "des3": "Procesador de pagos SSTX",
+        "des4": "Desarrollar Bids Arena"
+      },
+      "Q322": {
+        "quarter": "Q3 2022",
+        "title": "Expansión SSTX",
+        "des1": "Listado exchange centralizado pequeño",
+        "des2": "Internalizar la producción de la plata",
+        "des3": "Desarrollo Underground Lounge",
+        "des4": "Lanzamiento edificios NFT para Silverback City"
+      },
+      "Q422": {
+        "quarter": "Q4 2022",
+        "title": "Expansión ecosistema",
+        "des1": "Desarrollo video juego SilverBack Run",
+        "des2": "Expandir contenido financiero",
+        "des3": "Expandir redes sociales",
+        "des4": "Expandir productos joyería"
+      },
+      "Q123": {
+        "quarter": "Q1 2023",
+        "title": "Go Mainstream",
+        "des1": "NFT Marketplace para Silverback City",
+        "des2": "Listado exchange grande "
+      },
+      "Q223": {
+        "quarter": "Q2 2023",
+        "title": "Servicios Meta Advertising",
+        "des1": "Mejorar servicios Metaverso",
+        "des2": "Expandir Marketplace",
+        "des3": "Lanzamiento NFT Meta Advertising"
+      }
+    }
+  },
+  "team": {
+    "main_title": "Nuestro equipo",
+    "description": "El equipo de Silver Stonks combina la pasión por crear negocios impactantes con la experiencia de la industria en finanzas, desarrollo y marketing.",
+    "member": {
+      "Vicente": {
+        "name": "Vicente Benlloch",
+        "jobTitle": "Co-fundador, Director Ejecutivo"
+      },
+      "Teresa": {
+        "name": "Teresa De Jesus",
+        "jobTitle": "Co-fundadora, Directora Financiera"
+      },
+      "Pablo": {
+        "name": "Pablo Palau",
+        "jobTitle": "Director Creativo"
+      },
+      "JoseDeJesus": {
+        "name": "Jose De Jesus",
+        "jobTitle": "Director Tecnología"
+      },
+      "Jose": {
+        "name": "Jose Honrubia",
+        "jobTitle": "Director Operaciones"
+      },
+      "David": {
+        "name": "David Miquel",
+        "jobTitle": "Director Producción Plata, Europa"
+      },
+      "Christopher": {
+        "name": "Christopher Navarro",
+        "jobTitle": "Director Producción Plata, USA"
+      },
+      "Ignacio": {
+        "name": "Ignacio Olmos",
+        "jobTitle": "Abogado, Consejero Legal"
+      },
+      "Carlos": {
+        "name": "Carlos Moreno",
+        "jobTitle": "Programador, Desarrollador Principal"
+      },
+      "Niraj": {
+        "name": "Niraj Bhattarai",
+        "jobTitle": "Programador, Desarrollador Blockchain"
+      },
+      "Jamal": {
+        "name": "Jamal Ramjohn",
+        "jobTitle": "Director Ecommerce"
+      }
+    }
+  },
+  "footer": {
+    "link": {
+      "arena": "BIDSARENA",
+      "nftlab": "NFT LAB",
+      "vault": "THE VAULT",
+      "foundry": "FOUNDRY",
+      "lounge": "UNDERGROUND LOUNGE",
+      "exchange": "SSTX EXCHANGE",
+      "ecommerce": "SILVER SHOP",
+      "avertising": "META ADVERTISING"
+    },
+    "copyright": "© 2022 Silver Stonks. Todos los derechos reservados.",
+    "privacy_policy": "Política Privacidad",
+    "terms_and_conditions": "Términos & Condiciones"
+  }
+}

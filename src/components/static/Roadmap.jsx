@@ -6,7 +6,7 @@ const Roadmap = () => {
   return (
     <>
       {/*<!-- Roadmap START -->*/}
-      <section className="container-fluid bg-color-dark py-5 roadmap">
+      <section className="container-fluid bg-color-purple py-5 roadmap">
         <div className="container">
           <div className="row mb-5">
             <div className="col-md-12">

@@ -6,6 +6,10 @@ import David from '../../static/images/team/david.jpg';
 import Pablo from '../../static/images/team/pablo.jpg';
 import Christopher from '../../static/images/team/christopher.jpg';
 import Ignacio from '../../static/images/team/ignacio.jpg';
+import Carlos from '../../static/images/team/carlos.jpg';
+import Niraj from '../../static/images/team/niraj.jpg';
+import Jamal from '../../static/images/team/jamal.jpg';
+
 import { useTranslation } from 'react-i18next';
 
 const Team = () => {
@@ -13,7 +17,7 @@ const Team = () => {
 
   return (
     <>
-      <section className="container-fluid py-5 bg-white">
+      <section className="container-fluid py-5 bg-purple">
         <div className="container">
           <div className="row">
             <div className="col text-center">
@@ -72,75 +76,6 @@ const Team = () => {
                 </div>
               </div>
             </div>
-            {/*<!-- Team 3-->*/}
-            <div className="col-md-3 mb-4">
-              <div className="team d-flex flex-column align-items-center">
-                <div className="mb-3" data-aos="flip-left" data-aos-delay="300" data-aos-offset="50" data-aos-duration="1000">
-                  <div className="image-box">
-                    <img src={Jose} />
-                  </div>
-                </div>
-                <div
-                  className="text-center team-info"
-                  data-aos="fade-zoom-in"
-                  data-aos-delay="100"
-                  data-aos-offset="50"
-                  data-aos-duration="1000"
-                >
-                  <h3 className="card-title">{t('member.Jose.name')}</h3>
-                  <h2 className="card-subtitle mb-2 text-muted">{t('member.Jose.jobTitle')}</h2>
-                  <a href="https://www.linkedin.com/in/jose-manuel-honrubia-belenguer-8338a9104/" target="_blank" className="">
-                    <i className="fab fa-linkedin fa-lg"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/*<!-- Team 4-->*/}
-            <div className="col-md-3 mb-4">
-              <div className="team d-flex flex-column align-items-center">
-                <div className="mb-3" data-aos="flip-left" data-aos-delay="300" data-aos-offset="50" data-aos-duration="1000">
-                  <div className="image-box">
-                    <img src={JoseDeJesus} />
-                  </div>
-                </div>
-                <div
-                  className="text-center team-info"
-                  data-aos="fade-zoom-in"
-                  data-aos-delay="100"
-                  data-aos-offset="50"
-                  data-aos-duration="1000"
-                >
-                  <h3 className="card-title">{t('member.JoseDeJesus.name')}</h3>
-                  <h2 className="card-subtitle mb-2 text-muted">{t('member.JoseDeJesus.jobTitle')}</h2>
-                  <a href="https://www.linkedin.com/in/jdejesus-ibm/" target="_blank" className="">
-                    <i className="fab fa-linkedin fa-lg"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/*<!-- Team 5-->*/}
-            <div className="col-md-3 mb-4">
-              <div className="team d-flex flex-column align-items-center">
-                <div className="mb-3" data-aos="flip-left" data-aos-delay="300" data-aos-offset="50" data-aos-duration="1000">
-                  <div className="image-box">
-                    <img src={David} />
-                  </div>
-                </div>
-                <div
-                  className="text-center team-info"
-                  data-aos="fade-zoom-in"
-                  data-aos-delay="100"
-                  data-aos-offset="50"
-                  data-aos-duration="1000"
-                >
-                  <h3 className="card-title">{t('member.David.name')}</h3>
-                  <h2 className="card-subtitle mb-2 text-muted">{t('member.David.jobTitle')}</h2>
-                  <a href="https://www.linkedin.com/in/david-miquel-castells-855424123/" target="_blank" className="">
-                    <i className="fab fa-linkedin fa-lg"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
             {/*<!-- Team 6-->*/}
             <div className="col-md-3 mb-4">
               <div className="team d-flex flex-column align-items-center">
@@ -164,6 +99,79 @@ const Team = () => {
                 </div>
               </div>
             </div>
+            
+            {/*<!-- Team 4-->*/}
+            <div className="col-md-3 mb-4">
+              <div className="team d-flex flex-column align-items-center">
+                <div className="mb-3" data-aos="flip-left" data-aos-delay="300" data-aos-offset="50" data-aos-duration="1000">
+                  <div className="image-box">
+                    <img src={JoseDeJesus} />
+                  </div>
+                </div>
+                <div
+                  className="text-center team-info"
+                  data-aos="fade-zoom-in"
+                  data-aos-delay="100"
+                  data-aos-offset="50"
+                  data-aos-duration="1000"
+                >
+                  <h3 className="card-title">{t('member.JoseDeJesus.name')}</h3>
+                  <h2 className="card-subtitle mb-2 text-muted">{t('member.JoseDeJesus.jobTitle')}</h2>
+                  <a href="https://www.linkedin.com/in/jdejesus-ibm/" target="_blank" className="">
+                    <i className="fab fa-linkedin fa-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/*<!-- Team 3-->*/}
+            <div className="col-md-3 mb-4">
+              <div className="team d-flex flex-column align-items-center">
+                <div className="mb-3" data-aos="flip-left" data-aos-delay="300" data-aos-offset="50" data-aos-duration="1000">
+                  <div className="image-box">
+                    <img src={Jose} />
+                  </div>
+                </div>
+                <div
+                  className="text-center team-info"
+                  data-aos="fade-zoom-in"
+                  data-aos-delay="100"
+                  data-aos-offset="50"
+                  data-aos-duration="1000"
+                >
+                  <h3 className="card-title">{t('member.Jose.name')}</h3>
+                  <h2 className="card-subtitle mb-2 text-muted">{t('member.Jose.jobTitle')}</h2>
+                  <a href="https://www.linkedin.com/in/jose-manuel-honrubia-belenguer-8338a9104/" target="_blank" className="">
+                    <i className="fab fa-linkedin fa-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/*<!-- Team 5-->*/}
+            <div className="col-md-3 mb-4">
+              <div className="team d-flex flex-column align-items-center">
+                <div className="mb-3" data-aos="flip-left" data-aos-delay="300" data-aos-offset="50" data-aos-duration="1000">
+                  <div className="image-box">
+                    <img src={David} />
+                  </div>
+                </div>
+                <div
+                  className="text-center team-info"
+                  data-aos="fade-zoom-in"
+                  data-aos-delay="100"
+                  data-aos-offset="50"
+                  data-aos-duration="1000"
+                >
+                  <h3 className="card-title">{t('member.David.name')}</h3>
+                  <h2 className="card-subtitle mb-2 text-muted">{t('member.David.jobTitle')}</h2>
+                  <a href="https://www.linkedin.com/in/david-miquel-castells-855424123/" target="_blank" className="">
+                    <i className="fab fa-linkedin fa-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
 
             {/*<!-- Team 8-->*/}
             <div className="col-md-3 mb-4">
@@ -211,6 +219,79 @@ const Team = () => {
                 </div>
               </div>
             </div>
+
+           {/*<!-- Team 9-->*/}
+           <div className="col-md-3 mb-4">
+              <div className="team d-flex flex-column align-items-center">
+                <div className="mb-3" data-aos="flip-left" data-aos-delay="300" data-aos-offset="50" data-aos-duration="1000">
+                  <div className="image-box">
+                    <img src={Carlos} />
+                  </div>
+                </div>
+                <div
+                  className="text-center team-info"
+                  data-aos="fade-zoom-in"
+                  data-aos-delay="100"
+                  data-aos-offset="50"
+                  data-aos-duration="1000"
+                >
+                  <h3 className="card-title">{t('member.Carlos.name')}</h3>
+                  <h2 className="card-subtitle mb-2 text-muted">{t('member.Carlos.jobTitle')}</h2>
+                  <a href="https://www.linkedin.com/in/carlos-moreno-fontana/" target="_blank" className="">
+                    <i className="fab fa-linkedin fa-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/*<!-- Team 9-->*/}
+           <div className="col-md-3 mb-4">
+              <div className="team d-flex flex-column align-items-center">
+                <div className="mb-3" data-aos="flip-left" data-aos-delay="300" data-aos-offset="50" data-aos-duration="1000">
+                  <div className="image-box">
+                    <img src={Niraj} />
+                  </div>
+                </div>
+                <div
+                  className="text-center team-info"
+                  data-aos="fade-zoom-in"
+                  data-aos-delay="100"
+                  data-aos-offset="50"
+                  data-aos-duration="1000"
+                >
+                  <h3 className="card-title">{t('member.Niraj.name')}</h3>
+                  <h2 className="card-subtitle mb-2 text-muted">{t('member.Niraj.jobTitle')}</h2>
+                  <a href="https://www.linkedin.com/in/niraj-b-92356713b/" target="_blank" className="">
+                    <i className="fab fa-linkedin fa-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/*<!-- Team 9-->*/}
+           <div className="col-md-3 mb-4">
+              <div className="team d-flex flex-column align-items-center">
+                <div className="mb-3" data-aos="flip-left" data-aos-delay="300" data-aos-offset="50" data-aos-duration="1000">
+                  <div className="image-box">
+                    <img src={Jamal} />
+                  </div>
+                </div>
+                <div
+                  className="text-center team-info"
+                  data-aos="fade-zoom-in"
+                  data-aos-delay="100"
+                  data-aos-offset="50"
+                  data-aos-duration="1000"
+                >
+                  <h3 className="card-title">{t('member.Jamal.name')}</h3>
+                  <h2 className="card-subtitle mb-2 text-muted">{t('member.Jamal.jobTitle')}</h2>
+                  <a href="https://www.linkedin.com/in/jamal-ramjohn23/" target="_blank" className="">
+                    <i className="fab fa-linkedin fa-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

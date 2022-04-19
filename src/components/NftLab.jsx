@@ -1,5 +1,5 @@
 import React from 'react';
-import NftLabImg from '../static/images/sections/NftLab.png';
+import NftLabImg from '../static/images/sections/NftLab.gif';
 import NftLabIcon from '../static/images/slider/IconNftLab.png';
 import GreenBoxTitle from '../static/images/sections/GreenBoxTitle.png';
 import { useTranslation } from 'react-i18next';
