@@ -23,7 +23,8 @@
     }
   },
   "jumbotron": {
-    "button": "JOIN THE PRESALE",
+    "button_presale": "JOIN THE PRESALE",
+    "button_comunity": "JOIN THE COMMUNITY",
     "countdown": {
       "days": "DAYS",
       "hours": "HOURS",
@@ -155,7 +156,7 @@
     },
     "lounge": {
       "title": "UNDERGROUND\nLOUNGE",
-      "buttonText": "COMING SOON",
+      "buttonText": "JOIN THE COMMUNITY",
       "text": "Each Silverback holder will have access to the Underground Lounge, an exclusive chatroom to talk about the latest news from everything in crypto to the precious metals market."
     },
     "exchange": {

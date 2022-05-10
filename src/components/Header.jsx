@@ -43,12 +43,14 @@ const Header = () => {
       //x.scrollIntoView({ block: 'start', behavior: 'smooth' });
       const y = x.getBoundingClientRect().top + window.pageYOffset - offset;
       window.scrollTo({ top: y, behavior: 'smooth' });
+      toggleSideMenu();
     }
     return false;
   };
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
+    toggleSideMenu();
   }
 
   return (

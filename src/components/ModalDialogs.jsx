@@ -21,7 +21,7 @@ const ModalDialogs = () => {
         keyboard={false}
         id="onboardModal"
         dialogClassName={'mint-modal-content '}
-        style={{ transform: "translate(0, 5%)", "background-image": "url('../images/sections/Background.png')" }}
+        style={{ transform: "translate(0, 5%)", "background-color": "#0E1316" }}
       >
         {modalStep === 1 && <MintModal />}
         {/*modalStep === 1 && <LoginModal email={email} setEmail={setEmail} error={error} />*/}

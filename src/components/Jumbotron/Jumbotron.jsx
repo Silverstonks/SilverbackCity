@@ -39,39 +39,48 @@ export const Jumbotron = () => {
 
   return (
     <div className="jumbotron-container d-flex flex-column justify-content-center ">
-      <img src={Logo} alt="" className="w-25 mx-auto my-5" />
-      <div className="button-decoration mx-auto">
-
-        <div className="button-container h-75 mx-2 my-2">
-          <a onClick={() => scrollTo()}  >
-            <button className="h-100 information">{t('button')}</button>
-          </a>
-        </div>
-        
-        {/* <div className="button-container h-75 mx-2 my-2">
-          <a onClick={() => scrollTo()}  >
-            <button className="h-100 information">{t('button')}</button>
-          </a>
-        </div> */}
-
-        <div className="decoration-bar">
-          <img src={ButtonDecorationBar} alt="" />
-        </div>
-      </div>
-        <div className="row">
-          <h1 className='col-12 d-flex justify-content-center countdown-container mt-4'>
-            <span className='day-countdown'>{days}&nbsp;:&nbsp;</span>
-            <span className='hour-countdown'>{hours}&nbsp;:&nbsp;</span>
-            <span className='minute-countdown'>{minutes}&nbsp;:&nbsp;</span>
-            <span className='second-countdown'>{seconds}</span>
-          </h1>
-          <div className='col-12 d-flex justify-content-center text-white countdown-container'>
-            <span>{t('countdown.days')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span>{t('countdown.hours')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span>{t('countdown.minutes')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span className='second-countdown'>{t('countdown.seconds')}</span>
+      <img src={Logo} alt="" className="w-25 mx-auto my-5 jumbotron-logo" />
+      <div className="row">
+        <div className="col-12 d-flex justify-content-center col-xl-2 offset-xl-4 col-12">
+          <div className="button-decoration mx-auto">
+            <div className="button-container h-75 mx-2 my-2">
+              <a onClick={() => scrollTo()}>
+                <button className="h-100 information">{t('button_presale')}</button>
+              </a>
+            </div>
+            <div className="decoration-bar">
+              <img src={ButtonDecorationBar} alt="" />
+            </div>
           </div>
         </div>
+        <div className="col-12 d-flex justify-content-center col-xl-2 col-12">
+          <div className="button-decoration mx-auto">
+            <div className="button-container h-75 mx-2 my-2">
+              <a href="https://discord.com/invite/6q9hQcmYq5" target="_blank" rel="noreferrer">
+                <button className="h-100 information">{t('button_comunity')}</button>
+              </a>
+            </div>
+
+            <div className="decoration-bar">
+              <img src={ButtonDecorationBar} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <h1 className="col-12 d-flex justify-content-center countdown-container mt-4">
+          <span className="day-countdown">{days}&nbsp;:&nbsp;</span>
+          <span className="hour-countdown">{hours}&nbsp;:&nbsp;</span>
+          <span className="minute-countdown">{minutes}&nbsp;:&nbsp;</span>
+          <span className="second-countdown">{seconds}</span>
+        </h1>
+        <div className="col-12 d-flex justify-content-center text-white countdown-container">
+          <span>{t('countdown.days')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>{t('countdown.hours')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>{t('countdown.minutes')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span className="second-countdown">{t('countdown.seconds')}</span>
+        </div>
+      </div>
     </div>
   );
 };

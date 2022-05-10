@@ -26,7 +26,7 @@ const Sections = () => {
       </div>
       <SectionItemImgLeft id="silvershop" icon={SilverShopIcon} img={SilverShopImg} btnHref={`https://silverstonks.com/`} />
       <SectionItemImgRight id="vault" icon={VaultIcon} img={VaultImg} />
-      <SectionItemImgLeft id="lounge" icon={LoungeIcon} img={LoungeImg} />
+      <SectionItemImgLeft id="lounge" icon={LoungeIcon} img={LoungeImg} btnHref={`https://discord.com/invite/6q9hQcmYq5`} />
       <SectionItemImgRight id="exchange" icon={ExchangeIcon} img={ExchangeImg} btnHref={`https://silverstonks.io`} />
       <div className="d-flex justify-content-center ">
         <img src={DotsDecoration} alt="" className="mr-5 my-4" style={{ transform: 'rotate(90deg)' }} />

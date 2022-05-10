@@ -23,7 +23,8 @@
     }
   },
   "jumbotron": {
-    "button": "ÚNETE A LA PREVENTA",
+    "button_presale": "ÚNETE A LA PREVENTA",
+    "button_comunity": "ÚNETE A LA COMUNIDAD",
     "countdown": {
       "days": "DIAS",
       "hours": "HORAS",
@@ -154,7 +155,7 @@
     },
     "lounge": {
       "title": "UNDERGROUND\nLOUNGE",
-      "buttonText": "PRÓXIMAMENTE",
+      "buttonText": "ÚNETE A LA COMUNIDAD",
       "text": "Cada dueño de un NFT Silverback tendrá acceso al Underground Lounge, una sala de chat exclusiva para hablar sobre las últimas noticias, desde todo lo relacionado con las criptomonedas hasta el mercado de los metales preciosos."
     },
     "exchange": {
