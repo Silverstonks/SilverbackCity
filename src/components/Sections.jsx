@@ -42,7 +42,7 @@ const SectionItemImgRight = ({ id = '', icon, img, btnHref = null }) => {
   return (
     <div className="row">
       <div className="section-item-img-right col-12 m-lg-auto mb-5">
-        <div className="row flex-lg-column-reverse flex-column flex-lg-row ">
+        <div className="row flex-md-column-reverse flex-column flex-lg-row ">
           
           <div className="col-lg-6 d-flex col-12 flex-column justify-content-between pr-5 my-5">
             <div className="title-container mb-3" id={id}>
