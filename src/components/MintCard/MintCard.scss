@@ -12,6 +12,13 @@ $navText: #00e101;
   margin: 4rem 0;
 
   background: url('../../static/images/sections/BackgroundMintNft.png') no-repeat;
+
+  /*@media (max-width: 991px) {
+    & {
+      background: none;
+    }
+  }*/
+
   background-size: contain;
 
   .mint-card {
@@ -24,11 +31,20 @@ $navText: #00e101;
     justify-content: center;
     align-items: end;
 
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 991px) {
       & {
         min-height: 500px;
       }
     }
+
+    @media (max-width: 767px) {
+      & {
+        background: none;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+    }
+
 
     .img-detail.lines {
       align-self: start;
@@ -53,6 +69,10 @@ $navText: #00e101;
           color: white !important;
           background: rgba(0, 225, 1, 0.2) !important;
         }
+      }
+      @media (max-width: 767px) {
+        position: relative;
+        bottom: -40px;
       }
     }
 
