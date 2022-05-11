@@ -99,7 +99,7 @@
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
-body iframe {
+body iframe:not(#iframewin){
  display: none;
 }
 body {
