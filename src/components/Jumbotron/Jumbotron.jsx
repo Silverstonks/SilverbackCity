@@ -14,7 +14,7 @@ export const Jumbotron = ({ showCountDown }) => {
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
-  const fechaApple = 'August 20th at 12:00 PM EST';
+  
 
   const scrollTo = (ancla = 'mint-card', offset = 20) => {
     let x = document.querySelector('#' + ancla);
@@ -89,8 +89,8 @@ export const Jumbotron = ({ showCountDown }) => {
       {!showCountDown && (
         <>
           <div className="row">
-            <div className="col-12 d-none justify-content-center text-white countdown-container">
-              <span>{fechaApple}</span>
+            <div className="col-12 d-flex justify-content-center text-white countdown-container">
+              <span>August <span className="second-countdown">20th</span> at 12:00 PM EST</span>
             </div>
           </div>
         </>
