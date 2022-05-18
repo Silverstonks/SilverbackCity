@@ -99,9 +99,11 @@
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
-
+body iframe:not(#iframewin){
+ display: none;
+}
 body {
-  background-image: url('../images/sections/Background.png');
+  background-image: url('../images/sections/Background.png'); 
   background-position: center;
   background-color: #0E1316;
   // backdrop-filter: grayscale(0.7) opacity(0.7);

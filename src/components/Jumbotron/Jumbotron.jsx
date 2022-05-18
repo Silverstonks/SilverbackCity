@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 export const Jumbotron = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'jumbotron' });
-  const countDownDate = new Date('2022-07-16 18:00');
+  const countDownDate = new Date('2022-08-20 18:00');
   const intervalTime = 1000;
   // Update the count down every 1 second
   const [days, setDays] = useState(0);
@@ -79,6 +79,9 @@ export const Jumbotron = () => {
           <span>{t('countdown.hours')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <span>{t('countdown.minutes')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <span className="second-countdown">{t('countdown.seconds')}</span>
+        </div>
+        <div className="col-12 d-flex d-md-none justify-content-center text-white countdown-container">
+          <span>{countDownDate.toLocaleString()}</span>
         </div>
       </div>
     </div>
