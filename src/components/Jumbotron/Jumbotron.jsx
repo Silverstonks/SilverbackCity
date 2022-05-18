@@ -5,7 +5,7 @@ import Logo from '../../static/images/header/Logo2.png';
 import ButtonDecorationBar from '../../static/images/header/ButtonDecorationBar.png';
 import { useTranslation } from 'react-i18next';
 
-export const Jumbotron = () => {
+export const Jumbotron = ({ showCountDown }) => {
   const { t } = useTranslation('translation', { keyPrefix: 'jumbotron' });
   const countDownDate = new Date('2022-08-20 18:00');
   const intervalTime = 1000;
@@ -14,6 +14,7 @@ export const Jumbotron = () => {
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
+  const fechaApple = 'August 20th at 12:00 PM EST';
 
   const scrollTo = (ancla = 'mint-card', offset = 20) => {
     let x = document.querySelector('#' + ancla);
@@ -67,23 +68,33 @@ export const Jumbotron = () => {
           </div>
         </div>
       </div>
-      <div className="row">
-        <h1 className="col-12 d-flex justify-content-center countdown-container mt-4">
-          <span className="day-countdown">{days}&nbsp;:&nbsp;</span>
-          <span className="hour-countdown">{hours}&nbsp;:&nbsp;</span>
-          <span className="minute-countdown">{minutes}&nbsp;:&nbsp;</span>
-          <span className="second-countdown">{seconds}</span>
-        </h1>
-        <div className="col-12 d-flex justify-content-center text-white countdown-container">
-          <span>{t('countdown.days')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>{t('countdown.hours')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>{t('countdown.minutes')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span className="second-countdown">{t('countdown.seconds')}</span>
-        </div>
-        <div className="col-12 d-flex d-md-none justify-content-center text-white countdown-container">
-          <span>{countDownDate.toLocaleString()}</span>
-        </div>
-      </div>
+      {showCountDown && (
+        <>
+          <div className="row">
+            <h1 className="col-12 d-flex justify-content-center countdown-container mt-4">
+              <span className="day-countdown">{days}&nbsp;:&nbsp;</span>
+              <span className="hour-countdown">{hours}&nbsp;:&nbsp;</span>
+              <span className="minute-countdown">{minutes}&nbsp;:&nbsp;</span>
+              <span className="second-countdown">{seconds}</span>
+            </h1>
+            <div className="col-12 d-flex justify-content-center text-white countdown-container">
+              <span>{t('countdown.days')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span>{t('countdown.hours')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span>{t('countdown.minutes')}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span className="second-countdown">{t('countdown.seconds')}</span>
+            </div>
+          </div>
+        </>
+      )}
+      {!showCountDown && (
+        <>
+          <div className="row">
+            <div className="col-12 d-none justify-content-center text-white countdown-container">
+              <span>{fechaApple}</span>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };

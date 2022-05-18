@@ -29,41 +29,47 @@ const HomePage = () => {
     /*dispatch(actions.applicationActions.setModal());*/
   }, [dispatch]);
 
+  const isApple =
+    /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+    ((navigator?.userAgentData?.platform || navigator?.platform || 'unknown') === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+    console.error(!isApple);
+
   return (
     <>
-    <Suspense fallback="loading">
+      <Suspense fallback="loading">
+        <Header />
 
-      <Header />
+        {/* <ToastContainer /> */}
+        <ModalDialogs />
 
-      {/* <ToastContainer /> */}
-      <ModalDialogs /> 
+        <Jumbotron showCountDown={!isApple} />
 
-      <Jumbotron />
-
-      <div className="container">
-        <Slider />
-        <div className='d-flex justify-content-end mt-3'>
-          <img src={LinesDecoration} alt="" className="img-detail lines mr-5 mt-5" />
+        <div className="prueba-degradado">
+          <div className="container">
+            <Slider />
+            <div className="d-flex justify-content-end mt-3">
+              <img src={LinesDecoration} alt="" className="img-detail lines mr-5 mt-5" />
+            </div>
+            <MetaverseStory />
+            <NftLab />
+            <ClansSlider />
+            <MintCard />
+          </div>
         </div>
-        <MetaverseStory />
-        <NftLab/>
-        <ClansSlider />
-        <MintCard />
-      </div>
 
-      <Benefits />
+        <Benefits />
 
-      <Sections />
+        <Sections />
 
-      <Marketplace />
+        <Marketplace />
 
-      <Roadmap />
+        <Roadmap />
 
-      <Team />
+        <Team />
 
-      <Footer />
-    </Suspense>
-
+        <Footer />
+      </Suspense>
     </>
   );
 };
