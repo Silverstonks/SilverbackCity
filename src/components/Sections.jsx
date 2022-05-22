@@ -1,20 +1,20 @@
 import React from 'react';
-import BidsarenaImg from '../static/images/sections/stadio_ilustracion.jpg';
+import BidsarenaImg from '../static/images/sections/stadio_ilustracion.gif';
 import BidsarenaIcon from '../static/images/slider/IconBidsarena.png';
 import GreenBoxTitle from '../static/images/sections/GreenBoxTitle.png';
-import VaultImg from '../static/images/sections/vault_ilustracion.jpg';
+import VaultImg from '../static/images/sections/vault_ilustracion.gif';
 import VaultIcon from '../static/images/slider/IconVault.png';
-import ExchangeImg from '../static/images/sections/EXCHANGE_ILUSTRACION.jpg';
+import ExchangeImg from '../static/images/sections/EXCHANGE_ILUSTRACION.gif';
 import ExchangeIcon from '../static/images/slider/IconExchange.png';
-import SilverShopImg from '../static/images/sections/shop_ilustracion.jpg';
+import SilverShopImg from '../static/images/sections/shop_ilustracion.gif';
 import SilverShopIcon from '../static/images/slider/IconEcommerce.png';
-import LoungeImg from '../static/images/sections/underground_ilustracion.jpg';
+import LoungeImg from '../static/images/sections/underground_ilustracion.gif';
 import LoungeIcon from '../static/images/slider/IconLounge.png';
 import FoundryImg from '../static/images/sections/FOUNDRY_ILUSTRACION.jpg';
 import FoundryIcon from '../static/images/slider/IconFoundry.png';
 import DotsDecoration from '../static/images/slider/DotsDecoration.png';
 import StakingIcon from '../static/images/slider/IconStaking.png';
-import StakingImg from '../static/images/sections/SectionStaking.png';
+import StakingImg from '../static/images/sections/SectionStaking.jpg';
 import { useTranslation } from 'react-i18next';
 
 const Sections = () => {
