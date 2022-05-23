@@ -31,7 +31,7 @@ const Sections = () => {
       <div className="d-flex justify-content-center ">
         <img src={DotsDecoration} alt="" className="mr-5 my-4" style={{ transform: 'rotate(90deg)' }} />
       </div>
-      <SectionItemImgLeft id="foundry" icon={FoundryIcon} img={FoundryImg} />
+      {/*<SectionItemImgLeft id="foundry" icon={FoundryIcon} img={FoundryImg} />*/}
       <SectionItemImgRight id="staking" icon={StakingIcon} img={StakingImg}  btnHref={`https://staking.silverstonkstoken.com/`}/>
     </div>
   );
