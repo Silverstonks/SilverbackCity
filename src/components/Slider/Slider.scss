@@ -81,6 +81,7 @@ $navText: #00e101;
       top: 6.5ch;
       left: 5ch;
     }
+    
   }
 
   .slider-content {
@@ -103,6 +104,9 @@ $navText: #00e101;
   .slider-index-content {
     img {
       max-width: 100%;
+    }
+    .map {
+      max-width: 70%;
     }
   }
 

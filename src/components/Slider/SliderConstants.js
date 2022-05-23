@@ -10,10 +10,13 @@ export const initialNavPills = [
   {
     content: <SecondSliderPage />,
   },
+ /* {
+    content: Build Wealth
+  },*/
+  {
+    content: <FourthSliderPage />,
+  },
   {
     content: <ThirdSliderPage />,
   },
-  /*{
-    content: <FourthSliderPage />,
-  },*/
 ];
