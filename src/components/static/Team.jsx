@@ -24,7 +24,7 @@ const Team = () => {
               <h2 className="txt-color-mint fw-600" data-aos="fade-up" data-aos-delay="300" data-aos-offset="50" data-aos-duration="500">
                 {t('main_title')}
               </h2>
-              <p className="fs-16 mb-5" data-aos="fade" data-aos-delay="100" data-aos-offset="50" data-aos-duration="1000">
+              <p className="fs-16 mb-5 text-white" data-aos="fade" data-aos-delay="100" data-aos-offset="50" data-aos-duration="1000">
                 {t('description')}
               </p>
             </div>
