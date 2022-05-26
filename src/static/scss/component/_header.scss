@@ -1,0 +1,284 @@
+// BOOTSTRAP IMPORTS
+@import '../../../../node_modules/bootstrap/scss/bootstrap';
+
+$navabr-bg: #202428;
+$navlink-clr: #f2f1f1;
+$green: #00dd73;
+$white: #ffffff;
+$dark: #000000;
+$gold: #f6aa18;
+
+$font-family: 'Chakra SemiBold', sans-serif;
+$fonts: (
+  'primary': 'Chakra SemiBold',
+);
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*background: $navabr-bg !important;*/
+  width: 100%;
+  box-shadow: 1px 0px 5px silver;
+  z-index: 1;
+}
+.navbar-toggler-icon {
+  color: $green;
+}
+.navbar-bg {
+  // background-color: $navabr-bg;
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $navlink-clr !important;
+        font-family: 'Chakra SemiBold', sans-serif;
+      }
+    }
+  }
+}
+.nav {
+  @include media-breakpoint-down(sm) {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,.4);
+    z-index: 999999;
+    width: calc(100% - 30px);
+    max-width: 300px;
+    height: 100%;
+    display: block;
+    box-shadow: 0px 5px 8px 3px rgba($dark, $alpha: 0.5);
+
+    transform: translateX(-100%);
+
+    transition: transform 300ms ease-in-out;
+
+    &.active {
+      transform: translateX(0%);
+    }
+  }
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-brand {
+  }
+
+  &-item {
+    margin-left: 1em;
+    align-items: center;
+    display: flex;
+
+    @include media-breakpoint-down(sm) {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  & .btn.btn-outline-bgalpha {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #45ef8e;
+    color: #ffffff;
+  }
+  .btn-outline-bgalpha:hover {
+    background-color: #5eeebf;
+    color: #141d20;
+  }
+
+  &-link {
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $primary;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 20px;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 10px 5px;
+    }
+  }
+}
+
+.nav-link {
+  display: block;
+  padding: 1.75rem 0.5rem;
+}
+.nav-link:hover,
+.nav-link:focus {
+  text-decoration: none;
+}
+.nav-link.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
+}
+
+.stick {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 999999;
+  background: rgba(0,0,0,.4);
+  box-shadow: 0px 2px 8px rgb(20 29 32 / 50%);
+  border-bottom: 3px solid #45ef8e;
+  animation-name: drop;
+  animation-duration: 1200ms;
+  -webkit-box-shadow: 0px 2px 8px rgb(20 29 32 / 50%);
+  -webkit-animation-name: drop;
+  -webkit-animation-duration: 1200ms;
+}
+
+.nav-link:hover {
+  color: #45ef8e;
+  text-decoration: none;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.btn {
+  padding: 10px 25px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: $font-family;
+
+  &-unset {
+    /* // ONLY USE THIS CLASS WHEN YOU WANT RESET ALL STYLE IN A BUTTON */
+    all: unset;
+  }
+
+  &-link {
+    /* // TRANSPARENT BUTTON */
+    all: unset;
+    padding: 0px;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  &-clear {
+    /* // TRANSPARENT BUTTON */
+    background: transparent;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &-solid {
+    /*  // SOLID COLORS BUTTON */
+    @each $color_name, $color_value in $colors {
+      &-#{$color_name} {
+        // @if $color_name=='white' {
+        //     color: $primary;
+        // }
+
+        // @else {
+        //     color: $white;
+        // }
+
+        background: $color_value;
+        color: $white;
+        border: 2px solid $color_value;
+
+        @if $color_name== 'mint' {
+          color: $dark;
+        }
+
+        &:hover {
+          color: $white;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+
+          @if $color_name== 'mint' {
+            color: $dark;
+            background: #5eeebf;
+          }
+        }
+      }
+    }
+  }
+
+  &-outline {
+    /* // OUTLINED BUTTON */
+    @each $color_name, $color_value in $colors {
+      &-#{$color_name} {
+        @if $color_name== 'white' {
+          color: $primary;
+        } @else {
+          color: $color_value;
+        }
+
+        border: 2px solid $color_value;
+        background: transparent;
+        font-weight: 700;
+
+        &:hover {
+          background: $color_value;
+          color: $white;
+        }
+      }
+    }
+
+    &-cta {
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      border: 2px solid $primary;
+      color: $white;
+
+      &:hover {
+        background-color: #5eeebf;
+        color: $dark;
+      }
+    }
+
+    &-bgalpha {
+      background-color: rgba($color: #000000, $alpha: 0);
+      border: 2px solid #45ef8e;
+      color: $white;
+
+      &:hover {
+        background-color: #5eeebf;
+        color: $dark;
+      }
+    }
+  }
+}
+
+.nav .dropdown-menu {
+  background: rgba(0,0,0,.4);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  
+  & :hover {
+    background: rgba(0,0,0,.4);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#barmenu {
+  fill: #3acb87;
+}
+
+.banner .stick button:hover {
+  background: rgba(0,0,0,.4);
+  color: #00e101;
+}
+

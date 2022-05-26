@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+$colors: (
+  "dark": #141d20,
+  "dark-2": #3d4449,
+  "mint": #3acb87,
+  "black": #000000,
+  "white": #ffffff,
+  "gray": #d6d6d6,
+  "light": #f1f5f6,
+  "yellow": #01f953,
+  "dgray": #8b8b8b,
+  "darker-gray": #706f6f,
+  "mint-2": #03f27a,
+);
+
+$font-family: "D-DIN Exp", sans-serif;
+$fonts: (
+  "primary": "D-DIN Exp",
+);
+
+$navabr-bg: #202428;
+$navlink-clr: #f2f1f1;
+$green: #00dd73;
+$white: #ffffff;
+$dark: #000000;
+$gold: #f6aa18;
+
+$DN-Exp: "D-DIN Exp";
+$popins: "D-DIN Exp", sans-serif;
+
+// COLORS
+$primary: #45ef8e;
+$white: #ffffff;
+$red: #ff0000;
+$dark: #141d20;
+
+// CHECKBOX
+$checkbox-background: $white;
+$checkbox-border: #c3cace;
+$checkbox-checked: $dark;
+$checkbox-label-color: #ffffff;
+
+// ICON SIZES
+$icon-sizes: (10px, 15px, 20px, 25px, 30px, 40px, 50px, 80px, 140px);
+
+footer {
+  color: #fff;
+  background-color: #0E1316;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: $font-family !important;
+  font-size: 14px;
+  
+  .footer-container {
+    justify-content: space-evenly;
+  }
+
+  button {
+    clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+    background-color: #0f0f11;
+    color: #0bff56;
+    width: 100%;
+    margin: auto;
+    font-size: 12px;
+    line-height: 200%;
+    border: solid #0f0f11;
+    &:hover {
+      background-color: #00e101;
+      font-weight: bold;
+      color: #271528;
+      border: solid #00e101;
+    }
+  }
+
+  .button-container {
+    background-color: #fff;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+    border: 2px solid #fff;
+    width: 75%;
+    &:hover {
+      background-color: #00e101;
+      border: 2px solid #00e101;
+      color: #00e101;
+    }
+  }
+
+  div {
+    color: #fff;
+    text-decoration: none; /* no underline */
+    &:hover {
+      
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    li {
+      white-space: nowrap;
+      &:hover {
+        cursor: pointer;
+        color: #00e101;
+        text-decoration: none;
+      }
+    }
+  }
+}
