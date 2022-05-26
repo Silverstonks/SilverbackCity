@@ -1,0 +1,4 @@
+export const LOAD_BLOCKCHAIN = "LOAD_BLOCKCHAIN";
+export const BLOCKCHAIN_ERROR = "BLOCKCHAIN_ERROR";
+export const LOAD_USER = "LOAD_USER";
+export const LOAD_USER_ERROR = "LOAD_USER_ERROR";

@@ -1,0 +1,94 @@
+.metaverse-story-container
+{
+
+    .metaverse-story-title-container
+    {
+        position: relative;
+        color: #0BFF56;
+
+        .metaverse-story-title
+        {
+            position: absolute;
+            top: 2rem;
+            left: 20rem;
+            font-size: 2rem;
+        }
+
+        .metaverse-story-subtitle
+        {
+            position: absolute;
+            top: 5.75rem;
+            left: 36.5rem;
+            font-size: 1.25rem;
+            width: 15ch;
+        }
+
+
+        @media screen and (max-width: 800px) {
+            &
+            {
+                margin-left: -17.5rem;
+                transform: scale(.75);
+                margin-bottom: -2.5rem;
+            }
+        }
+    }
+
+    .metaverse-story-controls
+    {
+        .metaverse-story-page-index
+        {
+            color: white;
+
+            &.active
+            {
+                color: #0BFF56;
+            }
+        }
+    }
+
+    .metaverse-story
+    {
+        position: relative;
+
+        &-img-container
+        {
+            max-width: 100%;
+
+            img
+            {
+                width: 100%;
+            }
+        }
+
+        &-details
+        {
+            img {
+                width: 15px;
+            }
+            @media screen and (max-width: 800px) {
+                &
+                {
+                    max-height: 100%;
+                    overflow-y: auto;
+                }
+            }
+
+            background: rgba(0,0,0,.4);
+            padding: 0 2rem 2rem 2rem;
+
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            bottom: 0;
+        }
+
+        &-text
+        {
+            color: white;
+            text-align: justify;
+            text-align-last: left;
+            font-size: 14px;
+        }
+    }
+}

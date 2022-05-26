@@ -1,0 +1,118 @@
+$mainTextColor: #0bff56;
+
+.banner {
+  // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 50%, transparent 100%);
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  .gradient{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 30px;
+  }
+  .stick {
+    background-color: rgba(15, 15, 17, 1);
+    border: none;
+    box-shadow: none;
+    // z-index: 9999;
+    & button {
+      background-image: none;
+      background-color: rgba(15, 15, 17, 1);
+      &:hover {
+        background-image: none;
+        background-color: #00e101;
+        color: #271528;
+      }
+    }
+  }
+
+  .nav-item {
+    &:hover {
+      color: #00e101;
+      cursor: pointer;
+
+      & > a, & > div {
+        color: #00e101;
+      }
+    }
+  }
+  .nav-link {
+  }
+
+  .nav {
+    .dropdown-menu {
+      &.show {
+        display: flex;
+        flex-wrap: wrap;
+        width: 22.5rem;
+      }
+
+      .dropdown-item {
+        flex: 50% 0 0;
+      }
+
+      :hover {
+        background: rgba(0, 0, 0, 0.4);
+        color: #00e101;
+      }
+    }
+
+    // TODO: Some elements overlap with the responsive menu
+    @media screen and (max-width: 800px) {
+      #problematic-button {
+        width: 90%;
+      }
+
+      & {
+        background: linear-gradient(to right, rgba(12, 10, 16, 0.95) 25%, rgba(12, 10, 16, 0.8) 75%);
+
+        #menu-toggle {
+          color: white;
+        }
+      }
+    }
+  }
+
+  button {
+    clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+    background-color: #0f0f11;
+    color: #0bff56;
+    width: 100%;
+    margin: auto;
+    font-size: 12px;
+    line-height: 0.8;
+    // border: solid #0f0f11;
+    background-image: url("../static/images/header/HeaderBackground2.jpg");
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: initial;
+    background-attachment: fixed;
+    &:hover {
+      background-color: rgba(11, 255, 86, 0.4);
+      color: #fff;
+  }
+  }
+
+  .button-container {
+    background-color: #fff;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+    border: 2px solid #fff;
+    width: 150px;
+    max-height: fit-content;
+    &:hover {
+      background-color: rgba(11, 255, 86, 1);
+      border: 2px solid rgba(11, 255, 86, 0.5);
+  }
+  }
+
+  .lang-options {
+    color: white;
+
+    span.active {
+      color: #0bff56;
+    }
+  }
+}

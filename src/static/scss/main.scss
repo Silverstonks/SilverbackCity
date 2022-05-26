@@ -1,0 +1,204 @@
+@font-face {
+  font-family: 'D-DIN';
+  src: url('font/D-DIN-Bold.woff2') format('woff2'), url('font/D-DIN-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'D-DIN Condensed';
+  src: url('font/D-DINCondensed.woff2') format('woff2'), url('font/D-DINCondensed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'D-DIN Exp';
+  src: url('font/D-DINExp-Bold.woff2') format('woff2'), url('font/D-DINExp-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'D-DIN';
+  src: url('font/D-DIN.woff2') format('woff2'), url('font/D-DIN.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'D-DIN Exp';
+  src: url('font/D-DINExp.woff2') format('woff2'), url('font/D-DINExp.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'D-DIN Condensed';
+  src: url('font/D-DINCondensed-Bold.woff2') format('woff2'), url('font/D-DINCondensed-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'D-DIN';
+  src: url('font/D-DIN-Italic.woff2') format('woff2'), url('font/D-DIN-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'D-DIN Exp';
+  src: url('font/D-DINExp-Italic.woff2') format('woff2'), url('font/D-DINExp-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chakra Bold';
+  src: url('font/ChakraPetch-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Chakra SemiBold';
+  src: url('font/ChakraPetch-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Chakra Regular';
+  src: url('font/ChakraPetch-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Chakra Medium';
+  src: url('font/ChakraPetch-Medium.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import '../scss/component/header.scss';
+@import '../scss/component/banner.scss';
+@import '../scss/component/modal.scss';
+@import '../scss/component/buy.scss';
+@import '../scss/component/footer.scss';
+@import '../scss/component/checkbox.scss';
+@import '../scss/component/sections.scss';
+@import '../scss/component/mintModal.scss';
+@import '../scss/component/_silversontks.io.main.scss';
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+body iframe:not(#iframewin){
+ display: none;
+}
+body {
+  /*background-image: url('../images/sections/Background.png'); */
+  background-position: center;
+  background-color: #0E1316;
+  
+  // backdrop-filter: grayscale(0.7) opacity(0.7);
+}
+
+body,
+label {
+  font-family: 'Chakra Medium', 'Arial' !important;
+}
+
+.slider-subtitle, .clans-slider-subtitle, .mint-card-price-label {
+  font-family: 'Chakra Regular', 'Arial' !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.slider-title,
+.h6,
+.h5,
+.h4,
+.h3,
+.h2,
+.h1 {
+  font-family: 'Chakra Bold', 'Arial' !important;
+}
+
+button,
+.slider-pre-title,
+.button-container {
+  font-family: 'Chakra SemiBold', 'Arial' !important;
+}
+
+.btn-claim {
+  background-color: #163244;
+}
+.footer {
+  font-family: 'D-DIN Exp';
+}
+.fa-linkedin {
+  color: #0a66c2;
+}
+
+.roadmap {
+  h2, h3 {
+    font-size: 16px;
+  }
+  *{
+    font-size: 14px;
+  }
+}
+/*
+body
+{
+  position: relative;
+  background: black;
+
+  &::before
+  {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    filter: grayscale(0.7) opacity(0.7);
+    background-image: url('../images/sections/Background.png');
+    background-position: center;
+  }
+
+  .button-container {
+      background-color: #fff;
+      clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+      border: 2px solid #fff;
+      width: 75%;
+
+      button {
+          clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+          background-color: #0f0f11;
+          color: #0bff56;
+          width: 100%;
+          margin: auto;
+          font-size: 12px;
+          line-height: 200%;
+          border: solid #0f0f11;
+      }
+  }
+
+}
+*/
