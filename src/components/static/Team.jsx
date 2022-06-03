@@ -124,29 +124,7 @@ const Team = () => {
               </div>
             </div>
 
-            {/*<!-- Team 3-->*/}
-            <div className="col-md-3 mb-4">
-              <div className="team d-flex flex-column align-items-center">
-                <div className="mb-3" data-aos="flip-left" data-aos-delay="300" data-aos-offset="50" data-aos-duration="1000">
-                  <div className="image-box">
-                    <img src={Jose} />
-                  </div>
-                </div>
-                <div
-                  className="text-center team-info"
-                  data-aos="fade-zoom-in"
-                  data-aos-delay="100"
-                  data-aos-offset="50"
-                  data-aos-duration="1000"
-                >
-                  <h3 className="card-title">{t('member.Jose.name')}</h3>
-                  <h2 className="card-subtitle mb-2 text-muted">{t('member.Jose.jobTitle')}</h2>
-                  <a href="https://www.linkedin.com/in/jose-manuel-honrubia-belenguer-8338a9104/" target="_blank" className="">
-                    <i className="fab fa-linkedin fa-lg"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+            
 
             {/*<!-- Team 5-->*/}
             <div className="col-md-3 mb-4">
@@ -244,30 +222,7 @@ const Team = () => {
               </div>
             </div>
 
-            {/*<!-- Team 9-->*/}
-           <div className="col-md-3 mb-4">
-              <div className="team d-flex flex-column align-items-center">
-                <div className="mb-3" data-aos="flip-left" data-aos-delay="300" data-aos-offset="50" data-aos-duration="1000">
-                  <div className="image-box">
-                    <img src={Niraj} />
-                  </div>
-                </div>
-                <div
-                  className="text-center team-info"
-                  data-aos="fade-zoom-in"
-                  data-aos-delay="100"
-                  data-aos-offset="50"
-                  data-aos-duration="1000"
-                >
-                  <h3 className="card-title">{t('member.Niraj.name')}</h3>
-                  <h2 className="card-subtitle mb-2 text-muted">{t('member.Niraj.jobTitle')}</h2>
-                  <a href="https://www.linkedin.com/in/niraj-b-92356713b/" target="_blank" className="">
-                    <i className="fab fa-linkedin fa-lg"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
+            
             {/*<!-- Team 9-->*/}
            <div className="col-md-3 mb-4">
               <div className="team d-flex flex-column align-items-center">
