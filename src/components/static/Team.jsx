@@ -1,13 +1,13 @@
 import Vicente from '../../static/images/team/vicente.jpg'
 import Teresa from '../../static/images/team/teresa.jpg'
-import Jose from '../../static/images/team/Jose.jpg';
+/*<!--import Jose from '../../static/images/team/Jose.jpg';--> */
 import JoseDeJesus from '../../static/images/team/jose-dejesus.jpg';
 import David from '../../static/images/team/david.jpg';
 import Pablo from '../../static/images/team/pablo.jpg';
 import Christopher from '../../static/images/team/christopher.jpg';
 import Ignacio from '../../static/images/team/ignacio.jpg';
 import Carlos from '../../static/images/team/carlos.jpg';
-import Niraj from '../../static/images/team/niraj.jpg';
+/*<!--import Niraj from '../../static/images/team/niraj.jpg';--> */
 import Jamal from '../../static/images/team/jamal.jpg';
 
 import { useTranslation } from 'react-i18next';
