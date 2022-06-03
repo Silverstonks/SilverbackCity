@@ -205,7 +205,7 @@
         "quarter": "Q2 2021",
         "title": "Concept",
         "des1": "Assemble Team",
-        "des2": "White Paper Completion",
+        "des2": "Whitepaper Completion",
         "des3": "Strategic plan"
       },
       "Q321": {
@@ -221,12 +221,12 @@
         "quarter": "Q4 2021",
         "title": "Silver Market",
         "des1": "E-Commerce",
-        "des2": "Marketing Campaign",
-        "des3": "Silver Stonks Merch Release"
+        "des2": "Silver Stonks Merch Release",
+        "des3": "SSTX and Silver Staking"
       },
       "Q122": {
         "quarter": "Q1 2022",
-        "title": "Silver Stonks Expansion",
+        "title": "Silver Expansion",
         "des1": "Expand SilverStonks Products",
         "des2": "Talks with Centralized Exchanges",
         "des3": "NFT Authenticity Certificates",
@@ -235,40 +235,40 @@
       },
       "Q222": {
         "quarter": "Q2 2022",
-        "title": "Metaverse & Play2Earn Development",
-        "des1": "Token Adoption Talks with Bullion Dealers",
-        "des2": "Apply SilverStonks Services to Metaverse",
-        "des3": "Payment Processor for SSTX",
-        "des4": "Develop Bids Arena"
+        "title": "SSTX Expansion",
+        "des1": "Partnerships with Bullion Dealers",
+        "des2": "Payment Processor for SSTX",
+        "des3": "Develop Property Holders Concept"
       },
       "Q322": {
         "quarter": "Q3 2022",
-        "title": "SSTX Expansion",
-        "des1": "Small Centralized Exchange Listing",
-        "des2": "Bring Silver Creation Process In-House",
-        "des3": "Underground Lounge Development",
-        "des4": "NFT Building Drop for Silverback City"
+        "title": "Metaverse for Hard Assets",
+        "des1": "Launch NFT Collection for Silverback City",
+        "des2": "Begin Property Holders Development",
+        "des3": "Expand Social Media Following",
+       
       },
       "Q422": {
         "quarter": "Q4 2022",
         "title": "Exosystem Expansion",
-        "des1": "Silver Bank Run Game Development",
-        "des2": "Expand Financial Content",
-        "des3": "Grow Social Channels",
-        "des4": "Expand Into Jewelry"
+        "des1": "Bring Silver Creation Process In-House",
+        "des2": "Finish Development of Property Holders",
+        "des3": "Expand Into Jewelry"
       },
       "Q123": {
         "quarter": "Q1 2023",
-        "title": "Go Mainstream",
-        "des1": "NFT Marketplace for Silverback City",
-        "des2": "Large Exchange Listing"
+        "title": "Expand Hard Assets",
+        "des1": "NFT Marketplace for Hard Assets",
+        "des2": "Launch Property Holders",
+        "des3": "Centralized Exchange Listing",
+        "des4": "Develop Second NFT Collection",
       },
       "Q223": {
         "quarter": "Q2 2023",
-        "title": "Meta Advertising Services",
-        "des1": "Improve Metaverse Services",
-        "des2": "Expand Marketplace",
-        "des3": "Meta Advertising NFT Drop"
+        "title": "Metaverse",
+        "des1": "Build Out Silverback City's Metaverse",
+        "des2": "Launch Play 2 Earn games",
+        "des3": "Expand Marketplace"
       }
     }
   },
@@ -318,7 +318,7 @@
       },
       "Jamal": {
         "name": "Jamal Ramjohn",
-        "jobTitle": "Chief Operating Officer"
+        "jobTitle": "Chief Operating Officer, Silver Stonks"
       }
     }
   },
