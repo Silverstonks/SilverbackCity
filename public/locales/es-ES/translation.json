@@ -205,70 +205,69 @@
         "quarter": "Q2 2021",
         "title": "Concepto",
         "des1": "Crear equipo",
-        "des2": "White Paper finalizado",
+        "des2": "Whitepaper finalizado",
         "des3": "Plan estratégico"
       },
       "Q321": {
         "quarter": "Q3 2021",
         "title": "Lanzamiento Token",
-        "des1": "Lanzamienti SSTX",
+        "des1": "Lanzamiento SSTX",
         "des2": "Liquidez bloqueada",
         "des3": "Diseño y producción de plata",
-        "des4": "Creación web",
+        "des4": "Sitio web",
         "des5": "Staking"
       },
       "Q421": {
         "quarter": "Q4 2021",
-        "title": "PLATA",
+        "title": "Mercado de plata",
         "des1": "E-Commerce",
-        "des2": "Campaña de marketing",
-        "des3": "Lanzamiento merch de Silver Stonks"
+        "des2": "Silver Stonks Merch",
+        "des3": "Staking de SSTX y plata"
       },
       "Q122": {
         "quarter": "Q1 2022",
-        "title": "Expansión Silver Stonks",
-        "des1": "Expandir productos Silver Stonks",
-        "des2": "Hablar con exchanges centralizados",
-        "des3": "Certificates de autenticidad NFT",
-        "des4": "Colección de arte NFT",
-        "des5": "Concepto Silverback City"
+        "title": "Expansión de plata",
+        "des1": "Ampliar los productos Silver Stonks",
+        "des2": "Conversaciones con pequeños intercambios centralizados",
+        "des3": "Certificados de autenticidad NFT",
+        "des4": "Colección de arte NFTs de Silverback City",
+        "des5": "Concepto del metaverso Silverback City"
       },
       "Q222": {
         "quarter": "Q2 2022",
-        "title": "Desarrollo Metaverso & Play2Earn",
-        "des1": "Reuniones con bullion dealers adopción token",
-        "des2": "Aplicar los servicios de Silver Stonks al Metaverso",
-        "des3": "Procesador de pagos SSTX",
-        "des4": "Desarrollar Bids Arena"
+        "title": "Expansión SSTX",
+        "des1": "Colaboraciones con distribuidores de metales preciosos",
+        "des2": "Procesador de pagos para SSTX",
+        "des3": "Desarrollar el concepto de Property Holders",
       },
       "Q322": {
         "quarter": "Q3 2022",
-        "title": "Expansión SSTX",
-        "des1": "Listado exchange centralizado pequeño",
-        "des2": "Internalizar la producción de la plata",
-        "des3": "Desarrollo Underground Lounge",
-        "des4": "Lanzamiento edificios NFT para Silverback City"
+        "title": "Metaverso para activos tangibles",
+        "des1": "Lanzamiento de NFTs para Silverback City",
+        "des2": "Empezar desarrollo de Property Holders",
+        "des3": "Ampliar los seguidores en las redes sociales",
       },
       "Q422": {
         "quarter": "Q4 2022",
         "title": "Expansión ecosistema",
-        "des1": "Desarrollo video juego SilverBack Run",
-        "des2": "Expandir contenido financiero",
-        "des3": "Expandir redes sociales",
-        "des4": "Expandir productos joyería"
+        "des1": "Traer el proceso de creación de plata internamente",
+        "des2": "Finalizar el desarrollo de Property Holders",
+        "des3": "Expandir en joyería"
       },
       "Q123": {
         "quarter": "Q1 2023",
-        "title": "Go Mainstream",
-        "des1": "NFT Marketplace para Silverback City",
-        "des2": "Listado exchange grande "
+        "title": "Ampliar activos tangibles",
+        "des1": "NFT Marketplace para activos tangibles",
+        "des2": "Lanzamiento de Property Holders",
+        "des3": "Listado de intercambio centralizado",
+        "des4": "Desarrollar la segunda colección de NFTs"
       },
       "Q223": {
         "quarter": "Q2 2023",
-        "title": "Servicios Meta Advertising",
-        "des1": "Mejorar servicios Metaverso",
-        "des2": "Expandir Marketplace",
-        "des3": "Lanzamiento NFT Meta Advertising"
+        "title": "Metaverso",
+        "des1": "Construir el metaverso de Silverback City",
+        "des2": "Lanzar juegos Play 2 Earn",
+        "des3": "Ampliar el mercado"
       }
     }
   },
