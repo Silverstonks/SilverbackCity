@@ -118,16 +118,16 @@
 		"title": "BENEFICIOS",
 		"section": {
 			"play": {
+				"title": "- Ingresos Pasivos",
+				"text": "Durante los primeros tres años, el 5% de las ganancias generadas por Property Holders se distribuirá a todos los holders que tengan un NFT de Silverback City en su cartera digital."
+			},
+			"incoming": {
 				"title": "- Acceso exclusivo al whitelist de propiedades de Property Holders",
 				"text": "Poseer un NFT Silverback te da acceso a propiedades exclusivas antes que nadie en nuestro marketplace Property Holders. Invierte en los bienes inmuebles más populares, accediendo a través de pases exclusivos previos a cada venta de propiedad NFT al público general."
 			},
-			"incoming": {
-				"title": "- Ingresos Pasivos",
-				"text": "Recibe un porcentaje de las tasas por cada NFT que poseas al comprar propiedades en Property Holders (hasta 5 NFTs)."
-			},
 			"auctions": {
-				"title": "- Regalías",
-				"text": "Todos los que mintean un NFT de Silverback City por primera vez, lo que significa que eres el primer propietario en obtener un NFT de la colección, disfrutará de una tasa de royalty del 2,5 % cada vez que alguien venda tu NFT en el futuro."
+				"title": "- Discord privado para inversores",
+				"text": "En esta comunidad privada, serás el primero en conocer las oportunidades de inversión en Property Holders, las estrategias para crear un portfolio de inmuebles y servicio de atención al cliente prioritario para todas nuestras plataformas."
 			},
 			"cashback": {
 				"title": "- Recompensas en Silverback City",
