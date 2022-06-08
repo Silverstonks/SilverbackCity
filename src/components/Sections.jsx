@@ -16,7 +16,7 @@ import FoundryImg from '../static/images/sections/FOUNDRY_ILUSTRACION.jpg';
 import FoundryIcon from '../static/images/slider/IconFoundry.png';
 import DotsDecoration from '../static/images/slider/DotsDecoration.png';
 import StakingIcon from '../static/images/slider/IconStaking.png';
-import StakingImg from '../static/images/sections/SectionStaking.jpg';
+import StakingImg from '../static/images/sections/SectionStaking.gif';
 import { useTranslation } from 'react-i18next';
 
 const Sections = () => {
