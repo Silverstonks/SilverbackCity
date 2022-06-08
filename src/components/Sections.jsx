@@ -22,7 +22,7 @@ import { useTranslation } from 'react-i18next';
 const Sections = () => {
   return (
     <div className="container mx-auto sections">
-      <SectionItemImgRight id="propertyholders" icon={BidsarenaIcon} img={PropertyHoldersImg} />
+      <SectionItemImgRight id="propertyholders" icon={BidsarenaIcon} img={PropertyHoldersImg} btnHref={`https://propertyholders.io/`} />
       <div className="d-flex justify-content-end ">
         <img src={DotsDecoration} alt="" className="mr-5 my-4" />
       </div>
