@@ -102,7 +102,7 @@ const Footer = () => {
             <ul>
               <li className="py-1" onClick={() => scrollTo('PropertyHolders', 100)}>
                 <p className="d-flex">
-                  <img src={PropertyHolders} alt="This is an image of the Property Holders logo." width="20px" className="mr-2" /> {t('link.arena')}
+                  <img src={PropertyHolders} alt="This is an image of the Property Holders logo." width="20px" className="mr-2" /> {t('link.PropertyHolders')}
                 </p>
               </li>
               <li className="py-1" onClick={() => scrollTo('nft-lab', 100)}>
