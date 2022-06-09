@@ -109,7 +109,7 @@ const Roadmap = () => {
               data-aos-duration="1000"
             >
               <h3 className="txt-color-mint mb-4 td-1">{t('Quarter.Q322.quarter')}</h3>
-              <div className="road-map-card text-center dash-top border-tl dash-left mb-5 h-100">
+              <div className="road-map-card text-center solid-top border-tl dash-left mb-5 h-100">
                 <div className="dot-solid-only"></div>
                 <h2 className="my-4">{t('Quarter.Q322.title')}</h2>
                 <dl>
