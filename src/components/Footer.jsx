@@ -102,24 +102,24 @@ const Footer = () => {
             <ul>
               <li className="py-1" onClick={() => scrollTo('PropertyHolders', 100)}>
                 <p className="d-flex">
-                  <img src={PropertyHolders} alt="" width="20px" className="mr-2" /> {t('link.arena')}
+                  <img src={PropertyHolders} alt="This is an image of the Property Holders logo." width="20px" className="mr-2" /> {t('link.arena')}
                 </p>
               </li>
               <li className="py-1" onClick={() => scrollTo('nft-lab', 100)}>
                 <p className="d-flex">
-                  <img src={NftLab} alt="" width="25px" className="mr-2" />
+                  <img src={NftLab} alt="This is an image of the Silver Stonks NFT lab, with a Troop of Silverback City in the making." width="25px" className="mr-2" />
                   {t('link.nftlab')}
                 </p>
               </li>
               <li className="py-1" onClick={() => scrollTo('vault', 100)}>
                 <p className="d-flex">
-                  <img src={Vault} alt="" width="20px" className="mr-2" />
+                  <img src={Vault} alt="This is an image of the Silver Stonks digital vault for staking SSTX tokens or precious metals." width="20px" className="mr-2" />
                   {t('link.vault')}
                 </p>
               </li>
                <li className="py-1" onClick={() => scrollTo('bidsarena', 100)}>
                 <p className="d-flex">
-                  <img src={Bidsarena} alt="" width="20px" className="mr-2" /> {t('link.arena')}
+                  <img src={Bidsarena} alt="This is an image of Bids Arena, the Silver Stonks marketplace for other hard assets you will be able to buy with SSTX." width="20px" className="mr-2" /> {t('link.arena')}
                 </p>
               </li>
             </ul>
@@ -128,25 +128,25 @@ const Footer = () => {
             <ul>
               <li className="py-1" onClick={() => scrollTo('lounge', 100)}>
                 <p className="d-flex">
-                  <img src={Lounge} alt="" width="20px" className="mr-2" />
+                  <img src={Lounge} alt="This is an image of the Silver Stonks underground lounge in Silverback City. Join the DIscord to be a part of the chat." width="20px" className="mr-2" />
                   <span>{t('link.lounge')}</span>
                 </p>
               </li>
               <li className="py-1" onClick={() => scrollTo('exchange', 100)}>
                 <p className="d-flex">
-                  <img src={Exchange} alt="" width="20px" className="mr-2" />
+                  <img src={Exchange} alt="This is an image of the Silver Stonks exchange where you can purchase SSTX." width="20px" className="mr-2" />
                   <span>{t('link.exchange')}</span>
                 </p>
               </li>
               <li className="py-1" onClick={() => scrollTo('silvershop', 100)}>
                 <p className="d-flex">
-                  <img src={Ecommerce} alt="" width="20px" className="mr-2" />
+                  <img src={Ecommerce} alt="This is an image of the Silver Stonks shop that sells precious metals." width="20px" className="mr-2" />
                   <span>{t('link.ecommerce')}</span>
                 </p>
               </li>
               <li className="py-1" onClick={() => scrollTo('meta-advertising', 100)}>
                 <p className="d-flex">
-                  <img src={Meta} alt="" width="20px" className="mr-2" />
+                  <img src={Meta} alt="This is an image of the Silver Stonks meta advertising in the Silverback City metaverse." width="20px" className="mr-2" />
                   <span>{t('link.avertising')}</span>
                 </p>
               </li>
