@@ -2,7 +2,7 @@ import React from 'react';
 import BidsarenaImg from '../static/images/sections/stadio_ilustracion.gif';
 import BidsarenaIcon from '../static/images/slider/IconBidsarena.png';
 import PropertyHoldersImg from '../static/images/slider/propertyholders.jpg';
-import PropertyHoldersIcon from '../static/images/slider/IconBidsarena.png';
+import PropertyHoldersIcon from '../static/images/slider/IconPropertyholders.png';
 import GreenBoxTitle from '../static/images/sections/GreenBoxTitle.png';
 import VaultImg from '../static/images/sections/vault_ilustracion.gif';
 import VaultIcon from '../static/images/slider/IconVault.png';
