@@ -91,7 +91,9 @@ const Roadmap = () => {
             >
               <h3 className="txt-color-mint mb-4 td-1">{t('Quarter.Q421.quarter')}</h3>
               <div className="road-map-card text-center solid-top solid-right h-100 border-tr mb-5">
-                <div className="dot-solid-only"></div>
+                 <div className="dot">
+                  <div className="dot-solid"></div>
+                </div>
                 <h2 className="my-4">{t('Quarter.Q421.title')}</h2>
                 <dl>
                   <dd>{t('Quarter.Q421.des1')}</dd>
@@ -130,7 +132,9 @@ const Roadmap = () => {
             >
               <h3 className="txt-color-mint mb-4 td-1">{t('Quarter.Q222.quarter')}</h3>
               <div className="road-map-card text-center solid-top mb-5">
-                <div className="dot-solid-only"></div>
+                 <div className="dot">
+                  <div className="dot-solid"></div>
+                </div>
                 <h2 className="my-4">{t('Quarter.Q222.title')}</h2>
                 <dl>
                   <dd>{t('Quarter.Q222.des1')}</dd>
@@ -152,7 +156,9 @@ const Roadmap = () => {
               {t('Quarter.Q122.quarter')}
               </h2>
               <div className="road-map-card text-center solid-top mb-5">
-                <div className="dot-solid-only"></div>
+                 <div className="dot">
+                  <div className="dot-solid"></div>
+                </div>
                 <h3 className="my-4">{t('Quarter.Q122.title')}</h3>
                 <dl>
                   <dd>{t('Quarter.Q122.des1')}</dd>
