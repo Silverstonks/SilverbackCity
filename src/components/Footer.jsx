@@ -4,6 +4,7 @@ import actions from '../store/actions';
 import { toast } from 'react-toastify';
 import Logo from '../static/images/header/Logo.png';
 import Bidsarena from '../static/images/slider/IconBidsarena.png';
+import PropertyHolders from '../static/images/slider/IconPropertyholders.png';
 import Ecommerce from '../static/images/slider/IconEcommerce.png';
 import Exchange from '../static/images/slider/IconExchange.png';
 import Foundry from '../static/images/slider/IconFoundry.png';
@@ -99,9 +100,9 @@ const Footer = () => {
         <div className="row mt-5 pt-md-5">
           <div className="col-6 col-md">
             <ul>
-              <li className="py-1" onClick={() => scrollTo('bidsarena', 100)}>
+              <li className="py-1" onClick={() => scrollTo('PropertyHolders', 100)}>
                 <p className="d-flex">
-                  <img src={Bidsarena} alt="" width="20px" className="mr-2" /> {t('link.arena')}
+                  <img src={PropertyHolders} alt="" width="20px" className="mr-2" /> {t('link.arena')}
                 </p>
               </li>
               <li className="py-1" onClick={() => scrollTo('nft-lab', 100)}>
@@ -116,10 +117,9 @@ const Footer = () => {
                   {t('link.vault')}
                 </p>
               </li>
-              <li className="py-1" onClick={() => scrollTo('foundry', 100)}>
+               <li className="py-1" onClick={() => scrollTo('bidsarena', 100)}>
                 <p className="d-flex">
-                  <img src={Foundry} alt="" width="20px" className="mr-2" />
-                  {t('link.foundry')}
+                  <img src={Bidsarena} alt="" width="20px" className="mr-2" /> {t('link.arena')}
                 </p>
               </li>
             </ul>
