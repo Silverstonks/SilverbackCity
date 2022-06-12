@@ -100,7 +100,7 @@ const Footer = () => {
         <div className="row mt-5 pt-md-5">
           <div className="col-6 col-md">
             <ul>
-              <li className="py-1" onClick={() => scrollTo('PropertyHolders', 100)}>
+              <li className="py-1" onClick={() => scrollTo('propertyholders', 100)}>
                 <p className="d-flex">
                   <img src={PropertyHolders} alt="This is an image of the Property Holders logo." width="20px" className="mr-2" /> {t('link.PropertyHolders')}
                 </p>
