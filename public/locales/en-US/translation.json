@@ -105,10 +105,10 @@
 		"subtitle": "Pre Launch: August 20",
 		"btn": "Register for Whitelist",
 		"priceLabel": "Presale Price:",
-		"price": "0.1",
-		"coin": "ETH",
+		"price": "$175",
+		"coin": "USD / ETH",
 		"launchLabel": "Launch Price:",
-		"launchPrice": "0.13"
+		"launchPrice": "$200"
 	},
 	"mint_modal": {
 		"title": ""
@@ -292,7 +292,7 @@
 			},
 			"JoseDeJesus": {
 				"name": "Jose De Jesus",
-				"jobTitle": "Chief Technology Officer"
+				"jobTitle": "Advisor"
 			},
 			"David": {
 				"name": "David Miquel",
