@@ -105,10 +105,10 @@
 		"subtitle": "Pre Lanzamiento: Agosto 20",
 		"btn": "Regístrate a la Whitelist",
 		"priceLabel": "Precio Preventa:",
-		"price": "0.1",
-		"coin": "ETH",
+		"price": "$175",
+		"coin": "USD / ETH",
 		"launchLabel": "Precio Lanzamiento:",
-		"launchPrice": "0.13"
+		"launchPrice": "$200"
 	},
 	"mint_modal": {
 		"title": ""
