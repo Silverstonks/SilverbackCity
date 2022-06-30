@@ -139,17 +139,17 @@
 		"bidsarena": {
 			"title": "SILVER BANK RUN",
 			"buttonText": "APRENDE MÁS ",
-			"text": "Gana poder adquisitivo con nuestro primer video juego Play 2 Earn. Usa tus pujas para ganar tus productos favoritos a precios increíbles. Cada subasta comienza en $0.00 y tiene un temporizador. Cada puja aumenta el precio en $ 0.01 y reinicia el temporizador en 10 segundos. El último postor que haga una puja antes de que se acabe el tiempo gana el artículo a un precio mucho más bajo que el precio de venta normal."
+			"text": "Gana poder adquisitivo con nuestro primer juego de móvil Play 2 Earn para iOS y Android. La Reserva Federal de Nueva York ha estallado después de un ataque nuclear, dejando pepitas de oro y plata por todo Manhattan. Recoge las pepitas con tu avatar NFT para acumular compras en la vida real. Las pepitas del juego se pueden derretir en nuestra fundición."
 		},
 		"silvershop": {
-			"title": "SILVER SHOP",
+			"title": "SILVER STONKS SHOP",
 			"buttonText": "INVIERTE EN PLATA",
-			"text": "Compre plata física en la tienda de plata de Silver Stonks para protegerte contra la inflación. Damos un giro a los lingotes de plata tradicionales al hacer productos que atraigan a un grupo demográfico más amplio, conectando blockchain con el mundo tradicional de invertir en metales preciosos. Cada producto de plata está vinculado a un certificado digital de autenticidad. \n\nPoseer nuestros lingotes de plata te permite reclamar certificados de autenticidad en forma de NFT en tu cartera digital. Tus certificados generan intereses sobre tu plata todos los meses en SSTX."
+			"text": "Compra plata física en la tienda de plata de Silver Stonks para protegerte contra la inflación. Damos un giro a los lingotes de plata tradicionales al hacer productos que atraigan a un grupo demográfico más amplio, conectando blockchain con el mundo tradicional de invertir en metales preciosos. Cada producto de plata está vinculado a un certificado digital de autenticidad. \n\nPoseer nuestros lingotes de plata te permite reclamar certificados de autenticidad en forma de NFT en tu cartera digital. Tus certificados generan intereses sobre tu plata todos los meses en SSTX."
 		},
 		"vault": {
 			"title": "LA BÓVEDA",
 			"buttonText": "STAKE METALES PRECIOSOS",
-			"text": "En la Bóveda puedes almacenar tus tokens SSTX y certificados NFT de los metales preciosos que compras para ganar intereses en SSTX. Hay tres formas de ganar intereses:\n- Almacena tus tokens SSTX y gana hasta un 12 % de APY.\n- Almacena tus certificados NFT de tus compras físicas de metales preciosos para ganar intereses de hasta un 6 % de APY.\n- Almacena la plata digital que ganas en nuestros juegos Play 2 Earn en Silverback City. Necesitas un Silverback NFT para obtener ingresos pasivos en los juegos Play 2 Earn."
+			"text": "En la bóveda puede ganar intereses sobre sus lingotes digitales y físicos. Guarda tus certificados NFT en la Bóveda, como los que creas en el Foundry, para comenzar a ganar SSTX. Usa tu SSTX para comprar plata y oro reales en nuestro ecommerce."
 		},
 		"lounge": {
 			"title": "UNDERGROUND\nLOUNGE",
@@ -164,7 +164,7 @@
 		"foundry": {
 			"title": "FUNDICIÓN",
 			"buttonText": "APRENDE MÁS",
-			"text": "Visita la fundición para fundir la plata y el oro digital que ganas en nuestros juegos Play 2 Earn con tu avatar NFT. Una vez que recojas suficientes metales preciosos, puedes moldear tu plata u oro en lingotes y monedas. Cuando creas tus lingotes y monedas digitales, recibes un certificado de autenticidad para tus metales preciosos digitales en forma de NFT. Guárdalos en nuestra bóveda para ganar intereses sobre sus metales preciosos digitales. Gana intereses en tokens SSTX y utilízalos para comprar metales preciosos físicos y otros activos tangibles en nuestra tienda de plata, o acumula tokens y ponlos a trabajar directamente para que sigan generando más SSTX y continues generando más ingresos pasivos."
+			"text": "Visita la fundición para fundir las pepitas de plata y el oro digital que ganas en nuestros juego Play 2 Earn con tu avatar NFT. Una vez que tengas suficientes pepitas para fundir, dales forma de barras, monedas y figuritas digitales que puedes guardar en tu cartera digital como un NFT. Guarda estos NFTs en nuestra bóveda digital para comenzar a ganar interés en SSTX."
 		},
 		"staking": {
 			"title": "STAKING",
