@@ -137,9 +137,9 @@
 	},
 	"sections": {
 		"bidsarena": {
-			"title": "BIDSARENA",
+			"title": "SILVER BANK RUN",
 			"buttonText": "LEARN MORE",
-			"text": "Win purchasing power with our first Play 2 Earn game. Use your bids to win your favorite products at incredible prices. Every auction starts at $0.00 and has a timer. Each bid increases the price by $0.01 and resets the timer by 10 seconds. The last bidder to place a bid before the time runs out wins the item at a price much lower than the regular retail price."
+			"text": "Win purchasing power with our first Play 2 Earn mobile app game for iOS and Android. The New York Federal Reserve has blown up after a nuclear attack, leaving pebbles of gold and silver all around Manhattan. Collect the pebbles with your NFT avatar to accumulate purchasing in real life. The pebbles in the game can be melted in our foundry."
 		},
 		"silvershop": {
 			"title": "SILVER SHOP",
@@ -164,7 +164,7 @@
 		"foundry": {
 			"title": "FOUNDRY",
 			"buttonText": "COMING SOON",
-			"text": "Visit the Foundry to melt the digital silver and gold you earn in our Play 2 Earn games with your NFT avatar. Once you collect enough precious metals, you can shape your silver or gold into bars and coins. When you create your digital bars and coins, you receive a certificate of authenticity for your precious metals in a form of an NFT. Store them in our vault to earn interest on your digital precious metals. Earn interest in SSTX tokens and use them to buy physical precious metals and other hard assets in our Silver Shop, or accumulate tokens and stake them directly to get paid in SSTX and begin earning passive income."
+			"text": "Melt the silver and gold pebbles you collect in our Play 2 Earn game in the foundry. Once you have enough pebbles to melt, shape them into digital bars, coins, and figurines that you can hold in your wallet as an NFT. Put these NFTs in our digital vault to start earning interest in SSTX."
 		},
 		"staking": {
 			"title": "STAKING",
