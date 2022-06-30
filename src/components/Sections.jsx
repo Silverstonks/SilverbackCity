@@ -23,11 +23,11 @@ import { useTranslation } from 'react-i18next';
 const Sections = () => {
   return (
     <div className="container mx-auto sections">
-      <SectionItemImgRight id="bidsarena" icon={BidsarenaIcon} img={BidsarenaImg} btnHref={'../static/images/SilverBankRun.pdf'} />
+      <SectionItemImgRight id="bidsarena" icon={BidsarenaIcon} img={BidsarenaImg} btnHref={'https://www.silverstonks.io/assets/files/SilverBankRun.pdf'} />
       <div className="d-flex justify-content-end ">
         <img src={DotsDecoration} alt="" className="mr-5 my-4" />
       </div>
-      <SectionItemImgLeft id="foundry" icon={FoundryIcon} img={FoundryImg} btnHref={`../static/images/SilverBankRun.pdf`}/>
+      <SectionItemImgLeft id="foundry" icon={FoundryIcon} img={FoundryImg} btnHref={`https://www.silverstonks.io/assets/files/SilverBankRun.pdf`}/>
       <SectionItemImgRight id="vault" icon={VaultIcon} img={VaultImg} btnHref={`https://collectibles.silverstonks.com/`} />
       <SectionItemImgLeft id="silvershop" icon={SilverShopIcon} img={SilverShopImg} btnHref={`https://silverstonks.com/`} />
       <SectionItemImgRight id="propertyholders" icon={PropertyHoldersIcon} img={PropertyHoldersImg} btnHref={`https://propertyholders.io/`} />
