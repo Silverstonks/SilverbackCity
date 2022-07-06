@@ -1,7 +1,7 @@
 import React from 'react';
 import BidsarenaImg from '../static/images/sections/stadio_ilustracion.gif';
 import BidsarenaIcon from '../static/images/slider/IconBidsarena.png';
-import PropertyHoldersImg from '../static/images/slider/propertyholders.jpg';
+import PropertyHoldersImg from '../static/images/slider/property_holdders.gif';
 import PropertyHoldersIcon from '../static/images/slider/IconPropertyholders.png';
 import GreenBoxTitle from '../static/images/sections/GreenBoxTitle.png';
 import VaultImg from '../static/images/sections/vault_ilustracion.gif';
@@ -12,7 +12,7 @@ import SilverShopImg from '../static/images/sections/shop_ilustracion.gif';
 import SilverShopIcon from '../static/images/slider/IconEcommerce.png';
 import LoungeImg from '../static/images/sections/underground_ilustracion.gif';
 import LoungeIcon from '../static/images/slider/IconLounge.png';
-import FoundryImg from '../static/images/sections/FOUNDRY_ILUSTRACION.jpg';
+import FoundryImg from '../static/images/sections/FOUNDRY_ILUSTRACION.gif';
 import FoundryIcon from '../static/images/slider/IconFoundry.png';
 import DotsDecoration from '../static/images/slider/DotsDecoration.png';
 import StakingIcon from '../static/images/slider/IconStaking.png';
