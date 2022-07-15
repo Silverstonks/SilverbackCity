@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 export const Jumbotron = ({ showCountDown }) => {
   const { t } = useTranslation('translation', { keyPrefix: 'jumbotron' });
-  const countDownDate = new Date('2022-08-20T18:00');
+  const countDownDate = new Date('2022-09-24T18:00');
   const intervalTime = 1000;
   // Update the count down every 1 second
   const [days, setDays] = useState(0);
