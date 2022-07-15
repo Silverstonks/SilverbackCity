@@ -90,7 +90,7 @@ export const Jumbotron = ({ showCountDown }) => {
         <>
           <div className="row">
             <div className="col-12 d-flex justify-content-center text-white countdown-container">
-              <span>August <span className="second-countdown">20th</span> at 12:00 PM EST</span>
+              <span>September <span className="second-countdown">24th</span> at 12:00 PM EST</span>
             </div>
           </div>
         </>
