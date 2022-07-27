@@ -3,9 +3,11 @@
 
     .metaverse-story-title-container
     {
-        position: relative;
+        // position: relative;
         color: #0BFF56;
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .metaverse-story-title
         {
             position: absolute;
@@ -59,6 +61,7 @@
             {
                 width: 100%;
             }
+            
         }
 
         &-details
