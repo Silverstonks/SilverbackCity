@@ -105,10 +105,10 @@
 		"subtitle": "Pre Launch: September 24",
 		"btn": "Register for Whitelist",
 		"priceLabel": "Presale Price:",
-		"price": "$175",
+		"price": "$185",
 		"coin": "USD / ETH",
 		"launchLabel": "Launch Price:",
-		"launchPrice": "$200"
+		"launchPrice": "$225"
 	},
 	"mint_modal": {
 		"title": ""
