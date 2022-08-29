@@ -108,7 +108,13 @@
 		"price": "$185",
 		"coin": "USD / ETH",
 		"launchLabel": "Launch Price:",
-		"launchPrice": "$225"
+		"launchPrice": "$225",
+		"publicSale":"Public Sale Is Now Life: ",
+		"soFar":"Minted So Far:",
+		"soFarPrice":"4000/9,999",
+		"howManyNFTs":"How many NFTs do you want to mint?",
+		"connectWallet":"CONNECT WALLET",
+		"mintNFT":"MINT NFT"
 	},
 	"mint_modal": {
 		"title": ""
