@@ -5,8 +5,16 @@ $mainTextColor: #0bff56;
   position: absolute;
   z-index: 999;
   width: 100%;
-  .gradient{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  .nav-container {
+    padding: 20px 0;
+  }
+
+  .gradient {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8) 0%,
+      transparent 100%
+    );
     position: absolute;
     z-index: 9999;
     width: 100%;
@@ -33,7 +41,8 @@ $mainTextColor: #0bff56;
       color: #00e101;
       cursor: pointer;
 
-      & > a, & > div {
+      & > a,
+      & > div {
         color: #00e101;
       }
     }
@@ -66,7 +75,11 @@ $mainTextColor: #0bff56;
       }
 
       & {
-        background: linear-gradient(to right, rgba(12, 10, 16, 0.95) 25%, rgba(12, 10, 16, 0.8) 75%);
+        background: linear-gradient(
+          to right,
+          rgba(12, 10, 16, 0.95) 25%,
+          rgba(12, 10, 16, 0.8) 75%
+        );
 
         #menu-toggle {
           color: white;
@@ -76,7 +89,14 @@ $mainTextColor: #0bff56;
   }
 
   button {
-    clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+    clip-path: polygon(
+      10% 0%,
+      100% 0%,
+      100% 65%,
+      90% 100%,
+      0% 100%,
+      0% 35%
+    ) !important;
     background-color: #0f0f11;
     color: #0bff56;
     width: 100%;
@@ -84,7 +104,7 @@ $mainTextColor: #0bff56;
     font-size: 12px;
     line-height: 0.8;
     // border: solid #0f0f11;
-    background-image: url("../static/images/header/HeaderBackground2.jpg");
+    // background-image: url("../static/images/header/HeaderBackground2.jpg");
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken;
     background-position: center;
@@ -93,19 +113,26 @@ $mainTextColor: #0bff56;
     &:hover {
       background-color: rgba(11, 255, 86, 0.4);
       color: #fff;
-  }
+    }
   }
 
   .button-container {
     background-color: #fff;
-    clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+    clip-path: polygon(
+      10% 0%,
+      100% 0%,
+      100% 65%,
+      90% 100%,
+      0% 100%,
+      0% 35%
+    ) !important;
     border: 2px solid #fff;
     width: 150px;
     max-height: fit-content;
     &:hover {
       background-color: rgba(11, 255, 86, 1);
       border: 2px solid rgba(11, 255, 86, 0.5);
-  }
+    }
   }
 
   .lang-options {
@@ -113,6 +140,98 @@ $mainTextColor: #0bff56;
 
     span.active {
       color: #0bff56;
+    }
+  }
+  .header-buttons {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    .button-container {
+      background-color: #9f9f9f;
+      border-color: #9f9f9f;
+      &:hover {
+        border-color: #ffffff;
+        background-color: #ffffff;
+        button {
+          color: #0bff56;
+          border-color: #ffffff;
+        }
+      }
+      &:last-child {
+        margin-left: 10px;
+      }
+    }
+    button {
+      padding: 10px 12px;
+      font-size: 16px;
+      border: none;
+      background-image: none;
+      background-color: #160c06;
+    }
+  }
+  @media (max-width: 768px) {
+    .header-buttons {
+      margin-left: 0;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .button-container:last-child {
+        margin-top: 10px;
+      }
+    }
+    .nav-item {
+      margin: 0;
+    }
+    .nav-top {
+      .nav-container {
+        .nav-brand {
+          width: 70%;
+        }
+        .btn.btn-clear {
+          width: 30%;
+          margin: 0;
+          img {
+            width: 10px;
+            height: 10px;
+            filter: brightness(0) invert(1);
+          }
+        }
+        .nav.active {
+          padding: 10px;
+          z-index: 999;
+          .nav-item {
+            margin: 0;
+            &.closer {
+              padding-top: 10px !important;
+            }
+            .nav-link {
+              padding: 10px 0;
+            }
+          }
+          .dropdown-menu {
+            position: relative !important;
+            width: 100%;
+            margin-bottom: 10px;
+            transform: unset !important;
+            .dropdown-item.nav-link {
+              padding: 10px 10px 10px 0 !important;
+            }
+          }
+          .header-buttons {
+            .button-container {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+    .nav-top.nav-top.scrolled.stick {
+      .nav-container {
+        .btn.btn-clear {
+          width: auto;
+          padding: 10px !important;
+        }
+      }
     }
   }
 }
