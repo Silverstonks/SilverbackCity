@@ -143,8 +143,12 @@ $mainTextColor: #0bff56;
     }
   }
   .header-buttons {
-    margin-left: 30px;
-    display: flex;
+
+	///
+	display: none;
+    ///
+	margin-left: 30px;
+    // display: flex;
     align-items: center;
     .button-container {
       background-color: #9f9f9f;
