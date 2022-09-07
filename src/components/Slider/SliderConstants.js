@@ -1,5 +1,5 @@
 import FirstSliderPage from "./Content/FirstSliderPage";
-// import FourthSliderPage from './Content/FourthSliderPage';
+import FourthSliderPage from "./Content/FourthSliderPage";
 import SecondSliderPage from "./Content/SecondSliderPage";
 import ThirdSliderPage from "./Content/ThirdSliderPage";
 

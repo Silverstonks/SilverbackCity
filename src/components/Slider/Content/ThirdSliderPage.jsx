@@ -8,6 +8,7 @@ import Exchange from "../../../static/images/slider/IconExchange.png";
 import Meta from "../../../static/images/slider/IconMeta.png";
 import Vault from "../../../static/images/slider/IconVault.png";
 import Ecommerce from "../../../static/images/slider/IconEcommerce.png";
+import Play2Earn from "../../../static/images/slider/propertyholders.jpg";
 
 const PointOfAccessIcon = (props) => {
 	const src = props?.src;
@@ -78,7 +79,9 @@ export const ThirdSliderPage = () => {
 	return (
 		<div className="slider-index-content">
 			<div className="access-points-container row">
-				{pointsOfAccess.map(renderPointOfAccess)}
+				<img src={Play2Earn} className="play2earn-img" alt="play to earn" />
+
+				{/* {pointsOfAccess.map(renderPointOfAccess)} */}
 			</div>
 		</div>
 	);
