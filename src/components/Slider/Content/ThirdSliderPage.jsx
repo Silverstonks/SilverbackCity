@@ -9,6 +9,8 @@ import Meta from "../../../static/images/slider/IconMeta.png";
 import Vault from "../../../static/images/slider/IconVault.png";
 import Ecommerce from "../../../static/images/slider/IconEcommerce.png";
 import Play2Earn from "../../../static/images/slider/propertyholders.jpg";
+import Silver from "../../../static/images/slider/Silver.png";
+import { useTranslation } from "react-i18next";
 
 const PointOfAccessIcon = (props) => {
 	const src = props?.src;
@@ -75,13 +77,18 @@ export const ThirdSliderPage = () => {
 			</a>
 		);
 	};
+	const { t } = useTranslation("translation", { keyPrefix: "propertyholders" });
 
 	return (
 		<div className="slider-index-content">
 			<div className="access-points-container row">
-				<img src={Play2Earn} className="play2earn-img" alt="play to earn" />
-
-				{/* {pointsOfAccess.map(renderPointOfAccess)} */}
+				<div className="col-12 col-md-6">
+					<img src={Play2Earn} className="play2earn-img" alt="play to earn" />
+				</div>
+				<div className="col-12 col-md-6">
+					<p className="play2earn-text">{t("description")}</p>
+					<img src={Silver} alt="pure silver" className="play2earn-img" />
+				</div>
 			</div>
 		</div>
 	);
