@@ -12,6 +12,14 @@
   .info {
     font-size: 14px;
   }
+  @media (max-width: 991px) {
+    .col-12 {
+      padding: 0;
+    }
+    p.h2 {
+      font-size: 20px;
+    }
+  }
 }
 
 .marketplace {
@@ -102,7 +110,14 @@
   }
 
   button {
-    clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+    clip-path: polygon(
+      10% 0%,
+      100% 0%,
+      100% 65%,
+      90% 100%,
+      0% 100%,
+      0% 35%
+    ) !important;
     background-color: #271528;
     color: #0bff56;
     width: 100%;
@@ -121,7 +136,14 @@
 
   .button-container {
     background-color: #fff;
-    clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+	clip-path: polygon(
+		10% 0%,
+		100% 0%,
+		100% 65%,
+		90% 100%,
+		0% 100%,
+		0% 35%
+	  ) !important;
     border: 2px solid #fff;
     width: 175px;
     height: 40px;
@@ -142,6 +164,11 @@
     #title-text {
       top: 35px;
       left: 95px;
+    }
+  }
+  @media (max-width: 991px) {
+    .row {
+      flex-direction: column-reverse;
     }
   }
 }
@@ -171,7 +198,14 @@
   }
 
   button {
-    clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+	clip-path: polygon(
+		10% 0%,
+		100% 0%,
+		100% 65%,
+		90% 100%,
+		0% 100%,
+		0% 35%
+	  ) !important;
     background-color: #271528;
     color: #0bff56;
     width: 100%;
@@ -190,7 +224,14 @@
 
   .button-container {
     background-color: #fff;
-    clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+	clip-path: polygon(
+		10% 0%,
+		100% 0%,
+		100% 65%,
+		90% 100%,
+		0% 100%,
+		0% 35%
+	  ) !important;
     border: 2px solid #fff;
     width: 175px;
     height: 40px;
@@ -259,3 +300,34 @@
 .sections p {
   white-space: pre-wrap;
 }
+
+.sections {
+	@media (max-width: 991px) {
+	  .row {
+		width: 100%;
+		margin: 0 auto;
+  
+		.section-item-img-right {
+		  padding: 0;
+  
+		  .col-lg-6 {
+			padding: 0 !important;
+		  }
+		  .row.flex-md-column-reverse {
+			flex-direction: column-reverse !important;
+		  }
+		}
+  
+		.section-item-img-left {
+		  padding: 0;
+		  .col-lg-6 {
+			padding: 0 !important;
+		  }
+		  .row.flex-column-reverse.flex-lg-row {
+			flex-direction: column !important;
+		  }
+		}
+	  }
+	}
+  }
+  

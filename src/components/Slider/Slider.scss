@@ -1,6 +1,9 @@
 $navText: #00e101;
 
 .main-home-slider {
+	.only-mobile {
+		display: none;
+	  }
   color: white;
   display: flex;
   flex-direction: column;
@@ -34,7 +37,9 @@ $navText: #00e101;
       z-index: 2;
       top: -1rem;
       left: -12.5rem;
-      background: url("../../static/images/slider/BackgroundDecoration.png") no-repeat;
+      background: url("../../static/images/slider/BackgroundDecoration.png")
+        no-repeat;
+
     }
 
     .slider-title-background,
@@ -54,7 +59,8 @@ $navText: #00e101;
       z-index: 2;
       top: 0;
       right: -20rem;
-      background: url("../../static/images/slider/CornerDecoration.png") no-repeat;
+	  background: url("../../static/images/slider/CornerDecoration.png")
+	  no-repeat;
     }
 
     .slider-pre-title {
@@ -121,6 +127,8 @@ $navText: #00e101;
   }
 
   .slider-nav-pills-container {
+	width: 100%;
+    margin: 0 auto;
     .nav-pill {
       $text: $navText;
       $border: white;
@@ -140,7 +148,14 @@ $navText: #00e101;
       }
 
       .button-container {
-        clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%) !important;
+        clip-path: polygon(
+          20% 0%,
+          100% 0%,
+          100% 80%,
+          80% 100%,
+          0% 100%,
+          0% 20%
+        ) !important;
         // background: transparent !important;
         width: 50px;
         background-color: #fff;
@@ -160,14 +175,21 @@ $navText: #00e101;
         }
 
         button {
-          clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%) !important;
-
-        //   border: 1px solid $border !important;
+			clip-path: polygon(
+				20% 0%,
+				100% 0%,
+				100% 80%,
+				80% 100%,
+				0% 100%,
+				0% 20%
+			  ) !important;
+	
+			  //   border: 1px solid $border !important;
           color: $text !important;
-        //   background: $background !important;
-        //   background: transparent !important;
-        //   font-weight: bold;
-        //   clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
+         //   background: $background !important;
+          //   background: transparent !important;
+          //   font-weight: bold;
+          //   clip-path: polygon(10% 0%, 100% 0%, 100% 65%, 90% 100%, 0% 100%, 0% 35%) !important;
           background-color: #271528;
           color: #0bff56;
           width: 100%;
@@ -195,3 +217,49 @@ $navText: #00e101;
     }
   }
 }
+@media (max-width: 991px) {
+	.only-mobile {
+	  display: block !important;
+	}
+	.only-desktop {
+	  display: none;
+	}
+	.slider-nav-pills-container {
+	  .content {
+		margin-top: 40px;
+	  }
+	  .slider-index-content {
+		img {
+		  width: 100%;
+		}
+		.access-points-container {
+		  margin: 0 auto;
+		  display: flex;
+		  .access-point-img-container {
+			padding: 10px;
+			min-width: 50px;
+			min-height: 50px;
+  
+			img {
+			  margin: 0;
+			}
+		  }
+		  .access-point-text {
+			margin: 0;
+		  }
+		}
+	  }
+	  h4,
+	  h5 {
+		text-align: center;
+		font-size: 12px;
+		margin-top: 20px;
+	  }
+  
+	  h4 {
+		font-size: 16px; 
+		color: #00e101;
+	  }
+	}
+  }
+  

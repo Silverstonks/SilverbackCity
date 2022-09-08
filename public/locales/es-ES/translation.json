@@ -57,7 +57,8 @@
 	"metaverse_story": {
 		"title": "HISTORIA METAVERSO",
 		"subtitle": "EL PRINCIPIO",
-		"slides": [{
+		"slides": [
+			{
 				"text": "En un futuro no muy lejano, el inevitable colapso económico global y el fracaso de los gobiernos mundiales se vuelve una realidad. La inflación está en su punto más alto, la cadena de suministro está en un estado de colapso total y el desempleo no para de crecer. No se pudo adoptar una solución escalable para la energía lo suficientemente rápido en todo el mundo, y las reservas de petróleo y las materias primas se han agotado. Las naciones se han derrumbado por completo, y los gobiernos restantes están luchando por la energía renovable que está disponible, mientras que las personas luchan entre sí por los recursos."
 			},
 			{
@@ -100,15 +101,23 @@
 		"title": "TROOPS",
 		"subtitle": "Scanning..."
 	},
+	"troops": {
+		"title": "TROOPS SIMBOLS",
+		"text": "Below each NFT you'll find symbols depending on the Troop that you have minted. Each symbol represents a power you will have within the metaverse and and advantages that you can use in our Play 2 Earn game."
+	},
 	"mint_card": {
 		"title": "TROOPS OF SILVERBACK CITY",
-		"subtitle": "Pre Lanzamiento:  24 de septiembre",
+		"subtitle": "Pre Lanzamiento:  24 de noviembre",
 		"btn": "Regístrate a la Whitelist",
 		"priceLabel": "Precio Preventa:",
 		"price": "$185",
 		"coin": "USD / ETH",
 		"launchLabel": "Precio Lanzamiento:",
-		"launchPrice": "$225"
+		"launchPrice": "$225",
+		"soFar": "Minted So Far:",
+		"howManyNFTs": "How many NFTs do you want to mint?",
+		"connectWallet": "Connect Wallet",
+		"mintNFT": "Mint NFT"
 	},
 	"mint_modal": {
 		"title": ""
@@ -132,6 +141,14 @@
 			"cashback": {
 				"title": "- Discord privado para inversores",
 				"text": "En esta comunidad privada, serás el primero en conocer las oportunidades de inversión en Property Holders, las estrategias para crear un portfolio de inmuebles y servicio de atención al cliente prioritario para todas nuestras plataformas."
+			},
+			"discount": {
+				"title": "- Descuentos en todos los alquileres a corto plazo de Property Holders",
+				"text": "Cuando reservas con Property Holders y utilizas tu membresía VIP, obtendrás acceso a descuentos en todas las propiedades."
+			},
+			"customer": {
+				"title": "- Atención al cliente prioritaria",
+				"text": "See dueño de una Tropa de Silverback City para obtener un servicio de atención al cliente prioritario en todas las plataformas de Silver Stonks."
 			}
 		}
 	},

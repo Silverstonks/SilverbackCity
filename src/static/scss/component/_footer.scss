@@ -46,7 +46,7 @@ $icon-sizes: (10px, 15px, 20px, 25px, 30px, 40px, 50px, 80px, 140px);
 
 footer {
   color: #fff;
-  background-color: #0E1316;
+  background-color: #0F0F11;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: $font-family !important;
@@ -103,6 +103,12 @@ footer {
         color: #00e101;
         text-decoration: none;
       }
+    }
+  }
+  @media (max-width:991px){
+    .footer-container{
+      width: 100%;
+      margin: 0 auto;
     }
   }
 }

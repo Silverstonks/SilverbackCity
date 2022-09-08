@@ -1,0 +1,38 @@
+$navText: #00e101;
+.troops{
+    .troops-images{
+       img{
+        width: 100%;
+       }
+    }
+    .troops-text{
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 60px auto 180px auto;
+        // margin-top: 60px;
+        .title{
+            font-size: 24px;
+            color: $navText;
+            white-space: nowrap;
+        }
+        .text{
+            padding-left: 40px;
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width:991px) {
+        .troops-text{
+            margin: 40px auto;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            .title,.text{
+                font-size: 12px;
+                padding: 0;
+            }
+        }
+    }
+}

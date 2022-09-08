@@ -1,170 +1,261 @@
-import React, { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import Logo from '../static/images/logo.svg';
-import { FaBars } from 'react-icons/fa';
-import actions from '../store/actions';
-import arrowLight from '../static/images/icon-arrow-right-single-light.png';
-import ClaimButton from './ClaimButton';
+import React, { useState, useEffect } from "react";
+import Logo from "../static/images/header/Logo.png";
+import LanguageIcon from "../static/images/header/LanguageIcon.png";
+import closer from "../static/images/header/closer.svg";
+import { FaBars } from "react-icons/fa";
+import "./Header.scss";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
-  const { walletAddress, isAuthenticated } = useSelector((state) => state.auth);
-  const { nft } = useSelector((state) => state.nft);
-  const dispatch = useDispatch();
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    if (offset > 100) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
+	const [scrolled, setScrolled] = useState(false);
+	const { t, i18n } = useTranslation("translation", { keyPrefix: "header" });
+	const langEn = "en-US";
+	const langEs = "es-ES";
+	// const { walletAddress, isAuthenticated } = useSelector((state) => state?.auth);
+	// const { nft } = useSelector((state) => state?.nft);
+	// const dispatch = useDispatch();
+	const handleScroll = () => {
+		const offset = window.scrollY;
+		if (offset > 100) {
+			setScrolled(true);
+		} else {
+			setScrolled(false);
+		}
+	};
 
-  window.addEventListener('scroll', handleScroll);
-  let x = ['nav-top'];
-  if (scrolled) {
-    x.push('scrolled stick');
-  }
+	window.addEventListener("scroll", handleScroll);
+	let x = ["nav-top"];
+	if (scrolled) {
+		x.push("scrolled stick");
+	}
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-  }, []);
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+	}, []);
 
-  const toggleSideMenu = () => {
-    console.log('menu active');
-    document.getElementById('nav').classList.toggle('active');
-  };
+	const toggleSideMenu = () => {
+		console.log("menu active");
+		document.getElementById("nav").classList.toggle("active");
+	};
 
-  const scrollTo = (ancla) => {
-    let x = document.querySelector('#' + ancla);
-    if (x) {
-      x.scrollIntoView({ block: 'start', behavior: 'smooth' });
-    }
-    return false;
-  };
+	const scrollTo = (ancla, offset = 0) => {
+		let x = document.querySelector("#" + ancla);
+		if (x) {
+			//x.scrollIntoView({ block: 'start', behavior: 'smooth' });
+			const y = x.getBoundingClientRect().top + window.pageYOffset - offset;
+			window.scrollTo({ top: y, behavior: "smooth" });
+			toggleSideMenu();
+		}
+		return false;
+	};
 
-  const showLoginModal = () => {
-    dispatch(actions.applicationActions.updateModalStep(3))
-    dispatch(actions.applicationActions.updateModalState(true))
-  }
+	const changeLanguage = (language) => {
+		i18n.changeLanguage(language);
+		toggleSideMenu();
+	};
 
-  return (
-    <>
-      <section className="banner">
-        <div className="banner-bg">
-          <div className={x.join('nav-top ')}>
-            <div className="container-xl">
-              <div className="nav-container">
-                <div className="nav-brand">
-                  <div className="navbar-brand">
-                    <a href="http://silverstonks.io">
-                      <img src={Logo} className="img-fluid" alt="Logo" />
-                    </a>
-                  </div>
-                </div>
-                <ul className="nav" id="nav">
-                  <li className="nav-item pt-3 d-flex d-md-none justify-content-end">
-                    <button className="btn btn-clear" id="menu-toggle" onClick={() => toggleSideMenu()}>
-                      <i className="fas fa-times txt-color-white"></i>
-                    </button>
-                  </li>
-                  <li className="nav-item">
-                    <a href="https://www.silverstonks.com/" className="nav-link">
-                      SHOP
-                    </a>
-                  </li>
-                  <li className="nav-item" onClick={() => scrollTo('buy-sstx')}>
-                    <div className="nav-link">BUY SSTX</div>
-                  </li>
-                  <li className="nav-item dropdown">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="/"
-                      id="navbarDropdown"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      ABOUT NFTs
-                    </a>
-                    <div className="dropdown-menu " aria-labelledby="navbarDropdown">
-                      <div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('other-certificates')}>
-                        Other Popular Certificates
-                      </div>
-                      <div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('silver-stonks-collectibles')}>
-                        Introducing Silver Stonks collectibles
-                      </div>
-                      <div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('nft-certificate')}>
-                        Why Silver Stonks Certificates?
-                      </div>
-                      <div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('section-metaverse')}>
-                        A growing Silver Stonks Ecosystem
-                      </div>
-                    </div>
-                  </li>
-                  <li className="nav-item">
-                    <ul className="navbar-nav ml-auto d-flex justify-content-center align-items-center">
-                      <li className="nav-item m-0">
-                        {isAuthenticated && walletAddress ? (
-                          <button className="btn btn-outline-danger ml-3 " onClick={() => dispatch(actions.authActions.logOutUser())}>
-                            DISCONNECT
-                          </button>
-                        ) : (
-                          <button
-                            type="button"
-                            className="btn btn-outline-bgalpha "
-                            onClick={() => showLoginModal()}
-                          >
-                            CONNECT WALLET
-                          </button>
-                        )}
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+	return (
+		<>
+			<section className="banner">
+				{/*<div className="gradient"></div>*/}
+				<div className={x.join(" nav-top ")}>
+					<div className="container-xl">
+						<div className="nav-container">
+							<div className="nav-brand">
+								<div className="navbar-brand">
+									<a href="/">
+										<img src={Logo} className="img-fluid" alt="Logo" />
+									</a>
+								</div>
+							</div>
+							<ul className="nav" id="nav">
+								<li className="nav-item pt-3 d-flex d-md-none justify-content-end closer">
+									<button
+										className="btn btn-clear"
+										id="menu-toggle"
+										onClick={() => toggleSideMenu()}
+									>
+										<img src={closer} alt="closer" />
+									</button>
+								</li>
+								<li className="nav-item nav-item-lang">
+									<img
+										src={LanguageIcon}
+										alt="lang selector"
+										id="lang-selector"
+										className="lang-selector"
+									/>
+									&nbsp;
+									<span className="lang-options">
+										<span
+											className={
+												"lang-en " + (i18n.language === langEn ? "active" : "")
+											}
+											id="lang-en"
+											onClick={() => changeLanguage(langEn)}
+										>
+											EN
+										</span>
+										<span className="separator">&nbsp; / &nbsp;</span>
+										<span
+											className={
+												"lang-es " + (i18n.language === langEs ? "active" : "")
+											}
+											id="lang-es"
+											onClick={() => changeLanguage(langEs)}
+										>
+											ES
+										</span>
+									</span>
+								</li>
+								<li className="nav-item">
+									<div
+										className="nav-link"
+										onClick={() => scrollTo("main-home-slider", 20)}
+									>
+										{t("nav.first_option.item")}
+									</div>
+								</li>
+								<li className="nav-item dropdown">
+									<div
+										className="nav-link dropdown-toggle"
+										id="navbarDropdown"
+										role="button"
+										data-toggle="dropdown"
+										aria-haspopup="true"
+										aria-expanded="false"
+									>
+										{t("nav.second_option.item")}
+									</div>
+									<div
+										className="dropdown-menu "
+										aria-labelledby="navbarDropdown"
+									>
+										<div
+											className="dropdown-item nav-link p-2 text-capitalize"
+											onClick={() => scrollTo("bidsarena", 100)}
+										>
+											{t("nav.second_option.dropdown.first")}
+										</div>
+										<div
+											className="dropdown-item nav-link p-2 text-capitalize"
+											onClick={() => scrollTo("vault", 100)}
+										>
+											{t("nav.second_option.dropdown.second")}
+										</div>
+										<div
+											className="dropdown-item nav-link p-2 text-capitalize"
+											onClick={() => scrollTo("nft-lab", 100)}
+										>
+											{t("nav.second_option.dropdown.third")}
+										</div>
+										<div
+											className="dropdown-item nav-link p-2 text-capitalize"
+											onClick={() => scrollTo("silvershop", 100)}
+										>
+											{t("nav.second_option.dropdown.fourth")}
+										</div>
+										<div
+											className="dropdown-item nav-link p-2 text-capitalize"
+											onClick={() => scrollTo("exchange", 20)}
+										>
+											{t("nav.second_option.dropdown.fifth")}
+										</div>
+										<div
+											className="dropdown-item nav-link p-2 text-capitalize"
+											onClick={() => scrollTo("lounge", 100)}
+										>
+											{t("nav.second_option.dropdown.sixth")}
+										</div>
+										{/*<div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('foundry', 100)}>
+                        Foundry
+                      </div>*/}
+									</div>
+								</li>
+								<li
+									className="nav-item"
+									onClick={() => scrollTo("metaverse-story", 50)}
+								>
+									<div className="nav-link">{t("nav.third_option.item")}</div>
+								</li>
+								{/* IMPORTANT: BUTTONS HIDDEN WITH d-none CLASS */}
+								<li className="nav-item d-none" id="problematic-button">
+									<div
+										className="ml-auto d-flex flex-wrap "
+										style={{
+											gap: "1rem",
+										}}
+									>
+										<ul className="navbar-nav ml-auto d-flex justify-content-center align-items-center">
+											<li className="nav-item m-0">
+												{
+													/*isAuthenticated && walletAddress ? (
+                          <div className="button-container">
+                            <button className="btn btn-outline-danger ml-3 " onClick={() => dispatch(actions.authActions.logOutUser())}>
+                              Disconect
+                            </button>
+                          </div>
+                        ) : (*/
+													<div className="button-container">
+														<button
+															type="button"
+															className="btn "
+															onClick={() =>
+																/*dispatch(actions.blockChainActions.connectToMetaMask)*/ null
+															}
+														>
+															{t("nav.first_button")}
+														</button>
+													</div>
+													/*)*/
+												}
+											</li>
+										</ul>
+										<div className="nav-item m-0">
+											<div className="button-container">
+												<button
+													type="button"
+													className="btn "
+													onClick={() =>
+														/*dispatch(actions.blockChainActions.connectToMetaMask)*/ null
+													}
+												>
+													{t("nav.second_button")}
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<div className="header-buttons">
+									<div className="button-container nav-item">
+										<button onClick={() => alert(2)}>
+											{t("nav.first_button")}
+										</button>
+									</div>
+									<div className="button-container nav-item">
+										<button onClick={() => alert(1)}>
+											{t("nav.second_button")}
+										</button>
+									</div>
+								</div>
+							</ul>
 
-                <button className="btn btn-clear px-0 d-block d-md-none" id="menu-toggle" onClick={() => toggleSideMenu()}>
-                  <div className="navbar-toggler-icon">
-                    <FaBars />
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="container">
-            <div className="banner-content">
-              <div className="row">
-                <div className="col-6 my-5 py-5">
-                  <h2>The New Way to Buy Precious Metals</h2>
+							<button
+								className="btn btn-clear px-0 d-block d-md-none"
+								id="menu-toggle"
+								onClick={() => toggleSideMenu()}
+							>
+								<div className="navbar-toggler-icon">
+									<FaBars />
+								</div>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</>
+	);
 
-                  <p className="color-alpha my-3 py-2">
-                    <img className="mr-2" alt="" src={arrowLight} height={15} />
-                    Earn more rewards on all of our products on our ecommerce store, and start building wealth in hard assets.
-                  </p>
-                  <button className="btn btn-outline-bgalpha " onClick={() => dispatch(actions.authActions.logOutUser())}>
-                    SHOP NOW
-                  </button>
-                </div>
-                <div className="col-6 my-5 d-flex justify-content-around d-none">
-                  <div className="align-self-center justify-content-center align-content-center">
-                    <img className="mx-2" alt={nft?.itemName} src={`nft/${nft?.imagePath || 'Sempsa-Silver-Bar-1000-grams.jpg'}`} height={500} />
-                  </div>
-                  <div className="d-none text-white align-self-center">
-                    <h4>Silver Silverback</h4>
-                    <h5>BNB {nft && nft.gasFee ? nft.gasFee.toString().substring(1, nft.gasFee.toString().length) : ''}</h5>
-                    <ClaimButton />
-                  </div>
-                </div>
-
-                <div className="col-12 d-none d-xl-block my-4 py-3"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
 };
 
 export default Header;
