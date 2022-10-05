@@ -1,20 +1,20 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import LandlordImg from '../static/images/sections/Landlord.png';
-import MetaImg from '../static/images/sections/Meta.png';
+import React from "react";
+import { useTranslation } from "react-i18next";
+import LandlordImg from "../static/images/sections/Landlord.png";
+import MetaImg from "../static/images/sections/Meta.png";
 
 const Marketplace = () => {
-  const { t } = useTranslation('translation', { keyPrefix: 'marketplace' });
-  return (
-    <div className="container">
-      <div className="row">
-        <div className="marketplace col-md-9 ml-auto my-md-5">
-          <p className="h4 my-md-auto py-md-5">
-            {t('title01')} <br />
-            {t('title02')} <span className="title-text">{t('title03')}</span>
-          </p>
-        </div>
-        {/* <div className="col-md-1"></div>
+	const { t } = useTranslation("translation", { keyPrefix: "marketplace" });
+	return (
+		<div className="container">
+			<div className="row">
+				<div className="marketplace col-md-9 ml-auto ">
+					<p className="h4 my-md-auto py-md-5">
+						{t("title01")} <br />
+						{t("title02")} <span className="title-text">{t("title03")}</span>
+					</p>
+				</div>
+				{/* <div className="col-md-1"></div>
       </div>
       <div className="row sections-container">
         <div className="col-md-1"></div>
@@ -43,9 +43,9 @@ const Marketplace = () => {
           </div>
           <div>{t('section.advertising.paragraph01')}</div>
         </div> */}
-      </div>
-    </div>
-  );
+			</div>
+		</div>
+	);
 };
 
 export default Marketplace;

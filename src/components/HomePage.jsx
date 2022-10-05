@@ -69,8 +69,8 @@ const HomePage = () => {
 						<MintCard />
 					</div>
 				</div>
-				<Marketplace />
 				<Benefits />
+				<Marketplace />
 
 				<Sections />
 

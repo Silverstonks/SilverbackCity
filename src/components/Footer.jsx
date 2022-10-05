@@ -12,6 +12,8 @@ import Lounge from "../static/images/slider/IconLounge.png";
 import Meta from "../static/images/slider/IconMeta.png";
 import NftLab from "../static/images/slider/IconNftLab.png";
 import Vault from "../static/images/slider/IconVault.png";
+import StakingIcon from "../static/images/slider/IconStaking.png";
+
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
@@ -100,17 +102,6 @@ const Footer = () => {
 				<div className="row mt-5 pt-md-5">
 					<div className="col-6 col-md">
 						<ul>
-							<li className="py-1" onClick={() => scrollTo("bidsarena", 100)}>
-								<p className="d-flex">
-									<img
-										src={Bidsarena}
-										alt="This is an image of Bids Arena, the Silver Stonks marketplace for other hard assets you will be able to buy with SSTX."
-										width="20px"
-										className="mr-2"
-									/>{" "}
-									{t("link.arena")}
-								</p>
-							</li>
 							<li
 								className="py-1"
 								onClick={() => scrollTo("propertyholders", 100)}
@@ -123,6 +114,17 @@ const Footer = () => {
 										className="mr-2"
 									/>{" "}
 									{t("link.PropertyHolders")}
+								</p>
+							</li>
+							<li className="py-1" onClick={() => scrollTo("bidsarena", 100)}>
+								<p className="d-flex">
+									<img
+										src={Bidsarena}
+										alt="This is an image of Bids Arena, the Silver Stonks marketplace for other hard assets you will be able to buy with SSTX."
+										width="20px"
+										className="mr-2"
+									/>{" "}
+									{t("link.arena")}
 								</p>
 							</li>
 							<li className="py-1" onClick={() => scrollTo("nft-lab", 100)}>
@@ -184,7 +186,18 @@ const Footer = () => {
 									<span>{t("link.ecommerce")}</span>
 								</p>
 							</li>
-							<li
+							<li className="py-1" onClick={() => scrollTo("staking", 100)}>
+								<p className="d-flex">
+									<img
+										src={StakingIcon}
+										alt="This is an image of the Silver Stonks staking."
+										width="20px"
+										className="mr-2"
+									/>
+									<span>{t("link.staking")}</span>
+								</p>
+							</li>
+							{/* <li
 								className="py-1"
 								onClick={() => scrollTo("meta-advertising", 100)}
 							>
@@ -197,7 +210,7 @@ const Footer = () => {
 									/>
 									<span>{t("link.avertising")}</span>
 								</p>
-							</li>
+							</li> */}
 						</ul>
 					</div>
 				</div>

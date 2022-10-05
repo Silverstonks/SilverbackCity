@@ -10,7 +10,8 @@
 	//     min-width: 100vw !important;
 	//   }
 	.modal-content {
-	  height: 90vh !important;
+	  height: auto !important;
+	  padding-bottom: 20px;
 	  /*background-image: url('../../images/sections/Background.png');*/
 	  background-color: rgb(55, 42, 56);
   
@@ -81,12 +82,9 @@
 		  align-items: center;
 		  display: flex;
 		  flex-direction: column;
-		  .logo {
-			width: 30%;
-		  }
 		  .earn-logo {
-			margin-top: 8px;
-			width: 15%;
+			margin-top: -35px;
+			width: 35%;
 		  }
 		}
 	  }

@@ -108,9 +108,19 @@ $navText: #00e101;
   }
 
   .slider-index-content {
+	.thirdslider {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
     img {
       max-width: 100%;
     }
+	.img-2{
+		width: 50%;
+		margin-right: 50%;
+	}
     .map {
       max-width: 70%;
     }
@@ -215,7 +225,18 @@ $navText: #00e101;
         text-align: center;
       }
     }
+	.slider-index-content{
+	.img-2{
+		width: 50%;
+		margin-right: 50%;
+	}
+	}
   }
+}
+@media (min-width:1200px) {
+	.third-slider-context{
+		margin-bottom: 60px;
+	}
 }
 @media (max-width: 991px) {
 	.only-mobile {
@@ -231,6 +252,10 @@ $navText: #00e101;
 	  .slider-index-content {
 		img {
 		  width: 100%;
+		}
+		.img-2{
+			width: 50%;
+			margin-right: 50%;
 		}
 		.access-points-container {
 		  margin: 0 auto;

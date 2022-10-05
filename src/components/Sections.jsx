@@ -1,7 +1,7 @@
 import React from "react";
 import BidsarenaImg from "../static/images/sections/stadio_ilustracion.gif";
 import BidsarenaIcon from "../static/images/slider/IconBidsarena.png";
-import PropertyHoldersImg from "../static/images/sections/property_holdders.gif";
+import PropertyHoldersImg from "../static/images/slider/property-holders-services.png";
 import PropertyHoldersIcon from "../static/images/slider/IconPropertyholders.png";
 import GreenBoxTitle from "../static/images/sections/GreenBoxTitle.png";
 import VaultImg from "../static/images/sections/vault_ilustracion.gif";
@@ -23,6 +23,12 @@ import { useTranslation } from "react-i18next";
 const Sections = () => {
 	return (
 		<div className="container mx-auto sections">
+			<SectionItemImgRight
+				id="propertyholders"
+				icon={PropertyHoldersIcon}
+				img={PropertyHoldersImg}
+				btnHref={`https://propertyholders.io/`}
+			/>
 			<SectionItemImgRight
 				id="bidsarena"
 				icon={BidsarenaIcon}
@@ -49,12 +55,6 @@ const Sections = () => {
 				icon={SilverShopIcon}
 				img={SilverShopImg}
 				btnHref={`https://silverstonks.com/`}
-			/>
-			<SectionItemImgRight
-				id="propertyholders"
-				icon={PropertyHoldersIcon}
-				img={PropertyHoldersImg}
-				btnHref={`https://propertyholders.io/`}
 			/>
 			<SectionItemImgLeft
 				id="lounge"

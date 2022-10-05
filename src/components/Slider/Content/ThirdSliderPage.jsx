@@ -8,8 +8,9 @@ import Exchange from "../../../static/images/slider/IconExchange.png";
 import Meta from "../../../static/images/slider/IconMeta.png";
 import Vault from "../../../static/images/slider/IconVault.png";
 import Ecommerce from "../../../static/images/slider/IconEcommerce.png";
-import Play2Earn from "../../../static/images/slider/propertyholders.jpg";
-import Silver from "../../../static/images/slider/Silver.png";
+import Play2Earn3 from "../../../static/images/slider/Play2Earn3.png";
+import AccessSilverbackcity from "../../../static/images/slider/AccessSilverbackcity.png";
+import PropertyHolders from "../../../static/images/slider/PropertyHolders.png";
 import { useTranslation } from "react-i18next";
 
 const PointOfAccessIcon = (props) => {
@@ -80,14 +81,44 @@ export const ThirdSliderPage = () => {
 	const { t } = useTranslation("translation", { keyPrefix: "propertyholders" });
 
 	return (
-		<div className="slider-index-content">
+		<div className="slider-index-content third-slider-context">
 			<div className="access-points-container row">
 				<div className="col-12 col-md-6">
-					<img src={Play2Earn} className="play2earn-img" alt="play to earn" />
+					<img
+						src={AccessSilverbackcity}
+						className="play2earn-img"
+						alt="play to earn"
+					/>
 				</div>
-				<div className="col-12 col-md-6">
-					<p className="play2earn-text">{t("description")}</p>
-					<img src={Silver} alt="pure silver" className="play2earn-img" />
+				<div className="col-12 col-md-6 thirdslider">
+					<div>
+						<img
+							src={PropertyHolders}
+							alt="property holders silverbackcity icon"
+							className="play2earn-img"
+						/>
+						<h5 className="mt-0 text-left mb-4">
+							Invest in real estate through NFT's
+						</h5>
+						<p className="play2earn-text">
+							Silver Stonks will launch Property Holders, an NFT real estate
+							marketplace that allows investors to buy pieces of properties in
+							the form of NFTs and generate passive income on the properties you
+							invest in.
+						</p>
+					</div>
+					<div>
+						<img
+							src={Play2Earn3}
+							alt="property holders silverbackcity icon"
+							className="play2earn-img img-2"
+						/>
+						<p className="play2earn-text">
+							Use your avatar from Silverback City to enjoy exclusive benefits,
+							like whitelisting for the most popular real estate and a
+							percentage of revenue from fees on the platform.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>

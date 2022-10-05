@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import actions from "../../store/actions";
 import logo from "./../../static/images/header/Logo2.png";
-import earnLogo from "./../../static/images/slider/Silver.png";
+import whitelist from "./../../static/images/slider/whitelist.png";
 const MintModal = () => {
 	const dispatch = useDispatch();
 	const { t } = useTranslation("translation", { keyPrefix: "mint_modal" });
@@ -37,8 +37,8 @@ const MintModal = () => {
 			</div>
 			<div className="modal-body">
 				<div className="modal-logo">
-					<img src={logo} alt="logo" className="logo" />
-					<img src={earnLogo} alt="earn-logo" className="earn-logo" />
+					{/* <img src={logo} alt="logo" className="logo" /> */}
+					<img src={whitelist} alt="earn-logo" className="earn-logo" />
 				</div>
 				<div id="mc_embed_signup">
 					<form

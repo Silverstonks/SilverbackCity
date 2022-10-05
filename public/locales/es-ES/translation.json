@@ -7,7 +7,7 @@
 			"second_option": {
 				"item": "Citizens / Zonas",
 				"dropdown": {
-					"first": "Bids Arena",
+					"first": "Whitelist",
 					"second": "The Vault",
 					"third": "NFT Lab",
 					"fourth": "Silver Shop",
@@ -349,7 +349,8 @@
 			"lounge": "UNDERGROUND LOUNGE",
 			"exchange": "SSTX EXCHANGE",
 			"ecommerce": "SILVER SHOP",
-			"avertising": "META ADVERTISING"
+			"avertising": "META ADVERTISING",
+			"staking": "STAKING"
 		},
 		"copyright": "© 2022 Silver Stonks. Todos los derechos reservados.",
 		"privacy_policy": "Política Privacidad",

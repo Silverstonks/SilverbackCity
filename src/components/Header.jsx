@@ -133,10 +133,16 @@ const Header = () => {
 									>
 										<div
 											className="dropdown-item nav-link p-2 text-capitalize"
-											onClick={() => scrollTo("bidsarena", 100)}
+											onClick={() => scrollTo("mint-card", 100)}
 										>
 											{t("nav.second_option.dropdown.first")}
 										</div>
+										{/* <div
+											className="dropdown-item nav-link p-2 text-capitalize"
+											onClick={() => scrollTo("bidsarena", 100)}
+										>
+											{t("nav.second_option.dropdown.first")}
+										</div> */}
 										<div
 											className="dropdown-item nav-link p-2 text-capitalize"
 											onClick={() => scrollTo("vault", 100)}
@@ -255,7 +261,6 @@ const Header = () => {
 			</section>
 		</>
 	);
-
 };
 
 export default Header;
