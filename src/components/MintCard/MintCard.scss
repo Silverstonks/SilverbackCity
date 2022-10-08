@@ -276,10 +276,10 @@ $navText: #00e101;
 		justify-content: center;
 		align-items: end;
 		.nft-launch {
-			width: 30%;
+			width:  70%;
 		}
 		.platforms {
-			width: 30%;
+			width: 80%;
 		}
 
 		@media screen and (min-width: 991px) {
@@ -288,12 +288,16 @@ $navText: #00e101;
 			}
 		}
 
-		@media (max-width: 767px) {
+		@media (max-width: 768px) {
 			& {
 				background: none;
 				justify-content: flex-start;
 				align-items: flex-start;
 			}
+      .nft-launch {
+        width:  30%;
+      }
+     
       .platforms {
         width: 50%;
       }
