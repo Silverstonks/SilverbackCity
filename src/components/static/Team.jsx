@@ -302,8 +302,8 @@ const Team = () => {
 									data-aos-offset="50"
 									data-aos-duration="1000"
 								>
-									<div className="image-box">
-										<img src={Ozodjon} />
+									<div className="image-box ">
+										<img className="developer" src={Ozodjon} />
 									</div>
 								</div>
 								<div

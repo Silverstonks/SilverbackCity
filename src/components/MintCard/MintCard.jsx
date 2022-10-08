@@ -50,7 +50,7 @@
 // 						<span className="mint-card-price font-weight-bold">
 // 							{t("launchPrice")}
 // 						</span>
-// 						&nbsp;
+// 						{" "}
 // 						<span>{t("coin")}</span>
 // 					</div>
 // 					<br />
@@ -58,7 +58,7 @@
 // 						<span className="mint-card-price-label color-white">
 // 							{t("soFar")}
 // 						</span>
-// 						&nbsp;
+// 						{" "}
 // 						<span className="mint-card-price text-white">
 // 							{t("soFarPrice")}
 // 						</span>
@@ -163,22 +163,22 @@ export const MintCard = () => {
 						<span className="mint-card-price-label ">
 							{t("priceLabel")}
 						</span>
-						&nbsp;
+						{" "}
 						<span className="mint-card-price font-weight-bold">
 							{t("price")}
 						</span>
-						&nbsp;
+						{" "}
 						<span>{t("coin")}</span>
 					</div>
 					<div className="mint-card-price-container text-white">
 						<span className="mint-card-price-label color-white">
 							{t("launchLabel")}
 						</span>
-						&nbsp;
+						{" "}
 						<span className="mint-card-price text-white">
 							{t("launchPrice")}
 						</span>
-						&nbsp;
+						{" "}
 						<span>{t("coin")}</span>
 					</div>
 

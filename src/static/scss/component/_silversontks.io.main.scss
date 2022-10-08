@@ -17459,7 +17459,9 @@ footer a:focus {
   background: -o-linear-gradient(left, #19c09c 0%, #5dff9c 100%);
   background: linear-gradient(90deg, #19c09c 0%, #5dff9c 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#19c09c",endColorstr="#5dff9c",GradientType=1);
+
 }
+
 .team .image-box img {
   width: 132px;
   height: 132px;
@@ -17467,6 +17469,10 @@ footer a:focus {
   position: absolute;
   margin-top: 10px;
   margin-left: 13px;
+  &.developer{
+    -webkit-filter: grayscale(80%); 
+    filter: grayscale(80%);
+  }
 }
 
 .team .team-info .card-title {

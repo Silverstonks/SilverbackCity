@@ -276,7 +276,7 @@ $navText: #00e101;
 		justify-content: center;
 		align-items: end;
 		.nft-launch {
-			width:  70%;
+			width: 70%;
 		}
 		.platforms {
 			width: 80%;
@@ -294,13 +294,13 @@ $navText: #00e101;
 				justify-content: flex-start;
 				align-items: flex-start;
 			}
-      .nft-launch {
-        width:  30%;
-      }
-     
-      .platforms {
-        width: 50%;
-      }
+			.nft-launch {
+				width: 35%;
+			}
+
+			.platforms {
+				width: 50%;
+			}
 		}
 
 		.img-detail.lines {
@@ -314,11 +314,11 @@ $navText: #00e101;
 
 		.mint-card-action {
 			width: 100%;
-      margin-top: 10px!important;
-      margin-bottom: 0!important;
+			margin-top: 10px !important;
+			margin-bottom: 0 !important;
 			.button-container {
 				width: 100% !important;
-        
+
 				button {
 					width: 100%;
 					height: 100px;
@@ -418,6 +418,10 @@ $navText: #00e101;
 @media (max-width: 768px) {
 	.mint-card-container {
 		// background-size: cover;
+		.presale {
+			font-size: unset !important;
+			margin: 4px 0;
+		}
 		background-position: center center;
 		padding: 40px 0;
 		.mint-card.row {
@@ -426,14 +430,16 @@ $navText: #00e101;
 			padding: 25px 10px;
 			.mint-card-details {
 				.mint-card-title-container {
-          p {
-            margin-bottom: 0;
+					p {
+						margin-bottom: 0;
 						font-size: 12px;
 						// margin-bottom: 8px;
 						text-align: left;
 					}
 				}
 				.mint-card-price-container {
+					line-height: 1;
+
 					span {
 						font-size: 12px;
 					}
