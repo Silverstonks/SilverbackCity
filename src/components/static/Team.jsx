@@ -4,6 +4,8 @@ import Teresa from "../../static/images/team/teresa.jpg";
 import JoseDeJesus from "../../static/images/team/jose-dejesus.jpg";
 import David from "../../static/images/team/david.jpg";
 import Pablo from "../../static/images/team/pablo.jpg";
+import Omar from "../../static/images/team/omar.jpg";
+import Ozodjon from "../../static/images/team/ozodjon.jpg";
 import Christopher from "../../static/images/team/christopher.jpg";
 import Ignacio from "../../static/images/team/ignacio.jpg";
 import Carlos from "../../static/images/team/carlos.jpg";
@@ -255,7 +257,76 @@ const Team = () => {
 								</div>
 							</div>
 						</div>
-
+						{/*<!-- Team 9-->*/}
+						<div className="col-md-3 mb-4">
+							<div className="team d-flex flex-column align-items-center">
+								<div
+									className="mb-3"
+									data-aos="flip-left"
+									data-aos-delay="100"
+									data-aos-offset="50"
+									data-aos-duration="1000"
+								>
+									<div className="image-box">
+										<img src={Omar} />
+									</div>
+								</div>
+								<div
+									className="text-center team-info"
+									data-aos="fade-zoom-in"
+									data-aos-delay="100"
+									data-aos-offset="50"
+									data-aos-duration="1000"
+								>
+									<h3 className="card-title">{t("member.Omar.name")}</h3>
+									<h2 className="card-subtitle mb-2 text-muted">
+										{t("member.Omar.jobTitle")}
+									</h2>
+									<a
+										href="https://www.linkedin.com/in/omar-hammad-b488b41a/"
+										target="_blank"
+										className=""
+									>
+										<i className="fab fa-linkedin fa-lg"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						{/*<!-- Team 9-->*/}
+						<div className="col-md-3 mb-4">
+							<div className="team d-flex flex-column align-items-center">
+								<div
+									className="mb-3"
+									data-aos="flip-left"
+									data-aos-delay="100"
+									data-aos-offset="50"
+									data-aos-duration="1000"
+								>
+									<div className="image-box">
+										<img src={Ozodjon} />
+									</div>
+								</div>
+								<div
+									className="text-center team-info"
+									data-aos="fade-zoom-in"
+									data-aos-delay="100"
+									data-aos-offset="50"
+									data-aos-duration="1000"
+								>
+									<h3 className="card-title">{t("member.Ozodjon.name")}</h3>
+									<h2 className="card-subtitle mb-2 text-muted">
+										{t("member.Ozodjon.jobTitle")}
+									</h2>
+									<a
+										href="http://linkedin.com/in/ozodjon-asadullayev-17044b1a7"
+										target="_blank"
+										className=""
+									>
+										<i className="fab fa-linkedin fa-lg"></i>
+									</a>
+								</div>
+							</div>
+						</div>
 						{/*<!-- Team 9-->*/}
 						<div className="col-md-3 mb-4">
 							<div className="team d-flex flex-column align-items-center">

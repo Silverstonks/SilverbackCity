@@ -55,7 +55,8 @@ $mainTextColor: #0bff56;
       &.show {
         display: flex;
         flex-wrap: wrap;
-        width: 22.5rem;
+        width: 25.5rem;
+        left: -150px!important;
       }
 
       .dropdown-item {

@@ -42,7 +42,8 @@ const Header = () => {
 		let x = document.querySelector("#" + ancla);
 		if (x) {
 			//x.scrollIntoView({ block: 'start', behavior: 'smooth' });
-			const y = x.getBoundingClientRect().top + window.pageYOffset - offset;
+			const y =
+				x.getBoundingClientRect().top + window.pageYOffset - offset;
 			window.scrollTo({ top: y, behavior: "smooth" });
 			toggleSideMenu();
 		}
@@ -64,7 +65,11 @@ const Header = () => {
 							<div className="nav-brand">
 								<div className="navbar-brand">
 									<a href="/">
-										<img src={Logo} className="img-fluid" alt="Logo" />
+										<img
+											src={Logo}
+											className="img-fluid"
+											alt="Logo"
+										/>
 									</a>
 								</div>
 							</div>
@@ -89,20 +94,32 @@ const Header = () => {
 									<span className="lang-options">
 										<span
 											className={
-												"lang-en " + (i18n.language === langEn ? "active" : "")
+												"lang-en " +
+												(i18n.language === langEn
+													? "active"
+													: "")
 											}
 											id="lang-en"
-											onClick={() => changeLanguage(langEn)}
+											onClick={() =>
+												changeLanguage(langEn)
+											}
 										>
 											EN
 										</span>
-										<span className="separator">&nbsp; / &nbsp;</span>
+										<span className="separator">
+											&nbsp; / &nbsp;
+										</span>
 										<span
 											className={
-												"lang-es " + (i18n.language === langEs ? "active" : "")
+												"lang-es " +
+												(i18n.language === langEs
+													? "active"
+													: "")
 											}
 											id="lang-es"
-											onClick={() => changeLanguage(langEs)}
+											onClick={() =>
+												changeLanguage(langEs)
+											}
 										>
 											ES
 										</span>
@@ -111,9 +128,21 @@ const Header = () => {
 								<li className="nav-item">
 									<div
 										className="nav-link"
-										onClick={() => scrollTo("main-home-slider", 20)}
+										onClick={() =>
+											scrollTo("main-home-slider", 20)
+										}
 									>
 										{t("nav.first_option.item")}
+									</div>
+								</li>
+								<li className="nav-item">
+									<div
+										className="nav-link"
+										onClick={() =>
+											scrollTo("mint-card", 100)
+										}
+									>
+										{t("nav.second_option.item")}
 									</div>
 								</li>
 								<li className="nav-item dropdown">
@@ -125,7 +154,7 @@ const Header = () => {
 										aria-haspopup="true"
 										aria-expanded="false"
 									>
-										{t("nav.second_option.item")}
+										{t("nav.third_option.item")}
 									</div>
 									<div
 										className="dropdown-menu "
@@ -133,59 +162,101 @@ const Header = () => {
 									>
 										<div
 											className="dropdown-item nav-link p-2 text-capitalize"
-											onClick={() => scrollTo("mint-card", 100)}
+											onClick={() =>
+												scrollTo("propertyholders", 100)
+											}
 										>
-											{t("nav.second_option.dropdown.first")}
-										</div>
-										{/* <div
-											className="dropdown-item nav-link p-2 text-capitalize"
-											onClick={() => scrollTo("bidsarena", 100)}
-										>
-											{t("nav.second_option.dropdown.first")}
-										</div> */}
-										<div
-											className="dropdown-item nav-link p-2 text-capitalize"
-											onClick={() => scrollTo("vault", 100)}
-										>
-											{t("nav.second_option.dropdown.second")}
+											{t(
+												"nav.third_option.dropdown.propertyHolders"
+											)}
 										</div>
 										<div
 											className="dropdown-item nav-link p-2 text-capitalize"
-											onClick={() => scrollTo("nft-lab", 100)}
+											onClick={() =>
+												scrollTo("lounge", 100)
+											}
 										>
-											{t("nav.second_option.dropdown.third")}
+											{t(
+												"nav.third_option.dropdown.lounge"
+											)}
 										</div>
 										<div
 											className="dropdown-item nav-link p-2 text-capitalize"
-											onClick={() => scrollTo("silvershop", 100)}
+											onClick={() =>
+												scrollTo("bidsarena", 100)
+											}
 										>
-											{t("nav.second_option.dropdown.fourth")}
+											{t(
+												"nav.third_option.dropdown.arena"
+											)}
 										</div>
 										<div
 											className="dropdown-item nav-link p-2 text-capitalize"
-											onClick={() => scrollTo("exchange", 20)}
+											onClick={() =>
+												scrollTo("exchange", 100)
+											}
 										>
-											{t("nav.second_option.dropdown.fifth")}
+											{t(
+												"nav.third_option.dropdown.exchange"
+											)}
 										</div>
 										<div
 											className="dropdown-item nav-link p-2 text-capitalize"
-											onClick={() => scrollTo("lounge", 100)}
+											onClick={() =>
+												scrollTo("nft-lab", 100)
+											}
 										>
-											{t("nav.second_option.dropdown.sixth")}
+											{t(
+												"nav.third_option.dropdown.nftlab"
+											)}
 										</div>
-										{/*<div className="dropdown-item nav-link p-2 text-capitalize" onClick={() => scrollTo('foundry', 100)}>
-                        Foundry
-                      </div>*/}
+										<div
+											className="dropdown-item nav-link p-2 text-capitalize"
+											onClick={() =>
+												scrollTo("silvershop", 100)
+											}
+										>
+											{t(
+												"nav.third_option.dropdown.ecommerce"
+											)}
+										</div>
+										<div
+											className="dropdown-item nav-link p-2 text-capitalize"
+											onClick={() =>
+												scrollTo("vault", 100)
+											}
+										>
+											{t(
+												"nav.third_option.dropdown.vault"
+											)}
+										</div>
+										<div
+											className="dropdown-item nav-link p-2 text-capitalize"
+											onClick={() =>
+												scrollTo("staking", 100)
+											}
+										>
+											{t(
+												"nav.third_option.dropdown.staking"
+											)}
+										</div>
 									</div>
 								</li>
 								<li
 									className="nav-item"
-									onClick={() => scrollTo("metaverse-story", 50)}
+									onClick={() =>
+										scrollTo("metaverse-story", 50)
+									}
 								>
-									<div className="nav-link">{t("nav.third_option.item")}</div>
+									<div className="nav-link">
+										{t("nav.fourth_option.item")}
+									</div>
 								</li>
 								{/* IMPORTANT: BUTTONS HIDDEN WITH d-none CLASS */}
-								<li className="nav-item d-none" id="problematic-button">
+								<li
+									className="nav-item d-none"
+									id="problematic-button"
+								>
 									<div
 										className="ml-auto d-flex flex-wrap "
 										style={{
@@ -210,7 +281,9 @@ const Header = () => {
 																/*dispatch(actions.blockChainActions.connectToMetaMask)*/ null
 															}
 														>
-															{t("nav.first_button")}
+															{t(
+																"nav.first_button"
+															)}
 														</button>
 													</div>
 													/*)*/

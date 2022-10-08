@@ -5,17 +5,22 @@
 				"item": "Silverback City"
 			},
 			"second_option": {
-				"item": "Citizens / Zones",
-				"dropdown": {
-					"first": "Whitelist",
-					"second": "The Vault",
-					"third": "NFT Lab",
-					"fourth": "Silver Shop",
-					"fifth": "Token",
-					"sixth": "Underground Lounge"
-				}
+				"item": "Whitelist"
 			},
 			"third_option": {
+				"item": "Citizens / Zones",
+				"dropdown": {
+					"propertyHolders": "PROPERTY HOLDERS",
+					"arena": "Play 2 Earn",
+					"nftlab": "NFT LAB",
+					"vault": "THE VAULT",
+					"lounge": "UNDERGROUND LOUNGE",
+					"exchange": "SSTX EXCHANGE",
+					"ecommerce": "SILVER SHOP",
+					"staking": "STAKING"
+				}
+			},
+			"fourth_option": {
 				"item": "Story"
 			},
 			"first_button": "Connect Wallet",
@@ -319,6 +324,14 @@
 			"Pablo": {
 				"name": "Pablo Palau",
 				"jobTitle": "Creative Director"
+			},
+			"Omar": {
+				"name": "Omar Hammad",
+				"jobTitle": "Chief Investment Officer"
+			},
+			"Ozodjon": {
+				"name": "Ozodjon Asadullayev",
+				"jobTitle": "Software Developer"
 			},
 			"Christopher": {
 				"name": "Christopher Navarro",
