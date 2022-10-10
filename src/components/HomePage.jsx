@@ -70,11 +70,9 @@ const HomePage = () => {
 					</div>
 				</div>
 				<Benefits />
-				<Marketplace />
+				{/* <Marketplace /> */}
 
 				<Sections />
-
-				{/* <Marketplace /> */}
 
 				<Roadmap />
 

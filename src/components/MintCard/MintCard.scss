@@ -327,11 +327,11 @@ $navText: #00e101;
 					outline: none;
 					box-shadow: none;
 					padding: 0;
-					background: url("../../static/images/button_negativo.png")
+					background: url("../../static/images/button_negativo_active.png")
 						no-repeat;
 					background-size: cover;
 					&:hover {
-						background: url("../../static/images/button_negativo_active.png")
+						background: url("../../static/images/button_negativo.png")
 							no-repeat;
 						background-size: cover;
 					}

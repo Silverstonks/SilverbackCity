@@ -23,7 +23,7 @@ import { useTranslation } from "react-i18next";
 const Sections = () => {
 	return (
 		<div className="container mx-auto sections">
-			<SectionItemImgRight
+			<SectionItemImgLeft
 				id="propertyholders"
 				icon={PropertyHoldersIcon}
 				img={PropertyHoldersImg}
