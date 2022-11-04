@@ -113,7 +113,7 @@
 		"price": "$185",
 		"coin": "USD / ETH",
 		"launchLabel": "Precio Lanzamiento:",
-		"launchPrice": "$225",
+		"launchPrice": "$185",
 		"soFar": "Minted So Far:",
 		"howManyNFTs": "How many NFTs do you want to mint?",
 		"connectWallet": "Connect Wallet",
@@ -149,6 +149,10 @@
 			"customer": {
 				"title": "- Atención al cliente prioritaria",
 				"text": "See dueño de una Tropa de Silverback City para obtener un servicio de atención al cliente prioritario en todas las plataformas de Silver Stonks."
+			},
+			"finance": {
+				"title": "-Acceso a la Academia de Finanzas",
+				"text": "Recibe una membresía de un año en la Academia de Finanzas y aprende a ganar dinero, invertir y crear riqueza."
 			}
 		}
 	},
@@ -192,6 +196,11 @@
 			"title": "PROPERTY HOLDERS",
 			"buttonText": "INVIERTE EN INMUEBLES",
 			"text": "Property Holders es un marketplace de bienes inmuebles NFT que te permitirá invertir en fracciones de propiedades en todo el mundo. Podrás comprar partes de propiedades a través de NFT que están vinculados a los bienes inmuebles físicos. Ser propietario de un NFT de una propiedad te dará derecho a obtener los ingresos pasivos que produce la propiedad, de acuerdo con el porcentaje de propiedad que te otorga tu NFT, sin tener los inconvenientes de un propietario. Adquiere tu avatar de Silverback City para obtener beneficios exclusivos en Property Holders."
+		},
+		"financeacademy": {
+			"title": "Academia de Finanzas",
+			"buttonText": "APRENDE MÁS",
+			"text": "Como alumno de la Academia de Finanzas de Piedras Plateadas, ya no tienes excusa para no ganar dinero de forma constante. Hazte miembro para acceder a una variedad de temas de finanzas que van desde las criptomonedas hasta el emprendimiento, y aprende a construir una riqueza generacional."
 		}
 	},
 	"marketplace": {

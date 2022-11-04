@@ -118,7 +118,7 @@
 		"price": "$185",
 		"coin": "USD / ETH",
 		"launchLabel": "Launch Price:",
-		"launchPrice": "$225",
+		"launchPrice": "$185",
 		"publicSale": "Public Sale Is Now Live: ",
 		"soFar": "Minted So Far:",
 		"soFarPrice": "4000/9,999",
@@ -156,6 +156,10 @@
 			"customer": {
 				"title": "- Priority Customer Service",
 				"text": "Own a Troop of Silverback City to gain priority customer service across all Silver Stonks platforms."
+			},
+			"finance": {
+				"title": "-Access to the Finance Academy",
+				"text": "Receive a year membership to the Finance Academy and"
 			}
 		}
 	},
@@ -199,6 +203,11 @@
 			"title": "PROPERTY HOLDERS",
 			"buttonText": "INVEST IN REAL ESTATE",
 			"text": "Property Holders is an NFT real estate marketplace that will allow you to invest in fractions of properties around the world. You will be able to purchase pieces of properties through NFTs that are tied to the physical real estate. Owning NFTs to the property will give you the right to earn passive income based on your percentage of ownership without the hassle of landlorship. Own a Troop from Silverback City to get exclusive benefits on Property Holders."
+		},
+		"financeacademy": {
+			"title": "FINANCE ACADEMY",
+			"buttonText": "LEARN MORE",
+			"text": "As a Silver Stonks Finance Academy student, you have no more excuses to not consistently be making money. Become a member to gain access to a variety of finance topics ranging from crypto to entrepreneurship, and learn how to build generational wealth."
 		}
 	},
 	"marketplace": {

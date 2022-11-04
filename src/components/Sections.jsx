@@ -4,6 +4,7 @@ import BidsarenaIcon from "../static/images/slider/IconBidsarena.png";
 import PropertyHoldersImg from "../static/images/slider/property-holders-services.png";
 import PropertyHoldersIcon from "../static/images/slider/IconPropertyholders.png";
 import GreenBoxTitle from "../static/images/sections/GreenBoxTitle.png";
+import FinanceAImg from "../static/images/sections/f-acad.jpg";
 import VaultImg from "../static/images/sections/vault_ilustracion.gif";
 import VaultIcon from "../static/images/slider/IconVault.png";
 import ExchangeImg from "../static/images/sections/EXCHANGE_ILUSTRACION.gif";
@@ -30,6 +31,12 @@ const Sections = () => {
 				btnHref={`https://propertyholders.io/`}
 			/>
 			<SectionItemImgRight
+				id="financeacademy"
+				icon={PropertyHoldersIcon}
+				img={FinanceAImg}
+				btnHref={"https://www.silverstonks.io/assets/files/SilverBankRun.pdf"}
+			/>
+			<SectionItemImgLeft
 				id="bidsarena"
 				icon={BidsarenaIcon}
 				img={BidsarenaImg}
@@ -38,19 +45,19 @@ const Sections = () => {
 			<div className="d-flex justify-content-end ">
 				<img src={DotsDecoration} alt="" className="mr-5 my-4" />
 			</div>
-			<SectionItemImgLeft
+			<SectionItemImgRight
 				id="foundry"
 				icon={FoundryIcon}
 				img={FoundryImg}
 				btnHref={`https://www.silverstonks.io/assets/files/SilverBankRun.pdf`}
 			/>
-			<SectionItemImgRight
+			<SectionItemImgLeft
 				id="vault"
 				icon={VaultIcon}
 				img={VaultImg}
 				btnHref={`https://collectibles.silverstonks.com/`}
 			/>
-			<SectionItemImgLeft
+			<SectionItemImgRight
 				id="silvershop"
 				icon={SilverShopIcon}
 				img={SilverShopImg}
