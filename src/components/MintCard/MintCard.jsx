@@ -87,10 +87,10 @@ export const MintCard = () => {
 							<button onClick={() => alert(counter)}>{t("mintNFT")}</button>
 						</div>
 					</div>
-					<div className="mint-card-buttons">
+					<div className="mint-card-buttons tooltippy">
 						<div style={{ margin: "8px 0 0 0" }} className="button-container">
 							<button
-								style={{ padding: "2px 17px" }}
+								style={{ padding: "2px 7px" }}
 								onClick={() => {
 									window.open(
 										"https://silverstonks.com/buy-silverbackcity-nft",
@@ -98,9 +98,13 @@ export const MintCard = () => {
 									);
 								}}
 							>
-								{"Pay without Crypto"}
+								{"PAY WITHOUT CRYPTO"}
 							</button>
 						</div>
+						<span class="tooltiptext">
+							If you are not comfortable with crypto, you can purchase the NFT
+							with regular currency and we will mint the NFT for you
+						</span>
 					</div>
 
 					{/* <div className="mint-card-action my-5">
