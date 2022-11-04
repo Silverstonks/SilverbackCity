@@ -181,6 +181,21 @@ export const MintCard = () => {
 						{" "}
 						<span>{t("coin")}</span>
 					</div>
+					<div className="mint-card-buttons">
+						<div style={{ margin: "8px 0 0 0" }} className="button-container">
+							<button
+								style={{ padding: "2px 17px" }}
+								onClick={() => {
+									window.open(
+										"https://silverstonks.com/buy-silverbackcity-nft",
+										"_blank"
+									);
+								}}
+							>
+								{"Pay without Crypto"}
+							</button>
+						</div>
+					</div>
 
 					<div className="mint-card-action my-4">
 						<div className="button-container ">
