@@ -146,7 +146,7 @@ export const MintCard = () => {
             </div>
             <span class="tooltiptext">
               If you are not comfortable with crypto, you can purchase the NFT
-              with regular currency and we will mint the NFT for you
+              with regular currency in our ecommerce, and we will mint the NFT for you.
             </span>
           </div>
 
