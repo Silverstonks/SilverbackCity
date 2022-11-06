@@ -13,11 +13,12 @@ const selectOptions = [
 
 export const MintCard = () => {
   //Todo Need to Show Connected Address SomeWhere
-  const { isConnected, walletAddress, totalSupply, isWrongNetwork } =
-    useSelector((state) => state.blockChain);
+  const { isConnected, amount, totalSupply, isWrongNetwork } = useSelector(
+    (state) => state.blockChain
+  );
   const dispatch = useDispatch();
   const { t } = useTranslation("translation", { keyPrefix: "mint_card" });
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(1);
   const renderOption = ({ label, value }) => (
     <option key={`mint-card-option-${value}`} value={value}>
       {label}
@@ -92,7 +93,7 @@ export const MintCard = () => {
               type="number"
               className="input-form"
               value={counter > 0 ? counter : ""}
-              placeholder={t("howManyNFTs")}
+              placeholder={amount}
               onChange={(e) => onChange(e)}
             />
             <br />
