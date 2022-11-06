@@ -18,6 +18,11 @@ $navText: #00e101;
 		margin: 4rem 0 0 5px;
     }
   }
+  @media (min-width: 1800px) {
+    & {
+		margin: 6rem 0 2rem 330px;
+    }
+  }
 
   background-size: contain;
 
