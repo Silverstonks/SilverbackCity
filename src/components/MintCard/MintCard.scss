@@ -18,9 +18,19 @@ $navText: #00e101;
 		margin: 4rem 0 0 5px;
     }
   }
+  @media (max-width: 991px) {
+    & {
+		margin: 4rem 0 0 5px;
+    }
+  }
   @media (min-width: 1800px) {
     & {
 		margin: 6rem 0 2rem 330px;
+    }
+  }
+  @media (min-width: 1900px) {
+    & {
+		margin: 6rem 0 2rem 360px;
     }
   }
   @media (min-width: 1200px) {
