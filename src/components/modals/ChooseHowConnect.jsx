@@ -4,6 +4,7 @@ import MetaMaskLogo from "../../static/images/metamask.svg";
 import WalletConnectLogo from "../../static/images/walletconnect.svg";
 // import "../../static/scss/component/_connect_wallet.scss";
 import { useRef } from "react";
+import { Modal } from "react-bootstrap";
 // import useOnClickOutside from "../../hooks/useOnClickOutside";
 
 const ChooseHowConnect = () => {
@@ -32,6 +33,7 @@ const ChooseHowConnect = () => {
 
 	return (
 		<div ref={connectModal} className="connect-to-wallet">
+			<Modal.Header closeButton={true}></Modal.Header>
 			<div className="modal-body">
 				<div className="row">
 					<div className="col-12 d-flex justify-content-around my-2 py-2">
