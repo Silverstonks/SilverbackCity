@@ -1,4 +1,11 @@
-import { LOAD_BLOCKCHAIN, BLOCKCHAIN_ERROR } from '../types'
+import {
+  LOAD_BLOCKCHAIN,
+  BLOCKCHAIN_ERROR,
+  LOAD_WALLET_ADDRESS,
+  LOAD_TOTAL_SUPPLY,
+  WRONG_NETWORK,
+  CHANGE_AMOUNT
+} from "../types";
 
 const initialState = {
   blockChainLoaded: false,
@@ -6,7 +13,13 @@ const initialState = {
   nftContract: null,
   tokenContract: null,
   walletProvider: null,
-}
+  isConnected: false,
+  nftContractMethods: null,
+  walletAddress: "",
+  totalSupply: 0,
+  isWrongNetwork: false,
+  amount: 1
+};
 
 export default function blockChainReducer(state = initialState, action) {
   switch (action.type) {
@@ -16,27 +29,45 @@ export default function blockChainReducer(state = initialState, action) {
         blockChainLoaded: true,
         web3: action.payload.web3,
         nftContract: action.payload.nftContract,
-        tokenContract: action.payload.tokenContract,
+        tokenContract: action.payload.tokenContract
       };
     case "SET_WALLET_PROVIDER":
       return {
         ...state,
-        walletProvider: action.payload.walletProvider,
-      }
+        walletProvider: action.payload.walletProvider
+      };
     case BLOCKCHAIN_ERROR:
       return {
         ...state,
         blockChainLoaded: false
-      }
-    case "SET_USER_DETAILS" :
+      };
+    case LOAD_TOTAL_SUPPLY:
+      return {
+        ...state,
+        totalSupply: action.payload.totalSupply
+      };
+    case WRONG_NETWORK:
+      return { ...state, isWrongNetwork: action.payload.isWrongNetwork };
+
+    case CHANGE_AMOUNT:
+      debugger;
+      return { ...state, amount: action.payload.amount };
+
+    case LOAD_WALLET_ADDRESS:
+      return {
+        ...state,
+        walletAddress: action.payload.walletAddress,
+        isConnected: action.payload.isConnected
+      };
+    case "SET_USER_DETAILS":
     case "GET_USER_BLOCKCHAIN_NFT":
       return {
-        ...state,
-      }
+        ...state
+      };
     case "LOGOUT_USER_BLOCKCHAIN":
       return {
-        ...state,
-      }
+        ...state
+      };
     default:
       return state;
   }

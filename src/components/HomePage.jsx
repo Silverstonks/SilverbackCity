@@ -43,11 +43,16 @@ const HomePage = () => {
 		<>
 			<Suspense fallback="loading">
 				<Header />
+				<div
+					style={{ display: "flex", justifyContent: "center", width: "100%" }}
+				>
+					<MintCard />
+				</div>
 
 				{/* <ToastContainer /> */}
 				<ModalDialogs />
 
-				<Jumbotron showCountDown={!isApple} />
+				{/* <Jumbotron showCountDown={!isApple} /> */}
 
 				<div className="prueba-degradado">
 					<div className="first-gradient" />
@@ -66,7 +71,6 @@ const HomePage = () => {
 						<NftLab />
 						<ClansSlider />
 						<Troops />
-						<MintCard />
 					</div>
 				</div>
 				<Benefits />
