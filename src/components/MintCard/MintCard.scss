@@ -13,7 +13,7 @@ $navText: #00e101;
 
   background: url('../../static/images/sections/BackgroundMintNft.png') no-repeat;
 
-  @media (max-width: 991px) {
+  @media (min-width: 991px) {
     & {
 		margin: 4rem 0 0 5px;
     }
