@@ -23,6 +23,36 @@ $navText: #00e101;
 		margin: 6rem 0 2rem 330px;
     }
   }
+  @media (min-width: 1200px) {
+    & {
+		margin: 6rem 0 2rem 6px;
+    }
+  }
+  @media (min-width: 1300px) {
+    & {
+		margin: 6rem 0 2rem 60px;
+    }
+  }
+  @media (min-width: 1400px) {
+    & {
+		margin: 6rem 0 2rem 120px;
+    }
+  }
+  @media (min-width: 1500px) {
+    & {
+		margin: 6rem 0 2rem 180px;
+    }
+  }
+  @media (min-width: 1600px) {
+    & {
+		margin: 6rem 0 2rem 210px;
+    }
+  }
+  @media (min-width: 1700px) {
+    & {
+		margin: 6rem 0 2rem 250px;
+    }
+  }
 
   background-size: contain;
 
