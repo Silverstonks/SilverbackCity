@@ -3,7 +3,8 @@ import {
   BLOCKCHAIN_ERROR,
   LOAD_WALLET_ADDRESS,
   LOAD_TOTAL_SUPPLY,
-  WRONG_NETWORK
+  WRONG_NETWORK,
+  CHANGE_AMOUNT
 } from "../types";
 
 const initialState = {
@@ -16,7 +17,8 @@ const initialState = {
   nftContractMethods: null,
   walletAddress: "",
   totalSupply: 0,
-  isWrongNetwork: false
+  isWrongNetwork: false,
+  amount: 1
 };
 
 export default function blockChainReducer(state = initialState, action) {
@@ -46,6 +48,10 @@ export default function blockChainReducer(state = initialState, action) {
       };
     case WRONG_NETWORK:
       return { ...state, isWrongNetwork: action.payload.isWrongNetwork };
+
+    case CHANGE_AMOUNT:
+      debugger;
+      return { ...state, amount: action.payload.amount };
 
     case LOAD_WALLET_ADDRESS:
       return {

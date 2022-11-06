@@ -36,6 +36,19 @@ const abi = [
     ],
     stateMutability: "view",
     type: "function"
+  },
+  {
+    inputs: [],
+    name: "CURRENT_PRICE",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256"
+      }
+    ],
+    stateMutability: "view",
+    type: "function"
   }
 ];
 
@@ -146,17 +159,24 @@ const loadProvider = async () => {
 };
 
 const mint = async (dispatch, getState) => {
-  const { walletAddress } = getState().blockChain;
+  const currentPrice = await price();
+  const { walletAddress, amount } = getState().blockChain;
+  debugger;
   if (isMetaMask) {
     await methods
-      .mint(1)
-      .send({ from: walletAddress })
+      .mint(amount)
+      .send({ from: walletAddress, value: currentPrice * amount })
       .on("transactionHash", (transactionHash) => {
         waitTillTransactionCompleted(transactionHash, dispatch);
       });
   } else {
-    const data = methods.mint(1).encodeABI();
-    const tx = { from: walletAddress, to: address, data };
+    const data = methods.mint(amount).encodeABI();
+    const tx = {
+      from: walletAddress,
+      to: address,
+      data,
+      value: currentPrice * amount
+    };
     connector.sendTransaction(tx).then(async (transactionHash) => {
       await waitTillTransactionCompleted(transactionHash);
     });
@@ -169,6 +189,13 @@ const totalSupply = async (dispatch, getState) => {
     .totalSupply()
     .call();
   dispatch({ type: LOAD_TOTAL_SUPPLY, payload: { totalSupply } });
+};
+
+const price = () => {
+  let supplyWeb3 = new Web3(rpcurl);
+  return new supplyWeb3.eth.Contract(abi, address).methods
+    .CURRENT_PRICE()
+    .call();
 };
 
 const waitTillTransactionCompleted = async (transactionHash, dispatch) => {
@@ -194,7 +221,8 @@ const blockChainActions = {
   mint,
   totalSupply,
   changeNetwork,
-  networkChanged
+  networkChanged,
+  price
 };
 
 export default blockChainActions;

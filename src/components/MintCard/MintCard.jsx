@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import "./MintCard.scss";
 import actions from "../../store/actions";
 import { useDispatch, useSelector } from "react-redux";
+import { CHANGE_AMOUNT } from "../../store/types";
 const selectOptions = [
   {
     label: "How many SilverBacks do you want to mint?",
@@ -25,16 +26,25 @@ export const MintCard = () => {
 
   useEffect(() => {
     dispatch(actions.blockChainActions.totalSupply);
+    dispatch(actions.blockChainActions.price);
   }, []);
 
   //;
 
   const onChange = (e) => {
+    debugger;
     e.preventDefault();
-    setCounter(parseInt(e.target.value));
+    dispatch({
+      type: CHANGE_AMOUNT,
+      payload: { amount: parseInt(counter) }
+    });
   };
 
   const mint = () => {
+    dispatch({
+      type: CHANGE_AMOUNT,
+      payload: { amount: parseInt(counter) }
+    });
     dispatch(actions.blockChainActions.mint);
   };
 
@@ -101,7 +111,12 @@ export const MintCard = () => {
             )}
             {isConnected && !isWrongNetwork && (
               <div className="button-container">
-                <button onClick={mint}>{t("mintNFT")}</button>
+                <button
+                  disabled={counter < 1 && !isWrongNetwork}
+                  onClick={mint}
+                >
+                  {t("mintNFT")}
+                </button>
               </div>
             )}
             {isConnected && isWrongNetwork && (
