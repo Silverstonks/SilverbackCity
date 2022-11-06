@@ -8,7 +8,7 @@ import {
 import actions from ".";
 import Web3 from "web3";
 const { ethereum } = window;
-const rpcurl = "https://goerli.infura.io/v3/e0737333518f412892d21b1762e8fe47";
+const rpcurl = process.env.REACT_APP_RPC_URL;
 const address = process.env.REACT_APP_NFT_Address;
 const abi = [
   {
@@ -188,6 +188,7 @@ const totalSupply = async (dispatch, getState) => {
   let totalSupply = await new supplyWeb3.eth.Contract(abi, address).methods
     .totalSupply()
     .call();
+  debugger;
   dispatch({ type: LOAD_TOTAL_SUPPLY, payload: { totalSupply } });
 };
 
