@@ -50,7 +50,6 @@ export default function blockChainReducer(state = initialState, action) {
       return { ...state, isWrongNetwork: action.payload.isWrongNetwork };
 
     case CHANGE_AMOUNT:
-      debugger;
       return { ...state, amount: action.payload.amount };
 
     case LOAD_WALLET_ADDRESS:

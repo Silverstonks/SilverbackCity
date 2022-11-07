@@ -135,7 +135,6 @@ const connectToMetaMask = async (dispatch) => {
 };
 
 const networkChanged = async (dispatch) => {
-  debugger;
   web3 = new Web3(ethereum);
   const chainId = await web3.eth.getChainId();
   if (Number(chainId) !== Number(process.env.REACT_APP_CHAIN_ID)) {
@@ -159,9 +158,9 @@ const loadProvider = async () => {
 };
 
 const mint = async (dispatch, getState) => {
+  debugger;
   const currentPrice = await price();
   const { walletAddress, amount } = getState().blockChain;
-  debugger;
   if (isMetaMask) {
     await methods
       .mint(amount)
@@ -170,16 +169,24 @@ const mint = async (dispatch, getState) => {
         waitTillTransactionCompleted(transactionHash, dispatch);
       });
   } else {
-    const data = methods.mint(amount).encodeABI();
+    const data = methods.mint(amount.toString()).encodeABI();
     const tx = {
       from: walletAddress,
       to: address,
       data,
-      value: currentPrice * amount
+      value: (currentPrice * amount).toLocaleString("fullwide", {
+        useGrouping: false
+      })
     };
-    connector.sendTransaction(tx).then(async (transactionHash) => {
-      await waitTillTransactionCompleted(transactionHash);
-    });
+    debugger;
+    await connector
+      .sendTransaction(tx)
+      .then(async (transactionHash) => {
+        await waitTillTransactionCompleted(transactionHash);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 };
 
@@ -188,7 +195,6 @@ const totalSupply = async (dispatch, getState) => {
   let totalSupply = await new supplyWeb3.eth.Contract(abi, address).methods
     .totalSupply()
     .call();
-  debugger;
   dispatch({ type: LOAD_TOTAL_SUPPLY, payload: { totalSupply } });
 };
 
