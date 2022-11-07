@@ -33,7 +33,6 @@ export const MintCard = () => {
   //;
 
   const onChange = (e) => {
-    debugger;
     e.preventDefault();
     dispatch({
       type: CHANGE_AMOUNT,
