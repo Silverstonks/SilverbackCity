@@ -133,7 +133,8 @@ const Roadmap = () => {
 								{t("Quarter.Q322.quarter")}
 							</h3>
 							<div className="road-map-card text-center mobile-solid-left solid-top border-tl dash-left mb-5 h-100">
-								<div className="dot-solid"></div>
+								<div className="dot">
+								 <div className="dot-solid"></div>
 								<h2 className="my-4">{t("Quarter.Q322.title")}</h2>
 								<dl>
 									<dd>{t("Quarter.Q322.des1")}</dd>
