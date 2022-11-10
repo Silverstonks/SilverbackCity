@@ -3,6 +3,7 @@ import BidsarenaImg from "../static/images/sections/stadio_ilustracion.gif";
 import BidsarenaIcon from "../static/images/slider/IconBidsarena.png";
 import PropertyHoldersImg from "../static/images/slider/property-holders-services.png";
 import PropertyHoldersIcon from "../static/images/slider/IconPropertyholders.png";
+import IconMeta from "../static/images/slider/IconMeta.png";
 import GreenBoxTitle from "../static/images/sections/GreenBoxTitle.png";
 import FinanceAImg from "../static/images/sections/f-acad.jpg";
 import VaultImg from "../static/images/sections/vault_ilustracion.gif";
@@ -32,13 +33,13 @@ const Sections = () => {
 			/>
 			<SectionItemImgRight
 				id="financeacademy"
-				icon={PropertyHoldersIcon}
+				icon={BidsarenaIcon}
 				img={FinanceAImg}
 				btnHref={"https://academy.silverstonks.com/"}
 			/>
 			<SectionItemImgLeft
 				id="bidsarena"
-				icon={BidsarenaIcon}
+				icon={IconMeta}
 				img={BidsarenaImg}
 				btnHref={"https://www.silverstonks.io/assets/files/SilverBankRun.pdf"}
 			/>
