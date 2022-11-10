@@ -34,7 +34,7 @@ const Sections = () => {
 				id="financeacademy"
 				icon={PropertyHoldersIcon}
 				img={FinanceAImg}
-				btnHref={"https://www.silverstonks.io/assets/files/SilverBankRun.pdf"}
+				btnHref={"https://academy.silverstonks.com/"}
 			/>
 			<SectionItemImgLeft
 				id="bidsarena"
