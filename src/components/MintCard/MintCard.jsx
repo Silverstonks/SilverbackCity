@@ -103,7 +103,8 @@ export const MintCard = () => {
             {!isConnected && (
               <div className="button-container">
                 {
-                  <button onClick={() => connectWallet()}>
+               {/*   <button onClick={() => connectWallet()}> */}
+                 <button>
                     {t("connectWallet")}
                   </button>
                 }
