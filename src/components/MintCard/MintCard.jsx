@@ -99,12 +99,12 @@ export const MintCard = () => {
             <button onClick={() => setCounter(counter + 1)}>+</button>
           </div>
           <br />
-          <div className="mint-card-buttons">
+      {/*      <div className="mint-card-buttons">
             {!isConnected && (
               <div className="button-container">
                 {
-               {/*   <button onClick={() => connectWallet()}> */}
-                 <button>
+                <button onClick={() => connectWallet()}> 
+                
                     {t("connectWallet")}
                   </button>
                 }
@@ -140,10 +140,10 @@ export const MintCard = () => {
                     "_blank"
                   );
                 }}
-              >
+              > 
                 {"PAY WITHOUT CRYPTO"}
               </button>
-            </div>
+            </div> */}
             <span class="tooltiptext">
               If you are not comfortable with crypto, you can purchase the NFT
               with regular currency in our ecommerce, and we will mint the NFT for you.
