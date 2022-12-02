@@ -136,7 +136,7 @@ export const MintCard = () => {
                 style={{ padding: "2px 7px" }}
                 onClick={() => {
                   window.open(
-                    "https://silverstonks.com/buy-silverbackcity-nft",
+                    "https://entrepreneursuniversity.io/",
                     "_blank"
                   );
                 }}
