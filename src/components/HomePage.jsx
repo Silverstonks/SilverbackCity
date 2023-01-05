@@ -15,7 +15,7 @@ import ClansSlider from "./ClansSlider/ClansSlider";
 import Jumbotron from "./Jumbotron/Jumbotron";
 import "./HomePage.scss";
 import MetaverseStory from "./MetaverseStory/MetaverseStory";
-import MintCard from "./MintCard/MintCard";
+// import MintCard from "./MintCard/MintCard";
 import NftLab from "./NftLab";
 import LinesDecoration from "../static/images/slider/LinesDecoration.png";
 import Roadmap from "./static/Roadmap";
@@ -43,11 +43,11 @@ const HomePage = () => {
 		<>
 			<Suspense fallback="loading">
 				<Header />
-				<div
+				{/* <div
 					style={{ display: "flex", justifyContent: "center", width: "100%" }}
 				>
 					<MintCard />
-				</div>
+				</div> */}
 
 				{/* <ToastContainer /> */}
 				<ModalDialogs />

@@ -99,7 +99,7 @@ export const MintCard = () => {
             <button onClick={() => setCounter(counter + 1)}>+</button>
           </div>
           <br />
-      {/*      <div className="mint-card-buttons">
+          {/*      <div className="mint-card-buttons">
             {!isConnected && (
               <div className="button-container">
                 {
@@ -144,23 +144,22 @@ export const MintCard = () => {
                 {"PAY WITHOUT CRYPTO"}
               </button>
             </div> */}
-            <span class="tooltiptext">
-              If you are not comfortable with crypto, you can purchase the NFT
-              with regular currency in our ecommerce, and we will mint the NFT for you.
-            </span>
-          </div>
+          <span class="tooltiptext">
+            If you are not comfortable with crypto, you can purchase the NFT
+            with regular currency in our ecommerce, and we will mint the NFT for you.
+          </span>
+        </div>
 
-          {/* <div className="mint-card-action my-5">
+        {/* <div className="mint-card-action my-5">
             <div className="button-container">
               <button onClick={() => openModalMint()}>{t('btn')}</button>
             </div>
           </div> */}
-          {/*<div className="mint-card-select-container">
+        {/*<div className="mint-card-select-container">
                     <select name="mint-card" id="mint-card" disabled={true} onChange={onChange} className="mint-card-select">
                         {selectOptions.map(renderOption)}
                     </select>
                 </div>*/}
-        </div>
       </div>
     </div>
   );
