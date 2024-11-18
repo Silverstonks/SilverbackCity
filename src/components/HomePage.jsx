@@ -76,11 +76,11 @@ const HomePage = () => {
 				<Benefits />
 				{/* <Marketplace /> */}
 
-				<Sections />
+				{/* <Sections /> */}
 
-				{/* <Roadmap />
+				{/* <Roadmap /> */}
 
-				<Team /> */}
+				{/* <Team /> */}
 
 				<Footer />
 			</Suspense>
