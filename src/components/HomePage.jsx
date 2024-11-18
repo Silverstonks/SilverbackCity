@@ -78,9 +78,9 @@ const HomePage = () => {
 
 				<Sections />
 
-				<Roadmap />
+				{/* <Roadmap />
 
-				<Team />
+				<Team /> */}
 
 				<Footer />
 			</Suspense>
